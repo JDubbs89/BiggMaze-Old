@@ -37,12 +37,16 @@
 			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/be623df092c442609c20a840630031fb"
 		},
 		{
-			"Name": "AdvancedSteamSessions",
-			"Enabled": false
+			"Name": "SteamSockets",
+			"Enabled": true
 		},
 		{
-			"Name": "AdvancedSessions",
-			"Enabled": false
+			"Name": "OnlineSubsystemSteam",
+			"Enabled": true
+		},
+		{
+			"Name": "SteamShared",
+			"Enabled": true
 		}
 	]
 }
