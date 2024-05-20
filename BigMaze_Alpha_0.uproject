@@ -53,6 +53,11 @@
 		{
 			"Name": "ClipboardFunctions",
 			"Enabled": true
+		},
+		{
+			"Name": "BlueprintableOnlineBeacons",
+			"Enabled": true,
+			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/22087fb2e2494de6a2641d7cc97e07f0"
 		}
 	]
 }
