@@ -7,7 +7,11 @@
 		{
 			"Name": "BigMaze_Alpha_0",
 			"Type": "Runtime",
-			"LoadingPhase": "Default"
+			"LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"Engine",
+				"OnlineSubsystemUtils"
+			]
 		}
 	],
 	"Plugins": [
