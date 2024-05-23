@@ -12,7 +12,7 @@
 UCLASS()
 class BIGMAZE_ALPHA_0_API ABiggMazeBeaconHostObject : public AOnlineBeaconHostObject
 {
-	GENERATED_BODY();
+	GENERATED_BODY()
 public:
 	ABiggMazeBeaconHostObject();
 	
