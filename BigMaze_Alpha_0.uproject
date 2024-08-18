@@ -38,10 +38,6 @@
 			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/6fef18d187bf4942abad64f2d98a9a73"
 		},
 		{
-			"Name": "SteamSockets",
-			"Enabled": true
-		},
-		{
 			"Name": "OnlineSubsystemSteam",
 			"Enabled": true
 		},
@@ -131,6 +127,11 @@
 			"Name": "TodoLogging",
 			"Enabled": true,
 			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/6d3410ae11924cc084d036d85118363a"
+		},
+		{
+			"Name": "StatsIntegration",
+			"Enabled": true,
+			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/ec733baa0ae049d08cda0c3528ebe8d4"
 		}
 	]
 }
