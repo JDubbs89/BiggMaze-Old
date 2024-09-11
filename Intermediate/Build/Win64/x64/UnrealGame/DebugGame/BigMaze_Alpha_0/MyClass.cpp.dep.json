@@ -1,0 +1,14 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\jonat\\onedrive\\documents\\bigmaze_alpha-0.0.1_ue_5.3.2joust-brigade\\source\\bigmaze_alpha_0\\myclass.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\jonat\\onedrive\\documents\\bigmaze_alpha-0.0.1_ue_5.3.2joust-brigade\\intermediate\\build\\win64\\x64\\bigmaze_alpha_0\\debuggame\\engine\\sharedpch.engine.nonoptimized.cpp20.inclorderunreal5_0.h.pch",
+        "Includes": [
+            "c:\\users\\jonat\\onedrive\\documents\\bigmaze_alpha-0.0.1_ue_5.3.2joust-brigade\\intermediate\\build\\win64\\x64\\unrealgame\\debuggame\\bigmaze_alpha_0\\definitions.bigmaze_alpha_0.h",
+            "c:\\users\\jonat\\onedrive\\documents\\bigmaze_alpha-0.0.1_ue_5.3.2joust-brigade\\source\\bigmaze_alpha_0\\myclass.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

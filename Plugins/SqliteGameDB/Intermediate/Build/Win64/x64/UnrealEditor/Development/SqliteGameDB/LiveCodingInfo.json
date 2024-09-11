@@ -1,0 +1,30 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.SqliteGameDB.cpp.obj": [
+			"DbBase.gen.cpp.obj",
+			"DbPersistable.gen.cpp.obj",
+			"DbStatement.gen.cpp.obj",
+			"DbStringSerializer.gen.cpp.obj",
+			"DBSupport.gen.cpp.obj",
+			"GameDatabaseStatics.gen.cpp.obj",
+			"GameDbConfig.gen.cpp.obj",
+			"GameInstanceDatabaseSubsystem.gen.cpp.obj",
+			"LogInfo.gen.cpp.obj",
+			"PlayDb.gen.cpp.obj",
+			"PreparedStatementGroup.gen.cpp.obj",
+			"PreparedStatementManager.gen.cpp.obj",
+			"SqliteGameDB.init.gen.cpp.obj",
+			"SqliteGameDBSettings.gen.cpp.obj",
+			"DbBase.cpp.obj",
+			"DbPersistable.cpp.obj",
+			"DbStatement.cpp.obj",
+			"GameDatabaseStatics.cpp.obj",
+			"GameInstanceDatabaseSubsystem.cpp.obj",
+			"PlayDb.cpp.obj",
+			"PreparedStatementGroup.cpp.obj",
+			"PreparedStatementManager.cpp.obj",
+			"SqliteGameDB.cpp.obj"
+		]
+	}
+}

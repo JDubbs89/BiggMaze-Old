@@ -1,0 +1,17 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-SqliteCoreX.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"C:\Users\jonat\OneDrive\Documents\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\Intermediate\Build\Win64\x64\BigMaze_Alpha_0Editor\Development\Core\SharedPCH.Core.Cpp20.InclOrderUnreal5_0.h.obj"
+"C:\Users\jonat\OneDrive\Documents\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\Plugins\SqliteGameDB\Intermediate\Build\Win64\x64\UnrealEditor\Development\SqliteCoreX\SqliteCoreX.cpp.obj"
+"C:\Users\jonat\OneDrive\Documents\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\Plugins\SqliteGameDB\Intermediate\Build\Win64\x64\UnrealEditor\Development\SqliteCoreX\SQLiteDatabase.cpp.obj"
+"C:\Users\jonat\OneDrive\Documents\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\Plugins\SqliteGameDB\Intermediate\Build\Win64\x64\UnrealEditor\Development\SqliteCoreX\SQLiteEmbeddedPlatform.cpp.obj"
+"C:\Users\jonat\OneDrive\Documents\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\Plugins\SqliteGameDB\Intermediate\Build\Win64\x64\UnrealEditor\Development\SqliteCoreX\SQLitePreparedStatement.cpp.obj"
+"C:\Users\jonat\OneDrive\Documents\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\Plugins\SqliteGameDB\Intermediate\Build\Win64\x64\UnrealEditor\Development\SqliteCoreX\SQLiteTest.cpp.obj"
+"C:\Users\jonat\OneDrive\Documents\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\Plugins\SqliteGameDB\Intermediate\Build\Win64\x64\UnrealEditor\Development\SqliteCoreX\SQLiteEmbedded.c.obj"
+"C:\Users\jonat\OneDrive\Documents\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\Plugins\SqliteGameDB\Intermediate\Build\Win64\x64\UnrealEditor\Development\SqliteCoreX\Default.rc2.res"
+/OUT:"C:\Users\jonat\OneDrive\Documents\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\Plugins\SqliteGameDB\Intermediate\Build\Win64\x64\UnrealEditor\Development\SqliteCoreX\UnrealEditor-SqliteCoreX.lib"
