@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "BigMaze_Alpha_0",
+			"Path": "..\\Source\\BigMaze_Alpha_0.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "BigMaze_Alpha_0Editor",
+			"Path": "..\\Source\\BigMaze_Alpha_0Editor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}
