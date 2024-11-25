@@ -168,6 +168,10 @@
 				"Mac",
 				"Linux"
 			]
+		},
+		{
+			"Name": "ModelViewViewModel",
+			"Enabled": true
 		}
 	]
 }
