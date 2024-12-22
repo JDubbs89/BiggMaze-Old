@@ -1,0 +1,12 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-ClipboardFunctions-Win64-DebugGame.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"C:\Users\Jonathan Warner\Documents\Github\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\Intermediate\Build\Win64\x64\BigMaze_Alpha_0Editor\DebugGame\Engine\SharedPCH.Engine.NonOptimized.Cpp20.InclOrderUnreal5_0.h.obj"
+"C:\Users\Jonathan Warner\Documents\Github\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\Plugins\ClipboardFunctions\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\ClipboardFunctions\Module.ClipboardFunctions.cpp.obj"
+"C:\Users\Jonathan Warner\Documents\Github\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\Plugins\ClipboardFunctions\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\ClipboardFunctions\Default.rc2.res"
+/OUT:"C:\Users\Jonathan Warner\Documents\Github\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\Plugins\ClipboardFunctions\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\ClipboardFunctions\UnrealEditor-ClipboardFunctions-Win64-DebugGame.lib"
