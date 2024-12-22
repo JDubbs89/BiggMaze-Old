@@ -296,14 +296,4 @@
       <Filter>Source\BigMaze_Alpha_0</Filter>
     </ClInclude>
   </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="..\..\..\..\..\Desktop\ItemSystem.cpp">
-      <Filter>Source\BigMaze_Alpha_0</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="..\..\..\..\..\Desktop\ItemSystem.h">
-      <Filter>Source\BigMaze_Alpha_0</Filter>
-    </ClInclude>
-  </ItemGroup>
 </Project>

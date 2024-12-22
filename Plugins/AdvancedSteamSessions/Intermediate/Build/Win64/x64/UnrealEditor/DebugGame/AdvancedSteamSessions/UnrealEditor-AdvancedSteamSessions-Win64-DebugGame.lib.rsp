@@ -6,7 +6,7 @@
 /NAME:"UnrealEditor-AdvancedSteamSessions-Win64-DebugGame.dll"
 /IGNORE:4221
 /NODEFAULTLIB
-"C:\Users\Jonathan Warner\Documents\Github\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\Intermediate\Build\Win64\x64\BigMaze_Alpha_0Editor\DebugGame\Engine\SharedPCH.Engine.NonOptimized.Cpp20.InclOrderUnreal5_0.h.obj"
-"C:\Users\Jonathan Warner\Documents\Github\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\Plugins\AdvancedSteamSessions\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\AdvancedSteamSessions\Module.AdvancedSteamSessions.cpp.obj"
-"C:\Users\Jonathan Warner\Documents\Github\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\Plugins\AdvancedSteamSessions\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\AdvancedSteamSessions\Default.rc2.res"
-/OUT:"C:\Users\Jonathan Warner\Documents\Github\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\Plugins\AdvancedSteamSessions\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\AdvancedSteamSessions\UnrealEditor-AdvancedSteamSessions-Win64-DebugGame.lib"
+"C:\Users\morde\Documents\Unreal Projects\PluginExpProject\Intermediate\Build\Win64\x64\VRExpPluginExampleEditor\DebugGame\Engine\SharedPCH.Engine.NonOptimized.Cpp17.h.obj"
+"C:\Users\morde\Documents\Unreal Projects\PluginExpProject\Plugins\AdvancedSessions\AdvancedSteamSessions\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\AdvancedSteamSessions\Module.AdvancedSteamSessions.cpp.obj"
+"C:\Users\morde\Documents\Unreal Projects\PluginExpProject\Plugins\AdvancedSessions\AdvancedSteamSessions\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\AdvancedSteamSessions\Default.rc2.res"
+/OUT:"C:\Users\morde\Documents\Unreal Projects\PluginExpProject\Plugins\AdvancedSessions\AdvancedSteamSessions\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\AdvancedSteamSessions\UnrealEditor-AdvancedSteamSessions-Win64-DebugGame.lib"
