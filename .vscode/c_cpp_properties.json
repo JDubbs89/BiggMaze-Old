@@ -1,26 +1,45 @@
 {
-	"configurations": [
-		{
-			"name": "BigMaze_Alpha_0Editor Editor Win64 Development (BigMaze_Alpha_0)",
-			"compilerPath": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
-			"cStandard": "c17",
-			"cppStandard": "c++20",
-			"includePath": [
-				"${workspaceFolder}\\Intermediate\\**",
-				"${workspaceFolder}\\Plugins\\**",
-				"${workspaceFolder}\\Source\\**"
-			],
-			"intelliSenseMode": "msvc-x64",
-			"compileCommands": "C:\\Users\\jonat\\OneDrive\\Documents\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\.vscode\\compileCommands_BigMaze_Alpha_0.json"
-		},
-		{
-			"name": "Win32",
-			"compilerPath": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
-			"cStandard": "c17",
-			"cppStandard": "c++20",
-			"intelliSenseMode": "msvc-x64",
-			"compileCommands": "C:\\Users\\jonat\\OneDrive\\Documents\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\.vscode\\compileCommands_Default.json"
-		}
-	],
-	"version": 4
+    "configurations": [
+        {
+            "name": "BigMaze_Alpha_0Editor Editor Win64 Development (BigMaze_Alpha_0)",
+            "compilerPath": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+            "cStandard": "c17",
+            "cppStandard": "c++20",
+            "includePath": [
+                "${workspaceFolder}\\Intermediate\\**",
+                "${workspaceFolder}\\Plugins\\**",
+                "${workspaceFolder}\\Source\\**"
+            ],
+            "intelliSenseMode": "msvc-x64",
+            "compileCommands": "C:\\Users\\jonat\\OneDrive\\Documents\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\.vscode\\compileCommands_BigMaze_Alpha_0.json"
+        },
+        {
+            "name": "Win32",
+            "compilerPath": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\Hostx64\\x64\\cl.exe",
+            "cStandard": "c17",
+            "cppStandard": "c++20",
+            "intelliSenseMode": "msvc-x64",
+            "compileCommands": "C:\\Users\\jonat\\OneDrive\\Documents\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\.vscode\\compileCommands_Default.json"
+        },
+        {
+            "name": "JonPC",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${workspaceFolder}\\\\Intermediate\\\\**",
+                "${workspaceFolder}\\\\Plugins\\\\**",
+                "${workspaceFolder}\\\\Source\\\\**"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "windowsSdkVersion": "10.0.26100.0",
+            "compilerPath": "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.42.34433/bin/Hostx64/x64/cl.exe",
+            "cStandard": "c17",
+            "cppStandard": "c++20",
+            "intelliSenseMode": "windows-msvc-x64"
+        }
+    ],
+    "version": 4
 }
