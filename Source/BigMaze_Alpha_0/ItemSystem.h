@@ -57,7 +57,8 @@ public:
 
     // Default Constructor
     FItemAttribute()
-        : Id(0), Name(TEXT("")), Description(TEXT("")), Value(TEXT("")), MaxValue(TEXT("")), Visible(false) {
+        : Id(0), Name(TEXT("")), Description(TEXT("")), Value(TEXT("")), MaxValue(TEXT("")), Visible(false)
+    {
     }
 };
 
@@ -104,7 +105,8 @@ public:
 
     // Default Constructor
     FItem()
-        : Id(0), Name(TEXT("")), Description(TEXT("")), Value(0.0f), Stack(0), MaxStack(1), Class(nullptr) {
+        : Id(0), Name(TEXT("")), Description(TEXT("")), Value(0.0f), Stack(0), MaxStack(1), Class(nullptr)
+    {
     }
 };
 
@@ -119,35 +121,35 @@ class UItemFunctionalityBase : public UDataAsset
 public:
     /** Variable to set the icon texture of an item to be displayed in widgets. */
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Item Defaults")
-    UTexture2D* Icon;
+    UTexture2D *Icon;
 
     /** Variable to set the skeletal mesh of an item for in world display. */
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Item Defaults")
-    USkeletalMesh* SkeletalMesh;
+    USkeletalMesh *SkeletalMesh;
 
     /** Function called for the primary use of the item. */
     UFUNCTION(BlueprintNativeEvent, BlueprintCallable, Category = "Item Functionality")
-    void PrimaryUse(const FItem& Item, EItemActivationType ActivationType);
+    void PrimaryUse(const FItem &Item, EItemActivationType ActivationType);
 
     /** Function called for the secondary use of the item. */
     UFUNCTION(BlueprintNativeEvent, BlueprintCallable, Category = "Item Functionality")
-    void SecondaryUse(const FItem& Item, EItemActivationType ActivationType);
+    void SecondaryUse(const FItem &Item, EItemActivationType ActivationType);
 
     /** Function called for the tertiary use of the item. */
     UFUNCTION(BlueprintNativeEvent, BlueprintCallable, Category = "Item Functionality")
-    void TertiaryUse(const FItem& Item, EItemActivationType ActivationType);
+    void TertiaryUse(const FItem &Item, EItemActivationType ActivationType);
 
     /** Function called for the quaternary use of the item. */
     UFUNCTION(BlueprintNativeEvent, BlueprintCallable, Category = "Item Functionality")
-    void QuaternaryUse(const FItem& Item, EItemActivationType ActivationType);
+    void QuaternaryUse(const FItem &Item, EItemActivationType ActivationType);
 
     /** Function called when the item is switched to or from */
     UFUNCTION(BlueprintNativeEvent, BlueprintCallable, Category = "Item Functionality")
-    void OnSwapItem(const FItem& Item, bool SwapTo);
+    void OnSwapItem(const FItem &Item, bool SwapTo);
 
     // Constructor
     UItemFunctionalityBase()
-        : Icon(nullptr) 
-        , SkeletalMesh(nullptr)
-        {}
+        : Icon(nullptr), SkeletalMesh(nullptr)
+    {
+    }
 };

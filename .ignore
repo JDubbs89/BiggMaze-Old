@@ -1,0 +1,10 @@
+/.git
+/.vs
+/.vscode
+/Content
+/DerivedDataCache
+/Intermediate
+/Saved
+/Plugins/AdvancedSessions/Intermediate
+/Plugins/AdvancedSteamSessions/Intermediate
+/Plugins/ClipboardFunctions/Intermediate
