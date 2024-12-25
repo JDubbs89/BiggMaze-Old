@@ -266,7 +266,8 @@
 /I "..\Plugins\Online\OnlineSubsystem\Source\Test"
 /I "..\Plugins\Online\OnlineSubsystem\Source\Public"
 /I "..\Plugins\Online\OnlineBase\Source\Public"
-/I "C:\Users\Jonathan Warner\OneDrive\Documents\Github\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\Source"
+/I "C:\Users\jonat\OneDrive\Documents\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\Intermediate\Build\Win64\UnrealEditor\Inc\BigMaze_Alpha_0\UHT"
+/I "C:\Users\jonat\OneDrive\Documents\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\Source"
 /external:W0
 /external:I "ThirdParty\mimalloc\include"
 /external:I "ThirdParty\LibTiff\Source\Win64"

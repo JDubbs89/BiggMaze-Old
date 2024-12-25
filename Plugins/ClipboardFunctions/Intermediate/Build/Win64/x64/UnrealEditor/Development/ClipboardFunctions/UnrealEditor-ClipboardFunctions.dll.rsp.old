@@ -34,9 +34,9 @@
 /NODEFAULTLIB:"LIBCD"
 /NODEFAULTLIB:"LIBCPD"
 /FUNCTIONPADMIN:6
-"C:\Users\Jonathan Warner\OneDrive\Documents\Github\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\Intermediate\Build\Win64\x64\BigMaze_Alpha_0Editor\Development\Engine\SharedPCH.Engine.Cpp20.InclOrderUnreal5_0.h.obj"
-"C:\Users\Jonathan Warner\OneDrive\Documents\Github\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\Plugins\ClipboardFunctions\Intermediate\Build\Win64\x64\UnrealEditor\Development\ClipboardFunctions\Module.ClipboardFunctions.cpp.obj"
-"C:\Users\Jonathan Warner\OneDrive\Documents\Github\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\Plugins\ClipboardFunctions\Intermediate\Build\Win64\x64\UnrealEditor\Development\ClipboardFunctions\Default.rc2.res"
+"C:\Users\jonat\OneDrive\Documents\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\Intermediate\Build\Win64\x64\BigMaze_Alpha_0Editor\Development\Engine\SharedPCH.Engine.Cpp20.InclOrderUnreal5_0.h.obj"
+"C:\Users\jonat\OneDrive\Documents\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\Plugins\ClipboardFunctions\Intermediate\Build\Win64\x64\UnrealEditor\Development\ClipboardFunctions\Module.ClipboardFunctions.cpp.obj"
+"C:\Users\jonat\OneDrive\Documents\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\Plugins\ClipboardFunctions\Intermediate\Build\Win64\x64\UnrealEditor\Development\ClipboardFunctions\Default.rc2.res"
 "..\Intermediate\Build\Win64\x64\UnrealEditor\Development\CoreUObject\UnrealEditor-CoreUObject.lib"
 "..\Intermediate\Build\Win64\x64\UnrealEditor\Development\Engine\UnrealEditor-Engine.lib"
 "..\Intermediate\Build\Win64\x64\UnrealEditor\Development\Slate\UnrealEditor-Slate.lib"
@@ -67,7 +67,7 @@
 "synchronization.lib"
 "dwmapi.lib"
 "imm32.lib"
-/OUT:"C:\Users\Jonathan Warner\OneDrive\Documents\Github\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\Plugins\ClipboardFunctions\Binaries\Win64\UnrealEditor-ClipboardFunctions.dll"
-/IMPLIB:"C:\Users\Jonathan Warner\OneDrive\Documents\Github\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\Plugins\ClipboardFunctions\Intermediate\Build\Win64\x64\UnrealEditor\Development\ClipboardFunctions\UnrealEditor-ClipboardFunctions.sup.lib"
-/PDB:"C:\Users\Jonathan Warner\OneDrive\Documents\Github\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\Plugins\ClipboardFunctions\Binaries\Win64\UnrealEditor-ClipboardFunctions.pdb"
+/OUT:"C:\Users\jonat\OneDrive\Documents\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\Plugins\ClipboardFunctions\Binaries\Win64\UnrealEditor-ClipboardFunctions.dll"
+/IMPLIB:"C:\Users\jonat\OneDrive\Documents\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\Plugins\ClipboardFunctions\Intermediate\Build\Win64\x64\UnrealEditor\Development\ClipboardFunctions\UnrealEditor-ClipboardFunctions.sup.lib"
+/PDB:"C:\Users\jonat\OneDrive\Documents\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\Plugins\ClipboardFunctions\Binaries\Win64\UnrealEditor-ClipboardFunctions.pdb"
 /ignore:4078
