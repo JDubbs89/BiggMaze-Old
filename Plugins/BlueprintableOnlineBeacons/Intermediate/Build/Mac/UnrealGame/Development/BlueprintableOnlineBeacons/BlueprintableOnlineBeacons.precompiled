@@ -1,0 +1,8 @@
+{
+	"OutputFiles": [
+		"../../../arm64/UnrealGame/Development/BlueprintableOnlineBeacons/Module.BlueprintableOnlineBeacons.cpp.o",
+		"../../../arm64/UnrealGame/Development/BlueprintableOnlineBeacons/Module.BlueprintableOnlineBeacons.cpp.o",
+		"../../../x64/UnrealGame/Development/BlueprintableOnlineBeacons/Module.BlueprintableOnlineBeacons.cpp.o",
+		"../../../x64/UnrealGame/Development/BlueprintableOnlineBeacons/Module.BlueprintableOnlineBeacons.cpp.o"
+	]
+}
