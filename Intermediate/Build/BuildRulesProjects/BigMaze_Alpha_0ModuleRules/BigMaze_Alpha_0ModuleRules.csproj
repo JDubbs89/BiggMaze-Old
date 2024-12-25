@@ -17,6 +17,7 @@
   <ItemGroup>
   <Compile Include="..\..\..\..\Plugins\AdvancedSessions\Source\AdvancedSessions\AdvancedSessions.Build.cs"><Link>Plugins\AdvancedSessions\Source\AdvancedSessions\AdvancedSessions.Build.cs</Link></Compile>
   <Compile Include="..\..\..\..\Plugins\AdvancedSteamSessions\Source\AdvancedSteamSessions\AdvancedSteamSessions.Build.cs"><Link>Plugins\AdvancedSteamSessions\Source\AdvancedSteamSessions\AdvancedSteamSessions.Build.cs</Link></Compile>
+  <Compile Include="..\..\..\..\Plugins\ClipboardFunctions\Source\ClipboardFunctions\ClipboardFunctions.Build.cs"><Link>Plugins\ClipboardFunctions\Source\ClipboardFunctions\ClipboardFunctions.Build.cs</Link></Compile>
   <Compile Include="..\..\..\..\Source\BigMaze_Alpha_0.Target.cs"><Link>Source\BigMaze_Alpha_0.Target.cs</Link></Compile>
   <Compile Include="..\..\..\..\Source\BigMaze_Alpha_0Editor.Target.cs"><Link>Source\BigMaze_Alpha_0Editor.Target.cs</Link></Compile>
   <Compile Include="..\..\..\..\Source\BigMaze_Alpha_0\BigMaze_Alpha_0.Build.cs"><Link>Source\BigMaze_Alpha_0\BigMaze_Alpha_0.Build.cs</Link></Compile>
