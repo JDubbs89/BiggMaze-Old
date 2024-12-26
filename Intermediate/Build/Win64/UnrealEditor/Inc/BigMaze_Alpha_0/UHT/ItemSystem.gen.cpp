@@ -10,12 +10,12 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeItemSystem() {}
 
 // Begin Cross Module References
-BIGMAZE_ALPHA_0_API UClass* Z_Construct_UClass_UItemFunctionalityBase();
-BIGMAZE_ALPHA_0_API UClass* Z_Construct_UClass_UItemFunctionalityBase_NoRegister();
+BIGMAZE_ALPHA_0_API UClass* Z_Construct_UClass_AItemFunctionalityBase();
+BIGMAZE_ALPHA_0_API UClass* Z_Construct_UClass_AItemFunctionalityBase_NoRegister();
 BIGMAZE_ALPHA_0_API UEnum* Z_Construct_UEnum_BigMaze_Alpha_0_EItemActivationType();
 BIGMAZE_ALPHA_0_API UScriptStruct* Z_Construct_UScriptStruct_FItem();
 BIGMAZE_ALPHA_0_API UScriptStruct* Z_Construct_UScriptStruct_FItemAttribute();
-ENGINE_API UClass* Z_Construct_UClass_UDataAsset();
+ENGINE_API UClass* Z_Construct_UClass_AActor();
 ENGINE_API UClass* Z_Construct_UClass_USkeletalMesh_NoRegister();
 ENGINE_API UClass* Z_Construct_UClass_UTexture2D_NoRegister();
 UPackage* Z_Construct_UPackage__Script_BigMaze_Alpha_0();
@@ -332,11 +332,11 @@ struct Z_Construct_UScriptStruct_FItem_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Class_MetaData[] = {
 		{ "Category", "Item" },
 #if !UE_BUILD_SHIPPING
-		{ "Comment", "// Associated Functionality Class (UItemFunctionalityBase)\n" },
+		{ "Comment", "// Associated Functionality Class (AItemFunctionalityBase)\n" },
 #endif
 		{ "ModuleRelativePath", "ItemSystem.h" },
 #if !UE_BUILD_SHIPPING
-		{ "ToolTip", "Associated Functionality Class (UItemFunctionalityBase)" },
+		{ "ToolTip", "Associated Functionality Class (AItemFunctionalityBase)" },
 #endif
 	};
 #endif // WITH_METADATA
@@ -366,9 +366,9 @@ const UECodeGen_Private::FIntPropertyParams Z_Construct_UScriptStruct_FItem_Stat
 const UECodeGen_Private::FIntPropertyParams Z_Construct_UScriptStruct_FItem_Statics::NewProp_MaxStack = { "MaxStack", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FItem, MaxStack), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MaxStack_MetaData), NewProp_MaxStack_MetaData) };
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FItem_Statics::NewProp_Attributes_Inner = { "Attributes", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FItemAttribute, METADATA_PARAMS(0, nullptr) }; // 3073608223
 const UECodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FItem_Statics::NewProp_Attributes = { "Attributes", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FItem, Attributes), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Attributes_MetaData), NewProp_Attributes_MetaData) }; // 3073608223
-const UECodeGen_Private::FSoftObjectPropertyParams Z_Construct_UScriptStruct_FItem_Statics::NewProp_Parts_Inner = { "Parts", nullptr, (EPropertyFlags)0x0004000000000000, UECodeGen_Private::EPropertyGenFlags::SoftObject, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UClass_UItemFunctionalityBase_NoRegister, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FSoftObjectPropertyParams Z_Construct_UScriptStruct_FItem_Statics::NewProp_Parts_Inner = { "Parts", nullptr, (EPropertyFlags)0x0004000000000000, UECodeGen_Private::EPropertyGenFlags::SoftObject, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UClass_AItemFunctionalityBase_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FItem_Statics::NewProp_Parts = { "Parts", nullptr, (EPropertyFlags)0x0014000000000005, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FItem, Parts), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Parts_MetaData), NewProp_Parts_MetaData) };
-const UECodeGen_Private::FSoftObjectPropertyParams Z_Construct_UScriptStruct_FItem_Statics::NewProp_Class = { "Class", nullptr, (EPropertyFlags)0x0014000000000005, UECodeGen_Private::EPropertyGenFlags::SoftObject, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FItem, Class), Z_Construct_UClass_UItemFunctionalityBase_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Class_MetaData), NewProp_Class_MetaData) };
+const UECodeGen_Private::FSoftObjectPropertyParams Z_Construct_UScriptStruct_FItem_Statics::NewProp_Class = { "Class", nullptr, (EPropertyFlags)0x0014000000000005, UECodeGen_Private::EPropertyGenFlags::SoftObject, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FItem, Class), Z_Construct_UClass_AItemFunctionalityBase_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Class_MetaData), NewProp_Class_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FItem_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FItem_Statics::NewProp_Id,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FItem_Statics::NewProp_Name,
@@ -406,16 +406,16 @@ UScriptStruct* Z_Construct_UScriptStruct_FItem()
 }
 // End ScriptStruct FItem
 
-// Begin Class UItemFunctionalityBase Function OnSwapItem
+// Begin Class AItemFunctionalityBase Function OnSwapItem
 struct ItemFunctionalityBase_eventOnSwapItem_Parms
 {
 	FItem Item;
 	bool SwapTo;
 };
-static const FName NAME_UItemFunctionalityBase_OnSwapItem = FName(TEXT("OnSwapItem"));
-void UItemFunctionalityBase::OnSwapItem(FItem const& Item, bool SwapTo)
+static const FName NAME_AItemFunctionalityBase_OnSwapItem = FName(TEXT("OnSwapItem"));
+void AItemFunctionalityBase::OnSwapItem(FItem const& Item, bool SwapTo)
 {
-	UFunction* Func = FindFunctionChecked(NAME_UItemFunctionalityBase_OnSwapItem);
+	UFunction* Func = FindFunctionChecked(NAME_AItemFunctionalityBase_OnSwapItem);
 	if (!Func->GetOwnerClass()->HasAnyClassFlags(CLASS_Native))
 	{
 		ItemFunctionalityBase_eventOnSwapItem_Parms Parms;
@@ -428,7 +428,7 @@ void UItemFunctionalityBase::OnSwapItem(FItem const& Item, bool SwapTo)
 		OnSwapItem_Implementation(Item, SwapTo);
 	}
 }
-struct Z_Construct_UFunction_UItemFunctionalityBase_OnSwapItem_Statics
+struct Z_Construct_UFunction_AItemFunctionalityBase_OnSwapItem_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
@@ -451,29 +451,29 @@ struct Z_Construct_UFunction_UItemFunctionalityBase_OnSwapItem_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UItemFunctionalityBase_OnSwapItem_Statics::NewProp_Item = { "Item", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ItemFunctionalityBase_eventOnSwapItem_Parms, Item), Z_Construct_UScriptStruct_FItem, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Item_MetaData), NewProp_Item_MetaData) }; // 2259786990
-void Z_Construct_UFunction_UItemFunctionalityBase_OnSwapItem_Statics::NewProp_SwapTo_SetBit(void* Obj)
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AItemFunctionalityBase_OnSwapItem_Statics::NewProp_Item = { "Item", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ItemFunctionalityBase_eventOnSwapItem_Parms, Item), Z_Construct_UScriptStruct_FItem, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Item_MetaData), NewProp_Item_MetaData) }; // 2457164842
+void Z_Construct_UFunction_AItemFunctionalityBase_OnSwapItem_Statics::NewProp_SwapTo_SetBit(void* Obj)
 {
 	((ItemFunctionalityBase_eventOnSwapItem_Parms*)Obj)->SwapTo = 1;
 }
-const UECodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UItemFunctionalityBase_OnSwapItem_Statics::NewProp_SwapTo = { "SwapTo", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(ItemFunctionalityBase_eventOnSwapItem_Parms), &Z_Construct_UFunction_UItemFunctionalityBase_OnSwapItem_Statics::NewProp_SwapTo_SetBit, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UItemFunctionalityBase_OnSwapItem_Statics::PropPointers[] = {
-	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UItemFunctionalityBase_OnSwapItem_Statics::NewProp_Item,
-	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UItemFunctionalityBase_OnSwapItem_Statics::NewProp_SwapTo,
+const UECodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AItemFunctionalityBase_OnSwapItem_Statics::NewProp_SwapTo = { "SwapTo", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(ItemFunctionalityBase_eventOnSwapItem_Parms), &Z_Construct_UFunction_AItemFunctionalityBase_OnSwapItem_Statics::NewProp_SwapTo_SetBit, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AItemFunctionalityBase_OnSwapItem_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AItemFunctionalityBase_OnSwapItem_Statics::NewProp_Item,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AItemFunctionalityBase_OnSwapItem_Statics::NewProp_SwapTo,
 };
-static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UItemFunctionalityBase_OnSwapItem_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UItemFunctionalityBase_OnSwapItem_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UItemFunctionalityBase, nullptr, "OnSwapItem", nullptr, nullptr, Z_Construct_UFunction_UItemFunctionalityBase_OnSwapItem_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UItemFunctionalityBase_OnSwapItem_Statics::PropPointers), sizeof(ItemFunctionalityBase_eventOnSwapItem_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C420C00, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UItemFunctionalityBase_OnSwapItem_Statics::Function_MetaDataParams), Z_Construct_UFunction_UItemFunctionalityBase_OnSwapItem_Statics::Function_MetaDataParams) };
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_AItemFunctionalityBase_OnSwapItem_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AItemFunctionalityBase_OnSwapItem_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AItemFunctionalityBase, nullptr, "OnSwapItem", nullptr, nullptr, Z_Construct_UFunction_AItemFunctionalityBase_OnSwapItem_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AItemFunctionalityBase_OnSwapItem_Statics::PropPointers), sizeof(ItemFunctionalityBase_eventOnSwapItem_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C420C00, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AItemFunctionalityBase_OnSwapItem_Statics::Function_MetaDataParams), Z_Construct_UFunction_AItemFunctionalityBase_OnSwapItem_Statics::Function_MetaDataParams) };
 static_assert(sizeof(ItemFunctionalityBase_eventOnSwapItem_Parms) < MAX_uint16);
-UFunction* Z_Construct_UFunction_UItemFunctionalityBase_OnSwapItem()
+UFunction* Z_Construct_UFunction_AItemFunctionalityBase_OnSwapItem()
 {
 	static UFunction* ReturnFunction = nullptr;
 	if (!ReturnFunction)
 	{
-		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UItemFunctionalityBase_OnSwapItem_Statics::FuncParams);
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_AItemFunctionalityBase_OnSwapItem_Statics::FuncParams);
 	}
 	return ReturnFunction;
 }
-DEFINE_FUNCTION(UItemFunctionalityBase::execOnSwapItem)
+DEFINE_FUNCTION(AItemFunctionalityBase::execOnSwapItem)
 {
 	P_GET_STRUCT_REF(FItem,Z_Param_Out_Item);
 	P_GET_UBOOL(Z_Param_SwapTo);
@@ -482,18 +482,18 @@ DEFINE_FUNCTION(UItemFunctionalityBase::execOnSwapItem)
 	P_THIS->OnSwapItem_Implementation(Z_Param_Out_Item,Z_Param_SwapTo);
 	P_NATIVE_END;
 }
-// End Class UItemFunctionalityBase Function OnSwapItem
+// End Class AItemFunctionalityBase Function OnSwapItem
 
-// Begin Class UItemFunctionalityBase Function PrimaryUse
+// Begin Class AItemFunctionalityBase Function PrimaryUse
 struct ItemFunctionalityBase_eventPrimaryUse_Parms
 {
 	FItem Item;
 	EItemActivationType ActivationType;
 };
-static const FName NAME_UItemFunctionalityBase_PrimaryUse = FName(TEXT("PrimaryUse"));
-void UItemFunctionalityBase::PrimaryUse(FItem const& Item, EItemActivationType ActivationType)
+static const FName NAME_AItemFunctionalityBase_PrimaryUse = FName(TEXT("PrimaryUse"));
+void AItemFunctionalityBase::PrimaryUse(FItem const& Item, EItemActivationType ActivationType)
 {
-	UFunction* Func = FindFunctionChecked(NAME_UItemFunctionalityBase_PrimaryUse);
+	UFunction* Func = FindFunctionChecked(NAME_AItemFunctionalityBase_PrimaryUse);
 	if (!Func->GetOwnerClass()->HasAnyClassFlags(CLASS_Native))
 	{
 		ItemFunctionalityBase_eventPrimaryUse_Parms Parms;
@@ -506,7 +506,7 @@ void UItemFunctionalityBase::PrimaryUse(FItem const& Item, EItemActivationType A
 		PrimaryUse_Implementation(Item, ActivationType);
 	}
 }
-struct Z_Construct_UFunction_UItemFunctionalityBase_PrimaryUse_Statics
+struct Z_Construct_UFunction_AItemFunctionalityBase_PrimaryUse_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
@@ -529,27 +529,27 @@ struct Z_Construct_UFunction_UItemFunctionalityBase_PrimaryUse_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UItemFunctionalityBase_PrimaryUse_Statics::NewProp_Item = { "Item", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ItemFunctionalityBase_eventPrimaryUse_Parms, Item), Z_Construct_UScriptStruct_FItem, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Item_MetaData), NewProp_Item_MetaData) }; // 2259786990
-const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UItemFunctionalityBase_PrimaryUse_Statics::NewProp_ActivationType_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UItemFunctionalityBase_PrimaryUse_Statics::NewProp_ActivationType = { "ActivationType", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ItemFunctionalityBase_eventPrimaryUse_Parms, ActivationType), Z_Construct_UEnum_BigMaze_Alpha_0_EItemActivationType, METADATA_PARAMS(0, nullptr) }; // 651093556
-const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UItemFunctionalityBase_PrimaryUse_Statics::PropPointers[] = {
-	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UItemFunctionalityBase_PrimaryUse_Statics::NewProp_Item,
-	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UItemFunctionalityBase_PrimaryUse_Statics::NewProp_ActivationType_Underlying,
-	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UItemFunctionalityBase_PrimaryUse_Statics::NewProp_ActivationType,
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AItemFunctionalityBase_PrimaryUse_Statics::NewProp_Item = { "Item", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ItemFunctionalityBase_eventPrimaryUse_Parms, Item), Z_Construct_UScriptStruct_FItem, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Item_MetaData), NewProp_Item_MetaData) }; // 2457164842
+const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_AItemFunctionalityBase_PrimaryUse_Statics::NewProp_ActivationType_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_AItemFunctionalityBase_PrimaryUse_Statics::NewProp_ActivationType = { "ActivationType", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ItemFunctionalityBase_eventPrimaryUse_Parms, ActivationType), Z_Construct_UEnum_BigMaze_Alpha_0_EItemActivationType, METADATA_PARAMS(0, nullptr) }; // 651093556
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AItemFunctionalityBase_PrimaryUse_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AItemFunctionalityBase_PrimaryUse_Statics::NewProp_Item,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AItemFunctionalityBase_PrimaryUse_Statics::NewProp_ActivationType_Underlying,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AItemFunctionalityBase_PrimaryUse_Statics::NewProp_ActivationType,
 };
-static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UItemFunctionalityBase_PrimaryUse_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UItemFunctionalityBase_PrimaryUse_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UItemFunctionalityBase, nullptr, "PrimaryUse", nullptr, nullptr, Z_Construct_UFunction_UItemFunctionalityBase_PrimaryUse_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UItemFunctionalityBase_PrimaryUse_Statics::PropPointers), sizeof(ItemFunctionalityBase_eventPrimaryUse_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C420C00, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UItemFunctionalityBase_PrimaryUse_Statics::Function_MetaDataParams), Z_Construct_UFunction_UItemFunctionalityBase_PrimaryUse_Statics::Function_MetaDataParams) };
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_AItemFunctionalityBase_PrimaryUse_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AItemFunctionalityBase_PrimaryUse_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AItemFunctionalityBase, nullptr, "PrimaryUse", nullptr, nullptr, Z_Construct_UFunction_AItemFunctionalityBase_PrimaryUse_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AItemFunctionalityBase_PrimaryUse_Statics::PropPointers), sizeof(ItemFunctionalityBase_eventPrimaryUse_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C420C00, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AItemFunctionalityBase_PrimaryUse_Statics::Function_MetaDataParams), Z_Construct_UFunction_AItemFunctionalityBase_PrimaryUse_Statics::Function_MetaDataParams) };
 static_assert(sizeof(ItemFunctionalityBase_eventPrimaryUse_Parms) < MAX_uint16);
-UFunction* Z_Construct_UFunction_UItemFunctionalityBase_PrimaryUse()
+UFunction* Z_Construct_UFunction_AItemFunctionalityBase_PrimaryUse()
 {
 	static UFunction* ReturnFunction = nullptr;
 	if (!ReturnFunction)
 	{
-		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UItemFunctionalityBase_PrimaryUse_Statics::FuncParams);
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_AItemFunctionalityBase_PrimaryUse_Statics::FuncParams);
 	}
 	return ReturnFunction;
 }
-DEFINE_FUNCTION(UItemFunctionalityBase::execPrimaryUse)
+DEFINE_FUNCTION(AItemFunctionalityBase::execPrimaryUse)
 {
 	P_GET_STRUCT_REF(FItem,Z_Param_Out_Item);
 	P_GET_ENUM(EItemActivationType,Z_Param_ActivationType);
@@ -558,18 +558,18 @@ DEFINE_FUNCTION(UItemFunctionalityBase::execPrimaryUse)
 	P_THIS->PrimaryUse_Implementation(Z_Param_Out_Item,EItemActivationType(Z_Param_ActivationType));
 	P_NATIVE_END;
 }
-// End Class UItemFunctionalityBase Function PrimaryUse
+// End Class AItemFunctionalityBase Function PrimaryUse
 
-// Begin Class UItemFunctionalityBase Function QuaternaryUse
+// Begin Class AItemFunctionalityBase Function QuaternaryUse
 struct ItemFunctionalityBase_eventQuaternaryUse_Parms
 {
 	FItem Item;
 	EItemActivationType ActivationType;
 };
-static const FName NAME_UItemFunctionalityBase_QuaternaryUse = FName(TEXT("QuaternaryUse"));
-void UItemFunctionalityBase::QuaternaryUse(FItem const& Item, EItemActivationType ActivationType)
+static const FName NAME_AItemFunctionalityBase_QuaternaryUse = FName(TEXT("QuaternaryUse"));
+void AItemFunctionalityBase::QuaternaryUse(FItem const& Item, EItemActivationType ActivationType)
 {
-	UFunction* Func = FindFunctionChecked(NAME_UItemFunctionalityBase_QuaternaryUse);
+	UFunction* Func = FindFunctionChecked(NAME_AItemFunctionalityBase_QuaternaryUse);
 	if (!Func->GetOwnerClass()->HasAnyClassFlags(CLASS_Native))
 	{
 		ItemFunctionalityBase_eventQuaternaryUse_Parms Parms;
@@ -582,7 +582,7 @@ void UItemFunctionalityBase::QuaternaryUse(FItem const& Item, EItemActivationTyp
 		QuaternaryUse_Implementation(Item, ActivationType);
 	}
 }
-struct Z_Construct_UFunction_UItemFunctionalityBase_QuaternaryUse_Statics
+struct Z_Construct_UFunction_AItemFunctionalityBase_QuaternaryUse_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
@@ -605,27 +605,27 @@ struct Z_Construct_UFunction_UItemFunctionalityBase_QuaternaryUse_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UItemFunctionalityBase_QuaternaryUse_Statics::NewProp_Item = { "Item", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ItemFunctionalityBase_eventQuaternaryUse_Parms, Item), Z_Construct_UScriptStruct_FItem, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Item_MetaData), NewProp_Item_MetaData) }; // 2259786990
-const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UItemFunctionalityBase_QuaternaryUse_Statics::NewProp_ActivationType_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UItemFunctionalityBase_QuaternaryUse_Statics::NewProp_ActivationType = { "ActivationType", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ItemFunctionalityBase_eventQuaternaryUse_Parms, ActivationType), Z_Construct_UEnum_BigMaze_Alpha_0_EItemActivationType, METADATA_PARAMS(0, nullptr) }; // 651093556
-const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UItemFunctionalityBase_QuaternaryUse_Statics::PropPointers[] = {
-	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UItemFunctionalityBase_QuaternaryUse_Statics::NewProp_Item,
-	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UItemFunctionalityBase_QuaternaryUse_Statics::NewProp_ActivationType_Underlying,
-	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UItemFunctionalityBase_QuaternaryUse_Statics::NewProp_ActivationType,
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AItemFunctionalityBase_QuaternaryUse_Statics::NewProp_Item = { "Item", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ItemFunctionalityBase_eventQuaternaryUse_Parms, Item), Z_Construct_UScriptStruct_FItem, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Item_MetaData), NewProp_Item_MetaData) }; // 2457164842
+const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_AItemFunctionalityBase_QuaternaryUse_Statics::NewProp_ActivationType_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_AItemFunctionalityBase_QuaternaryUse_Statics::NewProp_ActivationType = { "ActivationType", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ItemFunctionalityBase_eventQuaternaryUse_Parms, ActivationType), Z_Construct_UEnum_BigMaze_Alpha_0_EItemActivationType, METADATA_PARAMS(0, nullptr) }; // 651093556
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AItemFunctionalityBase_QuaternaryUse_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AItemFunctionalityBase_QuaternaryUse_Statics::NewProp_Item,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AItemFunctionalityBase_QuaternaryUse_Statics::NewProp_ActivationType_Underlying,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AItemFunctionalityBase_QuaternaryUse_Statics::NewProp_ActivationType,
 };
-static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UItemFunctionalityBase_QuaternaryUse_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UItemFunctionalityBase_QuaternaryUse_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UItemFunctionalityBase, nullptr, "QuaternaryUse", nullptr, nullptr, Z_Construct_UFunction_UItemFunctionalityBase_QuaternaryUse_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UItemFunctionalityBase_QuaternaryUse_Statics::PropPointers), sizeof(ItemFunctionalityBase_eventQuaternaryUse_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C420C00, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UItemFunctionalityBase_QuaternaryUse_Statics::Function_MetaDataParams), Z_Construct_UFunction_UItemFunctionalityBase_QuaternaryUse_Statics::Function_MetaDataParams) };
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_AItemFunctionalityBase_QuaternaryUse_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AItemFunctionalityBase_QuaternaryUse_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AItemFunctionalityBase, nullptr, "QuaternaryUse", nullptr, nullptr, Z_Construct_UFunction_AItemFunctionalityBase_QuaternaryUse_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AItemFunctionalityBase_QuaternaryUse_Statics::PropPointers), sizeof(ItemFunctionalityBase_eventQuaternaryUse_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C420C00, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AItemFunctionalityBase_QuaternaryUse_Statics::Function_MetaDataParams), Z_Construct_UFunction_AItemFunctionalityBase_QuaternaryUse_Statics::Function_MetaDataParams) };
 static_assert(sizeof(ItemFunctionalityBase_eventQuaternaryUse_Parms) < MAX_uint16);
-UFunction* Z_Construct_UFunction_UItemFunctionalityBase_QuaternaryUse()
+UFunction* Z_Construct_UFunction_AItemFunctionalityBase_QuaternaryUse()
 {
 	static UFunction* ReturnFunction = nullptr;
 	if (!ReturnFunction)
 	{
-		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UItemFunctionalityBase_QuaternaryUse_Statics::FuncParams);
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_AItemFunctionalityBase_QuaternaryUse_Statics::FuncParams);
 	}
 	return ReturnFunction;
 }
-DEFINE_FUNCTION(UItemFunctionalityBase::execQuaternaryUse)
+DEFINE_FUNCTION(AItemFunctionalityBase::execQuaternaryUse)
 {
 	P_GET_STRUCT_REF(FItem,Z_Param_Out_Item);
 	P_GET_ENUM(EItemActivationType,Z_Param_ActivationType);
@@ -634,18 +634,18 @@ DEFINE_FUNCTION(UItemFunctionalityBase::execQuaternaryUse)
 	P_THIS->QuaternaryUse_Implementation(Z_Param_Out_Item,EItemActivationType(Z_Param_ActivationType));
 	P_NATIVE_END;
 }
-// End Class UItemFunctionalityBase Function QuaternaryUse
+// End Class AItemFunctionalityBase Function QuaternaryUse
 
-// Begin Class UItemFunctionalityBase Function SecondaryUse
+// Begin Class AItemFunctionalityBase Function SecondaryUse
 struct ItemFunctionalityBase_eventSecondaryUse_Parms
 {
 	FItem Item;
 	EItemActivationType ActivationType;
 };
-static const FName NAME_UItemFunctionalityBase_SecondaryUse = FName(TEXT("SecondaryUse"));
-void UItemFunctionalityBase::SecondaryUse(FItem const& Item, EItemActivationType ActivationType)
+static const FName NAME_AItemFunctionalityBase_SecondaryUse = FName(TEXT("SecondaryUse"));
+void AItemFunctionalityBase::SecondaryUse(FItem const& Item, EItemActivationType ActivationType)
 {
-	UFunction* Func = FindFunctionChecked(NAME_UItemFunctionalityBase_SecondaryUse);
+	UFunction* Func = FindFunctionChecked(NAME_AItemFunctionalityBase_SecondaryUse);
 	if (!Func->GetOwnerClass()->HasAnyClassFlags(CLASS_Native))
 	{
 		ItemFunctionalityBase_eventSecondaryUse_Parms Parms;
@@ -658,7 +658,7 @@ void UItemFunctionalityBase::SecondaryUse(FItem const& Item, EItemActivationType
 		SecondaryUse_Implementation(Item, ActivationType);
 	}
 }
-struct Z_Construct_UFunction_UItemFunctionalityBase_SecondaryUse_Statics
+struct Z_Construct_UFunction_AItemFunctionalityBase_SecondaryUse_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
@@ -681,27 +681,27 @@ struct Z_Construct_UFunction_UItemFunctionalityBase_SecondaryUse_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UItemFunctionalityBase_SecondaryUse_Statics::NewProp_Item = { "Item", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ItemFunctionalityBase_eventSecondaryUse_Parms, Item), Z_Construct_UScriptStruct_FItem, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Item_MetaData), NewProp_Item_MetaData) }; // 2259786990
-const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UItemFunctionalityBase_SecondaryUse_Statics::NewProp_ActivationType_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UItemFunctionalityBase_SecondaryUse_Statics::NewProp_ActivationType = { "ActivationType", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ItemFunctionalityBase_eventSecondaryUse_Parms, ActivationType), Z_Construct_UEnum_BigMaze_Alpha_0_EItemActivationType, METADATA_PARAMS(0, nullptr) }; // 651093556
-const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UItemFunctionalityBase_SecondaryUse_Statics::PropPointers[] = {
-	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UItemFunctionalityBase_SecondaryUse_Statics::NewProp_Item,
-	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UItemFunctionalityBase_SecondaryUse_Statics::NewProp_ActivationType_Underlying,
-	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UItemFunctionalityBase_SecondaryUse_Statics::NewProp_ActivationType,
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AItemFunctionalityBase_SecondaryUse_Statics::NewProp_Item = { "Item", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ItemFunctionalityBase_eventSecondaryUse_Parms, Item), Z_Construct_UScriptStruct_FItem, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Item_MetaData), NewProp_Item_MetaData) }; // 2457164842
+const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_AItemFunctionalityBase_SecondaryUse_Statics::NewProp_ActivationType_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_AItemFunctionalityBase_SecondaryUse_Statics::NewProp_ActivationType = { "ActivationType", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ItemFunctionalityBase_eventSecondaryUse_Parms, ActivationType), Z_Construct_UEnum_BigMaze_Alpha_0_EItemActivationType, METADATA_PARAMS(0, nullptr) }; // 651093556
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AItemFunctionalityBase_SecondaryUse_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AItemFunctionalityBase_SecondaryUse_Statics::NewProp_Item,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AItemFunctionalityBase_SecondaryUse_Statics::NewProp_ActivationType_Underlying,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AItemFunctionalityBase_SecondaryUse_Statics::NewProp_ActivationType,
 };
-static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UItemFunctionalityBase_SecondaryUse_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UItemFunctionalityBase_SecondaryUse_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UItemFunctionalityBase, nullptr, "SecondaryUse", nullptr, nullptr, Z_Construct_UFunction_UItemFunctionalityBase_SecondaryUse_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UItemFunctionalityBase_SecondaryUse_Statics::PropPointers), sizeof(ItemFunctionalityBase_eventSecondaryUse_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C420C00, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UItemFunctionalityBase_SecondaryUse_Statics::Function_MetaDataParams), Z_Construct_UFunction_UItemFunctionalityBase_SecondaryUse_Statics::Function_MetaDataParams) };
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_AItemFunctionalityBase_SecondaryUse_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AItemFunctionalityBase_SecondaryUse_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AItemFunctionalityBase, nullptr, "SecondaryUse", nullptr, nullptr, Z_Construct_UFunction_AItemFunctionalityBase_SecondaryUse_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AItemFunctionalityBase_SecondaryUse_Statics::PropPointers), sizeof(ItemFunctionalityBase_eventSecondaryUse_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C420C00, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AItemFunctionalityBase_SecondaryUse_Statics::Function_MetaDataParams), Z_Construct_UFunction_AItemFunctionalityBase_SecondaryUse_Statics::Function_MetaDataParams) };
 static_assert(sizeof(ItemFunctionalityBase_eventSecondaryUse_Parms) < MAX_uint16);
-UFunction* Z_Construct_UFunction_UItemFunctionalityBase_SecondaryUse()
+UFunction* Z_Construct_UFunction_AItemFunctionalityBase_SecondaryUse()
 {
 	static UFunction* ReturnFunction = nullptr;
 	if (!ReturnFunction)
 	{
-		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UItemFunctionalityBase_SecondaryUse_Statics::FuncParams);
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_AItemFunctionalityBase_SecondaryUse_Statics::FuncParams);
 	}
 	return ReturnFunction;
 }
-DEFINE_FUNCTION(UItemFunctionalityBase::execSecondaryUse)
+DEFINE_FUNCTION(AItemFunctionalityBase::execSecondaryUse)
 {
 	P_GET_STRUCT_REF(FItem,Z_Param_Out_Item);
 	P_GET_ENUM(EItemActivationType,Z_Param_ActivationType);
@@ -710,18 +710,18 @@ DEFINE_FUNCTION(UItemFunctionalityBase::execSecondaryUse)
 	P_THIS->SecondaryUse_Implementation(Z_Param_Out_Item,EItemActivationType(Z_Param_ActivationType));
 	P_NATIVE_END;
 }
-// End Class UItemFunctionalityBase Function SecondaryUse
+// End Class AItemFunctionalityBase Function SecondaryUse
 
-// Begin Class UItemFunctionalityBase Function TertiaryUse
+// Begin Class AItemFunctionalityBase Function TertiaryUse
 struct ItemFunctionalityBase_eventTertiaryUse_Parms
 {
 	FItem Item;
 	EItemActivationType ActivationType;
 };
-static const FName NAME_UItemFunctionalityBase_TertiaryUse = FName(TEXT("TertiaryUse"));
-void UItemFunctionalityBase::TertiaryUse(FItem const& Item, EItemActivationType ActivationType)
+static const FName NAME_AItemFunctionalityBase_TertiaryUse = FName(TEXT("TertiaryUse"));
+void AItemFunctionalityBase::TertiaryUse(FItem const& Item, EItemActivationType ActivationType)
 {
-	UFunction* Func = FindFunctionChecked(NAME_UItemFunctionalityBase_TertiaryUse);
+	UFunction* Func = FindFunctionChecked(NAME_AItemFunctionalityBase_TertiaryUse);
 	if (!Func->GetOwnerClass()->HasAnyClassFlags(CLASS_Native))
 	{
 		ItemFunctionalityBase_eventTertiaryUse_Parms Parms;
@@ -734,7 +734,7 @@ void UItemFunctionalityBase::TertiaryUse(FItem const& Item, EItemActivationType 
 		TertiaryUse_Implementation(Item, ActivationType);
 	}
 }
-struct Z_Construct_UFunction_UItemFunctionalityBase_TertiaryUse_Statics
+struct Z_Construct_UFunction_AItemFunctionalityBase_TertiaryUse_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
@@ -757,27 +757,27 @@ struct Z_Construct_UFunction_UItemFunctionalityBase_TertiaryUse_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UItemFunctionalityBase_TertiaryUse_Statics::NewProp_Item = { "Item", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ItemFunctionalityBase_eventTertiaryUse_Parms, Item), Z_Construct_UScriptStruct_FItem, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Item_MetaData), NewProp_Item_MetaData) }; // 2259786990
-const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UItemFunctionalityBase_TertiaryUse_Statics::NewProp_ActivationType_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UItemFunctionalityBase_TertiaryUse_Statics::NewProp_ActivationType = { "ActivationType", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ItemFunctionalityBase_eventTertiaryUse_Parms, ActivationType), Z_Construct_UEnum_BigMaze_Alpha_0_EItemActivationType, METADATA_PARAMS(0, nullptr) }; // 651093556
-const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UItemFunctionalityBase_TertiaryUse_Statics::PropPointers[] = {
-	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UItemFunctionalityBase_TertiaryUse_Statics::NewProp_Item,
-	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UItemFunctionalityBase_TertiaryUse_Statics::NewProp_ActivationType_Underlying,
-	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UItemFunctionalityBase_TertiaryUse_Statics::NewProp_ActivationType,
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AItemFunctionalityBase_TertiaryUse_Statics::NewProp_Item = { "Item", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ItemFunctionalityBase_eventTertiaryUse_Parms, Item), Z_Construct_UScriptStruct_FItem, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Item_MetaData), NewProp_Item_MetaData) }; // 2457164842
+const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_AItemFunctionalityBase_TertiaryUse_Statics::NewProp_ActivationType_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_AItemFunctionalityBase_TertiaryUse_Statics::NewProp_ActivationType = { "ActivationType", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ItemFunctionalityBase_eventTertiaryUse_Parms, ActivationType), Z_Construct_UEnum_BigMaze_Alpha_0_EItemActivationType, METADATA_PARAMS(0, nullptr) }; // 651093556
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AItemFunctionalityBase_TertiaryUse_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AItemFunctionalityBase_TertiaryUse_Statics::NewProp_Item,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AItemFunctionalityBase_TertiaryUse_Statics::NewProp_ActivationType_Underlying,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AItemFunctionalityBase_TertiaryUse_Statics::NewProp_ActivationType,
 };
-static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UItemFunctionalityBase_TertiaryUse_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UItemFunctionalityBase_TertiaryUse_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UItemFunctionalityBase, nullptr, "TertiaryUse", nullptr, nullptr, Z_Construct_UFunction_UItemFunctionalityBase_TertiaryUse_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UItemFunctionalityBase_TertiaryUse_Statics::PropPointers), sizeof(ItemFunctionalityBase_eventTertiaryUse_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C420C00, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UItemFunctionalityBase_TertiaryUse_Statics::Function_MetaDataParams), Z_Construct_UFunction_UItemFunctionalityBase_TertiaryUse_Statics::Function_MetaDataParams) };
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_AItemFunctionalityBase_TertiaryUse_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AItemFunctionalityBase_TertiaryUse_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AItemFunctionalityBase, nullptr, "TertiaryUse", nullptr, nullptr, Z_Construct_UFunction_AItemFunctionalityBase_TertiaryUse_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AItemFunctionalityBase_TertiaryUse_Statics::PropPointers), sizeof(ItemFunctionalityBase_eventTertiaryUse_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C420C00, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AItemFunctionalityBase_TertiaryUse_Statics::Function_MetaDataParams), Z_Construct_UFunction_AItemFunctionalityBase_TertiaryUse_Statics::Function_MetaDataParams) };
 static_assert(sizeof(ItemFunctionalityBase_eventTertiaryUse_Parms) < MAX_uint16);
-UFunction* Z_Construct_UFunction_UItemFunctionalityBase_TertiaryUse()
+UFunction* Z_Construct_UFunction_AItemFunctionalityBase_TertiaryUse()
 {
 	static UFunction* ReturnFunction = nullptr;
 	if (!ReturnFunction)
 	{
-		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UItemFunctionalityBase_TertiaryUse_Statics::FuncParams);
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_AItemFunctionalityBase_TertiaryUse_Statics::FuncParams);
 	}
 	return ReturnFunction;
 }
-DEFINE_FUNCTION(UItemFunctionalityBase::execTertiaryUse)
+DEFINE_FUNCTION(AItemFunctionalityBase::execTertiaryUse)
 {
 	P_GET_STRUCT_REF(FItem,Z_Param_Out_Item);
 	P_GET_ENUM(EItemActivationType,Z_Param_ActivationType);
@@ -786,27 +786,27 @@ DEFINE_FUNCTION(UItemFunctionalityBase::execTertiaryUse)
 	P_THIS->TertiaryUse_Implementation(Z_Param_Out_Item,EItemActivationType(Z_Param_ActivationType));
 	P_NATIVE_END;
 }
-// End Class UItemFunctionalityBase Function TertiaryUse
+// End Class AItemFunctionalityBase Function TertiaryUse
 
-// Begin Class UItemFunctionalityBase
-void UItemFunctionalityBase::StaticRegisterNativesUItemFunctionalityBase()
+// Begin Class AItemFunctionalityBase
+void AItemFunctionalityBase::StaticRegisterNativesAItemFunctionalityBase()
 {
-	UClass* Class = UItemFunctionalityBase::StaticClass();
+	UClass* Class = AItemFunctionalityBase::StaticClass();
 	static const FNameNativePtrPair Funcs[] = {
-		{ "OnSwapItem", &UItemFunctionalityBase::execOnSwapItem },
-		{ "PrimaryUse", &UItemFunctionalityBase::execPrimaryUse },
-		{ "QuaternaryUse", &UItemFunctionalityBase::execQuaternaryUse },
-		{ "SecondaryUse", &UItemFunctionalityBase::execSecondaryUse },
-		{ "TertiaryUse", &UItemFunctionalityBase::execTertiaryUse },
+		{ "OnSwapItem", &AItemFunctionalityBase::execOnSwapItem },
+		{ "PrimaryUse", &AItemFunctionalityBase::execPrimaryUse },
+		{ "QuaternaryUse", &AItemFunctionalityBase::execQuaternaryUse },
+		{ "SecondaryUse", &AItemFunctionalityBase::execSecondaryUse },
+		{ "TertiaryUse", &AItemFunctionalityBase::execTertiaryUse },
 	};
 	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 }
-IMPLEMENT_CLASS_NO_AUTO_REGISTRATION(UItemFunctionalityBase);
-UClass* Z_Construct_UClass_UItemFunctionalityBase_NoRegister()
+IMPLEMENT_CLASS_NO_AUTO_REGISTRATION(AItemFunctionalityBase);
+UClass* Z_Construct_UClass_AItemFunctionalityBase_NoRegister()
 {
-	return UItemFunctionalityBase::StaticClass();
+	return AItemFunctionalityBase::StaticClass();
 }
-struct Z_Construct_UClass_UItemFunctionalityBase_Statics
+struct Z_Construct_UClass_AItemFunctionalityBase_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
@@ -858,80 +858,80 @@ struct Z_Construct_UClass_UItemFunctionalityBase_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UItemFunctionalityBase_OnSwapItem, "OnSwapItem" }, // 1158747678
-		{ &Z_Construct_UFunction_UItemFunctionalityBase_PrimaryUse, "PrimaryUse" }, // 182384923
-		{ &Z_Construct_UFunction_UItemFunctionalityBase_QuaternaryUse, "QuaternaryUse" }, // 1209446267
-		{ &Z_Construct_UFunction_UItemFunctionalityBase_SecondaryUse, "SecondaryUse" }, // 1088588803
-		{ &Z_Construct_UFunction_UItemFunctionalityBase_TertiaryUse, "TertiaryUse" }, // 3326935615
+		{ &Z_Construct_UFunction_AItemFunctionalityBase_OnSwapItem, "OnSwapItem" }, // 2551201622
+		{ &Z_Construct_UFunction_AItemFunctionalityBase_PrimaryUse, "PrimaryUse" }, // 810403920
+		{ &Z_Construct_UFunction_AItemFunctionalityBase_QuaternaryUse, "QuaternaryUse" }, // 3118339651
+		{ &Z_Construct_UFunction_AItemFunctionalityBase_SecondaryUse, "SecondaryUse" }, // 2532150911
+		{ &Z_Construct_UFunction_AItemFunctionalityBase_TertiaryUse, "TertiaryUse" }, // 428287510
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
-		TCppClassTypeTraits<UItemFunctionalityBase>::IsAbstract,
+		TCppClassTypeTraits<AItemFunctionalityBase>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
 };
-const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UItemFunctionalityBase_Statics::NewProp_Icon = { "Icon", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UItemFunctionalityBase, Icon), Z_Construct_UClass_UTexture2D_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Icon_MetaData), NewProp_Icon_MetaData) };
-const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UItemFunctionalityBase_Statics::NewProp_SkeletalMesh = { "SkeletalMesh", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UItemFunctionalityBase, SkeletalMesh), Z_Construct_UClass_USkeletalMesh_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SkeletalMesh_MetaData), NewProp_SkeletalMesh_MetaData) };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UItemFunctionalityBase_Statics::NewProp_ItemDefault = { "ItemDefault", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UItemFunctionalityBase, ItemDefault), Z_Construct_UScriptStruct_FItem, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ItemDefault_MetaData), NewProp_ItemDefault_MetaData) }; // 2259786990
-const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UItemFunctionalityBase_Statics::PropPointers[] = {
-	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UItemFunctionalityBase_Statics::NewProp_Icon,
-	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UItemFunctionalityBase_Statics::NewProp_SkeletalMesh,
-	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UItemFunctionalityBase_Statics::NewProp_ItemDefault,
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AItemFunctionalityBase_Statics::NewProp_Icon = { "Icon", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AItemFunctionalityBase, Icon), Z_Construct_UClass_UTexture2D_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Icon_MetaData), NewProp_Icon_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AItemFunctionalityBase_Statics::NewProp_SkeletalMesh = { "SkeletalMesh", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AItemFunctionalityBase, SkeletalMesh), Z_Construct_UClass_USkeletalMesh_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SkeletalMesh_MetaData), NewProp_SkeletalMesh_MetaData) };
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_AItemFunctionalityBase_Statics::NewProp_ItemDefault = { "ItemDefault", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AItemFunctionalityBase, ItemDefault), Z_Construct_UScriptStruct_FItem, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ItemDefault_MetaData), NewProp_ItemDefault_MetaData) }; // 2457164842
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AItemFunctionalityBase_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AItemFunctionalityBase_Statics::NewProp_Icon,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AItemFunctionalityBase_Statics::NewProp_SkeletalMesh,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AItemFunctionalityBase_Statics::NewProp_ItemDefault,
 };
-static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UItemFunctionalityBase_Statics::PropPointers) < 2048);
-UObject* (*const Z_Construct_UClass_UItemFunctionalityBase_Statics::DependentSingletons[])() = {
-	(UObject* (*)())Z_Construct_UClass_UDataAsset,
+static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_AItemFunctionalityBase_Statics::PropPointers) < 2048);
+UObject* (*const Z_Construct_UClass_AItemFunctionalityBase_Statics::DependentSingletons[])() = {
+	(UObject* (*)())Z_Construct_UClass_AActor,
 	(UObject* (*)())Z_Construct_UPackage__Script_BigMaze_Alpha_0,
 };
-static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UItemFunctionalityBase_Statics::DependentSingletons) < 16);
-const UECodeGen_Private::FClassParams Z_Construct_UClass_UItemFunctionalityBase_Statics::ClassParams = {
-	&UItemFunctionalityBase::StaticClass,
-	nullptr,
+static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_AItemFunctionalityBase_Statics::DependentSingletons) < 16);
+const UECodeGen_Private::FClassParams Z_Construct_UClass_AItemFunctionalityBase_Statics::ClassParams = {
+	&AItemFunctionalityBase::StaticClass,
+	"Engine",
 	&StaticCppClassTypeInfo,
 	DependentSingletons,
 	FuncInfo,
-	Z_Construct_UClass_UItemFunctionalityBase_Statics::PropPointers,
+	Z_Construct_UClass_AItemFunctionalityBase_Statics::PropPointers,
 	nullptr,
 	UE_ARRAY_COUNT(DependentSingletons),
 	UE_ARRAY_COUNT(FuncInfo),
-	UE_ARRAY_COUNT(Z_Construct_UClass_UItemFunctionalityBase_Statics::PropPointers),
+	UE_ARRAY_COUNT(Z_Construct_UClass_AItemFunctionalityBase_Statics::PropPointers),
 	0,
-	0x000000A0u,
-	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UItemFunctionalityBase_Statics::Class_MetaDataParams), Z_Construct_UClass_UItemFunctionalityBase_Statics::Class_MetaDataParams)
+	0x008000A4u,
+	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AItemFunctionalityBase_Statics::Class_MetaDataParams), Z_Construct_UClass_AItemFunctionalityBase_Statics::Class_MetaDataParams)
 };
-UClass* Z_Construct_UClass_UItemFunctionalityBase()
+UClass* Z_Construct_UClass_AItemFunctionalityBase()
 {
-	if (!Z_Registration_Info_UClass_UItemFunctionalityBase.OuterSingleton)
+	if (!Z_Registration_Info_UClass_AItemFunctionalityBase.OuterSingleton)
 	{
-		UECodeGen_Private::ConstructUClass(Z_Registration_Info_UClass_UItemFunctionalityBase.OuterSingleton, Z_Construct_UClass_UItemFunctionalityBase_Statics::ClassParams);
+		UECodeGen_Private::ConstructUClass(Z_Registration_Info_UClass_AItemFunctionalityBase.OuterSingleton, Z_Construct_UClass_AItemFunctionalityBase_Statics::ClassParams);
 	}
-	return Z_Registration_Info_UClass_UItemFunctionalityBase.OuterSingleton;
+	return Z_Registration_Info_UClass_AItemFunctionalityBase.OuterSingleton;
 }
-template<> BIGMAZE_ALPHA_0_API UClass* StaticClass<UItemFunctionalityBase>()
+template<> BIGMAZE_ALPHA_0_API UClass* StaticClass<AItemFunctionalityBase>()
 {
-	return UItemFunctionalityBase::StaticClass();
+	return AItemFunctionalityBase::StaticClass();
 }
-DEFINE_VTABLE_PTR_HELPER_CTOR(UItemFunctionalityBase);
-UItemFunctionalityBase::~UItemFunctionalityBase() {}
-// End Class UItemFunctionalityBase
+DEFINE_VTABLE_PTR_HELPER_CTOR(AItemFunctionalityBase);
+AItemFunctionalityBase::~AItemFunctionalityBase() {}
+// End Class AItemFunctionalityBase
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_ItemSystem_h_Statics
+struct Z_CompiledInDeferFile_FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_ItemSystem_h_Statics
 {
 	static constexpr FEnumRegisterCompiledInInfo EnumInfo[] = {
 		{ EItemActivationType_StaticEnum, TEXT("EItemActivationType"), &Z_Registration_Info_UEnum_EItemActivationType, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 651093556U) },
 	};
 	static constexpr FStructRegisterCompiledInInfo ScriptStructInfo[] = {
 		{ FItemAttribute::StaticStruct, Z_Construct_UScriptStruct_FItemAttribute_Statics::NewStructOps, TEXT("ItemAttribute"), &Z_Registration_Info_UScriptStruct_ItemAttribute, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FItemAttribute), 3073608223U) },
-		{ FItem::StaticStruct, Z_Construct_UScriptStruct_FItem_Statics::NewStructOps, TEXT("Item"), &Z_Registration_Info_UScriptStruct_Item, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FItem), 2259786990U) },
+		{ FItem::StaticStruct, Z_Construct_UScriptStruct_FItem_Statics::NewStructOps, TEXT("Item"), &Z_Registration_Info_UScriptStruct_Item, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FItem), 2457164842U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UItemFunctionalityBase, UItemFunctionalityBase::StaticClass, TEXT("UItemFunctionalityBase"), &Z_Registration_Info_UClass_UItemFunctionalityBase, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UItemFunctionalityBase), 1421327320U) },
+		{ Z_Construct_UClass_AItemFunctionalityBase, AItemFunctionalityBase::StaticClass, TEXT("AItemFunctionalityBase"), &Z_Registration_Info_UClass_AItemFunctionalityBase, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AItemFunctionalityBase), 1783340471U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_ItemSystem_h_38381515(TEXT("/Script/BigMaze_Alpha_0"),
-	Z_CompiledInDeferFile_FID_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_ItemSystem_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_ItemSystem_h_Statics::ClassInfo),
-	Z_CompiledInDeferFile_FID_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_ItemSystem_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_ItemSystem_h_Statics::ScriptStructInfo),
-	Z_CompiledInDeferFile_FID_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_ItemSystem_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_ItemSystem_h_Statics::EnumInfo));
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_ItemSystem_h_2920293564(TEXT("/Script/BigMaze_Alpha_0"),
+	Z_CompiledInDeferFile_FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_ItemSystem_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_ItemSystem_h_Statics::ClassInfo),
+	Z_CompiledInDeferFile_FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_ItemSystem_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_ItemSystem_h_Statics::ScriptStructInfo),
+	Z_CompiledInDeferFile_FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_ItemSystem_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_ItemSystem_h_Statics::EnumInfo));
 // End Registration
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -18,9 +18,9 @@ enum class EItemActivationType : uint8
 };
 
 /**
- * Forward declaration of UItemFunctionalityBase for struct dependencies.
+ * Forward declaration of AItemFunctionalityBase for struct dependencies.
  */
-class UItemFunctionalityBase;
+class AItemFunctionalityBase;
 
 /**
  * FItemAttribute - A structure to hold attributes for an item.
@@ -100,11 +100,11 @@ public:
     TArray<FItemAttribute> Attributes;
 
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Item")
-    TArray<TSoftObjectPtr<UItemFunctionalityBase>> Parts;
+    TArray<TSoftObjectPtr<AItemFunctionalityBase>> Parts;
 
-    // Associated Functionality Class (UItemFunctionalityBase)
+    // Associated Functionality Class (AItemFunctionalityBase)
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Item")
-    TSoftObjectPtr<UItemFunctionalityBase> Class;
+    TSoftObjectPtr<AItemFunctionalityBase> Class;
 
     // Default Constructor
     FItem()
@@ -117,8 +117,8 @@ public:
  * Base class for item functionality within a UDataAsset.
  */
 UCLASS(BlueprintType, Blueprintable)
-class UItemFunctionalityBase : public UDataAsset
-{
+class AItemFunctionalityBase : public AActor
+{    
     GENERATED_BODY()
 
 public:
@@ -155,7 +155,7 @@ public:
     void OnSwapItem(const FItem &Item, bool SwapTo);
 
     // Constructor
-    UItemFunctionalityBase()
+    AItemFunctionalityBase()
         : Icon(nullptr), SkeletalMesh(nullptr)
     {
     }

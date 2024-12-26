@@ -16,21 +16,21 @@ struct FItem;
 #endif
 #define BIGMAZE_ALPHA_0_ItemSystem_generated_h
 
-#define FID_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_ItemSystem_h_31_GENERATED_BODY \
+#define FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_ItemSystem_h_31_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FItemAttribute_Statics; \
 	BIGMAZE_ALPHA_0_API static class UScriptStruct* StaticStruct();
 
 
 template<> BIGMAZE_ALPHA_0_API UScriptStruct* StaticStruct<struct FItemAttribute>();
 
-#define FID_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_ItemSystem_h_71_GENERATED_BODY \
+#define FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_ItemSystem_h_71_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FItem_Statics; \
 	BIGMAZE_ALPHA_0_API static class UScriptStruct* StaticStruct();
 
 
 template<> BIGMAZE_ALPHA_0_API UScriptStruct* StaticStruct<struct FItem>();
 
-#define FID_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_ItemSystem_h_122_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_ItemSystem_h_122_RPC_WRAPPERS_NO_PURE_DECLS \
 	virtual void OnSwapItem_Implementation(FItem const& Item, bool SwapTo); \
 	virtual void QuaternaryUse_Implementation(FItem const& Item, EItemActivationType ActivationType); \
 	virtual void TertiaryUse_Implementation(FItem const& Item, EItemActivationType ActivationType); \
@@ -43,44 +43,44 @@ template<> BIGMAZE_ALPHA_0_API UScriptStruct* StaticStruct<struct FItem>();
 	DECLARE_FUNCTION(execPrimaryUse);
 
 
-#define FID_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_ItemSystem_h_122_CALLBACK_WRAPPERS
-#define FID_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_ItemSystem_h_122_INCLASS_NO_PURE_DECLS \
+#define FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_ItemSystem_h_122_CALLBACK_WRAPPERS
+#define FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_ItemSystem_h_122_INCLASS_NO_PURE_DECLS \
 private: \
-	static void StaticRegisterNativesUItemFunctionalityBase(); \
-	friend struct Z_Construct_UClass_UItemFunctionalityBase_Statics; \
+	static void StaticRegisterNativesAItemFunctionalityBase(); \
+	friend struct Z_Construct_UClass_AItemFunctionalityBase_Statics; \
 public: \
-	DECLARE_CLASS(UItemFunctionalityBase, UDataAsset, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/BigMaze_Alpha_0"), NO_API) \
-	DECLARE_SERIALIZER(UItemFunctionalityBase)
+	DECLARE_CLASS(AItemFunctionalityBase, AActor, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/BigMaze_Alpha_0"), NO_API) \
+	DECLARE_SERIALIZER(AItemFunctionalityBase)
 
 
-#define FID_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_ItemSystem_h_122_ENHANCED_CONSTRUCTORS \
+#define FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_ItemSystem_h_122_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
-	UItemFunctionalityBase(UItemFunctionalityBase&&); \
-	UItemFunctionalityBase(const UItemFunctionalityBase&); \
+	AItemFunctionalityBase(AItemFunctionalityBase&&); \
+	AItemFunctionalityBase(const AItemFunctionalityBase&); \
 public: \
-	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UItemFunctionalityBase); \
-	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UItemFunctionalityBase); \
-	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UItemFunctionalityBase) \
-	NO_API virtual ~UItemFunctionalityBase();
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, AItemFunctionalityBase); \
+	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AItemFunctionalityBase); \
+	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AItemFunctionalityBase) \
+	NO_API virtual ~AItemFunctionalityBase();
 
 
-#define FID_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_ItemSystem_h_119_PROLOG
-#define FID_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_ItemSystem_h_122_GENERATED_BODY \
+#define FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_ItemSystem_h_119_PROLOG
+#define FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_ItemSystem_h_122_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_ItemSystem_h_122_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_ItemSystem_h_122_CALLBACK_WRAPPERS \
-	FID_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_ItemSystem_h_122_INCLASS_NO_PURE_DECLS \
-	FID_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_ItemSystem_h_122_ENHANCED_CONSTRUCTORS \
+	FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_ItemSystem_h_122_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_ItemSystem_h_122_CALLBACK_WRAPPERS \
+	FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_ItemSystem_h_122_INCLASS_NO_PURE_DECLS \
+	FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_ItemSystem_h_122_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-template<> BIGMAZE_ALPHA_0_API UClass* StaticClass<class UItemFunctionalityBase>();
+template<> BIGMAZE_ALPHA_0_API UClass* StaticClass<class AItemFunctionalityBase>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_ItemSystem_h
+#define CURRENT_FILE_ID FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_ItemSystem_h
 
 
 #define FOREACH_ENUM_EITEMACTIVATIONTYPE(op) \
