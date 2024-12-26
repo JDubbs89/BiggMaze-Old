@@ -26,7 +26,8 @@
 			"LogoutUserCallbackProxy.gen.cpp.obj",
 			"SendFriendInviteCallbackProxy.gen.cpp.obj",
 			"StartSessionCallbackProxyAdvanced.gen.cpp.obj",
-			"UpdateSessionCallbackProxyAdvanced.gen.cpp.obj"
+			"UpdateSessionCallbackProxyAdvanced.gen.cpp.obj",
+			"PerModuleInline.gen.cpp.obj"
 		],
 		"Module.AdvancedSessions.2.cpp.obj": [
 			"AdvancedFriendsInterface.cpp.obj",

@@ -99,6 +99,9 @@ public:
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Item")
     TArray<FItemAttribute> Attributes;
 
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Item")
+    TArray<TSoftObjectPtr<UItemFunctionalityBase>> Parts;
+
     // Associated Functionality Class (UItemFunctionalityBase)
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Item")
     TSoftObjectPtr<UItemFunctionalityBase> Class;
@@ -126,6 +129,10 @@ public:
     /** Variable to set the skeletal mesh of an item for in world display. */
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Item Defaults")
     USkeletalMesh *SkeletalMesh;
+
+    /** Variable to give an item default values to pull from. */
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Item Defaults")
+    FItem ItemDefault;
 
     /** Function called for the primary use of the item. */
     UFUNCTION(BlueprintNativeEvent, BlueprintCallable, Category = "Item Functionality")
