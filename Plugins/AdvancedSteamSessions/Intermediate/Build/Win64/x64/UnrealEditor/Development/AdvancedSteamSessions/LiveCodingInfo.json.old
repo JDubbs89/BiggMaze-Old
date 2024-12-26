@@ -9,7 +9,6 @@
 			"SteamNotificationsSubsystem.gen.cpp.obj",
 			"SteamRequestGroupOfficersCallbackProxy.gen.cpp.obj",
 			"SteamWSRequestUGCDetailsCallbackProxy.gen.cpp.obj",
-			"PerModuleInline.gen.cpp.obj",
 			"AdvancedSteamFriendsLibrary.cpp.obj",
 			"AdvancedSteamWorkshopLibrary.cpp.obj",
 			"SteamRequestGroupOfficersCallbackProxy.cpp.obj",

@@ -11,7 +11,6 @@
 /DELAY:UNLOAD
 /DLL
 /PDBALTPATH:%_PDB%
-/d2:-ExtendedWarningInfo
 /OPT:NOREF
 /OPT:NOICF
 /INCREMENTAL:NO
@@ -21,9 +20,9 @@
 /ALTERNATENAME:__imp___std_init_once_complete=__imp_InitOnceComplete
 /DELAYLOAD:"d3d12.dll"
 /DELAYLOAD:"DBGHELP.DLL"
-/LIBPATH:"C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\lib\x64"
-/LIBPATH:"C:\Program Files (x86)\Windows Kits\10\lib\10.0.22621.0\ucrt\x64"
-/LIBPATH:"C:\Program Files (x86)\Windows Kits\10\lib\10.0.22621.0\um\x64"
+/LIBPATH:"C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\lib\x64"
+/LIBPATH:"C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\ucrt\x64"
+/LIBPATH:"C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x64"
 /NODEFAULTLIB:"LIBCMT"
 /NODEFAULTLIB:"LIBCPMT"
 /NODEFAULTLIB:"LIBCMTD"
@@ -35,10 +34,8 @@
 /NODEFAULTLIB:"LIBCD"
 /NODEFAULTLIB:"LIBCPD"
 /FUNCTIONPADMIN:6
-/NOIMPLIB
-"C:\Users\jonat\OneDrive\Documents\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\Intermediate\Build\Win64\x64\BigMaze_Alpha_0Editor\Development\UnrealEd\SharedPCH.UnrealEd.Project.NoValFmtStr.ValApi.Cpp20.InclOrderUnreal5_3.h.obj"
+"C:\Users\jonat\OneDrive\Documents\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\Intermediate\Build\Win64\x64\BigMaze_Alpha_0Editor\Development\Engine\SharedPCH.Engine.Cpp20.InclOrderUnreal5_0.h.obj"
 "C:\Users\jonat\OneDrive\Documents\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\Plugins\BlueprintableOnlineBeacons\Intermediate\Build\Win64\x64\UnrealEditor\Development\BlueprintableOnlineBeacons\Module.BlueprintableOnlineBeacons.cpp.obj"
-"C:\Users\jonat\OneDrive\Documents\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\Plugins\BlueprintableOnlineBeacons\Intermediate\Build\Win64\x64\UnrealEditor\Development\BlueprintableOnlineBeacons\PerModuleInline.gen.cpp.obj"
 "C:\Users\jonat\OneDrive\Documents\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\Plugins\BlueprintableOnlineBeacons\Intermediate\Build\Win64\x64\UnrealEditor\Development\BlueprintableOnlineBeacons\BlueprintableOnlineBeacons.init.gen.cpp.obj"
 "C:\Users\jonat\OneDrive\Documents\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\Plugins\BlueprintableOnlineBeacons\Intermediate\Build\Win64\x64\UnrealEditor\Development\BlueprintableOnlineBeacons\OnlineBeaconBlueprint.gen.cpp.obj"
 "C:\Users\jonat\OneDrive\Documents\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\Plugins\BlueprintableOnlineBeacons\Intermediate\Build\Win64\x64\UnrealEditor\Development\BlueprintableOnlineBeacons\OnlineBeaconConnectProxy.gen.cpp.obj"
@@ -82,5 +79,6 @@
 "dwmapi.lib"
 "imm32.lib"
 /OUT:"C:\Users\jonat\OneDrive\Documents\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\Plugins\BlueprintableOnlineBeacons\Binaries\Win64\UnrealEditor-BlueprintableOnlineBeacons.dll"
+/IMPLIB:"C:\Users\jonat\OneDrive\Documents\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\Plugins\BlueprintableOnlineBeacons\Intermediate\Build\Win64\x64\UnrealEditor\Development\BlueprintableOnlineBeacons\UnrealEditor-BlueprintableOnlineBeacons.sup.lib"
 /PDB:"C:\Users\jonat\OneDrive\Documents\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\Plugins\BlueprintableOnlineBeacons\Binaries\Win64\UnrealEditor-BlueprintableOnlineBeacons.pdb"
 /ignore:4078

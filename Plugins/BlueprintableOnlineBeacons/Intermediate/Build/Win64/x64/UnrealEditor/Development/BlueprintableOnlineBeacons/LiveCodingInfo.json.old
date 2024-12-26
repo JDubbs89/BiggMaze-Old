@@ -15,8 +15,7 @@
 			"OnlineBeaconHostDynamic.gen.cpp.obj",
 			"OnlineBeaconHostObjectDynamic.gen.cpp.obj",
 			"OnlineBeaconsSettings.gen.cpp.obj",
-			"OnlineBeaconSubsystem.gen.cpp.obj",
-			"PerModuleInline.gen.cpp.obj"
+			"OnlineBeaconSubsystem.gen.cpp.obj"
 		]
 	}
 }
