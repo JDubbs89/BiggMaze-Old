@@ -13,7 +13,8 @@
 			"Maze.cpp.obj",
 			"MazeGenerator.cpp.obj",
 			"Maze.gen.cpp.obj",
-			"MazeGenerator.init.gen.cpp.obj"
+			"MazeGenerator.init.gen.cpp.obj",
+			"PerModuleInline.gen.cpp.obj"
 		]
 	}
 }
