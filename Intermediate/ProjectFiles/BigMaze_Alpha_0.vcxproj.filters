@@ -243,17 +243,29 @@
     <None Include="..\..\Plugins\AdvancedSteamSessions\Resources\Icon128.png">
       <Filter>Plugins\AdvancedSteamSessions\Resources</Filter>
     </None>
-    <Filter Include="Plugins\ClipboardFunctions">
-      <UniqueIdentifier>{5AAB2E37-2B8C-3A73-842E-10F55988BDCC}</UniqueIdentifier>
+    <Filter Include="Plugins\BlueprintableOnlineBeacons">
+      <UniqueIdentifier>{436DA6A4-59F8-375C-8FD2-B1AF853BE91E}</UniqueIdentifier>
     </Filter>
-    <None Include="..\..\Plugins\ClipboardFunctions\ClipboardFunctions.uplugin">
-      <Filter>Plugins\ClipboardFunctions</Filter>
+    <None Include="..\..\Plugins\BlueprintableOnlineBeacons\BlueprintableOnlineBeacons.uplugin">
+      <Filter>Plugins\BlueprintableOnlineBeacons</Filter>
     </None>
-    <Filter Include="Plugins\ClipboardFunctions\Resources">
-      <UniqueIdentifier>{4A1B6DD2-7857-34FC-A8B6-D59B9C6AD5D9}</UniqueIdentifier>
+    <Filter Include="Plugins\BlueprintableOnlineBeacons\Resources">
+      <UniqueIdentifier>{9AD555B4-324B-3E22-916F-3167D1583E3D}</UniqueIdentifier>
     </Filter>
-    <None Include="..\..\Plugins\ClipboardFunctions\Resources\Icon128.png">
-      <Filter>Plugins\ClipboardFunctions\Resources</Filter>
+    <None Include="..\..\Plugins\BlueprintableOnlineBeacons\Resources\Icon128.png">
+      <Filter>Plugins\BlueprintableOnlineBeacons\Resources</Filter>
+    </None>
+    <Filter Include="Plugins\MazeGenerator">
+      <UniqueIdentifier>{6E24395B-D0A4-3833-99CF-A08C18625760}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\MazeGenerator\MazeGenerator.uplugin">
+      <Filter>Plugins\MazeGenerator</Filter>
+    </None>
+    <Filter Include="Plugins\MazeGenerator\Resources">
+      <UniqueIdentifier>{00D26606-9B71-3BED-876E-C7694B2728B7}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\MazeGenerator\Resources\Icon128.png">
+      <Filter>Plugins\MazeGenerator\Resources</Filter>
     </None>
     <Filter Include="Plugins\AdvancedSteamSessions\Source">
       <UniqueIdentifier>{D96B0581-0D1E-3EAD-A89C-A9EE4E8E7D00}</UniqueIdentifier>
@@ -303,32 +315,143 @@
     <ClCompile Include="..\..\Plugins\AdvancedSteamSessions\Source\AdvancedSteamSessions\Private\SteamWSRequestUGCDetailsCallbackProxy.cpp">
       <Filter>Plugins\AdvancedSteamSessions\Source\AdvancedSteamSessions\Private</Filter>
     </ClCompile>
-    <Filter Include="Plugins\ClipboardFunctions\Source">
-      <UniqueIdentifier>{5B564D75-8FE9-325D-A4F4-A5E79C90952E}</UniqueIdentifier>
+    <Filter Include="Plugins\BlueprintableOnlineBeacons\Source">
+      <UniqueIdentifier>{A6CB3330-684E-33AE-84BF-25D9A899EA3F}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Plugins\ClipboardFunctions\Source\ClipboardFunctions">
-      <UniqueIdentifier>{10A43FC0-78DA-321C-BC2B-4478C8F77B67}</UniqueIdentifier>
+    <Filter Include="Plugins\BlueprintableOnlineBeacons\Source\BlueprintableOnlineBeacons">
+      <UniqueIdentifier>{D8450340-7950-3BC0-B178-7847D5DC2E9A}</UniqueIdentifier>
     </Filter>
-    <None Include="..\..\Plugins\ClipboardFunctions\Source\ClipboardFunctions\ClipboardFunctions.Build.cs">
-      <Filter>Plugins\ClipboardFunctions\Source\ClipboardFunctions</Filter>
+    <None Include="..\..\Plugins\BlueprintableOnlineBeacons\Source\BlueprintableOnlineBeacons\BlueprintableOnlineBeacons.Build.cs">
+      <Filter>Plugins\BlueprintableOnlineBeacons\Source\BlueprintableOnlineBeacons</Filter>
     </None>
-    <Filter Include="Plugins\ClipboardFunctions\Source\ClipboardFunctions\Private">
-      <UniqueIdentifier>{2DA2E27C-BEFA-3842-8DF1-8CF056935F99}</UniqueIdentifier>
+    <Filter Include="Plugins\BlueprintableOnlineBeacons\Source\BlueprintableOnlineBeacons\Private">
+      <UniqueIdentifier>{D106E1CF-1168-3A73-BDAF-C6CABCCB3445}</UniqueIdentifier>
     </Filter>
-    <ClCompile Include="..\..\Plugins\ClipboardFunctions\Source\ClipboardFunctions\Private\ClipboardFunctions.cpp">
-      <Filter>Plugins\ClipboardFunctions\Source\ClipboardFunctions\Private</Filter>
+    <ClCompile Include="..\..\Plugins\BlueprintableOnlineBeacons\Source\BlueprintableOnlineBeacons\Private\BlueprintableOnlineBeacons.cpp">
+      <Filter>Plugins\BlueprintableOnlineBeacons\Source\BlueprintableOnlineBeacons\Private</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Plugins\ClipboardFunctions\Source\ClipboardFunctions\Private\ClipboardFunctionsBPLibrary.cpp">
-      <Filter>Plugins\ClipboardFunctions\Source\ClipboardFunctions\Private</Filter>
+    <ClCompile Include="..\..\Plugins\BlueprintableOnlineBeacons\Source\BlueprintableOnlineBeacons\Private\OnlineBeaconBlueprint.cpp">
+      <Filter>Plugins\BlueprintableOnlineBeacons\Source\BlueprintableOnlineBeacons\Private</Filter>
     </ClCompile>
-    <Filter Include="Plugins\ClipboardFunctions\Source\ClipboardFunctions\Public">
-      <UniqueIdentifier>{1D1EA29E-C85E-3D3B-A8BA-82FD1830603B}</UniqueIdentifier>
+    <ClCompile Include="..\..\Plugins\BlueprintableOnlineBeacons\Source\BlueprintableOnlineBeacons\Private\OnlineBeaconConnectProxy.cpp">
+      <Filter>Plugins\BlueprintableOnlineBeacons\Source\BlueprintableOnlineBeacons\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\BlueprintableOnlineBeacons\Source\BlueprintableOnlineBeacons\Private\OnlineBeaconHostDynamic.cpp">
+      <Filter>Plugins\BlueprintableOnlineBeacons\Source\BlueprintableOnlineBeacons\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\BlueprintableOnlineBeacons\Source\BlueprintableOnlineBeacons\Private\OnlineBeaconHostObjectDynamic.cpp">
+      <Filter>Plugins\BlueprintableOnlineBeacons\Source\BlueprintableOnlineBeacons\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\BlueprintableOnlineBeacons\Source\BlueprintableOnlineBeacons\Private\OnlineBeaconsSettings.cpp">
+      <Filter>Plugins\BlueprintableOnlineBeacons\Source\BlueprintableOnlineBeacons\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\BlueprintableOnlineBeacons\Source\BlueprintableOnlineBeacons\Private\OnlineBeaconSubsystem.cpp">
+      <Filter>Plugins\BlueprintableOnlineBeacons\Source\BlueprintableOnlineBeacons\Private</Filter>
+    </ClCompile>
+    <Filter Include="Plugins\BlueprintableOnlineBeacons\Source\BlueprintableOnlineBeacons\Public">
+      <UniqueIdentifier>{BA7D95F2-5465-3606-9C08-5E51D6F7EF8B}</UniqueIdentifier>
     </Filter>
-    <ClCompile Include="..\..\Plugins\ClipboardFunctions\Source\ClipboardFunctions\Public\ClipboardFunctions.h">
-      <Filter>Plugins\ClipboardFunctions\Source\ClipboardFunctions\Public</Filter>
+    <ClCompile Include="..\..\Plugins\BlueprintableOnlineBeacons\Source\BlueprintableOnlineBeacons\Public\BlueprintableOnlineBeacons.h">
+      <Filter>Plugins\BlueprintableOnlineBeacons\Source\BlueprintableOnlineBeacons\Public</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Plugins\ClipboardFunctions\Source\ClipboardFunctions\Public\ClipboardFunctionsBPLibrary.h">
-      <Filter>Plugins\ClipboardFunctions\Source\ClipboardFunctions\Public</Filter>
+    <ClCompile Include="..\..\Plugins\BlueprintableOnlineBeacons\Source\BlueprintableOnlineBeacons\Public\OnlineBeaconBlueprint.h">
+      <Filter>Plugins\BlueprintableOnlineBeacons\Source\BlueprintableOnlineBeacons\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\BlueprintableOnlineBeacons\Source\BlueprintableOnlineBeacons\Public\OnlineBeaconConnectProxy.h">
+      <Filter>Plugins\BlueprintableOnlineBeacons\Source\BlueprintableOnlineBeacons\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\BlueprintableOnlineBeacons\Source\BlueprintableOnlineBeacons\Public\OnlineBeaconHostDynamic.h">
+      <Filter>Plugins\BlueprintableOnlineBeacons\Source\BlueprintableOnlineBeacons\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\BlueprintableOnlineBeacons\Source\BlueprintableOnlineBeacons\Public\OnlineBeaconHostObjectDynamic.h">
+      <Filter>Plugins\BlueprintableOnlineBeacons\Source\BlueprintableOnlineBeacons\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\BlueprintableOnlineBeacons\Source\BlueprintableOnlineBeacons\Public\OnlineBeaconsSettings.h">
+      <Filter>Plugins\BlueprintableOnlineBeacons\Source\BlueprintableOnlineBeacons\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\BlueprintableOnlineBeacons\Source\BlueprintableOnlineBeacons\Public\OnlineBeaconSubsystem.h">
+      <Filter>Plugins\BlueprintableOnlineBeacons\Source\BlueprintableOnlineBeacons\Public</Filter>
+    </ClCompile>
+    <Filter Include="Plugins\MazeGenerator\Source">
+      <UniqueIdentifier>{99857C39-D898-3721-966E-550EA69DD296}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugins\MazeGenerator\Source\MazeGenerator">
+      <UniqueIdentifier>{0F34B7A1-85DD-35B7-8CC4-A006BBF2C95E}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\MazeGenerator\Source\MazeGenerator\MazeGenerator.Build.cs">
+      <Filter>Plugins\MazeGenerator\Source\MazeGenerator</Filter>
+    </None>
+    <Filter Include="Plugins\MazeGenerator\Source\MazeGenerator\Private">
+      <UniqueIdentifier>{CC6FA980-079F-36C0-ACA2-2142D0199E5B}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Plugins\MazeGenerator\Source\MazeGenerator\Private\Maze.cpp">
+      <Filter>Plugins\MazeGenerator\Source\MazeGenerator\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\MazeGenerator\Source\MazeGenerator\Private\MazeGenerator.cpp">
+      <Filter>Plugins\MazeGenerator\Source\MazeGenerator\Private</Filter>
+    </ClCompile>
+    <Filter Include="Plugins\MazeGenerator\Source\MazeGenerator\Private\Algorithms">
+      <UniqueIdentifier>{C7B98535-690E-3713-9356-07DAA96CFF28}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Plugins\MazeGenerator\Source\MazeGenerator\Private\Algorithms\Algorithm.cpp">
+      <Filter>Plugins\MazeGenerator\Source\MazeGenerator\Private\Algorithms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\MazeGenerator\Source\MazeGenerator\Private\Algorithms\Algorithm.h">
+      <Filter>Plugins\MazeGenerator\Source\MazeGenerator\Private\Algorithms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\MazeGenerator\Source\MazeGenerator\Private\Algorithms\Backtracker.cpp">
+      <Filter>Plugins\MazeGenerator\Source\MazeGenerator\Private\Algorithms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\MazeGenerator\Source\MazeGenerator\Private\Algorithms\Backtracker.h">
+      <Filter>Plugins\MazeGenerator\Source\MazeGenerator\Private\Algorithms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\MazeGenerator\Source\MazeGenerator\Private\Algorithms\Division.cpp">
+      <Filter>Plugins\MazeGenerator\Source\MazeGenerator\Private\Algorithms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\MazeGenerator\Source\MazeGenerator\Private\Algorithms\Division.h">
+      <Filter>Plugins\MazeGenerator\Source\MazeGenerator\Private\Algorithms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\MazeGenerator\Source\MazeGenerator\Private\Algorithms\Eller.cpp">
+      <Filter>Plugins\MazeGenerator\Source\MazeGenerator\Private\Algorithms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\MazeGenerator\Source\MazeGenerator\Private\Algorithms\Eller.h">
+      <Filter>Plugins\MazeGenerator\Source\MazeGenerator\Private\Algorithms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\MazeGenerator\Source\MazeGenerator\Private\Algorithms\HaK.cpp">
+      <Filter>Plugins\MazeGenerator\Source\MazeGenerator\Private\Algorithms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\MazeGenerator\Source\MazeGenerator\Private\Algorithms\HaK.h">
+      <Filter>Plugins\MazeGenerator\Source\MazeGenerator\Private\Algorithms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\MazeGenerator\Source\MazeGenerator\Private\Algorithms\Kruskal.cpp">
+      <Filter>Plugins\MazeGenerator\Source\MazeGenerator\Private\Algorithms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\MazeGenerator\Source\MazeGenerator\Private\Algorithms\Kruskal.h">
+      <Filter>Plugins\MazeGenerator\Source\MazeGenerator\Private\Algorithms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\MazeGenerator\Source\MazeGenerator\Private\Algorithms\Prim.cpp">
+      <Filter>Plugins\MazeGenerator\Source\MazeGenerator\Private\Algorithms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\MazeGenerator\Source\MazeGenerator\Private\Algorithms\Prim.h">
+      <Filter>Plugins\MazeGenerator\Source\MazeGenerator\Private\Algorithms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\MazeGenerator\Source\MazeGenerator\Private\Algorithms\Sidewinder.cpp">
+      <Filter>Plugins\MazeGenerator\Source\MazeGenerator\Private\Algorithms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\MazeGenerator\Source\MazeGenerator\Private\Algorithms\Sidewinder.h">
+      <Filter>Plugins\MazeGenerator\Source\MazeGenerator\Private\Algorithms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\MazeGenerator\Source\MazeGenerator\Private\Algorithms\Utils.h">
+      <Filter>Plugins\MazeGenerator\Source\MazeGenerator\Private\Algorithms</Filter>
+    </ClCompile>
+    <Filter Include="Plugins\MazeGenerator\Source\MazeGenerator\Public">
+      <UniqueIdentifier>{710D434A-C691-34C7-9196-B2F952DA6834}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Plugins\MazeGenerator\Source\MazeGenerator\Public\Maze.h">
+      <Filter>Plugins\MazeGenerator\Source\MazeGenerator\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\MazeGenerator\Source\MazeGenerator\Public\MazeGenerator.h">
+      <Filter>Plugins\MazeGenerator\Source\MazeGenerator\Public</Filter>
     </ClCompile>
     <Filter Include="Source\BigMaze_Alpha_0">
       <UniqueIdentifier>{07C24C6A-8A16-3A3F-8015-80243E0B64B8}</UniqueIdentifier>

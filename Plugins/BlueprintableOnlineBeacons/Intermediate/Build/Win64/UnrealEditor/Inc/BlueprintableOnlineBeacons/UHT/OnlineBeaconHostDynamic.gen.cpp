@@ -8,84 +8,90 @@
 #include "BlueprintableOnlineBeacons/Public/OnlineBeaconHostDynamic.h"
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeOnlineBeaconHostDynamic() {}
-// Cross Module References
-	BLUEPRINTABLEONLINEBEACONS_API UClass* Z_Construct_UClass_AOnlineBeaconHostDynamic();
-	BLUEPRINTABLEONLINEBEACONS_API UClass* Z_Construct_UClass_AOnlineBeaconHostDynamic_NoRegister();
-	ONLINESUBSYSTEMUTILS_API UClass* Z_Construct_UClass_AOnlineBeaconHost();
-	UPackage* Z_Construct_UPackage__Script_BlueprintableOnlineBeacons();
+
+// Begin Cross Module References
+BLUEPRINTABLEONLINEBEACONS_API UClass* Z_Construct_UClass_AOnlineBeaconHostDynamic();
+BLUEPRINTABLEONLINEBEACONS_API UClass* Z_Construct_UClass_AOnlineBeaconHostDynamic_NoRegister();
+ONLINESUBSYSTEMUTILS_API UClass* Z_Construct_UClass_AOnlineBeaconHost();
+UPackage* Z_Construct_UPackage__Script_BlueprintableOnlineBeacons();
 // End Cross Module References
-	void AOnlineBeaconHostDynamic::StaticRegisterNativesAOnlineBeaconHostDynamic()
-	{
-	}
-	IMPLEMENT_CLASS_NO_AUTO_REGISTRATION(AOnlineBeaconHostDynamic);
-	UClass* Z_Construct_UClass_AOnlineBeaconHostDynamic_NoRegister()
-	{
-		return AOnlineBeaconHostDynamic::StaticClass();
-	}
-	struct Z_Construct_UClass_AOnlineBeaconHostDynamic_Statics
-	{
-		static UObject* (*const DependentSingletons[])();
+
+// Begin Class AOnlineBeaconHostDynamic
+void AOnlineBeaconHostDynamic::StaticRegisterNativesAOnlineBeaconHostDynamic()
+{
+}
+IMPLEMENT_CLASS_NO_AUTO_REGISTRATION(AOnlineBeaconHostDynamic);
+UClass* Z_Construct_UClass_AOnlineBeaconHostDynamic_NoRegister()
+{
+	return AOnlineBeaconHostDynamic::StaticClass();
+}
+struct Z_Construct_UClass_AOnlineBeaconHostDynamic_Statics
+{
 #if WITH_METADATA
-		static const UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
-#endif
-		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
-		static const UECodeGen_Private::FClassParams ClassParams;
-	};
-	UObject* (*const Z_Construct_UClass_AOnlineBeaconHostDynamic_Statics::DependentSingletons[])() = {
-		(UObject* (*)())Z_Construct_UClass_AOnlineBeaconHost,
-		(UObject* (*)())Z_Construct_UPackage__Script_BlueprintableOnlineBeacons,
-	};
-	static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_AOnlineBeaconHostDynamic_Statics::DependentSingletons) < 16);
-#if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AOnlineBeaconHostDynamic_Statics::Class_MetaDataParams[] = {
+	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * The Online Beacon Host Dynamic Class.\n * Some properties we might want to change in\n * runtime are protected, so let's make them public.\n */" },
+#endif
 		{ "IncludePath", "OnlineBeaconHostDynamic.h" },
 		{ "ModuleRelativePath", "Public/OnlineBeaconHostDynamic.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The Online Beacon Host Dynamic Class.\nSome properties we might want to change in\nruntime are protected, so let's make them public." },
-	};
 #endif
-	const FCppClassTypeInfoStatic Z_Construct_UClass_AOnlineBeaconHostDynamic_Statics::StaticCppClassTypeInfo = {
+	};
+#endif // WITH_METADATA
+	static UObject* (*const DependentSingletons[])();
+	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AOnlineBeaconHostDynamic>::IsAbstract,
 	};
-	const UECodeGen_Private::FClassParams Z_Construct_UClass_AOnlineBeaconHostDynamic_Statics::ClassParams = {
-		&AOnlineBeaconHostDynamic::StaticClass,
-		"Engine",
-		&StaticCppClassTypeInfo,
-		DependentSingletons,
-		nullptr,
-		nullptr,
-		nullptr,
-		UE_ARRAY_COUNT(DependentSingletons),
-		0,
-		0,
-		0,
-		0x009002ACu,
-		METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AOnlineBeaconHostDynamic_Statics::Class_MetaDataParams), Z_Construct_UClass_AOnlineBeaconHostDynamic_Statics::Class_MetaDataParams)
-	};
-	UClass* Z_Construct_UClass_AOnlineBeaconHostDynamic()
+	static const UECodeGen_Private::FClassParams ClassParams;
+};
+UObject* (*const Z_Construct_UClass_AOnlineBeaconHostDynamic_Statics::DependentSingletons[])() = {
+	(UObject* (*)())Z_Construct_UClass_AOnlineBeaconHost,
+	(UObject* (*)())Z_Construct_UPackage__Script_BlueprintableOnlineBeacons,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_AOnlineBeaconHostDynamic_Statics::DependentSingletons) < 16);
+const UECodeGen_Private::FClassParams Z_Construct_UClass_AOnlineBeaconHostDynamic_Statics::ClassParams = {
+	&AOnlineBeaconHostDynamic::StaticClass,
+	"Engine",
+	&StaticCppClassTypeInfo,
+	DependentSingletons,
+	nullptr,
+	nullptr,
+	nullptr,
+	UE_ARRAY_COUNT(DependentSingletons),
+	0,
+	0,
+	0,
+	0x009002ACu,
+	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AOnlineBeaconHostDynamic_Statics::Class_MetaDataParams), Z_Construct_UClass_AOnlineBeaconHostDynamic_Statics::Class_MetaDataParams)
+};
+UClass* Z_Construct_UClass_AOnlineBeaconHostDynamic()
+{
+	if (!Z_Registration_Info_UClass_AOnlineBeaconHostDynamic.OuterSingleton)
 	{
-		if (!Z_Registration_Info_UClass_AOnlineBeaconHostDynamic.OuterSingleton)
-		{
-			UECodeGen_Private::ConstructUClass(Z_Registration_Info_UClass_AOnlineBeaconHostDynamic.OuterSingleton, Z_Construct_UClass_AOnlineBeaconHostDynamic_Statics::ClassParams);
-		}
-		return Z_Registration_Info_UClass_AOnlineBeaconHostDynamic.OuterSingleton;
+		UECodeGen_Private::ConstructUClass(Z_Registration_Info_UClass_AOnlineBeaconHostDynamic.OuterSingleton, Z_Construct_UClass_AOnlineBeaconHostDynamic_Statics::ClassParams);
 	}
-	template<> BLUEPRINTABLEONLINEBEACONS_API UClass* StaticClass<AOnlineBeaconHostDynamic>()
-	{
-		return AOnlineBeaconHostDynamic::StaticClass();
-	}
-	AOnlineBeaconHostDynamic::AOnlineBeaconHostDynamic(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {}
-	DEFINE_VTABLE_PTR_HELPER_CTOR(AOnlineBeaconHostDynamic);
-	AOnlineBeaconHostDynamic::~AOnlineBeaconHostDynamic() {}
-	struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_BlueprintableOnlineBeacons_Source_BlueprintableOnlineBeacons_Public_OnlineBeaconHostDynamic_h_Statics
-	{
-		static const FClassRegisterCompiledInInfo ClassInfo[];
+	return Z_Registration_Info_UClass_AOnlineBeaconHostDynamic.OuterSingleton;
+}
+template<> BLUEPRINTABLEONLINEBEACONS_API UClass* StaticClass<AOnlineBeaconHostDynamic>()
+{
+	return AOnlineBeaconHostDynamic::StaticClass();
+}
+AOnlineBeaconHostDynamic::AOnlineBeaconHostDynamic(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {}
+DEFINE_VTABLE_PTR_HELPER_CTOR(AOnlineBeaconHostDynamic);
+AOnlineBeaconHostDynamic::~AOnlineBeaconHostDynamic() {}
+// End Class AOnlineBeaconHostDynamic
+
+// Begin Registration
+struct Z_CompiledInDeferFile_FID_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Plugins_BlueprintableOnlineBeacons_Source_BlueprintableOnlineBeacons_Public_OnlineBeaconHostDynamic_h_Statics
+{
+	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
+		{ Z_Construct_UClass_AOnlineBeaconHostDynamic, AOnlineBeaconHostDynamic::StaticClass, TEXT("AOnlineBeaconHostDynamic"), &Z_Registration_Info_UClass_AOnlineBeaconHostDynamic, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AOnlineBeaconHostDynamic), 4117342130U) },
 	};
-	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_BlueprintableOnlineBeacons_Source_BlueprintableOnlineBeacons_Public_OnlineBeaconHostDynamic_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_AOnlineBeaconHostDynamic, AOnlineBeaconHostDynamic::StaticClass, TEXT("AOnlineBeaconHostDynamic"), &Z_Registration_Info_UClass_AOnlineBeaconHostDynamic, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AOnlineBeaconHostDynamic), 2752837404U) },
-	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_BlueprintableOnlineBeacons_Source_BlueprintableOnlineBeacons_Public_OnlineBeaconHostDynamic_h_3363802395(TEXT("/Script/BlueprintableOnlineBeacons"),
-		Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_BlueprintableOnlineBeacons_Source_BlueprintableOnlineBeacons_Public_OnlineBeaconHostDynamic_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_BlueprintableOnlineBeacons_Source_BlueprintableOnlineBeacons_Public_OnlineBeaconHostDynamic_h_Statics::ClassInfo),
-		nullptr, 0,
-		nullptr, 0);
+};
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Plugins_BlueprintableOnlineBeacons_Source_BlueprintableOnlineBeacons_Public_OnlineBeaconHostDynamic_h_1048148045(TEXT("/Script/BlueprintableOnlineBeacons"),
+	Z_CompiledInDeferFile_FID_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Plugins_BlueprintableOnlineBeacons_Source_BlueprintableOnlineBeacons_Public_OnlineBeaconHostDynamic_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Plugins_BlueprintableOnlineBeacons_Source_BlueprintableOnlineBeacons_Public_OnlineBeaconHostDynamic_h_Statics::ClassInfo),
+	nullptr, 0,
+	nullptr, 0);
+// End Registration
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

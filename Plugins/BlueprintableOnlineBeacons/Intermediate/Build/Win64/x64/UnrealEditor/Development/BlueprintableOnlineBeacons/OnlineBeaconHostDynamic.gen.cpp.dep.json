@@ -1,0 +1,21 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\jonat\\onedrive\\documents\\bigmaze_alpha-0.0.1_ue_5.3.2joust-brigade\\plugins\\blueprintableonlinebeacons\\intermediate\\build\\win64\\unrealeditor\\inc\\blueprintableonlinebeacons\\uht\\onlinebeaconhostdynamic.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\jonat\\onedrive\\documents\\bigmaze_alpha-0.0.1_ue_5.3.2joust-brigade\\intermediate\\build\\win64\\x64\\bigmaze_alpha_0editor\\development\\unrealed\\sharedpch.unrealed.project.novalfmtstr.valapi.cpp20.inclorderunreal5_3.h.pch",
+        "Includes": [
+            "c:\\users\\jonat\\onedrive\\documents\\bigmaze_alpha-0.0.1_ue_5.3.2joust-brigade\\plugins\\blueprintableonlinebeacons\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\blueprintableonlinebeacons\\definitions.blueprintableonlinebeacons.h",
+            "c:\\users\\jonat\\onedrive\\documents\\bigmaze_alpha-0.0.1_ue_5.3.2joust-brigade\\plugins\\blueprintableonlinebeacons\\source\\blueprintableonlinebeacons\\public\\onlinebeaconhostdynamic.h",
+            "d:\\epic games\\ue_5.5\\engine\\plugins\\online\\onlinesubsystemutils\\source\\onlinesubsystemutils\\public\\onlinebeaconhost.h",
+            "d:\\epic games\\ue_5.5\\engine\\plugins\\online\\onlinesubsystemutils\\source\\onlinesubsystemutils\\public\\onlinebeacon.h",
+            "d:\\epic games\\ue_5.5\\engine\\plugins\\online\\onlinesubsystemutils\\intermediate\\build\\win64\\unrealeditor\\inc\\onlinesubsystemutils\\uht\\onlinebeacon.generated.h",
+            "d:\\epic games\\ue_5.5\\engine\\plugins\\online\\onlinesubsystemutils\\intermediate\\build\\win64\\unrealeditor\\inc\\onlinesubsystemutils\\uht\\onlinebeaconhost.generated.h",
+            "c:\\users\\jonat\\onedrive\\documents\\bigmaze_alpha-0.0.1_ue_5.3.2joust-brigade\\plugins\\blueprintableonlinebeacons\\source\\blueprintableonlinebeacons\\public\\onlinebeaconssettings.h",
+            "c:\\users\\jonat\\onedrive\\documents\\bigmaze_alpha-0.0.1_ue_5.3.2joust-brigade\\plugins\\blueprintableonlinebeacons\\intermediate\\build\\win64\\unrealeditor\\inc\\blueprintableonlinebeacons\\uht\\onlinebeaconssettings.generated.h",
+            "c:\\users\\jonat\\onedrive\\documents\\bigmaze_alpha-0.0.1_ue_5.3.2joust-brigade\\plugins\\blueprintableonlinebeacons\\intermediate\\build\\win64\\unrealeditor\\inc\\blueprintableonlinebeacons\\uht\\onlinebeaconhostdynamic.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

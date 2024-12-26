@@ -21,13 +21,13 @@ void EmptyLinkFunctionForGeneratedCodeBlueprintableOnlineBeacons_init() {}
 				SingletonFuncArray,
 				UE_ARRAY_COUNT(SingletonFuncArray),
 				PKG_CompiledIn | 0x00000000,
-				0xB63E5B8D,
-				0x6C950DF0,
+				0x8E676FF6,
+				0xF1F2567D,
 				METADATA_PARAMS(0, nullptr)
 			};
 			UECodeGen_Private::ConstructUPackage(Z_Registration_Info_UPackage__Script_BlueprintableOnlineBeacons.OuterSingleton, PackageParams);
 		}
 		return Z_Registration_Info_UPackage__Script_BlueprintableOnlineBeacons.OuterSingleton;
 	}
-	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_BlueprintableOnlineBeacons(Z_Construct_UPackage__Script_BlueprintableOnlineBeacons, TEXT("/Script/BlueprintableOnlineBeacons"), Z_Registration_Info_UPackage__Script_BlueprintableOnlineBeacons, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0xB63E5B8D, 0x6C950DF0));
+	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_BlueprintableOnlineBeacons(Z_Construct_UPackage__Script_BlueprintableOnlineBeacons, TEXT("/Script/BlueprintableOnlineBeacons"), Z_Registration_Info_UPackage__Script_BlueprintableOnlineBeacons, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0x8E676FF6, 0xF1F2567D));
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
