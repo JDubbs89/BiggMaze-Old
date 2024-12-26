@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BigMaze_Alpha_0ModuleRules")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Development")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d93b548316ab177c53200fab6ab0d7f39f9a25e8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+54fc9f8ddb66877ee91841b5a46b5dd53c34082e")]
 [assembly: System.Reflection.AssemblyProductAttribute("BigMaze_Alpha_0ModuleRules")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BigMaze_Alpha_0ModuleRules")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,0 +1,14 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\jonat\\onedrive\\documents\\bigmaze_alpha-0.0.1_ue_5.3.2joust-brigade\\plugins\\advancedsteamsessions\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\advancedsteamsessions\\permoduleinline.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\jonat\\onedrive\\documents\\bigmaze_alpha-0.0.1_ue_5.3.2joust-brigade\\intermediate\\build\\win64\\x64\\bigmaze_alpha_0editor\\development\\unrealed\\sharedpch.unrealed.project.novalfmtstr.valapi.cpp20.inclorderunreal5_3.h.pch",
+        "Includes": [
+            "c:\\users\\jonat\\onedrive\\documents\\bigmaze_alpha-0.0.1_ue_5.3.2joust-brigade\\plugins\\advancedsteamsessions\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\advancedsteamsessions\\definitions.advancedsteamsessions.h",
+            "d:\\epic games\\ue_5.5\\engine\\source\\runtime\\core\\public\\hal\\permoduleinline.inl"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

@@ -1,0 +1,56 @@
+// Copyright Epic Games, Inc. All Rights Reserved.
+/*===========================================================================
+	Generated code exported from UnrealHeaderTool.
+	DO NOT modify this manually! Edit the corresponding .h files instead!
+===========================================================================*/
+
+// IWYU pragma: private, include "OnlineBeaconHostDynamic.h"
+#include "UObject/ObjectMacros.h"
+#include "UObject/ScriptMacros.h"
+
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+#ifdef BLUEPRINTABLEONLINEBEACONS_OnlineBeaconHostDynamic_generated_h
+#error "OnlineBeaconHostDynamic.generated.h already included, missing '#pragma once' in OnlineBeaconHostDynamic.h"
+#endif
+#define BLUEPRINTABLEONLINEBEACONS_OnlineBeaconHostDynamic_generated_h
+
+#define FID_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Plugins_BlueprintableOnlineBeacons_Source_BlueprintableOnlineBeacons_Public_OnlineBeaconHostDynamic_h_17_INCLASS_NO_PURE_DECLS \
+private: \
+	static void StaticRegisterNativesAOnlineBeaconHostDynamic(); \
+	friend struct Z_Construct_UClass_AOnlineBeaconHostDynamic_Statics; \
+public: \
+	DECLARE_CLASS(AOnlineBeaconHostDynamic, AOnlineBeaconHost, COMPILED_IN_FLAGS(0 | CLASS_Transient | CLASS_Config), CASTCLASS_None, TEXT("/Script/BlueprintableOnlineBeacons"), NO_API) \
+	DECLARE_SERIALIZER(AOnlineBeaconHostDynamic)
+
+
+#define FID_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Plugins_BlueprintableOnlineBeacons_Source_BlueprintableOnlineBeacons_Public_OnlineBeaconHostDynamic_h_17_ENHANCED_CONSTRUCTORS \
+	/** Standard constructor, called after all reflected properties have been initialized */ \
+	NO_API AOnlineBeaconHostDynamic(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	AOnlineBeaconHostDynamic(AOnlineBeaconHostDynamic&&); \
+	AOnlineBeaconHostDynamic(const AOnlineBeaconHostDynamic&); \
+public: \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, AOnlineBeaconHostDynamic); \
+	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AOnlineBeaconHostDynamic); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AOnlineBeaconHostDynamic) \
+	NO_API virtual ~AOnlineBeaconHostDynamic();
+
+
+#define FID_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Plugins_BlueprintableOnlineBeacons_Source_BlueprintableOnlineBeacons_Public_OnlineBeaconHostDynamic_h_15_PROLOG
+#define FID_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Plugins_BlueprintableOnlineBeacons_Source_BlueprintableOnlineBeacons_Public_OnlineBeaconHostDynamic_h_17_GENERATED_BODY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	FID_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Plugins_BlueprintableOnlineBeacons_Source_BlueprintableOnlineBeacons_Public_OnlineBeaconHostDynamic_h_17_INCLASS_NO_PURE_DECLS \
+	FID_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Plugins_BlueprintableOnlineBeacons_Source_BlueprintableOnlineBeacons_Public_OnlineBeaconHostDynamic_h_17_ENHANCED_CONSTRUCTORS \
+private: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+template<> BLUEPRINTABLEONLINEBEACONS_API UClass* StaticClass<class AOnlineBeaconHostDynamic>();
+
+#undef CURRENT_FILE_ID
+#define CURRENT_FILE_ID FID_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Plugins_BlueprintableOnlineBeacons_Source_BlueprintableOnlineBeacons_Public_OnlineBeaconHostDynamic_h
+
+
+PRAGMA_ENABLE_DEPRECATION_WARNINGS

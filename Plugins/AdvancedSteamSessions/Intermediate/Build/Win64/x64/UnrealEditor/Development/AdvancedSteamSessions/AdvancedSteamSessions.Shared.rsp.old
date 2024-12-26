@@ -271,6 +271,9 @@
 /I "C:\Users\jonat\OneDrive\Documents\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\Plugins\AdvancedSessions\Source"
 /I "C:\Users\jonat\OneDrive\Documents\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\Plugins\AdvancedSessions\Source\AdvancedSessions\Classes"
 /I "..\Plugins\Runtime\Steam\SteamShared\Source\SteamShared\Public"
+/I "..\Plugins\Online\OnlineSubsystemSteam\Intermediate\Build\Win64\UnrealEditor\Inc\OnlineSubsystemSteam\UHT"
+/I "..\Plugins\Online\OnlineSubsystemSteam\Source\Classes"
+/I "..\Plugins\Online\OnlineSubsystemSteam\Source\Public"
 /external:W0
 /external:I "ThirdParty\mimalloc\include"
 /external:I "ThirdParty\LibTiff\Source\Win64"

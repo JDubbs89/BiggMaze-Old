@@ -22,14 +22,15 @@
 			"FindSessionsCallbackProxyAdvanced.gen.cpp.obj",
 			"GetFriendsCallbackProxy.gen.cpp.obj",
 			"GetRecentPlayersCallbackProxy.gen.cpp.obj",
-			"GetUserPrivilegeCallbackProxy.gen.cpp.obj"
-		],
-		"Module.AdvancedSessions.3.cpp.obj": [
+			"GetUserPrivilegeCallbackProxy.gen.cpp.obj",
 			"LoginUserCallbackProxy.gen.cpp.obj",
 			"LogoutUserCallbackProxy.gen.cpp.obj",
-			"SendFriendInviteCallbackProxy.gen.cpp.obj",
+			"SendFriendInviteCallbackProxy.gen.cpp.obj"
+		],
+		"Module.AdvancedSessions.3.cpp.obj": [
 			"StartSessionCallbackProxyAdvanced.gen.cpp.obj",
 			"UpdateSessionCallbackProxyAdvanced.gen.cpp.obj",
+			"PerModuleInline.gen.cpp.obj",
 			"AdvancedExternalUILibrary.cpp.obj",
 			"AdvancedFriendsGameInstance.cpp.obj",
 			"AdvancedFriendsInterface.cpp.obj",

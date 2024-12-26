@@ -1,6 +1,6 @@
 {
 	"FileVersion": 3,
-	"EngineAssociation": "5.3",
+	"EngineAssociation": "5.5",
 	"Category": "",
 	"Description": "",
 	"Modules": [
@@ -52,7 +52,7 @@
 		},
 		{
 			"Name": "ClipboardFunctions",
-			"Enabled": true
+			"Enabled": false
 		},
 		{
 			"Name": "BlueprintableOnlineBeacons",
@@ -91,17 +91,17 @@
 		},
 		{
 			"Name": "FileSystemLibrary",
-			"Enabled": true,
+			"Enabled": false,
 			"MarketplaceURL": "https://www.unrealengine.com/marketplace/en-US/product/c8061306eb9b4518ad9183e8a27bee04"
 		},
 		{
 			"Name": "MagicNode",
-			"Enabled": true,
+			"Enabled": false,
 			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/content/38f49e7411bc47588e0d219758d6b16f"
 		},
 		{
 			"Name": "NiagaraUIRenderer",
-			"Enabled": true,
+			"Enabled": false,
 			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/fd24d23ca57b4c59a4e4b7368da250bd",
 			"SupportedTargetPlatforms": [
 				"Win64",
@@ -110,7 +110,7 @@
 		},
 		{
 			"Name": "ProjectCleaner",
-			"Enabled": true,
+			"Enabled": false,
 			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/4d7f5dc837fc4b009bb91e678adf9fd0"
 		},
 		{
@@ -120,17 +120,17 @@
 		},
 		{
 			"Name": "ScreenFade",
-			"Enabled": true,
+			"Enabled": false,
 			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/content/c3edf2a04e0b4ec5a3940a4c35268972"
 		},
 		{
 			"Name": "TodoLogging",
-			"Enabled": true,
+			"Enabled": false,
 			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/6d3410ae11924cc084d036d85118363a"
 		},
 		{
 			"Name": "StatsIntegration",
-			"Enabled": true,
+			"Enabled": false,
 			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/ec733baa0ae049d08cda0c3528ebe8d4"
 		},
 		{
@@ -148,12 +148,12 @@
 		},
 		{
 			"Name": "UniversalCameraPlugin",
-			"Enabled": true,
+			"Enabled": false,
 			"MarketplaceURL": "com.epicgames.launcher://ue/Fab/product/3e455250-77f9-4341-8c8b-00d7d680f1ae"
 		},
 		{
 			"Name": "SmoothSyncPlugin",
-			"Enabled": true,
+			"Enabled": false,
 			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/content/c8f61b007fb44f4abcb7b0974cebff6b"
 		},
 		{
@@ -171,6 +171,30 @@
 		},
 		{
 			"Name": "ModelViewViewModel",
+			"Enabled": true
+		},
+		{
+			"Name": "CloudsLighting",
+			"Enabled": true,
+			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/a54a45caa08e41bb97b1c19cebfe1093"
+		},
+		{
+			"Name": "BlueprintableDeveloperSettings",
+			"Enabled": false,
+			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/62f83acd54314725b7a3e80f1bd5bf49",
+			"SupportedTargetPlatforms": [
+				"Win64",
+				"Mac",
+				"Linux"
+			]
+		},
+		{
+			"Name": "AsyncLoadingScreen",
+			"Enabled": true,
+			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/01f39767dc6b4290877f38365787cbf8"
+		},
+		{
+			"Name": "AdvancedFlockSystem",
 			"Enabled": true
 		}
 	]

@@ -11,15 +11,26 @@
     <None Include="..\..\Source\BigMaze_Alpha_0Editor.Target.cs">
       <Filter>Source</Filter>
     </None>
+    <None Include="..\..\.editorconfig" />
     <None Include="..\..\.gitattributes" />
     <None Include="..\..\.gitignore" />
+    <None Include="..\..\.ignore" />
     <None Include="..\..\.vsconfig" />
+    <None Include="..\..\BigMaze_Alpha_0.code-workspace" />
     <None Include="..\..\BigMaze_Alpha_0.png" />
+    <None Include="..\..\MCO_Mocap_Basics.png" />
     <None Include="..\..\README.md" />
+    <None Include="..\..\shadertoolsconfig.json" />
     <Filter Include="Config">
       <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
     </Filter>
+    <None Include="..\..\Config\DefaultBlueprintableOnlineBeacons.ini">
+      <Filter>Config</Filter>
+    </None>
     <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
       <Filter>Config</Filter>
     </None>
     <None Include="..\..\Config\DefaultEngine.ini">
@@ -29,6 +40,9 @@
       <Filter>Config</Filter>
     </None>
     <None Include="..\..\Config\DefaultGameplayTags.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGameUserSettings.ini">
       <Filter>Config</Filter>
     </None>
     <None Include="..\..\Config\DefaultInput.ini">
@@ -52,81 +66,81 @@
     <Filter Include="Plugins\AdvancedSessions\Source\AdvancedSessions\Classes">
       <UniqueIdentifier>{9E78B99A-76A3-3C41-BB3F-7B04A3F9AAFD}</UniqueIdentifier>
     </Filter>
-    <ClInclude Include="..\..\Plugins\AdvancedSessions\Source\AdvancedSessions\Classes\AdvancedExternalUILibrary.h">
+    <ClCompile Include="..\..\Plugins\AdvancedSessions\Source\AdvancedSessions\Classes\AdvancedExternalUILibrary.h">
       <Filter>Plugins\AdvancedSessions\Source\AdvancedSessions\Classes</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Plugins\AdvancedSessions\Source\AdvancedSessions\Classes\AdvancedFriendsGameInstance.h">
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\AdvancedSessions\Source\AdvancedSessions\Classes\AdvancedFriendsGameInstance.h">
       <Filter>Plugins\AdvancedSessions\Source\AdvancedSessions\Classes</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Plugins\AdvancedSessions\Source\AdvancedSessions\Classes\AdvancedFriendsInterface.h">
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\AdvancedSessions\Source\AdvancedSessions\Classes\AdvancedFriendsInterface.h">
       <Filter>Plugins\AdvancedSessions\Source\AdvancedSessions\Classes</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Plugins\AdvancedSessions\Source\AdvancedSessions\Classes\AdvancedFriendsLibrary.h">
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\AdvancedSessions\Source\AdvancedSessions\Classes\AdvancedFriendsLibrary.h">
       <Filter>Plugins\AdvancedSessions\Source\AdvancedSessions\Classes</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Plugins\AdvancedSessions\Source\AdvancedSessions\Classes\AdvancedGameSession.h">
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\AdvancedSessions\Source\AdvancedSessions\Classes\AdvancedGameSession.h">
       <Filter>Plugins\AdvancedSessions\Source\AdvancedSessions\Classes</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Plugins\AdvancedSessions\Source\AdvancedSessions\Classes\AdvancedIdentityLibrary.h">
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\AdvancedSessions\Source\AdvancedSessions\Classes\AdvancedIdentityLibrary.h">
       <Filter>Plugins\AdvancedSessions\Source\AdvancedSessions\Classes</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Plugins\AdvancedSessions\Source\AdvancedSessions\Classes\AdvancedSessions.h">
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\AdvancedSessions\Source\AdvancedSessions\Classes\AdvancedSessions.h">
       <Filter>Plugins\AdvancedSessions\Source\AdvancedSessions\Classes</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Plugins\AdvancedSessions\Source\AdvancedSessions\Classes\AdvancedSessionsLibrary.h">
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\AdvancedSessions\Source\AdvancedSessions\Classes\AdvancedSessionsLibrary.h">
       <Filter>Plugins\AdvancedSessions\Source\AdvancedSessions\Classes</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Plugins\AdvancedSessions\Source\AdvancedSessions\Classes\AdvancedVoiceLibrary.h">
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\AdvancedSessions\Source\AdvancedSessions\Classes\AdvancedVoiceLibrary.h">
       <Filter>Plugins\AdvancedSessions\Source\AdvancedSessions\Classes</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Plugins\AdvancedSessions\Source\AdvancedSessions\Classes\AutoLoginUserCallbackProxy.h">
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\AdvancedSessions\Source\AdvancedSessions\Classes\AutoLoginUserCallbackProxy.h">
       <Filter>Plugins\AdvancedSessions\Source\AdvancedSessions\Classes</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Plugins\AdvancedSessions\Source\AdvancedSessions\Classes\BlueprintDataDefinitions.h">
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\AdvancedSessions\Source\AdvancedSessions\Classes\BlueprintDataDefinitions.h">
       <Filter>Plugins\AdvancedSessions\Source\AdvancedSessions\Classes</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Plugins\AdvancedSessions\Source\AdvancedSessions\Classes\CancelFindSessionsCallbackProxy.h">
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\AdvancedSessions\Source\AdvancedSessions\Classes\CancelFindSessionsCallbackProxy.h">
       <Filter>Plugins\AdvancedSessions\Source\AdvancedSessions\Classes</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Plugins\AdvancedSessions\Source\AdvancedSessions\Classes\CreateSessionCallbackProxyAdvanced.h">
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\AdvancedSessions\Source\AdvancedSessions\Classes\CreateSessionCallbackProxyAdvanced.h">
       <Filter>Plugins\AdvancedSessions\Source\AdvancedSessions\Classes</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Plugins\AdvancedSessions\Source\AdvancedSessions\Classes\EndSessionCallbackProxy.h">
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\AdvancedSessions\Source\AdvancedSessions\Classes\EndSessionCallbackProxy.h">
       <Filter>Plugins\AdvancedSessions\Source\AdvancedSessions\Classes</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Plugins\AdvancedSessions\Source\AdvancedSessions\Classes\FindFriendSessionCallbackProxy.h">
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\AdvancedSessions\Source\AdvancedSessions\Classes\FindFriendSessionCallbackProxy.h">
       <Filter>Plugins\AdvancedSessions\Source\AdvancedSessions\Classes</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Plugins\AdvancedSessions\Source\AdvancedSessions\Classes\FindSessionsCallbackProxyAdvanced.h">
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\AdvancedSessions\Source\AdvancedSessions\Classes\FindSessionsCallbackProxyAdvanced.h">
       <Filter>Plugins\AdvancedSessions\Source\AdvancedSessions\Classes</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Plugins\AdvancedSessions\Source\AdvancedSessions\Classes\GetFriendsCallbackProxy.h">
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\AdvancedSessions\Source\AdvancedSessions\Classes\GetFriendsCallbackProxy.h">
       <Filter>Plugins\AdvancedSessions\Source\AdvancedSessions\Classes</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Plugins\AdvancedSessions\Source\AdvancedSessions\Classes\GetRecentPlayersCallbackProxy.h">
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\AdvancedSessions\Source\AdvancedSessions\Classes\GetRecentPlayersCallbackProxy.h">
       <Filter>Plugins\AdvancedSessions\Source\AdvancedSessions\Classes</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Plugins\AdvancedSessions\Source\AdvancedSessions\Classes\GetUserPrivilegeCallbackProxy.h">
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\AdvancedSessions\Source\AdvancedSessions\Classes\GetUserPrivilegeCallbackProxy.h">
       <Filter>Plugins\AdvancedSessions\Source\AdvancedSessions\Classes</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Plugins\AdvancedSessions\Source\AdvancedSessions\Classes\LoginUserCallbackProxy.h">
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\AdvancedSessions\Source\AdvancedSessions\Classes\LoginUserCallbackProxy.h">
       <Filter>Plugins\AdvancedSessions\Source\AdvancedSessions\Classes</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Plugins\AdvancedSessions\Source\AdvancedSessions\Classes\LogoutUserCallbackProxy.h">
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\AdvancedSessions\Source\AdvancedSessions\Classes\LogoutUserCallbackProxy.h">
       <Filter>Plugins\AdvancedSessions\Source\AdvancedSessions\Classes</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Plugins\AdvancedSessions\Source\AdvancedSessions\Classes\OnlineSubSystemHeader.h">
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\AdvancedSessions\Source\AdvancedSessions\Classes\OnlineSubSystemHeader.h">
       <Filter>Plugins\AdvancedSessions\Source\AdvancedSessions\Classes</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Plugins\AdvancedSessions\Source\AdvancedSessions\Classes\SendFriendInviteCallbackProxy.h">
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\AdvancedSessions\Source\AdvancedSessions\Classes\SendFriendInviteCallbackProxy.h">
       <Filter>Plugins\AdvancedSessions\Source\AdvancedSessions\Classes</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Plugins\AdvancedSessions\Source\AdvancedSessions\Classes\StartSessionCallbackProxyAdvanced.h">
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\AdvancedSessions\Source\AdvancedSessions\Classes\StartSessionCallbackProxyAdvanced.h">
       <Filter>Plugins\AdvancedSessions\Source\AdvancedSessions\Classes</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Plugins\AdvancedSessions\Source\AdvancedSessions\Classes\UpdateSessionCallbackProxyAdvanced.h">
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\AdvancedSessions\Source\AdvancedSessions\Classes\UpdateSessionCallbackProxyAdvanced.h">
       <Filter>Plugins\AdvancedSessions\Source\AdvancedSessions\Classes</Filter>
-    </ClInclude>
+    </ClCompile>
     <Filter Include="Plugins\AdvancedSessions\Source\AdvancedSessions\Private">
       <UniqueIdentifier>{A352E0BB-374F-32C5-964E-D78AA9200CC7}</UniqueIdentifier>
     </Filter>
@@ -229,6 +243,30 @@
     <None Include="..\..\Plugins\AdvancedSteamSessions\Resources\Icon128.png">
       <Filter>Plugins\AdvancedSteamSessions\Resources</Filter>
     </None>
+    <Filter Include="Plugins\BlueprintableOnlineBeacons">
+      <UniqueIdentifier>{436DA6A4-59F8-375C-8FD2-B1AF853BE91E}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\BlueprintableOnlineBeacons\BlueprintableOnlineBeacons.uplugin">
+      <Filter>Plugins\BlueprintableOnlineBeacons</Filter>
+    </None>
+    <Filter Include="Plugins\BlueprintableOnlineBeacons\Resources">
+      <UniqueIdentifier>{9AD555B4-324B-3E22-916F-3167D1583E3D}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\BlueprintableOnlineBeacons\Resources\Icon128.png">
+      <Filter>Plugins\BlueprintableOnlineBeacons\Resources</Filter>
+    </None>
+    <Filter Include="Plugins\MazeGenerator">
+      <UniqueIdentifier>{6E24395B-D0A4-3833-99CF-A08C18625760}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\MazeGenerator\MazeGenerator.uplugin">
+      <Filter>Plugins\MazeGenerator</Filter>
+    </None>
+    <Filter Include="Plugins\MazeGenerator\Resources">
+      <UniqueIdentifier>{00D26606-9B71-3BED-876E-C7694B2728B7}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\MazeGenerator\Resources\Icon128.png">
+      <Filter>Plugins\MazeGenerator\Resources</Filter>
+    </None>
     <Filter Include="Plugins\AdvancedSteamSessions\Source">
       <UniqueIdentifier>{D96B0581-0D1E-3EAD-A89C-A9EE4E8E7D00}</UniqueIdentifier>
     </Filter>
@@ -241,24 +279,24 @@
     <Filter Include="Plugins\AdvancedSteamSessions\Source\AdvancedSteamSessions\Classes">
       <UniqueIdentifier>{258A7927-0BE8-384F-801B-8DFB45E90123}</UniqueIdentifier>
     </Filter>
-    <ClInclude Include="..\..\Plugins\AdvancedSteamSessions\Source\AdvancedSteamSessions\Classes\AdvancedSteamFriendsLibrary.h">
+    <ClCompile Include="..\..\Plugins\AdvancedSteamSessions\Source\AdvancedSteamSessions\Classes\AdvancedSteamFriendsLibrary.h">
       <Filter>Plugins\AdvancedSteamSessions\Source\AdvancedSteamSessions\Classes</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Plugins\AdvancedSteamSessions\Source\AdvancedSteamSessions\Classes\AdvancedSteamSessions.h">
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\AdvancedSteamSessions\Source\AdvancedSteamSessions\Classes\AdvancedSteamSessions.h">
       <Filter>Plugins\AdvancedSteamSessions\Source\AdvancedSteamSessions\Classes</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Plugins\AdvancedSteamSessions\Source\AdvancedSteamSessions\Classes\AdvancedSteamWorkshopLibrary.h">
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\AdvancedSteamSessions\Source\AdvancedSteamSessions\Classes\AdvancedSteamWorkshopLibrary.h">
       <Filter>Plugins\AdvancedSteamSessions\Source\AdvancedSteamSessions\Classes</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Plugins\AdvancedSteamSessions\Source\AdvancedSteamSessions\Classes\SteamNotificationsSubsystem.h">
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\AdvancedSteamSessions\Source\AdvancedSteamSessions\Classes\SteamNotificationsSubsystem.h">
       <Filter>Plugins\AdvancedSteamSessions\Source\AdvancedSteamSessions\Classes</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Plugins\AdvancedSteamSessions\Source\AdvancedSteamSessions\Classes\SteamRequestGroupOfficersCallbackProxy.h">
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\AdvancedSteamSessions\Source\AdvancedSteamSessions\Classes\SteamRequestGroupOfficersCallbackProxy.h">
       <Filter>Plugins\AdvancedSteamSessions\Source\AdvancedSteamSessions\Classes</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Plugins\AdvancedSteamSessions\Source\AdvancedSteamSessions\Classes\SteamWSRequestUGCDetailsCallbackProxy.h">
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\AdvancedSteamSessions\Source\AdvancedSteamSessions\Classes\SteamWSRequestUGCDetailsCallbackProxy.h">
       <Filter>Plugins\AdvancedSteamSessions\Source\AdvancedSteamSessions\Classes</Filter>
-    </ClInclude>
+    </ClCompile>
     <Filter Include="Plugins\AdvancedSteamSessions\Source\AdvancedSteamSessions\Private">
       <UniqueIdentifier>{0597C23D-6485-3B4D-9707-FF52278B2B71}</UniqueIdentifier>
     </Filter>
@@ -277,6 +315,144 @@
     <ClCompile Include="..\..\Plugins\AdvancedSteamSessions\Source\AdvancedSteamSessions\Private\SteamWSRequestUGCDetailsCallbackProxy.cpp">
       <Filter>Plugins\AdvancedSteamSessions\Source\AdvancedSteamSessions\Private</Filter>
     </ClCompile>
+    <Filter Include="Plugins\BlueprintableOnlineBeacons\Source">
+      <UniqueIdentifier>{A6CB3330-684E-33AE-84BF-25D9A899EA3F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugins\BlueprintableOnlineBeacons\Source\BlueprintableOnlineBeacons">
+      <UniqueIdentifier>{D8450340-7950-3BC0-B178-7847D5DC2E9A}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\BlueprintableOnlineBeacons\Source\BlueprintableOnlineBeacons\BlueprintableOnlineBeacons.Build.cs">
+      <Filter>Plugins\BlueprintableOnlineBeacons\Source\BlueprintableOnlineBeacons</Filter>
+    </None>
+    <Filter Include="Plugins\BlueprintableOnlineBeacons\Source\BlueprintableOnlineBeacons\Private">
+      <UniqueIdentifier>{D106E1CF-1168-3A73-BDAF-C6CABCCB3445}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Plugins\BlueprintableOnlineBeacons\Source\BlueprintableOnlineBeacons\Private\BlueprintableOnlineBeacons.cpp">
+      <Filter>Plugins\BlueprintableOnlineBeacons\Source\BlueprintableOnlineBeacons\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\BlueprintableOnlineBeacons\Source\BlueprintableOnlineBeacons\Private\OnlineBeaconBlueprint.cpp">
+      <Filter>Plugins\BlueprintableOnlineBeacons\Source\BlueprintableOnlineBeacons\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\BlueprintableOnlineBeacons\Source\BlueprintableOnlineBeacons\Private\OnlineBeaconConnectProxy.cpp">
+      <Filter>Plugins\BlueprintableOnlineBeacons\Source\BlueprintableOnlineBeacons\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\BlueprintableOnlineBeacons\Source\BlueprintableOnlineBeacons\Private\OnlineBeaconHostDynamic.cpp">
+      <Filter>Plugins\BlueprintableOnlineBeacons\Source\BlueprintableOnlineBeacons\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\BlueprintableOnlineBeacons\Source\BlueprintableOnlineBeacons\Private\OnlineBeaconHostObjectDynamic.cpp">
+      <Filter>Plugins\BlueprintableOnlineBeacons\Source\BlueprintableOnlineBeacons\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\BlueprintableOnlineBeacons\Source\BlueprintableOnlineBeacons\Private\OnlineBeaconsSettings.cpp">
+      <Filter>Plugins\BlueprintableOnlineBeacons\Source\BlueprintableOnlineBeacons\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\BlueprintableOnlineBeacons\Source\BlueprintableOnlineBeacons\Private\OnlineBeaconSubsystem.cpp">
+      <Filter>Plugins\BlueprintableOnlineBeacons\Source\BlueprintableOnlineBeacons\Private</Filter>
+    </ClCompile>
+    <Filter Include="Plugins\BlueprintableOnlineBeacons\Source\BlueprintableOnlineBeacons\Public">
+      <UniqueIdentifier>{BA7D95F2-5465-3606-9C08-5E51D6F7EF8B}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Plugins\BlueprintableOnlineBeacons\Source\BlueprintableOnlineBeacons\Public\BlueprintableOnlineBeacons.h">
+      <Filter>Plugins\BlueprintableOnlineBeacons\Source\BlueprintableOnlineBeacons\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\BlueprintableOnlineBeacons\Source\BlueprintableOnlineBeacons\Public\OnlineBeaconBlueprint.h">
+      <Filter>Plugins\BlueprintableOnlineBeacons\Source\BlueprintableOnlineBeacons\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\BlueprintableOnlineBeacons\Source\BlueprintableOnlineBeacons\Public\OnlineBeaconConnectProxy.h">
+      <Filter>Plugins\BlueprintableOnlineBeacons\Source\BlueprintableOnlineBeacons\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\BlueprintableOnlineBeacons\Source\BlueprintableOnlineBeacons\Public\OnlineBeaconHostDynamic.h">
+      <Filter>Plugins\BlueprintableOnlineBeacons\Source\BlueprintableOnlineBeacons\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\BlueprintableOnlineBeacons\Source\BlueprintableOnlineBeacons\Public\OnlineBeaconHostObjectDynamic.h">
+      <Filter>Plugins\BlueprintableOnlineBeacons\Source\BlueprintableOnlineBeacons\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\BlueprintableOnlineBeacons\Source\BlueprintableOnlineBeacons\Public\OnlineBeaconsSettings.h">
+      <Filter>Plugins\BlueprintableOnlineBeacons\Source\BlueprintableOnlineBeacons\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\BlueprintableOnlineBeacons\Source\BlueprintableOnlineBeacons\Public\OnlineBeaconSubsystem.h">
+      <Filter>Plugins\BlueprintableOnlineBeacons\Source\BlueprintableOnlineBeacons\Public</Filter>
+    </ClCompile>
+    <Filter Include="Plugins\MazeGenerator\Source">
+      <UniqueIdentifier>{99857C39-D898-3721-966E-550EA69DD296}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugins\MazeGenerator\Source\MazeGenerator">
+      <UniqueIdentifier>{0F34B7A1-85DD-35B7-8CC4-A006BBF2C95E}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\MazeGenerator\Source\MazeGenerator\MazeGenerator.Build.cs">
+      <Filter>Plugins\MazeGenerator\Source\MazeGenerator</Filter>
+    </None>
+    <Filter Include="Plugins\MazeGenerator\Source\MazeGenerator\Private">
+      <UniqueIdentifier>{CC6FA980-079F-36C0-ACA2-2142D0199E5B}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Plugins\MazeGenerator\Source\MazeGenerator\Private\Maze.cpp">
+      <Filter>Plugins\MazeGenerator\Source\MazeGenerator\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\MazeGenerator\Source\MazeGenerator\Private\MazeGenerator.cpp">
+      <Filter>Plugins\MazeGenerator\Source\MazeGenerator\Private</Filter>
+    </ClCompile>
+    <Filter Include="Plugins\MazeGenerator\Source\MazeGenerator\Private\Algorithms">
+      <UniqueIdentifier>{C7B98535-690E-3713-9356-07DAA96CFF28}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Plugins\MazeGenerator\Source\MazeGenerator\Private\Algorithms\Algorithm.cpp">
+      <Filter>Plugins\MazeGenerator\Source\MazeGenerator\Private\Algorithms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\MazeGenerator\Source\MazeGenerator\Private\Algorithms\Algorithm.h">
+      <Filter>Plugins\MazeGenerator\Source\MazeGenerator\Private\Algorithms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\MazeGenerator\Source\MazeGenerator\Private\Algorithms\Backtracker.cpp">
+      <Filter>Plugins\MazeGenerator\Source\MazeGenerator\Private\Algorithms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\MazeGenerator\Source\MazeGenerator\Private\Algorithms\Backtracker.h">
+      <Filter>Plugins\MazeGenerator\Source\MazeGenerator\Private\Algorithms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\MazeGenerator\Source\MazeGenerator\Private\Algorithms\Division.cpp">
+      <Filter>Plugins\MazeGenerator\Source\MazeGenerator\Private\Algorithms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\MazeGenerator\Source\MazeGenerator\Private\Algorithms\Division.h">
+      <Filter>Plugins\MazeGenerator\Source\MazeGenerator\Private\Algorithms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\MazeGenerator\Source\MazeGenerator\Private\Algorithms\Eller.cpp">
+      <Filter>Plugins\MazeGenerator\Source\MazeGenerator\Private\Algorithms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\MazeGenerator\Source\MazeGenerator\Private\Algorithms\Eller.h">
+      <Filter>Plugins\MazeGenerator\Source\MazeGenerator\Private\Algorithms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\MazeGenerator\Source\MazeGenerator\Private\Algorithms\HaK.cpp">
+      <Filter>Plugins\MazeGenerator\Source\MazeGenerator\Private\Algorithms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\MazeGenerator\Source\MazeGenerator\Private\Algorithms\HaK.h">
+      <Filter>Plugins\MazeGenerator\Source\MazeGenerator\Private\Algorithms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\MazeGenerator\Source\MazeGenerator\Private\Algorithms\Kruskal.cpp">
+      <Filter>Plugins\MazeGenerator\Source\MazeGenerator\Private\Algorithms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\MazeGenerator\Source\MazeGenerator\Private\Algorithms\Kruskal.h">
+      <Filter>Plugins\MazeGenerator\Source\MazeGenerator\Private\Algorithms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\MazeGenerator\Source\MazeGenerator\Private\Algorithms\Prim.cpp">
+      <Filter>Plugins\MazeGenerator\Source\MazeGenerator\Private\Algorithms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\MazeGenerator\Source\MazeGenerator\Private\Algorithms\Prim.h">
+      <Filter>Plugins\MazeGenerator\Source\MazeGenerator\Private\Algorithms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\MazeGenerator\Source\MazeGenerator\Private\Algorithms\Sidewinder.cpp">
+      <Filter>Plugins\MazeGenerator\Source\MazeGenerator\Private\Algorithms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\MazeGenerator\Source\MazeGenerator\Private\Algorithms\Sidewinder.h">
+      <Filter>Plugins\MazeGenerator\Source\MazeGenerator\Private\Algorithms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\MazeGenerator\Source\MazeGenerator\Private\Algorithms\Utils.h">
+      <Filter>Plugins\MazeGenerator\Source\MazeGenerator\Private\Algorithms</Filter>
+    </ClCompile>
+    <Filter Include="Plugins\MazeGenerator\Source\MazeGenerator\Public">
+      <UniqueIdentifier>{710D434A-C691-34C7-9196-B2F952DA6834}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Plugins\MazeGenerator\Source\MazeGenerator\Public\Maze.h">
+      <Filter>Plugins\MazeGenerator\Source\MazeGenerator\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\MazeGenerator\Source\MazeGenerator\Public\MazeGenerator.h">
+      <Filter>Plugins\MazeGenerator\Source\MazeGenerator\Public</Filter>
+    </ClCompile>
     <Filter Include="Source\BigMaze_Alpha_0">
       <UniqueIdentifier>{07C24C6A-8A16-3A3F-8015-80243E0B64B8}</UniqueIdentifier>
     </Filter>
@@ -286,14 +462,20 @@
     <ClCompile Include="..\..\Source\BigMaze_Alpha_0\BigMaze_Alpha_0.cpp">
       <Filter>Source\BigMaze_Alpha_0</Filter>
     </ClCompile>
-    <ClInclude Include="..\..\Source\BigMaze_Alpha_0\BigMaze_Alpha_0.h">
+    <ClCompile Include="..\..\Source\BigMaze_Alpha_0\BigMaze_Alpha_0.h">
       <Filter>Source\BigMaze_Alpha_0</Filter>
-    </ClInclude>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\BigMaze_Alpha_0\ItemSystem.cpp">
+      <Filter>Source\BigMaze_Alpha_0</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\BigMaze_Alpha_0\ItemSystem.h">
+      <Filter>Source\BigMaze_Alpha_0</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\BigMaze_Alpha_0\MyClass.cpp">
       <Filter>Source\BigMaze_Alpha_0</Filter>
     </ClCompile>
-    <ClInclude Include="..\..\Source\BigMaze_Alpha_0\MyClass.h">
+    <ClCompile Include="..\..\Source\BigMaze_Alpha_0\MyClass.h">
       <Filter>Source\BigMaze_Alpha_0</Filter>
-    </ClInclude>
+    </ClCompile>
   </ItemGroup>
 </Project>

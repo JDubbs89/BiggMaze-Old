@@ -1,0 +1,22 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.BlueprintableOnlineBeacons.cpp.obj": [
+			"BlueprintableOnlineBeacons.cpp.obj",
+			"OnlineBeaconBlueprint.cpp.obj",
+			"OnlineBeaconConnectProxy.cpp.obj",
+			"OnlineBeaconHostDynamic.cpp.obj",
+			"OnlineBeaconHostObjectDynamic.cpp.obj",
+			"OnlineBeaconsSettings.cpp.obj",
+			"OnlineBeaconSubsystem.cpp.obj",
+			"BlueprintableOnlineBeacons.init.gen.cpp.obj",
+			"OnlineBeaconBlueprint.gen.cpp.obj",
+			"OnlineBeaconConnectProxy.gen.cpp.obj",
+			"OnlineBeaconHostDynamic.gen.cpp.obj",
+			"OnlineBeaconHostObjectDynamic.gen.cpp.obj",
+			"OnlineBeaconsSettings.gen.cpp.obj",
+			"OnlineBeaconSubsystem.gen.cpp.obj",
+			"PerModuleInline.gen.cpp.obj"
+		]
+	}
+}
