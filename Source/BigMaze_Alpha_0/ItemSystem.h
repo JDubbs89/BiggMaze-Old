@@ -83,6 +83,12 @@ public:
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Item")
     FString Description;
 
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Item")
+    TSoftObjectPtr<USkeletalMesh> SkeletalMesh;
+
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Item")
+    TSoftObjectPtr<UTexture2D> Icon;
+
     // Value of the Item
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Item")
     float Value;
@@ -94,6 +100,12 @@ public:
     // Maximum Stack Size Allowed
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Item")
     int MaxStack;
+
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Item")
+    float Weight;
+
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Item")
+    int StackWeight;
 
     // List of Attributes for the Item
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Item")
@@ -108,7 +120,7 @@ public:
 
     // Default Constructor
     FItem()
-        : Id(0), Name(TEXT("")), Description(TEXT("")), Value(0.0f), Stack(0), MaxStack(1), Class(nullptr)
+        : Id(0), Name(TEXT("null")), Description(TEXT("null")), SkeletalMesh(nullptr), Icon(nullptr), Value(0.0f), Stack(1), MaxStack(1), Weight(1.0), StackWeight(1), Class(nullptr)
     {
     }
 };
@@ -122,13 +134,6 @@ class AItemFunctionalityBase : public AActor
     GENERATED_BODY()
 
 public:
-    /** Variable to set the icon texture of an item to be displayed in widgets. */
-    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Item Defaults")
-    UTexture2D *Icon;
-
-    /** Variable to set the skeletal mesh of an item for in world display. */
-    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Item Defaults")
-    USkeletalMesh *SkeletalMesh;
 
     /** Variable to give an item default values to pull from. */
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Item Defaults")
@@ -154,9 +159,4 @@ public:
     UFUNCTION(BlueprintNativeEvent, BlueprintCallable, Category = "Item Functionality")
     void OnSwapItem(const FItem &Item, bool SwapTo);
 
-    // Constructor
-    AItemFunctionalityBase()
-        : Icon(nullptr), SkeletalMesh(nullptr)
-    {
-    }
 };
