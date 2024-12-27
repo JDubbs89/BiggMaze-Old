@@ -66,7 +66,7 @@ public:
  * FItem - A structure to represent an item with various properties and attributes.
  */
 USTRUCT(BlueprintType)
-struct FItem
+struct FItem /** : public FTableRowBase // Required for Data Table Compatibility*/
 {
     GENERATED_BODY()
 
@@ -82,6 +82,9 @@ public:
     // Description of the Item
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Item")
     FString Description;
+
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Item")
+    int Level;
 
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Item")
     TSoftObjectPtr<USkeletalMesh> SkeletalMesh;
@@ -112,15 +115,17 @@ public:
     TArray<FItemAttribute> Attributes;
 
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Item")
-    TArray<TSoftObjectPtr<AItemFunctionalityBase>> Parts;
+    TArray<TSubclassOf<AItemFunctionalityBase>> Parts;
 
     // Associated Functionality Class (AItemFunctionalityBase)
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Item")
-    TSoftObjectPtr<AItemFunctionalityBase> Class;
+    TSubclassOf<AItemFunctionalityBase> Class;
 
     // Default Constructor
     FItem()
-        : Id(0), Name(TEXT("null")), Description(TEXT("null")), SkeletalMesh(nullptr), Icon(nullptr), Value(0.0f), Stack(1), MaxStack(1), Weight(1.0), StackWeight(1), Class(nullptr)
+        : Id(0), Name(TEXT("null")), Description(TEXT("null")), Level(1)
+        , SkeletalMesh(nullptr), Icon(nullptr), Value(0.0f), Stack(1)
+        , MaxStack(1), Weight(1.0), StackWeight(1), Class(nullptr)
     {
     }
 };
