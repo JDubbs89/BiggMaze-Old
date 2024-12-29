@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jonat\\OneDrive\\Documents\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\Intermediate\\Build\\BuildRulesProjects\\BigMaze_Alpha_0ModuleRules\\BigMaze_Alpha_0ModuleRules.csproj": {}
+    "C:\\Unreal Projects\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\Intermediate\\Build\\BuildRulesProjects\\BigMaze_Alpha_0ModuleRules\\BigMaze_Alpha_0ModuleRules.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jonat\\OneDrive\\Documents\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\Intermediate\\Build\\BuildRulesProjects\\BigMaze_Alpha_0ModuleRules\\BigMaze_Alpha_0ModuleRules.csproj": {
+    "C:\\Unreal Projects\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\Intermediate\\Build\\BuildRulesProjects\\BigMaze_Alpha_0ModuleRules\\BigMaze_Alpha_0ModuleRules.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jonat\\OneDrive\\Documents\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\Intermediate\\Build\\BuildRulesProjects\\BigMaze_Alpha_0ModuleRules\\BigMaze_Alpha_0ModuleRules.csproj",
+        "projectUniqueName": "C:\\Unreal Projects\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\Intermediate\\Build\\BuildRulesProjects\\BigMaze_Alpha_0ModuleRules\\BigMaze_Alpha_0ModuleRules.csproj",
         "projectName": "BigMaze_Alpha_0ModuleRules",
-        "projectPath": "C:\\Users\\jonat\\OneDrive\\Documents\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\Intermediate\\Build\\BuildRulesProjects\\BigMaze_Alpha_0ModuleRules\\BigMaze_Alpha_0ModuleRules.csproj",
-        "packagesPath": "C:\\Users\\jonat\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jonat\\OneDrive\\Documents\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\Intermediate\\Build\\BuildRulesProjects\\BigMaze_Alpha_0ModuleRules\\obj\\",
+        "projectPath": "C:\\Unreal Projects\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\Intermediate\\Build\\BuildRulesProjects\\BigMaze_Alpha_0ModuleRules\\BigMaze_Alpha_0ModuleRules.csproj",
+        "packagesPath": "C:\\Users\\Jonathan Warner\\.nuget\\packages\\",
+        "outputPath": "C:\\Unreal Projects\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\Intermediate\\Build\\BuildRulesProjects\\BigMaze_Alpha_0ModuleRules\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\jonat\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Jonathan Warner\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

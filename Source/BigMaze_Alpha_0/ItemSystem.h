@@ -2,6 +2,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "AbilitySystemComponent.h"
 #include "UObject/ObjectMacros.h"
 #include "Engine/DataAsset.h"
 #include "ItemSystem.generated.h"
@@ -68,7 +69,7 @@ public:
  * FItem - A structure to represent an item with various properties and attributes.
  */
 USTRUCT(BlueprintType)
-struct FItem /** : public FTableRowBase // Required for Data Table Compatibility*/
+struct FItem
 {
     GENERATED_BODY()
 

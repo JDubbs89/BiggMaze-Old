@@ -1,4 +1,5 @@
 /.git
+/.github
 /.vs
 /.vscode
 /Content
@@ -7,4 +8,7 @@
 /Saved
 /Plugins/AdvancedSessions/Intermediate
 /Plugins/AdvancedSteamSessions/Intermediate
-/Plugins/ClipboardFunctions/Intermediate
+/Plugins/BlueprintableOnlineBeacons/Content
+/Plugins/BlueprintableOnlineBeacons/Intermediate
+/Plugins/MazeGenerator/Content
+/Plugins/MazeGenerator/Intermediate
