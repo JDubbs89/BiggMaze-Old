@@ -22,6 +22,8 @@ enum class EItemActivationType : uint8
  */
 class AItemFunctionalityBase;
 
+class UItemDefault;
+
 /**
  * FItemAttribute - A structure to hold attributes for an item.
  */
@@ -115,7 +117,7 @@ public:
     TArray<FItemAttribute> Attributes;
 
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Item")
-    TArray<TSubclassOf<AItemFunctionalityBase>> Parts;
+    TArray<UItemDefault*> Parts;
 
     // Associated Functionality Class (AItemFunctionalityBase)
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Item")
@@ -163,5 +165,18 @@ public:
     /** Function called when the item is switched to or from */
     UFUNCTION(BlueprintNativeEvent, BlueprintCallable, Category = "Item Functionality")
     void OnSwapItem(const FItem &Item, bool SwapTo);
+
+};
+
+UCLASS(BlueprintType, Blueprintable)
+class UItemDefault : public UPrimaryDataAsset
+{
+    GENERATED_BODY()
+
+public:
+
+    /**Default Item Variable */
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Item")
+    FItem ItemDefault;
 
 };
