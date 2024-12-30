@@ -2,7 +2,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "AbilitySystemComponent.h"
+#include "Abilities/GameplayAbility.h"
 #include "UObject/ObjectMacros.h"
 #include "Engine/DataAsset.h"
 #include "ItemSystem.generated.h"
@@ -119,6 +119,9 @@ public:
 
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Item")
     TArray<UItemDefault*> Parts;
+
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Item")
+    TArray<TSubclassOf<UGameplayAbility>> GameplayAbilities;
 
     // Associated Functionality Class (AItemFunctionalityBase)
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Item")
