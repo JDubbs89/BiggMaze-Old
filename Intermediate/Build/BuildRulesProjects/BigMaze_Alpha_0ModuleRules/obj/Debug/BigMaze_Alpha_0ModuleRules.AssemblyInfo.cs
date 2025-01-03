@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BigMaze_Alpha_0ModuleRules")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+369fb548cdb162b285f0e4265b0a1ab18f7e33da")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e6653c707d940d7f0ca093aed829632338fff1b7")]
 [assembly: System.Reflection.AssemblyProductAttribute("BigMaze_Alpha_0ModuleRules")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BigMaze_Alpha_0ModuleRules")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
