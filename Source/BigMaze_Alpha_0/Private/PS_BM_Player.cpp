@@ -37,9 +37,6 @@ void APS_BM_Player::BeginPlay()
     {
         // Bind playerstate change handles to attribute value change delegates in the ASC
         
-        /** Damage */
-        AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(AttributeSet->GetDamageAttribute()).AddUObject(this, &APS_BM_Player::HandleDamageChanged);
-
         /** Health Attributes */
         // CurrentHealth
         AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(AttributeSet->GetCurrentHealthAttribute()).AddUObject(this, &APS_BM_Player::HandleCurrentHealthChanged);
@@ -64,13 +61,6 @@ void APS_BM_Player::InitializeAttributes()
 }
 
 // Handle changes to attributes and propagate them to UI
-
-/** Damage */
-void APS_BM_Player::HandleDamageChanged(const FOnAttributeChangeData &Data)
-{
-    // Trigger blueprint event with new damage value
-    OnDamageChanged(Data.NewValue, FGameplayTagContainer());
-}
 
 /** Health Attributes */
 void APS_BM_Player::HandleCurrentHealthChanged(const FOnAttributeChangeData &Data) // CurrentHealth

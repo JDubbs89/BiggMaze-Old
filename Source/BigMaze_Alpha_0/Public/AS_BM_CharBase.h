@@ -37,8 +37,9 @@ public:
 	virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
 
 	/** Damage */
-
-	UPROPERTY(BlueprintReadOnly, Category = "Damage", ReplicatedUsing = OnRep_Damage)
+	// Damage is a meta attribute used by the damage execution to calculate final damage
+	// This value only exists on the server
+	UPROPERTY(BlueprintReadOnly, Category = "Damage")
 	FGameplayAttributeData Damage;
 	ATTRIBUTE_ACCESSORS(UAS_BM_CharBase, Damage)
 
@@ -57,10 +58,6 @@ public:
 
 protected:
 	// RepNotifies
-
-	/** Damage */
-	UFUNCTION()
-	virtual void OnRep_Damage(const FGameplayAttributeData& OldDamage);
 
 	/** Health Attributes */
 	UFUNCTION() // Current Health

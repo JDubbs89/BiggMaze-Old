@@ -19,8 +19,7 @@ struct FGameplayAttributeData;
 #define FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_Public_AS_BM_CharBase_h_23_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execOnRep_RegenHealth); \
 	DECLARE_FUNCTION(execOnRep_MaxHealth); \
-	DECLARE_FUNCTION(execOnRep_CurrentHealth); \
-	DECLARE_FUNCTION(execOnRep_Damage);
+	DECLARE_FUNCTION(execOnRep_CurrentHealth);
 
 
 #define FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_Public_AS_BM_CharBase_h_23_INCLASS_NO_PURE_DECLS \
@@ -33,8 +32,7 @@ public: \
 	enum class ENetFields_Private : uint16 \
 	{ \
 		NETFIELD_REP_START=(uint16)((int32)Super::ENetFields_Private::NETFIELD_REP_END + (int32)1), \
-		Damage=NETFIELD_REP_START, \
-		CurrentHealth, \
+		CurrentHealth=NETFIELD_REP_START, \
 		MaxHealth, \
 		RegenHealth, \
 		NETFIELD_REP_END=RegenHealth	}; \

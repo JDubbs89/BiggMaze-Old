@@ -78,63 +78,6 @@ UFunction* Z_Construct_UFunction_APS_BM_Player_OnCurrentHealthChanged()
 }
 // End Class APS_BM_Player Function OnCurrentHealthChanged
 
-// Begin Class APS_BM_Player Function OnDamageChanged
-struct PS_BM_Player_eventOnDamageChanged_Parms
-{
-	float DeltaValue;
-	FGameplayTagContainer EventTags;
-};
-static const FName NAME_APS_BM_Player_OnDamageChanged = FName(TEXT("OnDamageChanged"));
-void APS_BM_Player::OnDamageChanged(float DeltaValue, FGameplayTagContainer const& EventTags)
-{
-	PS_BM_Player_eventOnDamageChanged_Parms Parms;
-	Parms.DeltaValue=DeltaValue;
-	Parms.EventTags=EventTags;
-	UFunction* Func = FindFunctionChecked(NAME_APS_BM_Player_OnDamageChanged);
-	ProcessEvent(Func,&Parms);
-}
-struct Z_Construct_UFunction_APS_BM_Player_OnDamageChanged_Statics
-{
-#if WITH_METADATA
-	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
-		{ "Category", "Damage" },
-#if !UE_BUILD_SHIPPING
-		{ "Comment", "/** Damage */" },
-#endif
-		{ "ModuleRelativePath", "Public/PS_BM_Player.h" },
-#if !UE_BUILD_SHIPPING
-		{ "ToolTip", "Damage" },
-#endif
-	};
-	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_EventTags_MetaData[] = {
-		{ "NativeConst", "" },
-	};
-#endif // WITH_METADATA
-	static const UECodeGen_Private::FFloatPropertyParams NewProp_DeltaValue;
-	static const UECodeGen_Private::FStructPropertyParams NewProp_EventTags;
-	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
-	static const UECodeGen_Private::FFunctionParams FuncParams;
-};
-const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_APS_BM_Player_OnDamageChanged_Statics::NewProp_DeltaValue = { "DeltaValue", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(PS_BM_Player_eventOnDamageChanged_Parms, DeltaValue), METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_APS_BM_Player_OnDamageChanged_Statics::NewProp_EventTags = { "EventTags", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(PS_BM_Player_eventOnDamageChanged_Parms, EventTags), Z_Construct_UScriptStruct_FGameplayTagContainer, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_EventTags_MetaData), NewProp_EventTags_MetaData) }; // 3352185621
-const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_APS_BM_Player_OnDamageChanged_Statics::PropPointers[] = {
-	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_APS_BM_Player_OnDamageChanged_Statics::NewProp_DeltaValue,
-	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_APS_BM_Player_OnDamageChanged_Statics::NewProp_EventTags,
-};
-static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_APS_BM_Player_OnDamageChanged_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_APS_BM_Player_OnDamageChanged_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_APS_BM_Player, nullptr, "OnDamageChanged", nullptr, nullptr, Z_Construct_UFunction_APS_BM_Player_OnDamageChanged_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_APS_BM_Player_OnDamageChanged_Statics::PropPointers), sizeof(PS_BM_Player_eventOnDamageChanged_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08420800, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_APS_BM_Player_OnDamageChanged_Statics::Function_MetaDataParams), Z_Construct_UFunction_APS_BM_Player_OnDamageChanged_Statics::Function_MetaDataParams) };
-static_assert(sizeof(PS_BM_Player_eventOnDamageChanged_Parms) < MAX_uint16);
-UFunction* Z_Construct_UFunction_APS_BM_Player_OnDamageChanged()
-{
-	static UFunction* ReturnFunction = nullptr;
-	if (!ReturnFunction)
-	{
-		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_APS_BM_Player_OnDamageChanged_Statics::FuncParams);
-	}
-	return ReturnFunction;
-}
-// End Class APS_BM_Player Function OnDamageChanged
-
 // Begin Class APS_BM_Player Function OnMaxHealthChanged
 struct PS_BM_Player_eventOnMaxHealthChanged_Parms
 {
@@ -301,7 +244,6 @@ struct Z_Construct_UClass_APS_BM_Player_Statics
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
 		{ &Z_Construct_UFunction_APS_BM_Player_OnCurrentHealthChanged, "OnCurrentHealthChanged" }, // 1074449395
-		{ &Z_Construct_UFunction_APS_BM_Player_OnDamageChanged, "OnDamageChanged" }, // 1800166487
 		{ &Z_Construct_UFunction_APS_BM_Player_OnMaxHealthChanged, "OnMaxHealthChanged" }, // 3741087320
 		{ &Z_Construct_UFunction_APS_BM_Player_OnRegenHealthChanged, "OnRegenHealthChanged" }, // 2015947058
 	};
@@ -371,10 +313,10 @@ APS_BM_Player::~APS_BM_Player() {}
 struct Z_CompiledInDeferFile_FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_Public_PS_BM_Player_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_APS_BM_Player, APS_BM_Player::StaticClass, TEXT("APS_BM_Player"), &Z_Registration_Info_UClass_APS_BM_Player, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(APS_BM_Player), 1539836638U) },
+		{ Z_Construct_UClass_APS_BM_Player, APS_BM_Player::StaticClass, TEXT("APS_BM_Player"), &Z_Registration_Info_UClass_APS_BM_Player, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(APS_BM_Player), 3709881944U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_Public_PS_BM_Player_h_2440564841(TEXT("/Script/BigMaze_Alpha_0"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_Public_PS_BM_Player_h_3864702832(TEXT("/Script/BigMaze_Alpha_0"),
 	Z_CompiledInDeferFile_FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_Public_PS_BM_Player_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_Public_PS_BM_Player_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

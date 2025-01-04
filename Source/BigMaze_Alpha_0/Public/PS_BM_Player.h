@@ -26,10 +26,6 @@ public:
 
 	// Functions to handle attribute changes and propagate those changes to UI
 	
-	/** Damage */
-	UFUNCTION(BlueprintImplementableEvent, Category = "Damage")
-	void OnDamageChanged(float DeltaValue, const FGameplayTagContainer& EventTags);
-
 	/** Health Attributes */
 	UFUNCTION(BlueprintImplementableEvent, Category = "Health") // CurrentHealth
 	void OnCurrentHealthChanged(float DeltaValue, const FGameplayTagContainer& EventTags);
@@ -53,9 +49,6 @@ protected:
 
 private:
 	// Functions to handle attribute changes
-
-	/** Damage */
-	void HandleDamageChanged(const FOnAttributeChangeData& Data);
 
 	/** Health Attributes */
 	void HandleCurrentHealthChanged(const FOnAttributeChangeData& Data); // CurrentHealth

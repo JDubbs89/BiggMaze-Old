@@ -26,12 +26,6 @@ UAS_BM_CharBase::UAS_BM_CharBase()
 
 // RepNotifies
 
-/** Damage */
-void UAS_BM_CharBase::OnRep_Damage(const FGameplayAttributeData& OldDamage)
-{
-    GAMEPLAYATTRIBUTE_REPNOTIFY(UAS_BM_CharBase, Damage, OldDamage);
-}
-
 /** Health Attributes */
 // Current health
 void UAS_BM_CharBase::OnRep_CurrentHealth(const FGameplayAttributeData& OldCurrentHealth)
@@ -66,15 +60,7 @@ void UAS_BM_CharBase::PostGameplayEffectExecute(const FGameplayEffectModCallback
 {
     Super::PostGameplayEffectExecute(Data); // Callback to parent function
 
-    if (Data.EvaluatedData.Attribute == GetDamageAttribute())
-    {
-        // Set Current Health to subtract damage values.
-        float NewHealth = GetCurrentHealth() - GetDamage();
-        SetCurrentHealth(NewHealth);
-        // Set Damage to 0 after gameplay effects have been executed.
-        SetDamage(0.f);
-    }
-    else if (Data.EvaluatedData.Attribute == GetCurrentHealthAttribute())
+    if (Data.EvaluatedData.Attribute == GetCurrentHealthAttribute())
     {
         float NewHealth = FMath::Clamp(CurrentHealth.GetCurrentValue(), 0.0f, MaxHealth.GetCurrentValue());
         SetCurrentHealth(NewHealth);
@@ -87,9 +73,6 @@ void UAS_BM_CharBase::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutL
     Super::GetLifetimeReplicatedProps(OutLifetimeProps);
 
     // Replicate Attributes to all clients.
-
-    /** Damage */
-    DOREPLIFETIME_CONDITION_NOTIFY(UAS_BM_CharBase, Damage, COND_None, REPNOTIFY_Always);
     
     /** Health Attributes */
     // CurrentHealth
