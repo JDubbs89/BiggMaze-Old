@@ -117,7 +117,8 @@ void APS_BM_Player::InitializeAttributes()
 // Handle changes to attributes and propagate them to UI
 
 /** Health Attributes */
-void APS_BM_Player::HandleCurrentHealthChanged(const FOnAttributeChangeData &Data) // CurrentHealth
+// CurrentHealth
+void APS_BM_Player::HandleCurrentHealthChanged(const FOnAttributeChangeData &Data)
 {
     // Set local variables from old and new values
     float NewValue = Data.NewValue;
@@ -129,8 +130,8 @@ void APS_BM_Player::HandleCurrentHealthChanged(const FOnAttributeChangeData &Dat
     // Trigger blueprint event to update UI
     OnCurrentHealthChanged(DeltaValue, FGameplayTagContainer());
 }
-
-void APS_BM_Player::HandleMaxHealthChanged(const FOnAttributeChangeData &Data) // MaxHealth
+// MaxHealth
+void APS_BM_Player::HandleMaxHealthChanged(const FOnAttributeChangeData &Data)
 {
     // Set local variables from old and new values
     float NewValue = Data.NewValue;
@@ -142,8 +143,8 @@ void APS_BM_Player::HandleMaxHealthChanged(const FOnAttributeChangeData &Data) /
     // Trigger blueprint event to update UI
     OnMaxHealthChanged(DeltaValue, FGameplayTagContainer());
 }
-
-void APS_BM_Player::HandleRegenHealthChanged(const FOnAttributeChangeData &Data) // RegenHealth
+// RegenHealth
+void APS_BM_Player::HandleRegenHealthChanged(const FOnAttributeChangeData &Data) 
 {
     // Set local variables from old and new values
     float NewValue = Data.NewValue;
