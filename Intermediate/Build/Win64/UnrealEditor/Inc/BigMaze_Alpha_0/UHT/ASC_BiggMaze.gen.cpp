@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "BigMaze_Alpha_0/Public/ASC_BiggMaze.h"
+#include "BigMaze_Alpha_0/Public/GASFramework/ASCs/ASC_BiggMaze.h"
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeASC_BiggMaze() {}
 
@@ -33,8 +33,8 @@ struct Z_Construct_UClass_UASC_BiggMaze_Statics
 		{ "Comment", "/**\n * \n */" },
 #endif
 		{ "HideCategories", "Object LOD Lighting Transform Sockets TextureStreaming Object LOD Lighting Transform Sockets TextureStreaming" },
-		{ "IncludePath", "ASC_BiggMaze.h" },
-		{ "ModuleRelativePath", "Public/ASC_BiggMaze.h" },
+		{ "IncludePath", "GASFramework/ASCs/ASC_BiggMaze.h" },
+		{ "ModuleRelativePath", "Public/GASFramework/ASCs/ASC_BiggMaze.h" },
 	};
 #endif // WITH_METADATA
 	static UObject* (*const DependentSingletons[])();
@@ -81,14 +81,14 @@ UASC_BiggMaze::~UASC_BiggMaze() {}
 // End Class UASC_BiggMaze
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_Public_ASC_BiggMaze_h_Statics
+struct Z_CompiledInDeferFile_FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_Public_GASFramework_ASCs_ASC_BiggMaze_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UASC_BiggMaze, UASC_BiggMaze::StaticClass, TEXT("UASC_BiggMaze"), &Z_Registration_Info_UClass_UASC_BiggMaze, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UASC_BiggMaze), 834689680U) },
+		{ Z_Construct_UClass_UASC_BiggMaze, UASC_BiggMaze::StaticClass, TEXT("UASC_BiggMaze"), &Z_Registration_Info_UClass_UASC_BiggMaze, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UASC_BiggMaze), 3389467312U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_Public_ASC_BiggMaze_h_796762460(TEXT("/Script/BigMaze_Alpha_0"),
-	Z_CompiledInDeferFile_FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_Public_ASC_BiggMaze_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_Public_ASC_BiggMaze_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_Public_GASFramework_ASCs_ASC_BiggMaze_h_332402404(TEXT("/Script/BigMaze_Alpha_0"),
+	Z_CompiledInDeferFile_FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_Public_GASFramework_ASCs_ASC_BiggMaze_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_Public_GASFramework_ASCs_ASC_BiggMaze_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

@@ -4,7 +4,7 @@
 	DO NOT modify this manually! Edit the corresponding .h files instead!
 ===========================================================================*/
 
-// IWYU pragma: private, include "ASC_BiggMaze.h"
+// IWYU pragma: private, include "GASFramework/ASCs/ASC_BiggMaze.h"
 #include "UObject/ObjectMacros.h"
 #include "UObject/ScriptMacros.h"
 
@@ -14,7 +14,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define BIGMAZE_ALPHA_0_ASC_BiggMaze_generated_h
 
-#define FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_Public_ASC_BiggMaze_h_15_INCLASS_NO_PURE_DECLS \
+#define FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_Public_GASFramework_ASCs_ASC_BiggMaze_h_18_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUASC_BiggMaze(); \
 	friend struct Z_Construct_UClass_UASC_BiggMaze_Statics; \
@@ -23,7 +23,7 @@ public: \
 	DECLARE_SERIALIZER(UASC_BiggMaze)
 
 
-#define FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_Public_ASC_BiggMaze_h_15_ENHANCED_CONSTRUCTORS \
+#define FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_Public_GASFramework_ASCs_ASC_BiggMaze_h_18_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UASC_BiggMaze(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 private: \
@@ -37,12 +37,12 @@ public: \
 	NO_API virtual ~UASC_BiggMaze();
 
 
-#define FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_Public_ASC_BiggMaze_h_12_PROLOG
-#define FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_Public_ASC_BiggMaze_h_15_GENERATED_BODY \
+#define FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_Public_GASFramework_ASCs_ASC_BiggMaze_h_15_PROLOG
+#define FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_Public_GASFramework_ASCs_ASC_BiggMaze_h_18_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_Public_ASC_BiggMaze_h_15_INCLASS_NO_PURE_DECLS \
-	FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_Public_ASC_BiggMaze_h_15_ENHANCED_CONSTRUCTORS \
+	FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_Public_GASFramework_ASCs_ASC_BiggMaze_h_18_INCLASS_NO_PURE_DECLS \
+	FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_Public_GASFramework_ASCs_ASC_BiggMaze_h_18_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -50,7 +50,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 template<> BIGMAZE_ALPHA_0_API UClass* StaticClass<class UASC_BiggMaze>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_Public_ASC_BiggMaze_h
+#define CURRENT_FILE_ID FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_Public_GASFramework_ASCs_ASC_BiggMaze_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

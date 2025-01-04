@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "BigMaze_Alpha_0/Public/AS_BM_CharBase.h"
+#include "BigMaze_Alpha_0/Public/GASFramework/AttributeSets/AS_BM_CharBase.h"
 #include "GameplayAbilities/Public/AttributeSet.h"
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeAS_BM_CharBase() {}
@@ -30,7 +30,7 @@ struct Z_Construct_UFunction_UAS_BM_CharBase_OnRep_CurrentHealth_Statics
 #if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Health Attributes */// Current Health\n" },
 #endif
-		{ "ModuleRelativePath", "Public/AS_BM_CharBase.h" },
+		{ "ModuleRelativePath", "Public/GASFramework/AttributeSets/AS_BM_CharBase.h" },
 #if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Health Attributes // Current Health" },
 #endif
@@ -81,7 +81,7 @@ struct Z_Construct_UFunction_UAS_BM_CharBase_OnRep_MaxHealth_Statics
 #if !UE_BUILD_SHIPPING
 		{ "Comment", "// Max Health\n" },
 #endif
-		{ "ModuleRelativePath", "Public/AS_BM_CharBase.h" },
+		{ "ModuleRelativePath", "Public/GASFramework/AttributeSets/AS_BM_CharBase.h" },
 #if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Max Health" },
 #endif
@@ -132,7 +132,7 @@ struct Z_Construct_UFunction_UAS_BM_CharBase_OnRep_RegenHealth_Statics
 #if !UE_BUILD_SHIPPING
 		{ "Comment", "// Regen Health\n" },
 #endif
-		{ "ModuleRelativePath", "Public/AS_BM_CharBase.h" },
+		{ "ModuleRelativePath", "Public/GASFramework/AttributeSets/AS_BM_CharBase.h" },
 #if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Regen Health" },
 #endif
@@ -194,15 +194,15 @@ struct Z_Construct_UClass_UAS_BM_CharBase_Statics
 #if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * \n */" },
 #endif
-		{ "IncludePath", "AS_BM_CharBase.h" },
-		{ "ModuleRelativePath", "Public/AS_BM_CharBase.h" },
+		{ "IncludePath", "GASFramework/AttributeSets/AS_BM_CharBase.h" },
+		{ "ModuleRelativePath", "Public/GASFramework/AttributeSets/AS_BM_CharBase.h" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Damage_MetaData[] = {
 		{ "Category", "Damage" },
 #if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Damage */// Damage is a meta attribute used by the damage execution to calculate final damage\n// This value only exists on the server\n" },
 #endif
-		{ "ModuleRelativePath", "Public/AS_BM_CharBase.h" },
+		{ "ModuleRelativePath", "Public/GASFramework/AttributeSets/AS_BM_CharBase.h" },
 #if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Damage // Damage is a meta attribute used by the damage execution to calculate final damage\n// This value only exists on the server" },
 #endif
@@ -212,18 +212,18 @@ struct Z_Construct_UClass_UAS_BM_CharBase_Statics
 #if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Health Attributes */" },
 #endif
-		{ "ModuleRelativePath", "Public/AS_BM_CharBase.h" },
+		{ "ModuleRelativePath", "Public/GASFramework/AttributeSets/AS_BM_CharBase.h" },
 #if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Health Attributes" },
 #endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_MaxHealth_MetaData[] = {
 		{ "Category", "Health" },
-		{ "ModuleRelativePath", "Public/AS_BM_CharBase.h" },
+		{ "ModuleRelativePath", "Public/GASFramework/AttributeSets/AS_BM_CharBase.h" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_RegenHealth_MetaData[] = {
 		{ "Category", "Health" },
-		{ "ModuleRelativePath", "Public/AS_BM_CharBase.h" },
+		{ "ModuleRelativePath", "Public/GASFramework/AttributeSets/AS_BM_CharBase.h" },
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FStructPropertyParams NewProp_Damage;
@@ -233,9 +233,9 @@ struct Z_Construct_UClass_UAS_BM_CharBase_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UAS_BM_CharBase_OnRep_CurrentHealth, "OnRep_CurrentHealth" }, // 4168210381
-		{ &Z_Construct_UFunction_UAS_BM_CharBase_OnRep_MaxHealth, "OnRep_MaxHealth" }, // 3099157536
-		{ &Z_Construct_UFunction_UAS_BM_CharBase_OnRep_RegenHealth, "OnRep_RegenHealth" }, // 1692862268
+		{ &Z_Construct_UFunction_UAS_BM_CharBase_OnRep_CurrentHealth, "OnRep_CurrentHealth" }, // 870166351
+		{ &Z_Construct_UFunction_UAS_BM_CharBase_OnRep_MaxHealth, "OnRep_MaxHealth" }, // 1995616932
+		{ &Z_Construct_UFunction_UAS_BM_CharBase_OnRep_RegenHealth, "OnRep_RegenHealth" }, // 1063913235
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -302,14 +302,14 @@ UAS_BM_CharBase::~UAS_BM_CharBase() {}
 // End Class UAS_BM_CharBase
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_Public_AS_BM_CharBase_h_Statics
+struct Z_CompiledInDeferFile_FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_Public_GASFramework_AttributeSets_AS_BM_CharBase_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UAS_BM_CharBase, UAS_BM_CharBase::StaticClass, TEXT("UAS_BM_CharBase"), &Z_Registration_Info_UClass_UAS_BM_CharBase, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UAS_BM_CharBase), 1447512704U) },
+		{ Z_Construct_UClass_UAS_BM_CharBase, UAS_BM_CharBase::StaticClass, TEXT("UAS_BM_CharBase"), &Z_Registration_Info_UClass_UAS_BM_CharBase, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UAS_BM_CharBase), 1713343427U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_Public_AS_BM_CharBase_h_4023750082(TEXT("/Script/BigMaze_Alpha_0"),
-	Z_CompiledInDeferFile_FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_Public_AS_BM_CharBase_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_Public_AS_BM_CharBase_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_Public_GASFramework_AttributeSets_AS_BM_CharBase_h_264304707(TEXT("/Script/BigMaze_Alpha_0"),
+	Z_CompiledInDeferFile_FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_Public_GASFramework_AttributeSets_AS_BM_CharBase_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_Public_GASFramework_AttributeSets_AS_BM_CharBase_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

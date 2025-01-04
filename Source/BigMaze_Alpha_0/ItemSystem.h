@@ -121,7 +121,7 @@ public:
     TArray<UItemDefault*> Parts;
 
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Item")
-    TArray<TSubclassOf<UGameplayAbility>> GameplayAbilities;
+    TArray<UGameplayAbility*> GameplayAbilities;
 
     // Associated Functionality Class (AItemFunctionalityBase)
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Item")

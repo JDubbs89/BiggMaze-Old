@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "BigMaze_Alpha_0/Public/PS_BM_Player.h"
+#include "BigMaze_Alpha_0/Public/GASFramework/Player/PS_BM_Player.h"
 #include "Runtime/GameplayTags/Classes/GameplayTagContainer.h"
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodePS_BM_Player() {}
@@ -44,7 +44,7 @@ struct Z_Construct_UFunction_APS_BM_Player_OnCurrentHealthChanged_Statics
 #if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Health Attributes */// CurrentHealth\n" },
 #endif
-		{ "ModuleRelativePath", "Public/PS_BM_Player.h" },
+		{ "ModuleRelativePath", "Public/GASFramework/Player/PS_BM_Player.h" },
 #if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Health Attributes // CurrentHealth" },
 #endif
@@ -101,7 +101,7 @@ struct Z_Construct_UFunction_APS_BM_Player_OnMaxHealthChanged_Statics
 #if !UE_BUILD_SHIPPING
 		{ "Comment", "// MaxHealth\n" },
 #endif
-		{ "ModuleRelativePath", "Public/PS_BM_Player.h" },
+		{ "ModuleRelativePath", "Public/GASFramework/Player/PS_BM_Player.h" },
 #if !UE_BUILD_SHIPPING
 		{ "ToolTip", "MaxHealth" },
 #endif
@@ -158,7 +158,7 @@ struct Z_Construct_UFunction_APS_BM_Player_OnRegenHealthChanged_Statics
 #if !UE_BUILD_SHIPPING
 		{ "Comment", "// RegenHealth\n" },
 #endif
-		{ "ModuleRelativePath", "Public/PS_BM_Player.h" },
+		{ "ModuleRelativePath", "Public/GASFramework/Player/PS_BM_Player.h" },
 #if !UE_BUILD_SHIPPING
 		{ "ToolTip", "RegenHealth" },
 #endif
@@ -209,8 +209,8 @@ struct Z_Construct_UClass_APS_BM_Player_Statics
 		{ "Comment", "/**\n * \n */" },
 #endif
 		{ "HideCategories", "Input Movement Collision Rendering HLOD WorldPartition DataLayers Transformation" },
-		{ "IncludePath", "PS_BM_Player.h" },
-		{ "ModuleRelativePath", "Public/PS_BM_Player.h" },
+		{ "IncludePath", "GASFramework/Player/PS_BM_Player.h" },
+		{ "ModuleRelativePath", "Public/GASFramework/Player/PS_BM_Player.h" },
 		{ "ShowCategories", "Input|MouseInput Input|TouchInput" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_AbilitySystemComponent_MetaData[] = {
@@ -220,7 +220,7 @@ struct Z_Construct_UClass_APS_BM_Player_Statics
 		{ "Comment", "// ASC\n" },
 #endif
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Public/PS_BM_Player.h" },
+		{ "ModuleRelativePath", "Public/GASFramework/Player/PS_BM_Player.h" },
 #if !UE_BUILD_SHIPPING
 		{ "ToolTip", "ASC" },
 #endif
@@ -232,7 +232,7 @@ struct Z_Construct_UClass_APS_BM_Player_Statics
 		{ "Comment", "// Attribute Set\n" },
 #endif
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Public/PS_BM_Player.h" },
+		{ "ModuleRelativePath", "Public/GASFramework/Player/PS_BM_Player.h" },
 #if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Attribute Set" },
 #endif
@@ -243,9 +243,9 @@ struct Z_Construct_UClass_APS_BM_Player_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_APS_BM_Player_OnCurrentHealthChanged, "OnCurrentHealthChanged" }, // 1074449395
-		{ &Z_Construct_UFunction_APS_BM_Player_OnMaxHealthChanged, "OnMaxHealthChanged" }, // 3741087320
-		{ &Z_Construct_UFunction_APS_BM_Player_OnRegenHealthChanged, "OnRegenHealthChanged" }, // 2015947058
+		{ &Z_Construct_UFunction_APS_BM_Player_OnCurrentHealthChanged, "OnCurrentHealthChanged" }, // 2406269892
+		{ &Z_Construct_UFunction_APS_BM_Player_OnMaxHealthChanged, "OnMaxHealthChanged" }, // 2349713711
+		{ &Z_Construct_UFunction_APS_BM_Player_OnRegenHealthChanged, "OnRegenHealthChanged" }, // 3470008681
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static const UECodeGen_Private::FImplementedInterfaceParams InterfaceParams[];
@@ -310,14 +310,14 @@ APS_BM_Player::~APS_BM_Player() {}
 // End Class APS_BM_Player
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_Public_PS_BM_Player_h_Statics
+struct Z_CompiledInDeferFile_FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_Public_GASFramework_Player_PS_BM_Player_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_APS_BM_Player, APS_BM_Player::StaticClass, TEXT("APS_BM_Player"), &Z_Registration_Info_UClass_APS_BM_Player, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(APS_BM_Player), 3709881944U) },
+		{ Z_Construct_UClass_APS_BM_Player, APS_BM_Player::StaticClass, TEXT("APS_BM_Player"), &Z_Registration_Info_UClass_APS_BM_Player, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(APS_BM_Player), 1925703099U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_Public_PS_BM_Player_h_3864702832(TEXT("/Script/BigMaze_Alpha_0"),
-	Z_CompiledInDeferFile_FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_Public_PS_BM_Player_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_Public_PS_BM_Player_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_Public_GASFramework_Player_PS_BM_Player_h_2690746700(TEXT("/Script/BigMaze_Alpha_0"),
+	Z_CompiledInDeferFile_FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_Public_GASFramework_Player_PS_BM_Player_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_Public_GASFramework_Player_PS_BM_Player_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

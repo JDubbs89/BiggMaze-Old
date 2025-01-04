@@ -1,7 +1,7 @@
 // Copyright Jade Eye Studios 2025
 
 
-#include "AS_BM_CharBase.h"
+#include "GASFramework/AttributeSets/AS_BM_CharBase.h"
 #include "Net/UnrealNetwork.h"
 
 UAS_BM_CharBase::UAS_BM_CharBase()

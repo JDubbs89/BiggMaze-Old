@@ -6,7 +6,7 @@
 #include "GameFramework/PlayerState.h"
 #include "AbilitySystemInterface.h"
 #include "AbilitySystemComponent.h"
-#include "AS_BM_CharBase.h"
+#include "GASFramework/AttributeSets/AS_BM_CharBase.h"
 #include "PS_BM_Player.generated.h"
 
 /**

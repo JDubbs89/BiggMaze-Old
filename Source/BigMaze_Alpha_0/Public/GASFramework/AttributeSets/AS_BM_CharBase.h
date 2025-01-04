@@ -18,7 +18,7 @@
  * 
  */
 UCLASS()
-class BIGMAZE_ALPHA_0_API UAS_BM_CharBase : public UAttributeSet
+class BIGMAZE_ALPHA_0_API UAS_BM_CharBase : public UAttributeSet // Basic attribute set for every bigg maze character. Will be subclassed to include more attributes for different characters.
 {
 	GENERATED_BODY()
 	

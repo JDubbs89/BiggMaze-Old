@@ -1,10 +1,10 @@
 // Copyright Jade Eye Studios 2025
 
 
-#include "PS_BM_Player.h"
+#include "GASFramework/Player/PS_BM_Player.h"
 #include "GameplayEffect.h"
 #include "GameplayEffectExtension.h"
-#include "AS_BM_CharBase.h"
+#include "GASFramework/AttributeSets/AS_BM_CharBase.h"
 #include "Net/UnrealNetwork.h"
 
 APS_BM_Player::APS_BM_Player()

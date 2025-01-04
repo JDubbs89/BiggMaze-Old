@@ -1,7 +1,7 @@
 // Copyright Jade Eye Studios 2025
 
 
-#include "BiggMazeAssetManager.h"
+#include "AssetManager/BiggMazeAssetManager.h"
 #include "AbilitySystemGlobals.h"
 
 void UBiggMazeAssetManager::StartInitialLoading()

@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "BigMaze_Alpha_0/Public/BiggMazeAssetManager.h"
+#include "BigMaze_Alpha_0/Public/AssetManager/BiggMazeAssetManager.h"
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeBiggMazeAssetManager() {}
 
@@ -32,8 +32,8 @@ struct Z_Construct_UClass_UBiggMazeAssetManager_Statics
 #if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * \n */" },
 #endif
-		{ "IncludePath", "BiggMazeAssetManager.h" },
-		{ "ModuleRelativePath", "Public/BiggMazeAssetManager.h" },
+		{ "IncludePath", "AssetManager/BiggMazeAssetManager.h" },
+		{ "ModuleRelativePath", "Public/AssetManager/BiggMazeAssetManager.h" },
 	};
 #endif // WITH_METADATA
 	static UObject* (*const DependentSingletons[])();
@@ -80,14 +80,14 @@ UBiggMazeAssetManager::~UBiggMazeAssetManager() {}
 // End Class UBiggMazeAssetManager
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_Public_BiggMazeAssetManager_h_Statics
+struct Z_CompiledInDeferFile_FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_Public_AssetManager_BiggMazeAssetManager_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UBiggMazeAssetManager, UBiggMazeAssetManager::StaticClass, TEXT("UBiggMazeAssetManager"), &Z_Registration_Info_UClass_UBiggMazeAssetManager, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UBiggMazeAssetManager), 169932553U) },
+		{ Z_Construct_UClass_UBiggMazeAssetManager, UBiggMazeAssetManager::StaticClass, TEXT("UBiggMazeAssetManager"), &Z_Registration_Info_UClass_UBiggMazeAssetManager, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UBiggMazeAssetManager), 2320822697U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_Public_BiggMazeAssetManager_h_4256551238(TEXT("/Script/BigMaze_Alpha_0"),
-	Z_CompiledInDeferFile_FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_Public_BiggMazeAssetManager_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_Public_BiggMazeAssetManager_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_Public_AssetManager_BiggMazeAssetManager_h_148748182(TEXT("/Script/BigMaze_Alpha_0"),
+	Z_CompiledInDeferFile_FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_Public_AssetManager_BiggMazeAssetManager_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_Public_AssetManager_BiggMazeAssetManager_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration
