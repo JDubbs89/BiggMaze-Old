@@ -36,6 +36,11 @@ public:
 
 	virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
 
+	/** Damage */
+
+	UPROPERTY(BlueprintReadOnly, Category = "Damage", ReplicatedUsing = OnRep_Damage)
+	FGameplayAttributeData Damage;
+	ATTRIBUTE_ACCESSORS(UAS_BM_CharBase, Damage)
 
 	/** Health Attributes */
 	UPROPERTY(BlueprintReadOnly, Category = "Health", ReplicatedUsing = OnRep_CurrentHealth)
@@ -52,6 +57,10 @@ public:
 
 protected:
 	// RepNotifies
+
+	/** Damage */
+	UFUNCTION()
+	virtual void OnRep_Damage(const FGameplayAttributeData& OldDamage);
 
 	/** Health Attributes */
 	UFUNCTION() // Current Health

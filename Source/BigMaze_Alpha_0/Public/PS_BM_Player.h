@@ -26,6 +26,10 @@ public:
 
 	// Functions to handle attribute changes and propagate those changes to UI
 	
+	/** Damage */
+	UFUNCTION(BlueprintImplementableEvent, Category = "Damage")
+	void OnDamageChanged(float DeltaValue, const FGameplayTagContainer& EventTags);
+
 	/** Health Attributes */
 	UFUNCTION(BlueprintImplementableEvent, Category = "Health") // CurrentHealth
 	void OnCurrentHealthChanged(float DeltaValue, const FGameplayTagContainer& EventTags);
@@ -39,16 +43,19 @@ protected:
 	virtual void BeginPlay() override;
 	
 	// ASC
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Abilities", meta = (AllowPrivateAccess = "true"))
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Abilities", Replicated, meta = (AllowPrivateAccess = "true"))
 	UAbilitySystemComponent* AbilitySystemComponent;
 	// Attribute Set
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Abilities", meta = (AllowPrivateAccess = "true"))
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Abilities", Replicated, meta = (AllowPrivateAccess = "true"))
 	UAS_BM_CharBase* AttributeSet;
 
 	void InitializeAttributes();
 
 private:
 	// Functions to handle attribute changes
+
+	/** Damage */
+	void HandleDamageChanged(const FOnAttributeChangeData& Data);
 
 	/** Health Attributes */
 	void HandleCurrentHealthChanged(const FOnAttributeChangeData& Data); // CurrentHealth

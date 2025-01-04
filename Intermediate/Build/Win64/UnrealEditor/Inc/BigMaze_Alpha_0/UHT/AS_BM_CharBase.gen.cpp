@@ -69,6 +69,57 @@ DEFINE_FUNCTION(UAS_BM_CharBase::execOnRep_CurrentHealth)
 }
 // End Class UAS_BM_CharBase Function OnRep_CurrentHealth
 
+// Begin Class UAS_BM_CharBase Function OnRep_Damage
+struct Z_Construct_UFunction_UAS_BM_CharBase_OnRep_Damage_Statics
+{
+	struct AS_BM_CharBase_eventOnRep_Damage_Parms
+	{
+		FGameplayAttributeData OldDamage;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "/** Damage */" },
+#endif
+		{ "ModuleRelativePath", "Public/AS_BM_CharBase.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "Damage" },
+#endif
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OldDamage_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FStructPropertyParams NewProp_OldDamage;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UAS_BM_CharBase_OnRep_Damage_Statics::NewProp_OldDamage = { "OldDamage", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AS_BM_CharBase_eventOnRep_Damage_Parms, OldDamage), Z_Construct_UScriptStruct_FGameplayAttributeData, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OldDamage_MetaData), NewProp_OldDamage_MetaData) }; // 675369593
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UAS_BM_CharBase_OnRep_Damage_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UAS_BM_CharBase_OnRep_Damage_Statics::NewProp_OldDamage,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UAS_BM_CharBase_OnRep_Damage_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UAS_BM_CharBase_OnRep_Damage_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UAS_BM_CharBase, nullptr, "OnRep_Damage", nullptr, nullptr, Z_Construct_UFunction_UAS_BM_CharBase_OnRep_Damage_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UAS_BM_CharBase_OnRep_Damage_Statics::PropPointers), sizeof(Z_Construct_UFunction_UAS_BM_CharBase_OnRep_Damage_Statics::AS_BM_CharBase_eventOnRep_Damage_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00480400, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UAS_BM_CharBase_OnRep_Damage_Statics::Function_MetaDataParams), Z_Construct_UFunction_UAS_BM_CharBase_OnRep_Damage_Statics::Function_MetaDataParams) };
+static_assert(sizeof(Z_Construct_UFunction_UAS_BM_CharBase_OnRep_Damage_Statics::AS_BM_CharBase_eventOnRep_Damage_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_UAS_BM_CharBase_OnRep_Damage()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UAS_BM_CharBase_OnRep_Damage_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UAS_BM_CharBase::execOnRep_Damage)
+{
+	P_GET_STRUCT_REF(FGameplayAttributeData,Z_Param_Out_OldDamage);
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	P_THIS->OnRep_Damage(Z_Param_Out_OldDamage);
+	P_NATIVE_END;
+}
+// End Class UAS_BM_CharBase Function OnRep_Damage
+
 // Begin Class UAS_BM_CharBase Function OnRep_MaxHealth
 struct Z_Construct_UFunction_UAS_BM_CharBase_OnRep_MaxHealth_Statics
 {
@@ -177,6 +228,7 @@ void UAS_BM_CharBase::StaticRegisterNativesUAS_BM_CharBase()
 	UClass* Class = UAS_BM_CharBase::StaticClass();
 	static const FNameNativePtrPair Funcs[] = {
 		{ "OnRep_CurrentHealth", &UAS_BM_CharBase::execOnRep_CurrentHealth },
+		{ "OnRep_Damage", &UAS_BM_CharBase::execOnRep_Damage },
 		{ "OnRep_MaxHealth", &UAS_BM_CharBase::execOnRep_MaxHealth },
 		{ "OnRep_RegenHealth", &UAS_BM_CharBase::execOnRep_RegenHealth },
 	};
@@ -197,6 +249,16 @@ struct Z_Construct_UClass_UAS_BM_CharBase_Statics
 		{ "IncludePath", "AS_BM_CharBase.h" },
 		{ "ModuleRelativePath", "Public/AS_BM_CharBase.h" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Damage_MetaData[] = {
+		{ "Category", "Damage" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "/** Damage */" },
+#endif
+		{ "ModuleRelativePath", "Public/AS_BM_CharBase.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "Damage" },
+#endif
+	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_CurrentHealth_MetaData[] = {
 		{ "Category", "Health" },
 #if !UE_BUILD_SHIPPING
@@ -216,6 +278,7 @@ struct Z_Construct_UClass_UAS_BM_CharBase_Statics
 		{ "ModuleRelativePath", "Public/AS_BM_CharBase.h" },
 	};
 #endif // WITH_METADATA
+	static const UECodeGen_Private::FStructPropertyParams NewProp_Damage;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_CurrentHealth;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_MaxHealth;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_RegenHealth;
@@ -223,6 +286,7 @@ struct Z_Construct_UClass_UAS_BM_CharBase_Statics
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
 		{ &Z_Construct_UFunction_UAS_BM_CharBase_OnRep_CurrentHealth, "OnRep_CurrentHealth" }, // 4168210381
+		{ &Z_Construct_UFunction_UAS_BM_CharBase_OnRep_Damage, "OnRep_Damage" }, // 4171952534
 		{ &Z_Construct_UFunction_UAS_BM_CharBase_OnRep_MaxHealth, "OnRep_MaxHealth" }, // 3099157536
 		{ &Z_Construct_UFunction_UAS_BM_CharBase_OnRep_RegenHealth, "OnRep_RegenHealth" }, // 1692862268
 	};
@@ -232,10 +296,12 @@ struct Z_Construct_UClass_UAS_BM_CharBase_Statics
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
 };
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UAS_BM_CharBase_Statics::NewProp_Damage = { "Damage", "OnRep_Damage", (EPropertyFlags)0x0010000100000034, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UAS_BM_CharBase, Damage), Z_Construct_UScriptStruct_FGameplayAttributeData, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Damage_MetaData), NewProp_Damage_MetaData) }; // 675369593
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UAS_BM_CharBase_Statics::NewProp_CurrentHealth = { "CurrentHealth", "OnRep_CurrentHealth", (EPropertyFlags)0x0010000100000034, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UAS_BM_CharBase, CurrentHealth), Z_Construct_UScriptStruct_FGameplayAttributeData, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_CurrentHealth_MetaData), NewProp_CurrentHealth_MetaData) }; // 675369593
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UAS_BM_CharBase_Statics::NewProp_MaxHealth = { "MaxHealth", "OnRep_MaxHealth", (EPropertyFlags)0x0010000100000034, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UAS_BM_CharBase, MaxHealth), Z_Construct_UScriptStruct_FGameplayAttributeData, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MaxHealth_MetaData), NewProp_MaxHealth_MetaData) }; // 675369593
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UAS_BM_CharBase_Statics::NewProp_RegenHealth = { "RegenHealth", "OnRep_RegenHealth", (EPropertyFlags)0x0010000100000034, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UAS_BM_CharBase, RegenHealth), Z_Construct_UScriptStruct_FGameplayAttributeData, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_RegenHealth_MetaData), NewProp_RegenHealth_MetaData) }; // 675369593
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UAS_BM_CharBase_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UAS_BM_CharBase_Statics::NewProp_Damage,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UAS_BM_CharBase_Statics::NewProp_CurrentHealth,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UAS_BM_CharBase_Statics::NewProp_MaxHealth,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UAS_BM_CharBase_Statics::NewProp_RegenHealth,
@@ -275,10 +341,12 @@ template<> BIGMAZE_ALPHA_0_API UClass* StaticClass<UAS_BM_CharBase>()
 }
 void UAS_BM_CharBase::ValidateGeneratedRepEnums(const TArray<struct FRepRecord>& ClassReps) const
 {
+	static const FName Name_Damage(TEXT("Damage"));
 	static const FName Name_CurrentHealth(TEXT("CurrentHealth"));
 	static const FName Name_MaxHealth(TEXT("MaxHealth"));
 	static const FName Name_RegenHealth(TEXT("RegenHealth"));
 	const bool bIsValid = true
+		&& Name_Damage == ClassReps[(int32)ENetFields_Private::Damage].Property->GetFName()
 		&& Name_CurrentHealth == ClassReps[(int32)ENetFields_Private::CurrentHealth].Property->GetFName()
 		&& Name_MaxHealth == ClassReps[(int32)ENetFields_Private::MaxHealth].Property->GetFName()
 		&& Name_RegenHealth == ClassReps[(int32)ENetFields_Private::RegenHealth].Property->GetFName();
@@ -292,10 +360,10 @@ UAS_BM_CharBase::~UAS_BM_CharBase() {}
 struct Z_CompiledInDeferFile_FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_Public_AS_BM_CharBase_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UAS_BM_CharBase, UAS_BM_CharBase::StaticClass, TEXT("UAS_BM_CharBase"), &Z_Registration_Info_UClass_UAS_BM_CharBase, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UAS_BM_CharBase), 3075557982U) },
+		{ Z_Construct_UClass_UAS_BM_CharBase, UAS_BM_CharBase::StaticClass, TEXT("UAS_BM_CharBase"), &Z_Registration_Info_UClass_UAS_BM_CharBase, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UAS_BM_CharBase), 1145916503U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_Public_AS_BM_CharBase_h_2764016737(TEXT("/Script/BigMaze_Alpha_0"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_Public_AS_BM_CharBase_h_3838805823(TEXT("/Script/BigMaze_Alpha_0"),
 	Z_CompiledInDeferFile_FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_Public_AS_BM_CharBase_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_Public_AS_BM_CharBase_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

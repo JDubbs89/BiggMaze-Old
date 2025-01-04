@@ -23,7 +23,14 @@ private: \
 public: \
 	DECLARE_CLASS(APS_BM_Player, APlayerState, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/BigMaze_Alpha_0"), NO_API) \
 	DECLARE_SERIALIZER(APS_BM_Player) \
-	virtual UObject* _getUObject() const override { return const_cast<APS_BM_Player*>(this); }
+	virtual UObject* _getUObject() const override { return const_cast<APS_BM_Player*>(this); } \
+	enum class ENetFields_Private : uint16 \
+	{ \
+		NETFIELD_REP_START=(uint16)((int32)Super::ENetFields_Private::NETFIELD_REP_END + (int32)1), \
+		AbilitySystemComponent=NETFIELD_REP_START, \
+		AttributeSet, \
+		NETFIELD_REP_END=AttributeSet	}; \
+	NO_API virtual void ValidateGeneratedRepEnums(const TArray<struct FRepRecord>& ClassReps) const override;
 
 
 #define FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_Public_PS_BM_Player_h_18_ENHANCED_CONSTRUCTORS \
