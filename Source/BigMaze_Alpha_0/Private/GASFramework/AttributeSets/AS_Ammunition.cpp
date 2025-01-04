@@ -30,21 +30,21 @@ UAS_Ammunition::UAS_Ammunition()
     CurrentSniperAmmo.SetBaseValue(0.f);
     CurrentSniperAmmo.SetCurrentValue(0.f);
 
-    MaxSniperAmmo.SetBaseValue(999.f);
+    MaxSniperAmmo.SetBaseValue(50.f);
     MaxSniperAmmo.SetCurrentValue(0.f);
 
     /** Shotgun */
     CurrentShotgunAmmo.SetBaseValue(0.f);
     CurrentShotgunAmmo.SetCurrentValue(0.f);
 
-    MaxShotgunAmmo.SetBaseValue(999.f);
+    MaxShotgunAmmo.SetBaseValue(50.f);
     MaxShotgunAmmo.SetCurrentValue(0.f);
 
     /** Rocket */
     CurrentRocketAmmo.SetBaseValue(0.f);
     CurrentRocketAmmo.SetCurrentValue(0.f);
 
-    MaxRocketAmmo.SetBaseValue(999.f);
+    MaxRocketAmmo.SetBaseValue(20.f);
     MaxRocketAmmo.SetCurrentValue(0.f);
 
     /** Universal */

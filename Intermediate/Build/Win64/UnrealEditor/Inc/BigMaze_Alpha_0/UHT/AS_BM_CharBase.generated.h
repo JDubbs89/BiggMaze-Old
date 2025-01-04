@@ -17,6 +17,12 @@ struct FGameplayAttributeData;
 #define BIGMAZE_ALPHA_0_AS_BM_CharBase_generated_h
 
 #define FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_Public_GASFramework_AttributeSets_AS_BM_CharBase_h_23_RPC_WRAPPERS_NO_PURE_DECLS \
+	DECLARE_FUNCTION(execOnRep_CurrentXP); \
+	DECLARE_FUNCTION(execOnRep_XPRequired); \
+	DECLARE_FUNCTION(execOnRep_CurrentLevel); \
+	DECLARE_FUNCTION(execOnRep_RegenStamina); \
+	DECLARE_FUNCTION(execOnRep_MaxStamina); \
+	DECLARE_FUNCTION(execOnRep_CurrentStamina); \
 	DECLARE_FUNCTION(execOnRep_RegenHealth); \
 	DECLARE_FUNCTION(execOnRep_MaxHealth); \
 	DECLARE_FUNCTION(execOnRep_CurrentHealth);
@@ -35,7 +41,13 @@ public: \
 		CurrentHealth=NETFIELD_REP_START, \
 		MaxHealth, \
 		RegenHealth, \
-		NETFIELD_REP_END=RegenHealth	}; \
+		CurrentStamina, \
+		MaxStamina, \
+		RegenStamina, \
+		CurrentLevel, \
+		XPRequired, \
+		CurrentXP, \
+		NETFIELD_REP_END=CurrentXP	}; \
 	NO_API virtual void ValidateGeneratedRepEnums(const TArray<struct FRepRecord>& ClassReps) const override; \
 private: \
 	REPLICATED_BASE_CLASS(UAS_BM_CharBase) \
