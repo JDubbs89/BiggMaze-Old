@@ -128,8 +128,20 @@ void UAS_BM_CharBase::PostGameplayEffectExecute(const FGameplayEffectModCallback
 {
     Super::PostGameplayEffectExecute(Data); // Callback to parent function
 
-    if (Data.EvaluatedData.Attribute == GetCurrentHealthAttribute())
+    FGameplayEffectContextHandle Context = Data.EffectSpec.GetContext();
+	UAbilitySystemComponent* Source = Context.GetOriginalInstigatorAbilitySystemComponent();
+	const FGameplayTagContainer& SourceTags = *Data.EffectSpec.CapturedSourceTags.GetAggregatedTags();
+	FGameplayTagContainer SpecAssetTags;
+	Data.EffectSpec.GetAllAssetTags(SpecAssetTags);
+
+    if (Data.EvaluatedData.Attribute == GetDamageAttribute())
     {
+        const float LocalDamageDone = GetDamage();
+		SetDamage(0.f);
+    }
+    else if (Data.EvaluatedData.Attribute == GetCurrentHealthAttribute())
+    {
+        
         float NewHealth = FMath::Clamp(CurrentHealth.GetCurrentValue(), 0.0f, MaxHealth.GetCurrentValue());
         SetCurrentHealth(NewHealth);
     }

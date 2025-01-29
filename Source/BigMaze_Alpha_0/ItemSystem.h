@@ -121,13 +121,13 @@ public:
     TArray<UItemDefault*> Parts;
 
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Item")
-    TArray<TSubclassOf<UGameplayAbility>> GameplayAbilities;
+    TArray<TSubclassOf<UGameplayAbility>> GameplayAbilities; // Array of gameplay ability classes, one for each major item function
 
     // Default Constructor
     FItem()
         : Id(0), Name(TEXT("null")), Description(TEXT("null")), Level(1)
         , SkeletalMesh(nullptr), Icon(nullptr), Value(0.0f), Stack(1)
-        , MaxStack(1), Weight(1.0), StackWeight(1), Class(nullptr)
+        , MaxStack(1), Weight(1.0), StackWeight(1)
     {
     }
 };
