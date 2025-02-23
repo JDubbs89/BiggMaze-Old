@@ -6,7 +6,7 @@
 /NAME:"UnrealEditor-BlueprintableOnlineBeacons.dll"
 /IGNORE:4221
 /NODEFAULTLIB
-"C:\Unreal Projects\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\Intermediate\Build\Win64\x64\BigMaze_Alpha_0Editor\Development\UnrealEd\SharedPCH.UnrealEd.Project.NoValFmtStr.ValApi.Cpp20.InclOrderUnreal5_3.h.obj"
-"C:\Unreal Projects\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\Plugins\BlueprintableOnlineBeacons\Intermediate\Build\Win64\x64\UnrealEditor\Development\BlueprintableOnlineBeacons\Module.BlueprintableOnlineBeacons.cpp.obj"
-"C:\Unreal Projects\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\Plugins\BlueprintableOnlineBeacons\Intermediate\Build\Win64\x64\UnrealEditor\Development\BlueprintableOnlineBeacons\Default.rc2.res"
-/OUT:"C:\Unreal Projects\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\Plugins\BlueprintableOnlineBeacons\Intermediate\Build\Win64\x64\UnrealEditor\Development\BlueprintableOnlineBeacons\UnrealEditor-BlueprintableOnlineBeacons.lib"
+"C:\Users\jonat\Documents\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\Intermediate\Build\Win64\x64\BigMaze_Alpha_0Editor\Development\UnrealEd\SharedPCH.UnrealEd.Project.NoValFmtStr.ValApi.Cpp20.InclOrderUnreal5_3.h.obj"
+"C:\Users\jonat\Documents\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\Plugins\BlueprintableOnlineBeacons\Intermediate\Build\Win64\x64\UnrealEditor\Development\BlueprintableOnlineBeacons\Module.BlueprintableOnlineBeacons.cpp.obj"
+"C:\Users\jonat\Documents\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\Plugins\BlueprintableOnlineBeacons\Intermediate\Build\Win64\x64\UnrealEditor\Development\BlueprintableOnlineBeacons\Default.rc2.res"
+/OUT:"C:\Users\jonat\Documents\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\Plugins\BlueprintableOnlineBeacons\Intermediate\Build\Win64\x64\UnrealEditor\Development\BlueprintableOnlineBeacons\UnrealEditor-BlueprintableOnlineBeacons.lib"

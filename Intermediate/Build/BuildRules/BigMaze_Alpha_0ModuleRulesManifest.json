@@ -1,12 +1,12 @@
 {
 	"SourceFiles": [
-		"C:\\Unreal Projects\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\Source\\BigMaze_Alpha_0\\BigMaze_Alpha_0.Build.cs",
-		"C:\\Unreal Projects\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\Plugins\\AdvancedSessions\\Source\\AdvancedSessions\\AdvancedSessions.Build.cs",
-		"C:\\Unreal Projects\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\Plugins\\AdvancedSteamSessions\\Source\\AdvancedSteamSessions\\AdvancedSteamSessions.Build.cs",
-		"C:\\Unreal Projects\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\Plugins\\BlueprintableOnlineBeacons\\Source\\BlueprintableOnlineBeacons\\BlueprintableOnlineBeacons.Build.cs",
-		"C:\\Unreal Projects\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\Plugins\\MazeGenerator\\Source\\MazeGenerator\\MazeGenerator.Build.cs",
-		"C:\\Unreal Projects\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\Source\\BigMaze_Alpha_0.Target.cs",
-		"C:\\Unreal Projects\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\Source\\BigMaze_Alpha_0Editor.Target.cs"
+		"C:\\Users\\jonat\\Documents\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\Source\\BigMaze_Alpha_0\\BigMaze_Alpha_0.Build.cs",
+		"C:\\Users\\jonat\\Documents\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\Plugins\\AdvancedSessions\\Source\\AdvancedSessions\\AdvancedSessions.Build.cs",
+		"C:\\Users\\jonat\\Documents\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\Plugins\\AdvancedSteamSessions\\Source\\AdvancedSteamSessions\\AdvancedSteamSessions.Build.cs",
+		"C:\\Users\\jonat\\Documents\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\Plugins\\BlueprintableOnlineBeacons\\Source\\BlueprintableOnlineBeacons\\BlueprintableOnlineBeacons.Build.cs",
+		"C:\\Users\\jonat\\Documents\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\Plugins\\MazeGenerator\\Source\\MazeGenerator\\MazeGenerator.Build.cs",
+		"C:\\Users\\jonat\\Documents\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\Source\\BigMaze_Alpha_0.Target.cs",
+		"C:\\Users\\jonat\\Documents\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\Source\\BigMaze_Alpha_0Editor.Target.cs"
 	],
-	"EngineVersion": "5.5.1"
+	"EngineVersion": "5.5.3"
 }

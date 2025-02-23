@@ -2,7 +2,7 @@
 	"folders": [
 		{
 			"name": "BigMaze_Alpha_0",
-			"path": "."
+			"path": "C:\\Users\\jonat\\Documents\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade"
 		},
 		{
 			"name": "UE5",
@@ -37,7 +37,7 @@
 					"BigMaze_Alpha_0",
 					"Win64",
 					"Debug",
-					"C:\\Unreal Projects\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\BigMaze_Alpha_0.uproject",
+					"C:\\Users\\jonat\\Documents\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\BigMaze_Alpha_0.uproject",
 					"-waitmutex"
 				],
 				"problemMatcher": "$msCompile",
@@ -54,7 +54,7 @@
 					"BigMaze_Alpha_0",
 					"Win64",
 					"Debug",
-					"C:\\Unreal Projects\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\BigMaze_Alpha_0.uproject",
+					"C:\\Users\\jonat\\Documents\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\BigMaze_Alpha_0.uproject",
 					"-waitmutex"
 				],
 				"problemMatcher": "$msCompile",
@@ -74,7 +74,7 @@
 					"BigMaze_Alpha_0",
 					"Win64",
 					"Debug",
-					"C:\\Unreal Projects\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\BigMaze_Alpha_0.uproject",
+					"C:\\Users\\jonat\\Documents\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\BigMaze_Alpha_0.uproject",
 					"-waitmutex"
 				],
 				"problemMatcher": "$msCompile",
@@ -91,7 +91,7 @@
 					"BigMaze_Alpha_0",
 					"Win64",
 					"DebugGame",
-					"C:\\Unreal Projects\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\BigMaze_Alpha_0.uproject",
+					"C:\\Users\\jonat\\Documents\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\BigMaze_Alpha_0.uproject",
 					"-waitmutex"
 				],
 				"problemMatcher": "$msCompile",
@@ -108,7 +108,7 @@
 					"BigMaze_Alpha_0",
 					"Win64",
 					"DebugGame",
-					"C:\\Unreal Projects\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\BigMaze_Alpha_0.uproject",
+					"C:\\Users\\jonat\\Documents\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\BigMaze_Alpha_0.uproject",
 					"-waitmutex"
 				],
 				"problemMatcher": "$msCompile",
@@ -128,7 +128,7 @@
 					"BigMaze_Alpha_0",
 					"Win64",
 					"DebugGame",
-					"C:\\Unreal Projects\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\BigMaze_Alpha_0.uproject",
+					"C:\\Users\\jonat\\Documents\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\BigMaze_Alpha_0.uproject",
 					"-waitmutex"
 				],
 				"problemMatcher": "$msCompile",
@@ -145,7 +145,7 @@
 					"BigMaze_Alpha_0",
 					"Win64",
 					"Development",
-					"C:\\Unreal Projects\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\BigMaze_Alpha_0.uproject",
+					"C:\\Users\\jonat\\Documents\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\BigMaze_Alpha_0.uproject",
 					"-waitmutex"
 				],
 				"problemMatcher": "$msCompile",
@@ -162,7 +162,7 @@
 					"BigMaze_Alpha_0",
 					"Win64",
 					"Development",
-					"C:\\Unreal Projects\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\BigMaze_Alpha_0.uproject",
+					"C:\\Users\\jonat\\Documents\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\BigMaze_Alpha_0.uproject",
 					"-waitmutex"
 				],
 				"problemMatcher": "$msCompile",
@@ -182,7 +182,7 @@
 					"BigMaze_Alpha_0",
 					"Win64",
 					"Development",
-					"C:\\Unreal Projects\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\BigMaze_Alpha_0.uproject",
+					"C:\\Users\\jonat\\Documents\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\BigMaze_Alpha_0.uproject",
 					"-waitmutex"
 				],
 				"problemMatcher": "$msCompile",
@@ -199,7 +199,7 @@
 					"BigMaze_Alpha_0",
 					"Win64",
 					"Test",
-					"C:\\Unreal Projects\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\BigMaze_Alpha_0.uproject",
+					"C:\\Users\\jonat\\Documents\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\BigMaze_Alpha_0.uproject",
 					"-waitmutex"
 				],
 				"problemMatcher": "$msCompile",
@@ -216,7 +216,7 @@
 					"BigMaze_Alpha_0",
 					"Win64",
 					"Test",
-					"C:\\Unreal Projects\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\BigMaze_Alpha_0.uproject",
+					"C:\\Users\\jonat\\Documents\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\BigMaze_Alpha_0.uproject",
 					"-waitmutex"
 				],
 				"problemMatcher": "$msCompile",
@@ -236,7 +236,7 @@
 					"BigMaze_Alpha_0",
 					"Win64",
 					"Test",
-					"C:\\Unreal Projects\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\BigMaze_Alpha_0.uproject",
+					"C:\\Users\\jonat\\Documents\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\BigMaze_Alpha_0.uproject",
 					"-waitmutex"
 				],
 				"problemMatcher": "$msCompile",
@@ -253,7 +253,7 @@
 					"BigMaze_Alpha_0",
 					"Win64",
 					"Shipping",
-					"C:\\Unreal Projects\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\BigMaze_Alpha_0.uproject",
+					"C:\\Users\\jonat\\Documents\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\BigMaze_Alpha_0.uproject",
 					"-waitmutex"
 				],
 				"problemMatcher": "$msCompile",
@@ -270,7 +270,7 @@
 					"BigMaze_Alpha_0",
 					"Win64",
 					"Shipping",
-					"C:\\Unreal Projects\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\BigMaze_Alpha_0.uproject",
+					"C:\\Users\\jonat\\Documents\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\BigMaze_Alpha_0.uproject",
 					"-waitmutex"
 				],
 				"problemMatcher": "$msCompile",
@@ -290,7 +290,7 @@
 					"BigMaze_Alpha_0",
 					"Win64",
 					"Shipping",
-					"C:\\Unreal Projects\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\BigMaze_Alpha_0.uproject",
+					"C:\\Users\\jonat\\Documents\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\BigMaze_Alpha_0.uproject",
 					"-waitmutex"
 				],
 				"problemMatcher": "$msCompile",
@@ -307,7 +307,7 @@
 					"BigMaze_Alpha_0Editor",
 					"Win64",
 					"Debug",
-					"C:\\Unreal Projects\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\BigMaze_Alpha_0.uproject",
+					"C:\\Users\\jonat\\Documents\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\BigMaze_Alpha_0.uproject",
 					"-waitmutex"
 				],
 				"problemMatcher": "$msCompile",
@@ -324,7 +324,7 @@
 					"BigMaze_Alpha_0Editor",
 					"Win64",
 					"Debug",
-					"C:\\Unreal Projects\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\BigMaze_Alpha_0.uproject",
+					"C:\\Users\\jonat\\Documents\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\BigMaze_Alpha_0.uproject",
 					"-waitmutex"
 				],
 				"problemMatcher": "$msCompile",
@@ -344,7 +344,7 @@
 					"BigMaze_Alpha_0Editor",
 					"Win64",
 					"Debug",
-					"C:\\Unreal Projects\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\BigMaze_Alpha_0.uproject",
+					"C:\\Users\\jonat\\Documents\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\BigMaze_Alpha_0.uproject",
 					"-waitmutex"
 				],
 				"problemMatcher": "$msCompile",
@@ -361,7 +361,7 @@
 					"BigMaze_Alpha_0Editor",
 					"Win64",
 					"DebugGame",
-					"C:\\Unreal Projects\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\BigMaze_Alpha_0.uproject",
+					"C:\\Users\\jonat\\Documents\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\BigMaze_Alpha_0.uproject",
 					"-waitmutex"
 				],
 				"problemMatcher": "$msCompile",
@@ -378,7 +378,7 @@
 					"BigMaze_Alpha_0Editor",
 					"Win64",
 					"DebugGame",
-					"C:\\Unreal Projects\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\BigMaze_Alpha_0.uproject",
+					"C:\\Users\\jonat\\Documents\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\BigMaze_Alpha_0.uproject",
 					"-waitmutex"
 				],
 				"problemMatcher": "$msCompile",
@@ -398,7 +398,7 @@
 					"BigMaze_Alpha_0Editor",
 					"Win64",
 					"DebugGame",
-					"C:\\Unreal Projects\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\BigMaze_Alpha_0.uproject",
+					"C:\\Users\\jonat\\Documents\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\BigMaze_Alpha_0.uproject",
 					"-waitmutex"
 				],
 				"problemMatcher": "$msCompile",
@@ -415,7 +415,7 @@
 					"BigMaze_Alpha_0Editor",
 					"Win64",
 					"Development",
-					"C:\\Unreal Projects\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\BigMaze_Alpha_0.uproject",
+					"C:\\Users\\jonat\\Documents\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\BigMaze_Alpha_0.uproject",
 					"-waitmutex"
 				],
 				"problemMatcher": "$msCompile",
@@ -432,7 +432,7 @@
 					"BigMaze_Alpha_0Editor",
 					"Win64",
 					"Development",
-					"C:\\Unreal Projects\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\BigMaze_Alpha_0.uproject",
+					"C:\\Users\\jonat\\Documents\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\BigMaze_Alpha_0.uproject",
 					"-waitmutex"
 				],
 				"problemMatcher": "$msCompile",
@@ -452,7 +452,7 @@
 					"BigMaze_Alpha_0Editor",
 					"Win64",
 					"Development",
-					"C:\\Unreal Projects\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\BigMaze_Alpha_0.uproject",
+					"C:\\Users\\jonat\\Documents\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\BigMaze_Alpha_0.uproject",
 					"-waitmutex"
 				],
 				"problemMatcher": "$msCompile",
@@ -471,8 +471,7 @@
 				"request": "launch",
 				"program": "C:\\Unreal Projects\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\Binaries\\Win64\\UnrealGame-Win64-Debug.exe",
 				"preLaunchTask": "BigMaze_Alpha_0 Win64 Debug Build",
-				"args": [
-				],
+				"args": [],
 				"cwd": "C:\\Program Files\\Epic Games\\UE_5.5",
 				"stopAtEntry": false,
 				"console": "integratedTerminal",
@@ -487,8 +486,7 @@
 				"request": "launch",
 				"program": "C:\\Unreal Projects\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\Binaries\\Win64\\UnrealGame-Win64-DebugGame.exe",
 				"preLaunchTask": "BigMaze_Alpha_0 Win64 DebugGame Build",
-				"args": [
-				],
+				"args": [],
 				"cwd": "C:\\Program Files\\Epic Games\\UE_5.5",
 				"stopAtEntry": false,
 				"console": "integratedTerminal",
@@ -503,8 +501,7 @@
 				"request": "launch",
 				"program": "C:\\Unreal Projects\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\Binaries\\Win64\\UnrealGame.exe",
 				"preLaunchTask": "BigMaze_Alpha_0 Win64 Development Build",
-				"args": [
-				],
+				"args": [],
 				"cwd": "C:\\Program Files\\Epic Games\\UE_5.5",
 				"stopAtEntry": false,
 				"console": "integratedTerminal",
@@ -519,8 +516,7 @@
 				"request": "launch",
 				"program": "C:\\Unreal Projects\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\Binaries\\Win64\\UnrealGame-Win64-Test.exe",
 				"preLaunchTask": "BigMaze_Alpha_0 Win64 Test Build",
-				"args": [
-				],
+				"args": [],
 				"cwd": "C:\\Program Files\\Epic Games\\UE_5.5",
 				"stopAtEntry": false,
 				"console": "integratedTerminal",
@@ -535,8 +531,7 @@
 				"request": "launch",
 				"program": "C:\\Unreal Projects\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\Binaries\\Win64\\UnrealGame-Win64-Shipping.exe",
 				"preLaunchTask": "BigMaze_Alpha_0 Win64 Shipping Build",
-				"args": [
-				],
+				"args": [],
 				"cwd": "C:\\Program Files\\Epic Games\\UE_5.5",
 				"stopAtEntry": false,
 				"console": "integratedTerminal",
@@ -552,7 +547,7 @@
 				"program": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Binaries\\Win64\\UnrealEditor-Win64-Debug.exe",
 				"preLaunchTask": "BigMaze_Alpha_0Editor Win64 Debug Build",
 				"args": [
-					"C:\\Unreal Projects\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\BigMaze_Alpha_0.uproject"
+					"C:\\Users\\jonat\\Documents\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\BigMaze_Alpha_0.uproject"
 				],
 				"cwd": "C:\\Program Files\\Epic Games\\UE_5.5",
 				"stopAtEntry": false,
@@ -569,7 +564,7 @@
 				"program": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Binaries\\Win64\\UnrealEditor-Win64-DebugGame.exe",
 				"preLaunchTask": "BigMaze_Alpha_0Editor Win64 DebugGame Build",
 				"args": [
-					"C:\\Unreal Projects\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\BigMaze_Alpha_0.uproject"
+					"C:\\Users\\jonat\\Documents\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\BigMaze_Alpha_0.uproject"
 				],
 				"cwd": "C:\\Program Files\\Epic Games\\UE_5.5",
 				"stopAtEntry": false,
@@ -586,7 +581,7 @@
 				"program": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Binaries\\Win64\\UnrealEditor.exe",
 				"preLaunchTask": "BigMaze_Alpha_0Editor Win64 Development Build",
 				"args": [
-					"C:\\Unreal Projects\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\BigMaze_Alpha_0.uproject"
+					"C:\\Users\\jonat\\Documents\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\BigMaze_Alpha_0.uproject"
 				],
 				"cwd": "C:\\Program Files\\Epic Games\\UE_5.5",
 				"stopAtEntry": false,
@@ -606,7 +601,7 @@
 				"args": [
 					"-projectfiles",
 					"-vscode",
-					"-project=C:\\Unreal Projects\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\BigMaze_Alpha_0.uproject",
+					"-project=C:\\Users\\jonat\\Documents\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\BigMaze_Alpha_0.uproject",
 					"-game",
 					"-engine",
 					"-dotnet"
