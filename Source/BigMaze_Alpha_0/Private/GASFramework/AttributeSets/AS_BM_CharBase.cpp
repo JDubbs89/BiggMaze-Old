@@ -138,6 +138,7 @@ void UAS_BM_CharBase::PostGameplayEffectExecute(const FGameplayEffectModCallback
     {
         const float LocalDamageDone = GetDamage();
 		SetDamage(0.f);
+        
     }
     else if (Data.EvaluatedData.Attribute == GetCurrentHealthAttribute())
     {
