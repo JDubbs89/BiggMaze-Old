@@ -160,10 +160,15 @@ void UAS_BM_CharBase::PostGameplayEffectExecute(const FGameplayEffectModCallback
     }
     else if (Data.EvaluatedData.Attribute == GetCurrentXPAttribute())
     {
+        float NewXP = FMath::Clamp(CurrentXP.GetCurrentValue(), 0.0f, XPRequired.GetCurrentValue());
         if (CurrentXP.GetCurrentValue() >= XPRequired.GetCurrentValue())
         {
             SetCurrentLevel(CurrentLevel.GetCurrentValue() + 1);
             SetCurrentXP(CurrentXP.GetCurrentValue() - XPRequired.GetCurrentValue());
+        }
+        else
+        {
+            SetCurrentXP(NewXP);
         }
     }
 

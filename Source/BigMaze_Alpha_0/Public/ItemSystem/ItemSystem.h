@@ -50,7 +50,7 @@ public:
     // Default Constructor
     FItemAttribute()
         : Id(0), Name(TEXT("")), Description(TEXT("")), Value(TEXT(""))
-        , MaxValue(TEXT("")), Type(EAttributeReturnType::Integer), Visible(false)
+        , MaxValue(TEXT("")), Type(EAttributeReturnType::Int), Visible(false)
     {
     }
 };

@@ -8,11 +8,11 @@ enum class EAttributeReturnType : uint8
 {
     Int UMETA(DisplayName = "Int"),
     Float UMETA(DisplayName = "Float"),
-    Bool UMETA(DisplayName = "Bool")
+    Bool UMETA(DisplayName = "Bool"),
     Str UMETA(DisplayName = "String"),
     Enum UMETA(DisplayName = "Enum"),
     Byte UMETA(DisplayName = "Byte"),
-    Vec UMETA(DisplayName = "Vec"),
+    Vec UMETA(DisplayName = "Vec")
 };
 
 

@@ -18,7 +18,7 @@ class BIGMAZE_ALPHA_0_API UASC_BiggMaze : public UAbilitySystemComponent
 	GENERATED_BODY()
 	
 public:
-	bool AbilitiesGiven = false;
+
 	bool StartupEffectsApplied = false;
 
 	//FReceivedDamageDelegate RecievedDamage;

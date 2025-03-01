@@ -20,12 +20,13 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 
 #define FOREACH_ENUM_EATTRIBUTERETURNTYPE(op) \
-	op(EAttributeReturnType::Integer) \
+	op(EAttributeReturnType::Int) \
 	op(EAttributeReturnType::Float) \
-	op(EAttributeReturnType::String) \
+	op(EAttributeReturnType::Bool) \
+	op(EAttributeReturnType::Str) \
 	op(EAttributeReturnType::Enum) \
 	op(EAttributeReturnType::Byte) \
-	op(EAttributeReturnType::Vector) 
+	op(EAttributeReturnType::Vec) 
 
 enum class EAttributeReturnType : uint8;
 template<> struct TIsUEnumClass<EAttributeReturnType> { enum { Value = true }; };

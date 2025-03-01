@@ -6,6 +6,7 @@
 #include "GameFramework/PlayerState.h"
 #include "AbilitySystemInterface.h"
 #include "AbilitySystemComponent.h"
+#include "GASFramework/ASCs/ASC_BiggMaze.h"
 #include "GASFramework/AttributeSets/AS_BM_CharBase.h"
 #include "GASFramework/AttributeSets/AS_Ammunition.h"
 #include "PS_BM_Player.generated.h"
@@ -95,7 +96,7 @@ protected:
 	
 	// ASC
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Abilities", Replicated, meta = (AllowPrivateAccess = "true"))
-	UAbilitySystemComponent* AbilitySystemComponent;
+	UASC_BiggMaze* AbilitySystemComponent;
 	// Attribute Set
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Abilities", Replicated, meta = (AllowPrivateAccess = "true"))
 	UAS_BM_CharBase* AttributeSet;

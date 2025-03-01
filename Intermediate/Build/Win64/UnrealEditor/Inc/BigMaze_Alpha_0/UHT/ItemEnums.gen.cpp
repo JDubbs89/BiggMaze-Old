@@ -36,28 +36,31 @@ struct Z_Construct_UEnum_BigMaze_Alpha_0_EAttributeReturnType_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+		{ "Bool.DisplayName", "Bool" },
+		{ "Bool.Name", "EAttributeReturnType::Bool" },
 		{ "Byte.DisplayName", "Byte" },
 		{ "Byte.Name", "EAttributeReturnType::Byte" },
 		{ "Enum.DisplayName", "Enum" },
 		{ "Enum.Name", "EAttributeReturnType::Enum" },
 		{ "Float.DisplayName", "Float" },
 		{ "Float.Name", "EAttributeReturnType::Float" },
-		{ "Integer.DisplayName", "Integer" },
-		{ "Integer.Name", "EAttributeReturnType::Integer" },
+		{ "Int.DisplayName", "Int" },
+		{ "Int.Name", "EAttributeReturnType::Int" },
 		{ "ModuleRelativePath", "Public/ItemSystem/ItemEnums.h" },
-		{ "String.DisplayName", "String" },
-		{ "String.Name", "EAttributeReturnType::String" },
-		{ "Vector.DisplayName", "Vector" },
-		{ "Vector.Name", "EAttributeReturnType::Vector" },
+		{ "Str.DisplayName", "String" },
+		{ "Str.Name", "EAttributeReturnType::Str" },
+		{ "Vec.DisplayName", "Vec" },
+		{ "Vec.Name", "EAttributeReturnType::Vec" },
 	};
 #endif // WITH_METADATA
 	static constexpr UECodeGen_Private::FEnumeratorParam Enumerators[] = {
-		{ "EAttributeReturnType::Integer", (int64)EAttributeReturnType::Integer },
+		{ "EAttributeReturnType::Int", (int64)EAttributeReturnType::Int },
 		{ "EAttributeReturnType::Float", (int64)EAttributeReturnType::Float },
-		{ "EAttributeReturnType::String", (int64)EAttributeReturnType::String },
+		{ "EAttributeReturnType::Bool", (int64)EAttributeReturnType::Bool },
+		{ "EAttributeReturnType::Str", (int64)EAttributeReturnType::Str },
 		{ "EAttributeReturnType::Enum", (int64)EAttributeReturnType::Enum },
 		{ "EAttributeReturnType::Byte", (int64)EAttributeReturnType::Byte },
-		{ "EAttributeReturnType::Vector", (int64)EAttributeReturnType::Vector },
+		{ "EAttributeReturnType::Vec", (int64)EAttributeReturnType::Vec },
 	};
 	static const UECodeGen_Private::FEnumParams EnumParams;
 };
@@ -341,13 +344,13 @@ UEnum* Z_Construct_UEnum_BigMaze_Alpha_0_EItemSlotCategory()
 struct Z_CompiledInDeferFile_FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_Public_ItemSystem_ItemEnums_h_Statics
 {
 	static constexpr FEnumRegisterCompiledInInfo EnumInfo[] = {
-		{ EAttributeReturnType_StaticEnum, TEXT("EAttributeReturnType"), &Z_Registration_Info_UEnum_EAttributeReturnType, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 2176894446U) },
+		{ EAttributeReturnType_StaticEnum, TEXT("EAttributeReturnType"), &Z_Registration_Info_UEnum_EAttributeReturnType, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 2806043504U) },
 		{ EItemActivationType_StaticEnum, TEXT("EItemActivationType"), &Z_Registration_Info_UEnum_EItemActivationType, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 202093569U) },
 		{ EItemClass_StaticEnum, TEXT("EItemClass"), &Z_Registration_Info_UEnum_EItemClass, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 503928969U) },
 		{ EItemSlotCategory_StaticEnum, TEXT("EItemSlotCategory"), &Z_Registration_Info_UEnum_EItemSlotCategory, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 1515261824U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_Public_ItemSystem_ItemEnums_h_2473407956(TEXT("/Script/BigMaze_Alpha_0"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_Public_ItemSystem_ItemEnums_h_3696482396(TEXT("/Script/BigMaze_Alpha_0"),
 	nullptr, 0,
 	nullptr, 0,
 	Z_CompiledInDeferFile_FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_Public_ItemSystem_ItemEnums_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_Public_ItemSystem_ItemEnums_h_Statics::EnumInfo));

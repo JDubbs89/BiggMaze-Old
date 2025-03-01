@@ -4,14 +4,45 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/PlayerState.h"
+#include "AbilitySystemInterface.h"
+#include "AbilitySystemComponent.h"
+#include "GASFramework/ASCs/ASC_BiggMaze.h"
+#include "GASFramework/AttributeSets/AS_BM_CharBase.h"
+#include "GASFramework/AttributeSets/AS_Ammunition.h"
 #include "BiggMazePlayerState.generated.h"
 
 /**
  * 
  */
 UCLASS()
-class BIGMAZE_ALPHA_0_API ABiggMazePlayerState : public APlayerState
+class BIGMAZE_ALPHA_0_API ABiggMazePlayerState : public APlayerState, public IAbilitySystemInterface
 {
 	GENERATED_BODY()
 	
+public:
+	ABiggMazePlayerState();
+
+	virtual UAbilitySystemComponent* GetAbilitySystemComponent() const override;
+
+protected:
+
+	virtual void BeginPlay() override;
+
+	// ASC
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Abilities", Replicated, meta = (AllowPrivateAccess = "true"))
+	UASC_BiggMaze* AbilitySystemComponent;
+	// Attribute Set
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Abilities", Replicated, meta = (AllowPrivateAccess = "true"))
+	UAS_BM_CharBase* AttributeSet;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Abilities", Replicated, meta = (AllowPrivateAccess = "true"))
+	UAS_Ammunition* AmmoAttributeSet;
+
+	void InitializeAttributes();
+
+private:
+
+	// Specifies what properties get replicated
+	virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
+
 };
