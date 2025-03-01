@@ -18,6 +18,52 @@ enum class EItemActivationType : uint8
     Release UMETA(DisplayName = "Release")
 };
 
+UENUM(BlueprintType)
+enum class EItemClass : uint8
+{
+    Weapon UMETA(DisplayName = "Weapon"),
+    Consumable UMETA(DisplayName = "Consumable"),
+    Throwable UMETA(DisplayName = "Throwable"),
+    Placeable UMETA(DisplayName = "Placeable"),
+    Quest UMETA(DisplayName = "Quest"),
+    Attachment UMETA(DisplayName = "Attachment"),
+    Upgrade UMETA(DisplayName = "Upgrade"),
+    Armor UMETA(DisplayName = "Armor"),
+    Equipment UMETA(DisplayName = "Equipment")
+};
+
+UENUM(BlueprintType)
+enum class EItemSlotCategory : uint8
+{
+    Default UMETA(DisplayName = "Default"), // Any Slot Type
+    
+    Weapon UMETA(DisplayName = "Weapon"), // Weapon Types
+    MeleeWeapon UMETA(DisplayName = "Melee Weapon"),
+    RangedWeapon UMETA(DisplayName = "Ranged Weapon"),
+    
+    Consumable UMETA(DisplayName = "Consumable"), // Useable Items Besides Weapons
+    Throwable UMETA(DisplayName = "Throwable"),
+    Placeable UMETA(DisplayName = "Placeable"),
+    
+    Quest UMETA(DisplayName = "Quest"), // Quest Items
+    
+    Attachment UMETA(DisplayName = "Attachment"), // Attachments/Upgrades
+    Upgrade UMETA(DisplayName = "Upgrade"),
+    
+    HeadArmor UMETA(DisplayName = "Head Armor"), // Armor Types
+    ArmArmor UMETA(DisplayName = "Arm Armor"),
+    ChestArmor UMETA(DisplayName = "Chest Armor"),
+    LegArmor UMETA(DisplayName = "Leg Armor"),
+    
+    BackEquipment UMETA(DisplayName = "Back Equipment"), // Equipment types
+    HeadEquipment UMETA(DisplayName = "Head Equipment"),
+    ArmEquipment UMETA(DisplayName = "Arm Equipment"),
+    LegEquipment UMETA(DisplayName = "Leg Equipment"),
+    MiscEquipment UMETA(DisplayName = "Misc Equipment"),
+    
+    NoSlotRequired UMETA(DisplayName = "No Slot Required") //Item Doesn't Use Slots
+};
+
 /**
  * Forward declaration of AItemFunctionalityBase for struct dependencies.
  */
@@ -95,6 +141,12 @@ public:
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Item")
     TSoftObjectPtr<UTexture2D> Icon;
 
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Item")
+    EItemClass Class;
+
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Item")
+    EItemSlotCategory SlotType;
+
     // Value of the Item
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Item")
     float Value;
@@ -126,8 +178,8 @@ public:
     // Default Constructor
     FItem()
         : Id(0), Name(TEXT("null")), Description(TEXT("null")), Level(1)
-        , SkeletalMesh(nullptr), Icon(nullptr), Value(0.0f), Stack(1)
-        , MaxStack(1), Weight(1.0), StackWeight(1)
+        , SkeletalMesh(nullptr), Icon(nullptr), Class(EItemClass::Weapon), SlotType(EItemSlotCategory::Default)
+        , Value(0.0f), Stack(1), MaxStack(1), Weight(1.0), StackWeight(1)
     {
     }
 };

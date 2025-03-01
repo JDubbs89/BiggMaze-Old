@@ -15,6 +15,8 @@ BIGMAZE_ALPHA_0_API UClass* Z_Construct_UClass_AItemFunctionalityBase_NoRegister
 BIGMAZE_ALPHA_0_API UClass* Z_Construct_UClass_UItemDefault();
 BIGMAZE_ALPHA_0_API UClass* Z_Construct_UClass_UItemDefault_NoRegister();
 BIGMAZE_ALPHA_0_API UEnum* Z_Construct_UEnum_BigMaze_Alpha_0_EItemActivationType();
+BIGMAZE_ALPHA_0_API UEnum* Z_Construct_UEnum_BigMaze_Alpha_0_EItemClass();
+BIGMAZE_ALPHA_0_API UEnum* Z_Construct_UEnum_BigMaze_Alpha_0_EItemSlotCategory();
 BIGMAZE_ALPHA_0_API UScriptStruct* Z_Construct_UScriptStruct_FItem();
 BIGMAZE_ALPHA_0_API UScriptStruct* Z_Construct_UScriptStruct_FItemAttribute();
 COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
@@ -88,6 +90,203 @@ UEnum* Z_Construct_UEnum_BigMaze_Alpha_0_EItemActivationType()
 	return Z_Registration_Info_UEnum_EItemActivationType.InnerSingleton;
 }
 // End Enum EItemActivationType
+
+// Begin Enum EItemClass
+static FEnumRegistrationInfo Z_Registration_Info_UEnum_EItemClass;
+static UEnum* EItemClass_StaticEnum()
+{
+	if (!Z_Registration_Info_UEnum_EItemClass.OuterSingleton)
+	{
+		Z_Registration_Info_UEnum_EItemClass.OuterSingleton = GetStaticEnum(Z_Construct_UEnum_BigMaze_Alpha_0_EItemClass, (UObject*)Z_Construct_UPackage__Script_BigMaze_Alpha_0(), TEXT("EItemClass"));
+	}
+	return Z_Registration_Info_UEnum_EItemClass.OuterSingleton;
+}
+template<> BIGMAZE_ALPHA_0_API UEnum* StaticEnum<EItemClass>()
+{
+	return EItemClass_StaticEnum();
+}
+struct Z_Construct_UEnum_BigMaze_Alpha_0_EItemClass_Statics
+{
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
+		{ "Armor.DisplayName", "Armor" },
+		{ "Armor.Name", "EItemClass::Armor" },
+		{ "Attachment.DisplayName", "Attachment" },
+		{ "Attachment.Name", "EItemClass::Attachment" },
+		{ "BlueprintType", "true" },
+		{ "Consumable.DisplayName", "Consumable" },
+		{ "Consumable.Name", "EItemClass::Consumable" },
+		{ "Equipment.DisplayName", "Equipment" },
+		{ "Equipment.Name", "EItemClass::Equipment" },
+		{ "ModuleRelativePath", "ItemSystem.h" },
+		{ "Placeable.DisplayName", "Placeable" },
+		{ "Placeable.Name", "EItemClass::Placeable" },
+		{ "Quest.DisplayName", "Quest" },
+		{ "Quest.Name", "EItemClass::Quest" },
+		{ "Throwable.DisplayName", "Throwable" },
+		{ "Throwable.Name", "EItemClass::Throwable" },
+		{ "Upgrade.DisplayName", "Upgrade" },
+		{ "Upgrade.Name", "EItemClass::Upgrade" },
+		{ "Weapon.DisplayName", "Weapon" },
+		{ "Weapon.Name", "EItemClass::Weapon" },
+	};
+#endif // WITH_METADATA
+	static constexpr UECodeGen_Private::FEnumeratorParam Enumerators[] = {
+		{ "EItemClass::Weapon", (int64)EItemClass::Weapon },
+		{ "EItemClass::Consumable", (int64)EItemClass::Consumable },
+		{ "EItemClass::Throwable", (int64)EItemClass::Throwable },
+		{ "EItemClass::Placeable", (int64)EItemClass::Placeable },
+		{ "EItemClass::Quest", (int64)EItemClass::Quest },
+		{ "EItemClass::Attachment", (int64)EItemClass::Attachment },
+		{ "EItemClass::Upgrade", (int64)EItemClass::Upgrade },
+		{ "EItemClass::Armor", (int64)EItemClass::Armor },
+		{ "EItemClass::Equipment", (int64)EItemClass::Equipment },
+	};
+	static const UECodeGen_Private::FEnumParams EnumParams;
+};
+const UECodeGen_Private::FEnumParams Z_Construct_UEnum_BigMaze_Alpha_0_EItemClass_Statics::EnumParams = {
+	(UObject*(*)())Z_Construct_UPackage__Script_BigMaze_Alpha_0,
+	nullptr,
+	"EItemClass",
+	"EItemClass",
+	Z_Construct_UEnum_BigMaze_Alpha_0_EItemClass_Statics::Enumerators,
+	RF_Public|RF_Transient|RF_MarkAsNative,
+	UE_ARRAY_COUNT(Z_Construct_UEnum_BigMaze_Alpha_0_EItemClass_Statics::Enumerators),
+	EEnumFlags::None,
+	(uint8)UEnum::ECppForm::EnumClass,
+	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UEnum_BigMaze_Alpha_0_EItemClass_Statics::Enum_MetaDataParams), Z_Construct_UEnum_BigMaze_Alpha_0_EItemClass_Statics::Enum_MetaDataParams)
+};
+UEnum* Z_Construct_UEnum_BigMaze_Alpha_0_EItemClass()
+{
+	if (!Z_Registration_Info_UEnum_EItemClass.InnerSingleton)
+	{
+		UECodeGen_Private::ConstructUEnum(Z_Registration_Info_UEnum_EItemClass.InnerSingleton, Z_Construct_UEnum_BigMaze_Alpha_0_EItemClass_Statics::EnumParams);
+	}
+	return Z_Registration_Info_UEnum_EItemClass.InnerSingleton;
+}
+// End Enum EItemClass
+
+// Begin Enum EItemSlotCategory
+static FEnumRegistrationInfo Z_Registration_Info_UEnum_EItemSlotCategory;
+static UEnum* EItemSlotCategory_StaticEnum()
+{
+	if (!Z_Registration_Info_UEnum_EItemSlotCategory.OuterSingleton)
+	{
+		Z_Registration_Info_UEnum_EItemSlotCategory.OuterSingleton = GetStaticEnum(Z_Construct_UEnum_BigMaze_Alpha_0_EItemSlotCategory, (UObject*)Z_Construct_UPackage__Script_BigMaze_Alpha_0(), TEXT("EItemSlotCategory"));
+	}
+	return Z_Registration_Info_UEnum_EItemSlotCategory.OuterSingleton;
+}
+template<> BIGMAZE_ALPHA_0_API UEnum* StaticEnum<EItemSlotCategory>()
+{
+	return EItemSlotCategory_StaticEnum();
+}
+struct Z_Construct_UEnum_BigMaze_Alpha_0_EItemSlotCategory_Statics
+{
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
+		{ "ArmArmor.Comment", "// Armor Types\n" },
+		{ "ArmArmor.DisplayName", "Arm Armor" },
+		{ "ArmArmor.Name", "EItemSlotCategory::ArmArmor" },
+		{ "ArmArmor.ToolTip", "Armor Types" },
+		{ "ArmEquipment.DisplayName", "Arm Equipment" },
+		{ "ArmEquipment.Name", "EItemSlotCategory::ArmEquipment" },
+		{ "Attachment.Comment", "// Quest Items\n" },
+		{ "Attachment.DisplayName", "Attachment" },
+		{ "Attachment.Name", "EItemSlotCategory::Attachment" },
+		{ "Attachment.ToolTip", "Quest Items" },
+		{ "BackEquipment.DisplayName", "Back Equipment" },
+		{ "BackEquipment.Name", "EItemSlotCategory::BackEquipment" },
+		{ "BlueprintType", "true" },
+		{ "ChestArmor.DisplayName", "Chest Armor" },
+		{ "ChestArmor.Name", "EItemSlotCategory::ChestArmor" },
+		{ "Consumable.DisplayName", "Consumable" },
+		{ "Consumable.Name", "EItemSlotCategory::Consumable" },
+		{ "Default.DisplayName", "Default" },
+		{ "Default.Name", "EItemSlotCategory::Default" },
+		{ "HeadArmor.DisplayName", "Head Armor" },
+		{ "HeadArmor.Name", "EItemSlotCategory::HeadArmor" },
+		{ "HeadEquipment.Comment", "// Equipment types\n" },
+		{ "HeadEquipment.DisplayName", "Head Equipment" },
+		{ "HeadEquipment.Name", "EItemSlotCategory::HeadEquipment" },
+		{ "HeadEquipment.ToolTip", "Equipment types" },
+		{ "LegArmor.DisplayName", "Leg Armor" },
+		{ "LegArmor.Name", "EItemSlotCategory::LegArmor" },
+		{ "LegEquipment.DisplayName", "Leg Equipment" },
+		{ "LegEquipment.Name", "EItemSlotCategory::LegEquipment" },
+		{ "MeleeWeapon.Comment", "// Weapon Types\n" },
+		{ "MeleeWeapon.DisplayName", "Melee Weapon" },
+		{ "MeleeWeapon.Name", "EItemSlotCategory::MeleeWeapon" },
+		{ "MeleeWeapon.ToolTip", "Weapon Types" },
+		{ "MiscEquipment.DisplayName", "Misc Equipment" },
+		{ "MiscEquipment.Name", "EItemSlotCategory::MiscEquipment" },
+		{ "ModuleRelativePath", "ItemSystem.h" },
+		{ "NoSlotRequired.DisplayName", "No Slot Required" },
+		{ "NoSlotRequired.Name", "EItemSlotCategory::NoSlotRequired" },
+		{ "Placeable.DisplayName", "Placeable" },
+		{ "Placeable.Name", "EItemSlotCategory::Placeable" },
+		{ "Quest.DisplayName", "Quest" },
+		{ "Quest.Name", "EItemSlotCategory::Quest" },
+		{ "RangedWeapon.DisplayName", "Ranged Weapon" },
+		{ "RangedWeapon.Name", "EItemSlotCategory::RangedWeapon" },
+		{ "Throwable.Comment", "// Useable Items Besides Weapons\n" },
+		{ "Throwable.DisplayName", "Throwable" },
+		{ "Throwable.Name", "EItemSlotCategory::Throwable" },
+		{ "Throwable.ToolTip", "Useable Items Besides Weapons" },
+		{ "Upgrade.Comment", "// Attachments/Upgrades\n" },
+		{ "Upgrade.DisplayName", "Upgrade" },
+		{ "Upgrade.Name", "EItemSlotCategory::Upgrade" },
+		{ "Upgrade.ToolTip", "Attachments/Upgrades" },
+		{ "Weapon.Comment", "// Any Slot Type\n" },
+		{ "Weapon.DisplayName", "Weapon" },
+		{ "Weapon.Name", "EItemSlotCategory::Weapon" },
+		{ "Weapon.ToolTip", "Any Slot Type" },
+	};
+#endif // WITH_METADATA
+	static constexpr UECodeGen_Private::FEnumeratorParam Enumerators[] = {
+		{ "EItemSlotCategory::Default", (int64)EItemSlotCategory::Default },
+		{ "EItemSlotCategory::Weapon", (int64)EItemSlotCategory::Weapon },
+		{ "EItemSlotCategory::MeleeWeapon", (int64)EItemSlotCategory::MeleeWeapon },
+		{ "EItemSlotCategory::RangedWeapon", (int64)EItemSlotCategory::RangedWeapon },
+		{ "EItemSlotCategory::Consumable", (int64)EItemSlotCategory::Consumable },
+		{ "EItemSlotCategory::Throwable", (int64)EItemSlotCategory::Throwable },
+		{ "EItemSlotCategory::Placeable", (int64)EItemSlotCategory::Placeable },
+		{ "EItemSlotCategory::Quest", (int64)EItemSlotCategory::Quest },
+		{ "EItemSlotCategory::Attachment", (int64)EItemSlotCategory::Attachment },
+		{ "EItemSlotCategory::Upgrade", (int64)EItemSlotCategory::Upgrade },
+		{ "EItemSlotCategory::HeadArmor", (int64)EItemSlotCategory::HeadArmor },
+		{ "EItemSlotCategory::ArmArmor", (int64)EItemSlotCategory::ArmArmor },
+		{ "EItemSlotCategory::ChestArmor", (int64)EItemSlotCategory::ChestArmor },
+		{ "EItemSlotCategory::LegArmor", (int64)EItemSlotCategory::LegArmor },
+		{ "EItemSlotCategory::BackEquipment", (int64)EItemSlotCategory::BackEquipment },
+		{ "EItemSlotCategory::HeadEquipment", (int64)EItemSlotCategory::HeadEquipment },
+		{ "EItemSlotCategory::ArmEquipment", (int64)EItemSlotCategory::ArmEquipment },
+		{ "EItemSlotCategory::LegEquipment", (int64)EItemSlotCategory::LegEquipment },
+		{ "EItemSlotCategory::MiscEquipment", (int64)EItemSlotCategory::MiscEquipment },
+		{ "EItemSlotCategory::NoSlotRequired", (int64)EItemSlotCategory::NoSlotRequired },
+	};
+	static const UECodeGen_Private::FEnumParams EnumParams;
+};
+const UECodeGen_Private::FEnumParams Z_Construct_UEnum_BigMaze_Alpha_0_EItemSlotCategory_Statics::EnumParams = {
+	(UObject*(*)())Z_Construct_UPackage__Script_BigMaze_Alpha_0,
+	nullptr,
+	"EItemSlotCategory",
+	"EItemSlotCategory",
+	Z_Construct_UEnum_BigMaze_Alpha_0_EItemSlotCategory_Statics::Enumerators,
+	RF_Public|RF_Transient|RF_MarkAsNative,
+	UE_ARRAY_COUNT(Z_Construct_UEnum_BigMaze_Alpha_0_EItemSlotCategory_Statics::Enumerators),
+	EEnumFlags::None,
+	(uint8)UEnum::ECppForm::EnumClass,
+	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UEnum_BigMaze_Alpha_0_EItemSlotCategory_Statics::Enum_MetaDataParams), Z_Construct_UEnum_BigMaze_Alpha_0_EItemSlotCategory_Statics::Enum_MetaDataParams)
+};
+UEnum* Z_Construct_UEnum_BigMaze_Alpha_0_EItemSlotCategory()
+{
+	if (!Z_Registration_Info_UEnum_EItemSlotCategory.InnerSingleton)
+	{
+		UECodeGen_Private::ConstructUEnum(Z_Registration_Info_UEnum_EItemSlotCategory.InnerSingleton, Z_Construct_UEnum_BigMaze_Alpha_0_EItemSlotCategory_Statics::EnumParams);
+	}
+	return Z_Registration_Info_UEnum_EItemSlotCategory.InnerSingleton;
+}
+// End Enum EItemSlotCategory
 
 // Begin ScriptStruct FItemAttribute
 static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_ItemAttribute;
@@ -302,6 +501,14 @@ struct Z_Construct_UScriptStruct_FItem_Statics
 		{ "Category", "Item" },
 		{ "ModuleRelativePath", "ItemSystem.h" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Class_MetaData[] = {
+		{ "Category", "Item" },
+		{ "ModuleRelativePath", "ItemSystem.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SlotType_MetaData[] = {
+		{ "Category", "Item" },
+		{ "ModuleRelativePath", "ItemSystem.h" },
+	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Value_MetaData[] = {
 		{ "Category", "Item" },
 #if !UE_BUILD_SHIPPING
@@ -365,6 +572,10 @@ struct Z_Construct_UScriptStruct_FItem_Statics
 	static const UECodeGen_Private::FIntPropertyParams NewProp_Level;
 	static const UECodeGen_Private::FSoftObjectPropertyParams NewProp_SkeletalMesh;
 	static const UECodeGen_Private::FSoftObjectPropertyParams NewProp_Icon;
+	static const UECodeGen_Private::FBytePropertyParams NewProp_Class_Underlying;
+	static const UECodeGen_Private::FEnumPropertyParams NewProp_Class;
+	static const UECodeGen_Private::FBytePropertyParams NewProp_SlotType_Underlying;
+	static const UECodeGen_Private::FEnumPropertyParams NewProp_SlotType;
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_Value;
 	static const UECodeGen_Private::FIntPropertyParams NewProp_Stack;
 	static const UECodeGen_Private::FIntPropertyParams NewProp_MaxStack;
@@ -389,6 +600,10 @@ const UECodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FItem_Stat
 const UECodeGen_Private::FIntPropertyParams Z_Construct_UScriptStruct_FItem_Statics::NewProp_Level = { "Level", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FItem, Level), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Level_MetaData), NewProp_Level_MetaData) };
 const UECodeGen_Private::FSoftObjectPropertyParams Z_Construct_UScriptStruct_FItem_Statics::NewProp_SkeletalMesh = { "SkeletalMesh", nullptr, (EPropertyFlags)0x0014000000000005, UECodeGen_Private::EPropertyGenFlags::SoftObject, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FItem, SkeletalMesh), Z_Construct_UClass_USkeletalMesh_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SkeletalMesh_MetaData), NewProp_SkeletalMesh_MetaData) };
 const UECodeGen_Private::FSoftObjectPropertyParams Z_Construct_UScriptStruct_FItem_Statics::NewProp_Icon = { "Icon", nullptr, (EPropertyFlags)0x0014000000000005, UECodeGen_Private::EPropertyGenFlags::SoftObject, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FItem, Icon), Z_Construct_UClass_UTexture2D_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Icon_MetaData), NewProp_Icon_MetaData) };
+const UECodeGen_Private::FBytePropertyParams Z_Construct_UScriptStruct_FItem_Statics::NewProp_Class_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UScriptStruct_FItem_Statics::NewProp_Class = { "Class", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FItem, Class), Z_Construct_UEnum_BigMaze_Alpha_0_EItemClass, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Class_MetaData), NewProp_Class_MetaData) }; // 1812291399
+const UECodeGen_Private::FBytePropertyParams Z_Construct_UScriptStruct_FItem_Statics::NewProp_SlotType_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UScriptStruct_FItem_Statics::NewProp_SlotType = { "SlotType", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FItem, SlotType), Z_Construct_UEnum_BigMaze_Alpha_0_EItemSlotCategory, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SlotType_MetaData), NewProp_SlotType_MetaData) }; // 31164032
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FItem_Statics::NewProp_Value = { "Value", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FItem, Value), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Value_MetaData), NewProp_Value_MetaData) };
 const UECodeGen_Private::FIntPropertyParams Z_Construct_UScriptStruct_FItem_Statics::NewProp_Stack = { "Stack", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FItem, Stack), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Stack_MetaData), NewProp_Stack_MetaData) };
 const UECodeGen_Private::FIntPropertyParams Z_Construct_UScriptStruct_FItem_Statics::NewProp_MaxStack = { "MaxStack", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FItem, MaxStack), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MaxStack_MetaData), NewProp_MaxStack_MetaData) };
@@ -407,6 +622,10 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FI
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FItem_Statics::NewProp_Level,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FItem_Statics::NewProp_SkeletalMesh,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FItem_Statics::NewProp_Icon,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FItem_Statics::NewProp_Class_Underlying,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FItem_Statics::NewProp_Class,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FItem_Statics::NewProp_SlotType_Underlying,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FItem_Statics::NewProp_SlotType,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FItem_Statics::NewProp_Value,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FItem_Statics::NewProp_Stack,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FItem_Statics::NewProp_MaxStack,
@@ -488,7 +707,7 @@ struct Z_Construct_UFunction_AItemFunctionalityBase_OnSwapItem_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AItemFunctionalityBase_OnSwapItem_Statics::NewProp_Item = { "Item", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ItemFunctionalityBase_eventOnSwapItem_Parms, Item), Z_Construct_UScriptStruct_FItem, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Item_MetaData), NewProp_Item_MetaData) }; // 1863649424
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AItemFunctionalityBase_OnSwapItem_Statics::NewProp_Item = { "Item", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ItemFunctionalityBase_eventOnSwapItem_Parms, Item), Z_Construct_UScriptStruct_FItem, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Item_MetaData), NewProp_Item_MetaData) }; // 544824131
 void Z_Construct_UFunction_AItemFunctionalityBase_OnSwapItem_Statics::NewProp_SwapTo_SetBit(void* Obj)
 {
 	((ItemFunctionalityBase_eventOnSwapItem_Parms*)Obj)->SwapTo = 1;
@@ -566,7 +785,7 @@ struct Z_Construct_UFunction_AItemFunctionalityBase_PrimaryUse_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AItemFunctionalityBase_PrimaryUse_Statics::NewProp_Item = { "Item", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ItemFunctionalityBase_eventPrimaryUse_Parms, Item), Z_Construct_UScriptStruct_FItem, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Item_MetaData), NewProp_Item_MetaData) }; // 1863649424
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AItemFunctionalityBase_PrimaryUse_Statics::NewProp_Item = { "Item", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ItemFunctionalityBase_eventPrimaryUse_Parms, Item), Z_Construct_UScriptStruct_FItem, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Item_MetaData), NewProp_Item_MetaData) }; // 544824131
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_AItemFunctionalityBase_PrimaryUse_Statics::NewProp_ActivationType_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_AItemFunctionalityBase_PrimaryUse_Statics::NewProp_ActivationType = { "ActivationType", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ItemFunctionalityBase_eventPrimaryUse_Parms, ActivationType), Z_Construct_UEnum_BigMaze_Alpha_0_EItemActivationType, METADATA_PARAMS(0, nullptr) }; // 651093556
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AItemFunctionalityBase_PrimaryUse_Statics::PropPointers[] = {
@@ -642,7 +861,7 @@ struct Z_Construct_UFunction_AItemFunctionalityBase_QuaternaryUse_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AItemFunctionalityBase_QuaternaryUse_Statics::NewProp_Item = { "Item", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ItemFunctionalityBase_eventQuaternaryUse_Parms, Item), Z_Construct_UScriptStruct_FItem, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Item_MetaData), NewProp_Item_MetaData) }; // 1863649424
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AItemFunctionalityBase_QuaternaryUse_Statics::NewProp_Item = { "Item", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ItemFunctionalityBase_eventQuaternaryUse_Parms, Item), Z_Construct_UScriptStruct_FItem, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Item_MetaData), NewProp_Item_MetaData) }; // 544824131
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_AItemFunctionalityBase_QuaternaryUse_Statics::NewProp_ActivationType_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_AItemFunctionalityBase_QuaternaryUse_Statics::NewProp_ActivationType = { "ActivationType", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ItemFunctionalityBase_eventQuaternaryUse_Parms, ActivationType), Z_Construct_UEnum_BigMaze_Alpha_0_EItemActivationType, METADATA_PARAMS(0, nullptr) }; // 651093556
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AItemFunctionalityBase_QuaternaryUse_Statics::PropPointers[] = {
@@ -718,7 +937,7 @@ struct Z_Construct_UFunction_AItemFunctionalityBase_SecondaryUse_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AItemFunctionalityBase_SecondaryUse_Statics::NewProp_Item = { "Item", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ItemFunctionalityBase_eventSecondaryUse_Parms, Item), Z_Construct_UScriptStruct_FItem, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Item_MetaData), NewProp_Item_MetaData) }; // 1863649424
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AItemFunctionalityBase_SecondaryUse_Statics::NewProp_Item = { "Item", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ItemFunctionalityBase_eventSecondaryUse_Parms, Item), Z_Construct_UScriptStruct_FItem, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Item_MetaData), NewProp_Item_MetaData) }; // 544824131
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_AItemFunctionalityBase_SecondaryUse_Statics::NewProp_ActivationType_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_AItemFunctionalityBase_SecondaryUse_Statics::NewProp_ActivationType = { "ActivationType", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ItemFunctionalityBase_eventSecondaryUse_Parms, ActivationType), Z_Construct_UEnum_BigMaze_Alpha_0_EItemActivationType, METADATA_PARAMS(0, nullptr) }; // 651093556
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AItemFunctionalityBase_SecondaryUse_Statics::PropPointers[] = {
@@ -794,7 +1013,7 @@ struct Z_Construct_UFunction_AItemFunctionalityBase_TertiaryUse_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AItemFunctionalityBase_TertiaryUse_Statics::NewProp_Item = { "Item", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ItemFunctionalityBase_eventTertiaryUse_Parms, Item), Z_Construct_UScriptStruct_FItem, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Item_MetaData), NewProp_Item_MetaData) }; // 1863649424
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AItemFunctionalityBase_TertiaryUse_Statics::NewProp_Item = { "Item", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ItemFunctionalityBase_eventTertiaryUse_Parms, Item), Z_Construct_UScriptStruct_FItem, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Item_MetaData), NewProp_Item_MetaData) }; // 544824131
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_AItemFunctionalityBase_TertiaryUse_Statics::NewProp_ActivationType_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_AItemFunctionalityBase_TertiaryUse_Statics::NewProp_ActivationType = { "ActivationType", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ItemFunctionalityBase_eventTertiaryUse_Parms, ActivationType), Z_Construct_UEnum_BigMaze_Alpha_0_EItemActivationType, METADATA_PARAMS(0, nullptr) }; // 651093556
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AItemFunctionalityBase_TertiaryUse_Statics::PropPointers[] = {
@@ -873,11 +1092,11 @@ struct Z_Construct_UClass_AItemFunctionalityBase_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_AItemFunctionalityBase_OnSwapItem, "OnSwapItem" }, // 3572212662
-		{ &Z_Construct_UFunction_AItemFunctionalityBase_PrimaryUse, "PrimaryUse" }, // 3623916105
-		{ &Z_Construct_UFunction_AItemFunctionalityBase_QuaternaryUse, "QuaternaryUse" }, // 2282398587
-		{ &Z_Construct_UFunction_AItemFunctionalityBase_SecondaryUse, "SecondaryUse" }, // 250362583
-		{ &Z_Construct_UFunction_AItemFunctionalityBase_TertiaryUse, "TertiaryUse" }, // 3092097900
+		{ &Z_Construct_UFunction_AItemFunctionalityBase_OnSwapItem, "OnSwapItem" }, // 2016101019
+		{ &Z_Construct_UFunction_AItemFunctionalityBase_PrimaryUse, "PrimaryUse" }, // 1821348568
+		{ &Z_Construct_UFunction_AItemFunctionalityBase_QuaternaryUse, "QuaternaryUse" }, // 96220314
+		{ &Z_Construct_UFunction_AItemFunctionalityBase_SecondaryUse, "SecondaryUse" }, // 2100179879
+		{ &Z_Construct_UFunction_AItemFunctionalityBase_TertiaryUse, "TertiaryUse" }, // 2915549787
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -885,7 +1104,7 @@ struct Z_Construct_UClass_AItemFunctionalityBase_Statics
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_AItemFunctionalityBase_Statics::NewProp_ItemDefault = { "ItemDefault", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AItemFunctionalityBase, ItemDefault), Z_Construct_UScriptStruct_FItem, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ItemDefault_MetaData), NewProp_ItemDefault_MetaData) }; // 1863649424
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_AItemFunctionalityBase_Statics::NewProp_ItemDefault = { "ItemDefault", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AItemFunctionalityBase, ItemDefault), Z_Construct_UScriptStruct_FItem, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ItemDefault_MetaData), NewProp_ItemDefault_MetaData) }; // 544824131
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AItemFunctionalityBase_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AItemFunctionalityBase_Statics::NewProp_ItemDefault,
 };
@@ -964,7 +1183,7 @@ struct Z_Construct_UClass_UItemDefault_Statics
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UItemDefault_Statics::NewProp_ItemDefault = { "ItemDefault", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UItemDefault, ItemDefault), Z_Construct_UScriptStruct_FItem, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ItemDefault_MetaData), NewProp_ItemDefault_MetaData) }; // 1863649424
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UItemDefault_Statics::NewProp_ItemDefault = { "ItemDefault", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UItemDefault, ItemDefault), Z_Construct_UScriptStruct_FItem, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ItemDefault_MetaData), NewProp_ItemDefault_MetaData) }; // 544824131
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UItemDefault_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UItemDefault_Statics::NewProp_ItemDefault,
 };
@@ -1007,23 +1226,25 @@ UItemDefault::~UItemDefault() {}
 // End Class UItemDefault
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_Users_jonat_Documents_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_ItemSystem_h_Statics
+struct Z_CompiledInDeferFile_FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_ItemSystem_h_Statics
 {
 	static constexpr FEnumRegisterCompiledInInfo EnumInfo[] = {
 		{ EItemActivationType_StaticEnum, TEXT("EItemActivationType"), &Z_Registration_Info_UEnum_EItemActivationType, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 651093556U) },
+		{ EItemClass_StaticEnum, TEXT("EItemClass"), &Z_Registration_Info_UEnum_EItemClass, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 1812291399U) },
+		{ EItemSlotCategory_StaticEnum, TEXT("EItemSlotCategory"), &Z_Registration_Info_UEnum_EItemSlotCategory, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 31164032U) },
 	};
 	static constexpr FStructRegisterCompiledInInfo ScriptStructInfo[] = {
 		{ FItemAttribute::StaticStruct, Z_Construct_UScriptStruct_FItemAttribute_Statics::NewStructOps, TEXT("ItemAttribute"), &Z_Registration_Info_UScriptStruct_ItemAttribute, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FItemAttribute), 3073608223U) },
-		{ FItem::StaticStruct, Z_Construct_UScriptStruct_FItem_Statics::NewStructOps, TEXT("Item"), &Z_Registration_Info_UScriptStruct_Item, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FItem), 1863649424U) },
+		{ FItem::StaticStruct, Z_Construct_UScriptStruct_FItem_Statics::NewStructOps, TEXT("Item"), &Z_Registration_Info_UScriptStruct_Item, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FItem), 544824131U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_AItemFunctionalityBase, AItemFunctionalityBase::StaticClass, TEXT("AItemFunctionalityBase"), &Z_Registration_Info_UClass_AItemFunctionalityBase, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AItemFunctionalityBase), 2261599618U) },
-		{ Z_Construct_UClass_UItemDefault, UItemDefault::StaticClass, TEXT("UItemDefault"), &Z_Registration_Info_UClass_UItemDefault, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UItemDefault), 1368521102U) },
+		{ Z_Construct_UClass_AItemFunctionalityBase, AItemFunctionalityBase::StaticClass, TEXT("AItemFunctionalityBase"), &Z_Registration_Info_UClass_AItemFunctionalityBase, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AItemFunctionalityBase), 2627511301U) },
+		{ Z_Construct_UClass_UItemDefault, UItemDefault::StaticClass, TEXT("UItemDefault"), &Z_Registration_Info_UClass_UItemDefault, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UItemDefault), 4045791521U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_jonat_Documents_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_ItemSystem_h_705340184(TEXT("/Script/BigMaze_Alpha_0"),
-	Z_CompiledInDeferFile_FID_Users_jonat_Documents_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_ItemSystem_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_jonat_Documents_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_ItemSystem_h_Statics::ClassInfo),
-	Z_CompiledInDeferFile_FID_Users_jonat_Documents_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_ItemSystem_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_jonat_Documents_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_ItemSystem_h_Statics::ScriptStructInfo),
-	Z_CompiledInDeferFile_FID_Users_jonat_Documents_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_ItemSystem_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_jonat_Documents_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_ItemSystem_h_Statics::EnumInfo));
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_ItemSystem_h_1830103279(TEXT("/Script/BigMaze_Alpha_0"),
+	Z_CompiledInDeferFile_FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_ItemSystem_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_ItemSystem_h_Statics::ClassInfo),
+	Z_CompiledInDeferFile_FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_ItemSystem_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_ItemSystem_h_Statics::ScriptStructInfo),
+	Z_CompiledInDeferFile_FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_ItemSystem_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_ItemSystem_h_Statics::EnumInfo));
 // End Registration
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

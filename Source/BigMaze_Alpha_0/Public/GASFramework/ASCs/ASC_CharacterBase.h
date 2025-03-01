@@ -6,6 +6,9 @@
 #include "AbilitySystemComponent.h"
 #include "ASC_CharacterBase.generated.h"
 
+// DECLARE_DYNAMIC_MULTICAST_DELEGATE_ThreeParams(FReceivedDamageDelegate, UGDAbilitySystemComponent*, SourceASC, float, UnmitigatedDamage, float, MitigatedDamage);
+
+
 UCLASS()
 class BIGMAZE_ALPHA_0_API UASC_CharacterBase : public UAbilitySystemComponent
 {
@@ -15,4 +18,6 @@ public:
 	bool AbilitiesGiven = false;
 	bool StartupEffectsApplied = false;
 
+
+    
 };
