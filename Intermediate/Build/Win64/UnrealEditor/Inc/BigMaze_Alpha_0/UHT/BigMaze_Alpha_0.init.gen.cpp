@@ -17,13 +17,13 @@ void EmptyLinkFunctionForGeneratedCodeBigMaze_Alpha_0_init() {}
 				nullptr,
 				0,
 				PKG_CompiledIn | 0x00000000,
-				0x14727FDE,
-				0x27E97908,
+				0x7A51B40A,
+				0x6F208D5A,
 				METADATA_PARAMS(0, nullptr)
 			};
 			UECodeGen_Private::ConstructUPackage(Z_Registration_Info_UPackage__Script_BigMaze_Alpha_0.OuterSingleton, PackageParams);
 		}
 		return Z_Registration_Info_UPackage__Script_BigMaze_Alpha_0.OuterSingleton;
 	}
-	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_BigMaze_Alpha_0(Z_Construct_UPackage__Script_BigMaze_Alpha_0, TEXT("/Script/BigMaze_Alpha_0"), Z_Registration_Info_UPackage__Script_BigMaze_Alpha_0, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0x14727FDE, 0x27E97908));
+	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_BigMaze_Alpha_0(Z_Construct_UPackage__Script_BigMaze_Alpha_0, TEXT("/Script/BigMaze_Alpha_0"), Z_Registration_Info_UPackage__Script_BigMaze_Alpha_0, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0x7A51B40A, 0x6F208D5A));
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
