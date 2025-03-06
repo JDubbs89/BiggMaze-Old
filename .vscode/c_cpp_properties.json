@@ -2,26 +2,13 @@
     "configurations": [
         {
             "name": "BigMaze_Alpha_0Editor Editor Win64 Development (BigMaze_Alpha_0)",
-            "compilerPath": "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.42.34433/bin/Hostx64/x64/cl.exe",
+            "compilerPath": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.42.34433\\bin\\Hostx64\\x64\\cl.exe",
             "cStandard": "c17",
-            "cppStandard": "c++17",
+            "cppStandard": "c++20",
             "intelliSenseMode": "msvc-x64",
-            "compileCommands": "",
-            "includePath": [ 
-				"${workspaceFolder}\\Intermediate\\**", 
-				"${workspaceFolder}\\Plugins\\**", 
-				"${workspaceFolder}\\Source\\**"
+            "compileCommands": [
+                "C:\\Unreal Projects\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\.vscode\\compileCommands_BigMaze_Alpha_0.json"
             ]
-            "defines": [ 
-				"UNICODE", 
-				"_UNICODE", 
-				"__UNREAL__", 
-				"UBT_COMPILED_PLATFORM=Windows", 
-				"WITH_ENGINE=1", 
-				"WITH_UNREAL_DEVELOPER_TOOLS=1", 
-				"WITH_APPLICATION_CORE=1", 
-				"WITH_COREUOBJECT=1" 
-			]
         },
         {
             "name": "Win32",
@@ -29,7 +16,9 @@
             "cStandard": "c17",
             "cppStandard": "c++20",
             "intelliSenseMode": "msvc-x64",
-            "compileCommands": "C:\\Unreal Projects\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\.vscode\\compileCommands_Default.json"
+            "compileCommands": [
+                "C:\\Unreal Projects\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\.vscode\\compileCommands_Default.json"
+            ]
         }
     ],
     "version": 4

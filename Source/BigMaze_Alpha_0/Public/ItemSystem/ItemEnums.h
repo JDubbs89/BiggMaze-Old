@@ -1,4 +1,5 @@
 // Copyright Jade Eye Studios 2025
+#pragma once
 
 #include "CoreMinimal.h"
 #include "ItemEnums.generated.h"

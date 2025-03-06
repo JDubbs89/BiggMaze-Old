@@ -800,22 +800,6 @@
 		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
 	},
 	{
-		"file": "C:\\Unreal Projects\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\Source\\BigMaze_Alpha_0\\ItemSystem.cpp",
-		"arguments": [
-			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.42.34433\\bin\\Hostx64\\x64\\cl.exe",
-			"@C:\\Unreal Projects\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\.vscode\\compileCommands_Default\\BigMaze_Alpha_0.1.rsp"
-		],
-		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
-	},
-	{
-		"file": "C:\\Unreal Projects\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\Source\\BigMaze_Alpha_0\\ItemSystem.h",
-		"arguments": [
-			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.42.34433\\bin\\Hostx64\\x64\\cl.exe",
-			"@C:\\Unreal Projects\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\.vscode\\compileCommands_Default\\BigMaze_Alpha_0.1.rsp"
-		],
-		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
-	},
-	{
 		"file": "C:\\Unreal Projects\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\Source\\BigMaze_Alpha_0\\MyClass.cpp",
 		"arguments": [
 			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.42.34433\\bin\\Hostx64\\x64\\cl.exe",
@@ -825,6 +809,214 @@
 	},
 	{
 		"file": "C:\\Unreal Projects\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\Source\\BigMaze_Alpha_0\\MyClass.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.42.34433\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Unreal Projects\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\.vscode\\compileCommands_Default\\BigMaze_Alpha_0.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Unreal Projects\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\Source\\BigMaze_Alpha_0\\Private\\AssetManager\\BiggMazeAssetManager.cpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.42.34433\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Unreal Projects\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\.vscode\\compileCommands_Default\\BigMaze_Alpha_0.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Unreal Projects\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\Source\\BigMaze_Alpha_0\\Private\\Character\\AI\\BiggMazeAIController.cpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.42.34433\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Unreal Projects\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\.vscode\\compileCommands_Default\\BigMaze_Alpha_0.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Unreal Projects\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\Source\\BigMaze_Alpha_0\\Private\\Character\\BiggMazeCharacter.cpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.42.34433\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Unreal Projects\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\.vscode\\compileCommands_Default\\BigMaze_Alpha_0.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Unreal Projects\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\Source\\BigMaze_Alpha_0\\Private\\Character\\Player\\BiggMazePlayerCharacter.cpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.42.34433\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Unreal Projects\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\.vscode\\compileCommands_Default\\BigMaze_Alpha_0.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Unreal Projects\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\Source\\BigMaze_Alpha_0\\Private\\Character\\Player\\BiggMazePlayerController.cpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.42.34433\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Unreal Projects\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\.vscode\\compileCommands_Default\\BigMaze_Alpha_0.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Unreal Projects\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\Source\\BigMaze_Alpha_0\\Private\\Character\\Player\\BiggMazePlayerState.cpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.42.34433\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Unreal Projects\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\.vscode\\compileCommands_Default\\BigMaze_Alpha_0.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Unreal Projects\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\Source\\BigMaze_Alpha_0\\Private\\GASFramework\\ASCs\\ASC_BiggMaze.cpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.42.34433\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Unreal Projects\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\.vscode\\compileCommands_Default\\BigMaze_Alpha_0.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Unreal Projects\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\Source\\BigMaze_Alpha_0\\Private\\GASFramework\\ASCs\\ASC_CharacterBase.cpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.42.34433\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Unreal Projects\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\.vscode\\compileCommands_Default\\BigMaze_Alpha_0.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Unreal Projects\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\Source\\BigMaze_Alpha_0\\Private\\GASFramework\\AttributeSets\\AS_Ammunition.cpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.42.34433\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Unreal Projects\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\.vscode\\compileCommands_Default\\BigMaze_Alpha_0.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Unreal Projects\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\Source\\BigMaze_Alpha_0\\Private\\GASFramework\\AttributeSets\\AS_BM_CharBase.cpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.42.34433\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Unreal Projects\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\.vscode\\compileCommands_Default\\BigMaze_Alpha_0.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Unreal Projects\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\Source\\BigMaze_Alpha_0\\Private\\GASFramework\\AttributeSets\\AS_Ingredients.cpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.42.34433\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Unreal Projects\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\.vscode\\compileCommands_Default\\BigMaze_Alpha_0.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Unreal Projects\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\Source\\BigMaze_Alpha_0\\Private\\GASFramework\\Player\\PS_BM_Player.cpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.42.34433\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Unreal Projects\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\.vscode\\compileCommands_Default\\BigMaze_Alpha_0.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Unreal Projects\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\Source\\BigMaze_Alpha_0\\Public\\AssetManager\\BiggMazeAssetManager.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.42.34433\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Unreal Projects\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\.vscode\\compileCommands_Default\\BigMaze_Alpha_0.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Unreal Projects\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\Source\\BigMaze_Alpha_0\\Public\\Character\\AI\\BiggMazeAIController.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.42.34433\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Unreal Projects\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\.vscode\\compileCommands_Default\\BigMaze_Alpha_0.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Unreal Projects\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\Source\\BigMaze_Alpha_0\\Public\\Character\\BiggMazeCharacter.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.42.34433\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Unreal Projects\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\.vscode\\compileCommands_Default\\BigMaze_Alpha_0.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Unreal Projects\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\Source\\BigMaze_Alpha_0\\Public\\Character\\Player\\BiggMazePlayerCharacter.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.42.34433\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Unreal Projects\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\.vscode\\compileCommands_Default\\BigMaze_Alpha_0.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Unreal Projects\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\Source\\BigMaze_Alpha_0\\Public\\Character\\Player\\BiggMazePlayerController.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.42.34433\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Unreal Projects\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\.vscode\\compileCommands_Default\\BigMaze_Alpha_0.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Unreal Projects\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\Source\\BigMaze_Alpha_0\\Public\\Character\\Player\\BiggMazePlayerState.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.42.34433\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Unreal Projects\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\.vscode\\compileCommands_Default\\BigMaze_Alpha_0.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Unreal Projects\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\Source\\BigMaze_Alpha_0\\Public\\GASFramework\\ASCs\\ASC_BiggMaze.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.42.34433\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Unreal Projects\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\.vscode\\compileCommands_Default\\BigMaze_Alpha_0.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Unreal Projects\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\Source\\BigMaze_Alpha_0\\Public\\GASFramework\\ASCs\\ASC_CharacterBase.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.42.34433\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Unreal Projects\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\.vscode\\compileCommands_Default\\BigMaze_Alpha_0.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Unreal Projects\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\Source\\BigMaze_Alpha_0\\Public\\GASFramework\\AttributeSets\\AS_Ammunition.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.42.34433\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Unreal Projects\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\.vscode\\compileCommands_Default\\BigMaze_Alpha_0.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Unreal Projects\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\Source\\BigMaze_Alpha_0\\Public\\GASFramework\\AttributeSets\\AS_BM_CharBase.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.42.34433\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Unreal Projects\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\.vscode\\compileCommands_Default\\BigMaze_Alpha_0.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Unreal Projects\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\Source\\BigMaze_Alpha_0\\Public\\GASFramework\\AttributeSets\\AS_Ingredients.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.42.34433\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Unreal Projects\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\.vscode\\compileCommands_Default\\BigMaze_Alpha_0.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Unreal Projects\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\Source\\BigMaze_Alpha_0\\Public\\GASFramework\\Player\\PS_BM_Player.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.42.34433\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Unreal Projects\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\.vscode\\compileCommands_Default\\BigMaze_Alpha_0.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Unreal Projects\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\Source\\BigMaze_Alpha_0\\Public\\ItemSystem\\ItemEnums.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.42.34433\\bin\\Hostx64\\x64\\cl.exe",
+			"@C:\\Unreal Projects\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\.vscode\\compileCommands_Default\\BigMaze_Alpha_0.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Unreal Projects\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\Source\\BigMaze_Alpha_0\\Public\\ItemSystem\\ItemSystem.h",
 		"arguments": [
 			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.42.34433\\bin\\Hostx64\\x64\\cl.exe",
 			"@C:\\Unreal Projects\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\.vscode\\compileCommands_Default\\BigMaze_Alpha_0.1.rsp"

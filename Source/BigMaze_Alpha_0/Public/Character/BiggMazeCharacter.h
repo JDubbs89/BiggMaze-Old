@@ -20,23 +20,29 @@ public:
 	ABiggMazeCharacter();
 
 	// Interface method for getting ASC
-	virtual UAbilitySystemComponent* GetAbilitySystemComponent() const override;
+	virtual class UAbilitySystemComponent* GetAbilitySystemComponent() const override;
 
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
 	// ASC
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Abilities", Replicated, meta = (AllowPrivateAccess = "true"))
-	UASC_BiggMaze* AbilitySystemComponent;
+	TObjectPtr<UASC_BiggMaze> AbilitySystemComponent;
 
 	// Character Attribute Set
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Abilities", Replicated, meta = (AllowPrivateAccess = "true"))
-	UAS_BM_CharBase* CharAttributeSet;
+	TObjectPtr<UAS_BM_CharBase> CharAttributeSet;
 
 	void InitializeAttributes();
 
+	UFUNCTION(Blueprintable)
+	void InitializeAbilities();
+
 	virtual void OnRep_PlayerState() override;
+
+
+	// Default abilities for this Character. These will be removed on Character death and regiven if Character respawns.
+	UPROPERTY(BlueprintReadOnly, EditAnywhere, Category = "Abilities")
+	TArray<TSubclassOf<class UGameplayAbility>> CharacterAbilities;
 
 public:	
 	// Called every frame

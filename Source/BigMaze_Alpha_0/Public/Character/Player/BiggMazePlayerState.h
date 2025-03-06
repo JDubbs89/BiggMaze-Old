@@ -30,13 +30,10 @@ protected:
 
 	// ASC
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Abilities", Replicated, meta = (AllowPrivateAccess = "true"))
-	UASC_BiggMaze* AbilitySystemComponent;
+	TObjectPtr<UASC_BiggMaze> AbilitySystemComponent;
 	// Attribute Set
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Abilities", Replicated, meta = (AllowPrivateAccess = "true"))
-	UAS_BM_CharBase* AttributeSet;
-
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Abilities", Replicated, meta = (AllowPrivateAccess = "true"))
-	UAS_Ammunition* AmmoAttributeSet;
+	TObjectPtr<UAS_Ammunition> AmmoAttributeSet;
 
 	void InitializeAttributes();
 

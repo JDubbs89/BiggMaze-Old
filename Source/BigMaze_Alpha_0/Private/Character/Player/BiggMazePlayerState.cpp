@@ -18,7 +18,6 @@ ABiggMazePlayerState::ABiggMazePlayerState()
     AbilitySystemComponent->SetReplicationMode(EGameplayEffectReplicationMode::Mixed);
 
     // Init AttributeSets
-    AttributeSet = CreateDefaultSubobject<UAS_BM_CharBase>(TEXT("AttributeSet"));
     AmmoAttributeSet = CreateDefaultSubobject<UAS_Ammunition>(TEXT("AmmoAttributeSet"));
 }
 
@@ -49,6 +48,5 @@ void ABiggMazePlayerState::GetLifetimeReplicatedProps(TArray<FLifetimeProperty> 
 
     // Replicate ASC and AttributeSet
     DOREPLIFETIME(ABiggMazePlayerState, AbilitySystemComponent);
-    DOREPLIFETIME(ABiggMazePlayerState, AttributeSet);
     DOREPLIFETIME(ABiggMazePlayerState, AmmoAttributeSet);
 }

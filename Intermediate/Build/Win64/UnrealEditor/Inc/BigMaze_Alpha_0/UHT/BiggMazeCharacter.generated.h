@@ -14,6 +14,10 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define BIGMAZE_ALPHA_0_BiggMazeCharacter_generated_h
 
+#define FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_Public_Character_BiggMazeCharacter_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
+	DECLARE_FUNCTION(execInitializeAbilities);
+
+
 #define FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_Public_Character_BiggMazeCharacter_h_16_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesABiggMazeCharacter(); \
@@ -21,14 +25,7 @@ private: \
 public: \
 	DECLARE_CLASS(ABiggMazeCharacter, ACharacter, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/BigMaze_Alpha_0"), NO_API) \
 	DECLARE_SERIALIZER(ABiggMazeCharacter) \
-	virtual UObject* _getUObject() const override { return const_cast<ABiggMazeCharacter*>(this); } \
-	enum class ENetFields_Private : uint16 \
-	{ \
-		NETFIELD_REP_START=(uint16)((int32)Super::ENetFields_Private::NETFIELD_REP_END + (int32)1), \
-		AbilitySystemComponent=NETFIELD_REP_START, \
-		CharAttributeSet, \
-		NETFIELD_REP_END=CharAttributeSet	}; \
-	NO_API virtual void ValidateGeneratedRepEnums(const TArray<struct FRepRecord>& ClassReps) const override;
+	virtual UObject* _getUObject() const override { return const_cast<ABiggMazeCharacter*>(this); }
 
 
 #define FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_Public_Character_BiggMazeCharacter_h_16_ENHANCED_CONSTRUCTORS \
@@ -47,6 +44,7 @@ public: \
 #define FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_Public_Character_BiggMazeCharacter_h_16_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
+	FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_Public_Character_BiggMazeCharacter_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
 	FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_Public_Character_BiggMazeCharacter_h_16_INCLASS_NO_PURE_DECLS \
 	FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_Public_Character_BiggMazeCharacter_h_16_ENHANCED_CONSTRUCTORS \
 private: \

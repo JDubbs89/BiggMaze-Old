@@ -15,7 +15,8 @@
 		"files.associations": {
 			"*.json": "cpp",
 			"*.rh": "cpp"
-		}
+		},
+		"dotnet.preferCSharpExtension": true
 	},
 	"extensions": {
 		"recommendations": [

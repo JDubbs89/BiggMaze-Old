@@ -2,6 +2,8 @@
 
 
 #include "Character/BiggMazeCharacter.h"
+#include "GASFramework/ASCs/ASC_BiggMaze.h"
+#include "Net/UnrealNetwork.h"
 #include "Character/Player/BiggMazePlayerState.h"
 
 // Sets default values
@@ -10,17 +12,21 @@ ABiggMazeCharacter::ABiggMazeCharacter()
  	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
+	// Init AttributeSets
+    CharAttributeSet = CreateDefaultSubobject<UAS_BM_CharBase>(TEXT("AttributeSet"));
 }
 
+// Subclasses Override This
 UAbilitySystemComponent *ABiggMazeCharacter::GetAbilitySystemComponent() const
 {
-    return AbilitySystemComponent;
+	return nullptr;
 }
 // Called when the game starts or when spawned
 void ABiggMazeCharacter::BeginPlay()
 {
 	Super::BeginPlay();
-	
+
+	InitializeAttributes();
 }
 
 void ABiggMazeCharacter::InitializeAttributes()
@@ -29,6 +35,10 @@ void ABiggMazeCharacter::InitializeAttributes()
 	{
 		AbilitySystemComponent->StartupEffectsApplied = true;
 	}
+}
+
+void ABiggMazeCharacter::InitializeAbilities()
+{
 }
 
 void ABiggMazeCharacter::PossessedBy(AController * NewController)
@@ -50,7 +60,10 @@ void ABiggMazeCharacter::PossessedBy(AController * NewController)
 void ABiggMazeCharacter::GetLifetimeReplicatedProps(TArray<FLifetimeProperty> &OutLifetimeProps) const
 {
 	Super::GetLifetimeReplicatedProps(OutLifetimeProps);
+
+	DOREPLIFETIME(ABiggMazeCharacter, CharAttributeSet);
 }
+
 // Called every frame
 void ABiggMazeCharacter::Tick(float DeltaTime)
 {
