@@ -61,7 +61,7 @@ void ABiggMazeCharacter::GetLifetimeReplicatedProps(TArray<FLifetimeProperty> &O
 {
 	Super::GetLifetimeReplicatedProps(OutLifetimeProps);
 
-	DOREPLIFETIME(ABiggMazeCharacter, CharAttributeSet);
+	//DOREPLIFETIME(ABiggMazeCharacter, CharAttributeSet);
 }
 
 // Called every frame

@@ -9,7 +9,7 @@
 /**
  * 
  */
-UCLASS()
+UCLASS(Blueprintable, ClassGroup = BiggMaze)
 class BIGMAZE_ALPHA_0_API ABiggMazePlayerCharacter : public ABiggMazeCharacter
 {
 	GENERATED_BODY()
