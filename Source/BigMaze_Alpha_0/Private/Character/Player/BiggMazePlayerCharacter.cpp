@@ -16,6 +16,7 @@ void ABiggMazePlayerCharacter::PossessedBy(AController* NewController)
 {
     Super::PossessedBy(NewController);
     InitializeAbilitySystem();
+    BindAttributeChangeDelegates();
 }
 
 void ABiggMazePlayerCharacter::UnPossessed()
@@ -28,9 +29,20 @@ void ABiggMazePlayerCharacter::OnRep_PlayerState()
 {
     Super::OnRep_PlayerState();
     InitializeAbilitySystem();
+    BindAttributeChangeDelegates();
 }
 
-void ABiggMazePlayerCharacter::InitializeAbilitySystem()
+void ABiggMazePlayerCharacter::BindAttributeChangeDelegates()
+{
+    
+}
+
+void ABiggMazePlayerCharacter::OnAttributeChanged(const FOnAttributeChangeData &Data, FName AttributeName)
+{
+    
+}
+
+void ABiggMazePlayerCharacter::InitializeAbilitySystem() 
 {
     ABiggMazePlayerState* PS = GetPlayerState<ABiggMazePlayerState>();
     if (PS)

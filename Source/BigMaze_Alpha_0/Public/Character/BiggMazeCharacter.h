@@ -27,9 +27,11 @@ protected:
 	virtual void BeginPlay() override;
 
 	// ASC
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Abilities", Replicated, meta = (AllowPrivateAccess = "true"))
 	TObjectPtr<UASC_BiggMaze> AbilitySystemComponent;
 
 	// Character Attribute Set
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Attributes", Replicated, meta = (AllowPrivateAccess = "true"))
 	TObjectPtr<UAS_BM_CharBase> CharAttributeSet;
 
 	void InitializeAttributes();

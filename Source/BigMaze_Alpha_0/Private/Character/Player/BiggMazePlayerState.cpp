@@ -5,7 +5,8 @@
 #include "GameplayEffect.h"
 #include "GameplayEffectExtension.h"
 #include "GASFramework/ASCs/ASC_BiggMaze.h"
-#include "GASFramework/AttributeSets/AS_BM_CharBase.h"
+#include "GASFramework/AttributeSets/AS_Ammunition.h"
+#include "GASFramework/AttributeSets/AS_Ingredients.h"
 #include "Net/UnrealNetwork.h"
 
 ABiggMazePlayerState::ABiggMazePlayerState()
@@ -19,6 +20,7 @@ ABiggMazePlayerState::ABiggMazePlayerState()
 
     // Init AttributeSets
     AmmoAttributeSet = CreateDefaultSubobject<UAS_Ammunition>(TEXT("AmmoAttributeSet"));
+    IngredientAttributeSet = CreateDefaultSubobject<UAS_Ingredients>(TEXT("IngredientAttributeSet"));
 }
 
 UAbilitySystemComponent *ABiggMazePlayerState::GetAbilitySystemComponent() const
@@ -49,4 +51,5 @@ void ABiggMazePlayerState::GetLifetimeReplicatedProps(TArray<FLifetimeProperty> 
     // Replicate ASC and AttributeSet
     DOREPLIFETIME(ABiggMazePlayerState, AbilitySystemComponent);
     DOREPLIFETIME(ABiggMazePlayerState, AmmoAttributeSet);
+    DOREPLIFETIME(ABiggMazePlayerState, IngredientAttributeSet);
 }

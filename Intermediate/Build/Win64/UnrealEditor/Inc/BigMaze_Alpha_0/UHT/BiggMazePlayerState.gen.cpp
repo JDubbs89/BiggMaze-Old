@@ -13,6 +13,7 @@ void EmptyLinkFunctionForGeneratedCodeBiggMazePlayerState() {}
 BIGMAZE_ALPHA_0_API UClass* Z_Construct_UClass_ABiggMazePlayerState();
 BIGMAZE_ALPHA_0_API UClass* Z_Construct_UClass_ABiggMazePlayerState_NoRegister();
 BIGMAZE_ALPHA_0_API UClass* Z_Construct_UClass_UAS_Ammunition_NoRegister();
+BIGMAZE_ALPHA_0_API UClass* Z_Construct_UClass_UAS_Ingredients_NoRegister();
 BIGMAZE_ALPHA_0_API UClass* Z_Construct_UClass_UASC_BiggMaze_NoRegister();
 ENGINE_API UClass* Z_Construct_UClass_APlayerState();
 GAMEPLAYABILITIES_API UClass* Z_Construct_UClass_UAbilitySystemInterface_NoRegister();
@@ -54,7 +55,7 @@ struct Z_Construct_UClass_ABiggMazePlayerState_Statics
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_AmmoAttributeSet_MetaData[] = {
 		{ "AllowPrivateAccess", "true" },
-		{ "Category", "Abilities" },
+		{ "Category", "Attributes" },
 #if !UE_BUILD_SHIPPING
 		{ "Comment", "// Attribute Set\n" },
 #endif
@@ -64,9 +65,16 @@ struct Z_Construct_UClass_ABiggMazePlayerState_Statics
 		{ "ToolTip", "Attribute Set" },
 #endif
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_IngredientAttributeSet_MetaData[] = {
+		{ "AllowPrivateAccess", "true" },
+		{ "Category", "Attributes" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Public/Character/Player/BiggMazePlayerState.h" },
+	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_AbilitySystemComponent;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_AmmoAttributeSet;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_IngredientAttributeSet;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static const UECodeGen_Private::FImplementedInterfaceParams InterfaceParams[];
@@ -77,9 +85,11 @@ struct Z_Construct_UClass_ABiggMazePlayerState_Statics
 };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ABiggMazePlayerState_Statics::NewProp_AbilitySystemComponent = { "AbilitySystemComponent", nullptr, (EPropertyFlags)0x01240800000a003d, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABiggMazePlayerState, AbilitySystemComponent), Z_Construct_UClass_UASC_BiggMaze_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_AbilitySystemComponent_MetaData), NewProp_AbilitySystemComponent_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ABiggMazePlayerState_Statics::NewProp_AmmoAttributeSet = { "AmmoAttributeSet", nullptr, (EPropertyFlags)0x01240800000a003d, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABiggMazePlayerState, AmmoAttributeSet), Z_Construct_UClass_UAS_Ammunition_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_AmmoAttributeSet_MetaData), NewProp_AmmoAttributeSet_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ABiggMazePlayerState_Statics::NewProp_IngredientAttributeSet = { "IngredientAttributeSet", nullptr, (EPropertyFlags)0x01240800000a003d, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABiggMazePlayerState, IngredientAttributeSet), Z_Construct_UClass_UAS_Ingredients_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_IngredientAttributeSet_MetaData), NewProp_IngredientAttributeSet_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ABiggMazePlayerState_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABiggMazePlayerState_Statics::NewProp_AbilitySystemComponent,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABiggMazePlayerState_Statics::NewProp_AmmoAttributeSet,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABiggMazePlayerState_Statics::NewProp_IngredientAttributeSet,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_ABiggMazePlayerState_Statics::PropPointers) < 2048);
 UObject* (*const Z_Construct_UClass_ABiggMazePlayerState_Statics::DependentSingletons[])() = {
@@ -121,9 +131,11 @@ void ABiggMazePlayerState::ValidateGeneratedRepEnums(const TArray<struct FRepRec
 {
 	static const FName Name_AbilitySystemComponent(TEXT("AbilitySystemComponent"));
 	static const FName Name_AmmoAttributeSet(TEXT("AmmoAttributeSet"));
+	static const FName Name_IngredientAttributeSet(TEXT("IngredientAttributeSet"));
 	const bool bIsValid = true
 		&& Name_AbilitySystemComponent == ClassReps[(int32)ENetFields_Private::AbilitySystemComponent].Property->GetFName()
-		&& Name_AmmoAttributeSet == ClassReps[(int32)ENetFields_Private::AmmoAttributeSet].Property->GetFName();
+		&& Name_AmmoAttributeSet == ClassReps[(int32)ENetFields_Private::AmmoAttributeSet].Property->GetFName()
+		&& Name_IngredientAttributeSet == ClassReps[(int32)ENetFields_Private::IngredientAttributeSet].Property->GetFName();
 	checkf(bIsValid, TEXT("UHT Generated Rep Indices do not match runtime populated Rep Indices for properties in ABiggMazePlayerState"));
 }
 DEFINE_VTABLE_PTR_HELPER_CTOR(ABiggMazePlayerState);
@@ -134,10 +146,10 @@ ABiggMazePlayerState::~ABiggMazePlayerState() {}
 struct Z_CompiledInDeferFile_FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_Public_Character_Player_BiggMazePlayerState_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ABiggMazePlayerState, ABiggMazePlayerState::StaticClass, TEXT("ABiggMazePlayerState"), &Z_Registration_Info_UClass_ABiggMazePlayerState, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ABiggMazePlayerState), 1181615558U) },
+		{ Z_Construct_UClass_ABiggMazePlayerState, ABiggMazePlayerState::StaticClass, TEXT("ABiggMazePlayerState"), &Z_Registration_Info_UClass_ABiggMazePlayerState, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ABiggMazePlayerState), 4026114490U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_Public_Character_Player_BiggMazePlayerState_h_2122169604(TEXT("/Script/BigMaze_Alpha_0"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_Public_Character_Player_BiggMazePlayerState_h_693802996(TEXT("/Script/BigMaze_Alpha_0"),
 	Z_CompiledInDeferFile_FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_Public_Character_Player_BiggMazePlayerState_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_Public_Character_Player_BiggMazePlayerState_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

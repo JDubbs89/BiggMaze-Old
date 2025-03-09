@@ -9,7 +9,10 @@
 #include "GASFramework/ASCs/ASC_BiggMaze.h"
 #include "GASFramework/AttributeSets/AS_BM_CharBase.h"
 #include "GASFramework/AttributeSets/AS_Ammunition.h"
+#include "GASFramework/AttributeSets/AS_Ingredients.h"
 #include "BiggMazePlayerState.generated.h"
+
+
 
 /**
  * 
@@ -32,8 +35,10 @@ protected:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Abilities", Replicated, meta = (AllowPrivateAccess = "true"))
 	TObjectPtr<UASC_BiggMaze> AbilitySystemComponent;
 	// Attribute Set
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Abilities", Replicated, meta = (AllowPrivateAccess = "true"))
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Attributes", Replicated, meta = (AllowPrivateAccess = "true"))
 	TObjectPtr<UAS_Ammunition> AmmoAttributeSet;
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Attributes", Replicated, meta = (AllowPrivateAccess = "true"))
+	TObjectPtr<UAS_Ingredients> IngredientAttributeSet;
 
 	void InitializeAttributes();
 
