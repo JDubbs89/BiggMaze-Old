@@ -26,9 +26,6 @@ protected:
 
     void BindAttributeChangeDelegates();
 
-    // Attribute change handlers
-    void OnAttributeChanged(const FOnAttributeChangeData& Data, FName AttributeName);
-
     void InitializeAbilitySystem();
     void ApplyAttributeSetToASC();
     void RemoveAttributeSetFromASC();

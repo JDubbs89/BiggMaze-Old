@@ -112,6 +112,45 @@ void ABiggMazePlayerState::BeginPlay()
             // MaxUniversalAmmo
             AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(AmmoAttributeSet->GetMaxUniversalAmmoAttribute()).AddUObject(this, &ABiggMazePlayerState::HandleMaxUniversalAmmoChanged);
         }
+        if (IngredientAttributeSet)
+        {
+            /** Ingredient1 Attributes */
+            // CurrentIngredient1
+            AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(IngredientAttributeSet->GetCurrentIngredient1Attribute()).AddUObject(this, &ABiggMazePlayerState::HandleCurrentIngredient1Changed);
+            // MaxIngredient1
+            AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(IngredientAttributeSet->GetMaxIngredient1Attribute()).AddUObject(this, &ABiggMazePlayerState::HandleMaxIngredient1Changed);
+
+            /** Ingredient2 Attributes */
+            // CurrentIngredient2
+            AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(IngredientAttributeSet->GetCurrentIngredient2Attribute()).AddUObject(this, &ABiggMazePlayerState::HandleCurrentIngredient2Changed);
+            // MaxIngredient2
+            AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(IngredientAttributeSet->GetMaxIngredient2Attribute()).AddUObject(this, &ABiggMazePlayerState::HandleMaxIngredient2Changed);
+        
+            /** Ingredient3 Attributes */
+            // CurrentIngredient3
+            AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(IngredientAttributeSet->GetCurrentIngredient3Attribute()).AddUObject(this, &ABiggMazePlayerState::HandleCurrentIngredient3Changed);
+            // MaxIngredient3
+            AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(IngredientAttributeSet->GetMaxIngredient3Attribute()).AddUObject(this, &ABiggMazePlayerState::HandleMaxIngredient3Changed);
+        
+            /** Ingredient4 Attributes */
+            // CurrentIngredient4
+            AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(IngredientAttributeSet->GetCurrentIngredient4Attribute()).AddUObject(this, &ABiggMazePlayerState::HandleCurrentIngredient4Changed);
+            // MaxIngredient4
+            AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(IngredientAttributeSet->GetMaxIngredient4Attribute()).AddUObject(this, &ABiggMazePlayerState::HandleMaxIngredient4Changed);
+        
+            /** Ingredient5 Attributes */
+            // CurrentIngredient5
+            AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(IngredientAttributeSet->GetCurrentIngredient5Attribute()).AddUObject(this, &ABiggMazePlayerState::HandleCurrentIngredient5Changed);
+            // MaxIngredient5
+            AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(IngredientAttributeSet->GetMaxIngredient5Attribute()).AddUObject(this, &ABiggMazePlayerState::HandleMaxIngredient5Changed);
+        
+            /** Ingredient6 Attributes */
+            // CurrentIngredient6
+            AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(IngredientAttributeSet->GetCurrentIngredient6Attribute()).AddUObject(this, &ABiggMazePlayerState::HandleCurrentIngredient6Changed);
+            // MaxIngredient6
+            AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(IngredientAttributeSet->GetMaxIngredient6Attribute()).AddUObject(this, &ABiggMazePlayerState::HandleMaxIngredient6Changed);
+        
+        }
     }
 }
 
@@ -398,6 +437,157 @@ void ABiggMazePlayerState::HandleMaxUniversalAmmoChanged(const FOnAttributeChang
 
     // Trigger blueprint event to update UI
     OnMaxUniversalAmmoChanged(DeltaValue, FGameplayTagContainer());
+}
+
+// Ingredient1
+void ABiggMazePlayerState::HandleCurrentIngredient1Changed(const FOnAttributeChangeData &Data)
+{
+    // Set local variables from old and new values
+    float NewValue = Data.NewValue;
+    float OldValue = Data.OldValue;
+    
+    // Set a delta value based on the difference between new and old values
+    float DeltaValue = NewValue - OldValue;
+
+    // Trigger blueprint event to update UI
+    OnCurrentIngredient1Changed(DeltaValue, FGameplayTagContainer());
+}
+void ABiggMazePlayerState::HandleMaxIngredient1Changed(const FOnAttributeChangeData &Data)
+{
+    // Set local variables from old and new values
+    float NewValue = Data.NewValue;
+    float OldValue = Data.OldValue;
+    
+    // Set a delta value based on the difference between new and old values
+    float DeltaValue = NewValue - OldValue;
+
+    // Trigger blueprint event to update UI
+    OnMaxIngredient1Changed(DeltaValue, FGameplayTagContainer());
+}
+// Ingredient2
+void ABiggMazePlayerState::HandleCurrentIngredient2Changed(const FOnAttributeChangeData &Data)
+{
+    // Set local variables from old and new values
+    float NewValue = Data.NewValue;
+    float OldValue = Data.OldValue;
+    
+    // Set a delta value based on the difference between new and old values
+    float DeltaValue = NewValue - OldValue;
+
+    // Trigger blueprint event to update UI
+    OnCurrentIngredient2Changed(DeltaValue, FGameplayTagContainer());
+}
+void ABiggMazePlayerState::HandleMaxIngredient2Changed(const FOnAttributeChangeData &Data)
+{
+    // Set local variables from old and new values
+    float NewValue = Data.NewValue;
+    float OldValue = Data.OldValue;
+    
+    // Set a delta value based on the difference between new and old values
+    float DeltaValue = NewValue - OldValue;
+
+    // Trigger blueprint event to update UI
+    OnMaxIngredient2Changed(DeltaValue, FGameplayTagContainer());
+}
+// Ingredient3
+void ABiggMazePlayerState::HandleCurrentIngredient3Changed(const FOnAttributeChangeData &Data)
+{
+    // Set local variables from old and new values
+    float NewValue = Data.NewValue;
+    float OldValue = Data.OldValue;
+    
+    // Set a delta value based on the difference between new and old values
+    float DeltaValue = NewValue - OldValue;
+
+    // Trigger blueprint event to update UI
+    OnCurrentIngredient3Changed(DeltaValue, FGameplayTagContainer());
+}
+void ABiggMazePlayerState::HandleMaxIngredient3Changed(const FOnAttributeChangeData &Data)
+{
+    // Set local variables from old and new values
+    float NewValue = Data.NewValue;
+    float OldValue = Data.OldValue;
+    
+    // Set a delta value based on the difference between new and old values
+    float DeltaValue = NewValue - OldValue;
+
+    // Trigger blueprint event to update UI
+    OnMaxIngredient3Changed(DeltaValue, FGameplayTagContainer());
+}
+// Ingredient4
+void ABiggMazePlayerState::HandleCurrentIngredient4Changed(const FOnAttributeChangeData &Data)
+{
+    // Set local variables from old and new values
+    float NewValue = Data.NewValue;
+    float OldValue = Data.OldValue;
+    
+    // Set a delta value based on the difference between new and old values
+    float DeltaValue = NewValue - OldValue;
+
+    // Trigger blueprint event to update UI
+    OnCurrentIngredient4Changed(DeltaValue, FGameplayTagContainer());
+}
+void ABiggMazePlayerState::HandleMaxIngredient4Changed(const FOnAttributeChangeData &Data)
+{
+    // Set local variables from old and new values
+    float NewValue = Data.NewValue;
+    float OldValue = Data.OldValue;
+    
+    // Set a delta value based on the difference between new and old values
+    float DeltaValue = NewValue - OldValue;
+
+    // Trigger blueprint event to update UI
+    OnMaxIngredient4Changed(DeltaValue, FGameplayTagContainer());
+}
+// Ingredient5
+void ABiggMazePlayerState::HandleCurrentIngredient5Changed(const FOnAttributeChangeData &Data)
+{
+    // Set local variables from old and new values
+    float NewValue = Data.NewValue;
+    float OldValue = Data.OldValue;
+    
+    // Set a delta value based on the difference between new and old values
+    float DeltaValue = NewValue - OldValue;
+
+    // Trigger blueprint event to update UI
+    OnCurrentIngredient5Changed(DeltaValue, FGameplayTagContainer());
+}
+void ABiggMazePlayerState::HandleMaxIngredient5Changed(const FOnAttributeChangeData &Data)
+{
+    // Set local variables from old and new values
+    float NewValue = Data.NewValue;
+    float OldValue = Data.OldValue;
+    
+    // Set a delta value based on the difference between new and old values
+    float DeltaValue = NewValue - OldValue;
+
+    // Trigger blueprint event to update UI
+    OnMaxIngredient5Changed(DeltaValue, FGameplayTagContainer());
+}
+// Ingredient6
+void ABiggMazePlayerState::HandleCurrentIngredient6Changed(const FOnAttributeChangeData &Data)
+{
+    // Set local variables from old and new values
+    float NewValue = Data.NewValue;
+    float OldValue = Data.OldValue;
+    
+    // Set a delta value based on the difference between new and old values
+    float DeltaValue = NewValue - OldValue;
+
+    // Trigger blueprint event to update UI
+    OnCurrentIngredient6Changed(DeltaValue, FGameplayTagContainer());
+}
+void ABiggMazePlayerState::HandleMaxIngredient6Changed(const FOnAttributeChangeData &Data)
+{
+    // Set local variables from old and new values
+    float NewValue = Data.NewValue;
+    float OldValue = Data.OldValue;
+    
+    // Set a delta value based on the difference between new and old values
+    float DeltaValue = NewValue - OldValue;
+
+    // Trigger blueprint event to update UI
+    OnMaxIngredient6Changed(DeltaValue, FGameplayTagContainer());
 }
 
 void ABiggMazePlayerState::GetLifetimeReplicatedProps(TArray<FLifetimeProperty> &OutLifetimeProps) const

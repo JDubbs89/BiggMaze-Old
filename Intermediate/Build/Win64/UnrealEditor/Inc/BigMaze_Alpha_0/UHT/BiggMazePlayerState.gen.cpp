@@ -79,6 +79,348 @@ UFunction* Z_Construct_UFunction_ABiggMazePlayerState_OnCurrentHealthChanged()
 }
 // End Class ABiggMazePlayerState Function OnCurrentHealthChanged
 
+// Begin Class ABiggMazePlayerState Function OnCurrentIngredient1Changed
+struct BiggMazePlayerState_eventOnCurrentIngredient1Changed_Parms
+{
+	float DeltaValue;
+	FGameplayTagContainer EventTags;
+};
+static const FName NAME_ABiggMazePlayerState_OnCurrentIngredient1Changed = FName(TEXT("OnCurrentIngredient1Changed"));
+void ABiggMazePlayerState::OnCurrentIngredient1Changed(float DeltaValue, FGameplayTagContainer const& EventTags)
+{
+	BiggMazePlayerState_eventOnCurrentIngredient1Changed_Parms Parms;
+	Parms.DeltaValue=DeltaValue;
+	Parms.EventTags=EventTags;
+	UFunction* Func = FindFunctionChecked(NAME_ABiggMazePlayerState_OnCurrentIngredient1Changed);
+	ProcessEvent(Func,&Parms);
+}
+struct Z_Construct_UFunction_ABiggMazePlayerState_OnCurrentIngredient1Changed_Statics
+{
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Category", "Ingredients" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "/** Ingredient1 Attributes */// Current Ingredient1\n" },
+#endif
+		{ "ModuleRelativePath", "Public/Character/Player/BiggMazePlayerState.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "Ingredient1 Attributes // Current Ingredient1" },
+#endif
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_EventTags_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FFloatPropertyParams NewProp_DeltaValue;
+	static const UECodeGen_Private::FStructPropertyParams NewProp_EventTags;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_ABiggMazePlayerState_OnCurrentIngredient1Changed_Statics::NewProp_DeltaValue = { "DeltaValue", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(BiggMazePlayerState_eventOnCurrentIngredient1Changed_Parms, DeltaValue), METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_ABiggMazePlayerState_OnCurrentIngredient1Changed_Statics::NewProp_EventTags = { "EventTags", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(BiggMazePlayerState_eventOnCurrentIngredient1Changed_Parms, EventTags), Z_Construct_UScriptStruct_FGameplayTagContainer, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_EventTags_MetaData), NewProp_EventTags_MetaData) }; // 3352185621
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_ABiggMazePlayerState_OnCurrentIngredient1Changed_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ABiggMazePlayerState_OnCurrentIngredient1Changed_Statics::NewProp_DeltaValue,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ABiggMazePlayerState_OnCurrentIngredient1Changed_Statics::NewProp_EventTags,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_ABiggMazePlayerState_OnCurrentIngredient1Changed_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ABiggMazePlayerState_OnCurrentIngredient1Changed_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ABiggMazePlayerState, nullptr, "OnCurrentIngredient1Changed", nullptr, nullptr, Z_Construct_UFunction_ABiggMazePlayerState_OnCurrentIngredient1Changed_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_ABiggMazePlayerState_OnCurrentIngredient1Changed_Statics::PropPointers), sizeof(BiggMazePlayerState_eventOnCurrentIngredient1Changed_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08420800, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_ABiggMazePlayerState_OnCurrentIngredient1Changed_Statics::Function_MetaDataParams), Z_Construct_UFunction_ABiggMazePlayerState_OnCurrentIngredient1Changed_Statics::Function_MetaDataParams) };
+static_assert(sizeof(BiggMazePlayerState_eventOnCurrentIngredient1Changed_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_ABiggMazePlayerState_OnCurrentIngredient1Changed()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_ABiggMazePlayerState_OnCurrentIngredient1Changed_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+// End Class ABiggMazePlayerState Function OnCurrentIngredient1Changed
+
+// Begin Class ABiggMazePlayerState Function OnCurrentIngredient2Changed
+struct BiggMazePlayerState_eventOnCurrentIngredient2Changed_Parms
+{
+	float DeltaValue;
+	FGameplayTagContainer EventTags;
+};
+static const FName NAME_ABiggMazePlayerState_OnCurrentIngredient2Changed = FName(TEXT("OnCurrentIngredient2Changed"));
+void ABiggMazePlayerState::OnCurrentIngredient2Changed(float DeltaValue, FGameplayTagContainer const& EventTags)
+{
+	BiggMazePlayerState_eventOnCurrentIngredient2Changed_Parms Parms;
+	Parms.DeltaValue=DeltaValue;
+	Parms.EventTags=EventTags;
+	UFunction* Func = FindFunctionChecked(NAME_ABiggMazePlayerState_OnCurrentIngredient2Changed);
+	ProcessEvent(Func,&Parms);
+}
+struct Z_Construct_UFunction_ABiggMazePlayerState_OnCurrentIngredient2Changed_Statics
+{
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Category", "Ingredients" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "/** Ingredient2 Attributes */// Current Ingredient2\n" },
+#endif
+		{ "ModuleRelativePath", "Public/Character/Player/BiggMazePlayerState.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "Ingredient2 Attributes // Current Ingredient2" },
+#endif
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_EventTags_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FFloatPropertyParams NewProp_DeltaValue;
+	static const UECodeGen_Private::FStructPropertyParams NewProp_EventTags;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_ABiggMazePlayerState_OnCurrentIngredient2Changed_Statics::NewProp_DeltaValue = { "DeltaValue", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(BiggMazePlayerState_eventOnCurrentIngredient2Changed_Parms, DeltaValue), METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_ABiggMazePlayerState_OnCurrentIngredient2Changed_Statics::NewProp_EventTags = { "EventTags", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(BiggMazePlayerState_eventOnCurrentIngredient2Changed_Parms, EventTags), Z_Construct_UScriptStruct_FGameplayTagContainer, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_EventTags_MetaData), NewProp_EventTags_MetaData) }; // 3352185621
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_ABiggMazePlayerState_OnCurrentIngredient2Changed_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ABiggMazePlayerState_OnCurrentIngredient2Changed_Statics::NewProp_DeltaValue,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ABiggMazePlayerState_OnCurrentIngredient2Changed_Statics::NewProp_EventTags,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_ABiggMazePlayerState_OnCurrentIngredient2Changed_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ABiggMazePlayerState_OnCurrentIngredient2Changed_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ABiggMazePlayerState, nullptr, "OnCurrentIngredient2Changed", nullptr, nullptr, Z_Construct_UFunction_ABiggMazePlayerState_OnCurrentIngredient2Changed_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_ABiggMazePlayerState_OnCurrentIngredient2Changed_Statics::PropPointers), sizeof(BiggMazePlayerState_eventOnCurrentIngredient2Changed_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08420800, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_ABiggMazePlayerState_OnCurrentIngredient2Changed_Statics::Function_MetaDataParams), Z_Construct_UFunction_ABiggMazePlayerState_OnCurrentIngredient2Changed_Statics::Function_MetaDataParams) };
+static_assert(sizeof(BiggMazePlayerState_eventOnCurrentIngredient2Changed_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_ABiggMazePlayerState_OnCurrentIngredient2Changed()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_ABiggMazePlayerState_OnCurrentIngredient2Changed_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+// End Class ABiggMazePlayerState Function OnCurrentIngredient2Changed
+
+// Begin Class ABiggMazePlayerState Function OnCurrentIngredient3Changed
+struct BiggMazePlayerState_eventOnCurrentIngredient3Changed_Parms
+{
+	float DeltaValue;
+	FGameplayTagContainer EventTags;
+};
+static const FName NAME_ABiggMazePlayerState_OnCurrentIngredient3Changed = FName(TEXT("OnCurrentIngredient3Changed"));
+void ABiggMazePlayerState::OnCurrentIngredient3Changed(float DeltaValue, FGameplayTagContainer const& EventTags)
+{
+	BiggMazePlayerState_eventOnCurrentIngredient3Changed_Parms Parms;
+	Parms.DeltaValue=DeltaValue;
+	Parms.EventTags=EventTags;
+	UFunction* Func = FindFunctionChecked(NAME_ABiggMazePlayerState_OnCurrentIngredient3Changed);
+	ProcessEvent(Func,&Parms);
+}
+struct Z_Construct_UFunction_ABiggMazePlayerState_OnCurrentIngredient3Changed_Statics
+{
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Category", "Ingredients" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "/** Ingredient3 Attributes */// Current Ingredient3\n" },
+#endif
+		{ "ModuleRelativePath", "Public/Character/Player/BiggMazePlayerState.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "Ingredient3 Attributes // Current Ingredient3" },
+#endif
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_EventTags_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FFloatPropertyParams NewProp_DeltaValue;
+	static const UECodeGen_Private::FStructPropertyParams NewProp_EventTags;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_ABiggMazePlayerState_OnCurrentIngredient3Changed_Statics::NewProp_DeltaValue = { "DeltaValue", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(BiggMazePlayerState_eventOnCurrentIngredient3Changed_Parms, DeltaValue), METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_ABiggMazePlayerState_OnCurrentIngredient3Changed_Statics::NewProp_EventTags = { "EventTags", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(BiggMazePlayerState_eventOnCurrentIngredient3Changed_Parms, EventTags), Z_Construct_UScriptStruct_FGameplayTagContainer, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_EventTags_MetaData), NewProp_EventTags_MetaData) }; // 3352185621
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_ABiggMazePlayerState_OnCurrentIngredient3Changed_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ABiggMazePlayerState_OnCurrentIngredient3Changed_Statics::NewProp_DeltaValue,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ABiggMazePlayerState_OnCurrentIngredient3Changed_Statics::NewProp_EventTags,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_ABiggMazePlayerState_OnCurrentIngredient3Changed_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ABiggMazePlayerState_OnCurrentIngredient3Changed_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ABiggMazePlayerState, nullptr, "OnCurrentIngredient3Changed", nullptr, nullptr, Z_Construct_UFunction_ABiggMazePlayerState_OnCurrentIngredient3Changed_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_ABiggMazePlayerState_OnCurrentIngredient3Changed_Statics::PropPointers), sizeof(BiggMazePlayerState_eventOnCurrentIngredient3Changed_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08420800, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_ABiggMazePlayerState_OnCurrentIngredient3Changed_Statics::Function_MetaDataParams), Z_Construct_UFunction_ABiggMazePlayerState_OnCurrentIngredient3Changed_Statics::Function_MetaDataParams) };
+static_assert(sizeof(BiggMazePlayerState_eventOnCurrentIngredient3Changed_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_ABiggMazePlayerState_OnCurrentIngredient3Changed()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_ABiggMazePlayerState_OnCurrentIngredient3Changed_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+// End Class ABiggMazePlayerState Function OnCurrentIngredient3Changed
+
+// Begin Class ABiggMazePlayerState Function OnCurrentIngredient4Changed
+struct BiggMazePlayerState_eventOnCurrentIngredient4Changed_Parms
+{
+	float DeltaValue;
+	FGameplayTagContainer EventTags;
+};
+static const FName NAME_ABiggMazePlayerState_OnCurrentIngredient4Changed = FName(TEXT("OnCurrentIngredient4Changed"));
+void ABiggMazePlayerState::OnCurrentIngredient4Changed(float DeltaValue, FGameplayTagContainer const& EventTags)
+{
+	BiggMazePlayerState_eventOnCurrentIngredient4Changed_Parms Parms;
+	Parms.DeltaValue=DeltaValue;
+	Parms.EventTags=EventTags;
+	UFunction* Func = FindFunctionChecked(NAME_ABiggMazePlayerState_OnCurrentIngredient4Changed);
+	ProcessEvent(Func,&Parms);
+}
+struct Z_Construct_UFunction_ABiggMazePlayerState_OnCurrentIngredient4Changed_Statics
+{
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Category", "Ingredients" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "/** Ingredient4 Attributes */// Current Ingredient4\n" },
+#endif
+		{ "ModuleRelativePath", "Public/Character/Player/BiggMazePlayerState.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "Ingredient4 Attributes // Current Ingredient4" },
+#endif
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_EventTags_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FFloatPropertyParams NewProp_DeltaValue;
+	static const UECodeGen_Private::FStructPropertyParams NewProp_EventTags;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_ABiggMazePlayerState_OnCurrentIngredient4Changed_Statics::NewProp_DeltaValue = { "DeltaValue", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(BiggMazePlayerState_eventOnCurrentIngredient4Changed_Parms, DeltaValue), METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_ABiggMazePlayerState_OnCurrentIngredient4Changed_Statics::NewProp_EventTags = { "EventTags", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(BiggMazePlayerState_eventOnCurrentIngredient4Changed_Parms, EventTags), Z_Construct_UScriptStruct_FGameplayTagContainer, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_EventTags_MetaData), NewProp_EventTags_MetaData) }; // 3352185621
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_ABiggMazePlayerState_OnCurrentIngredient4Changed_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ABiggMazePlayerState_OnCurrentIngredient4Changed_Statics::NewProp_DeltaValue,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ABiggMazePlayerState_OnCurrentIngredient4Changed_Statics::NewProp_EventTags,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_ABiggMazePlayerState_OnCurrentIngredient4Changed_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ABiggMazePlayerState_OnCurrentIngredient4Changed_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ABiggMazePlayerState, nullptr, "OnCurrentIngredient4Changed", nullptr, nullptr, Z_Construct_UFunction_ABiggMazePlayerState_OnCurrentIngredient4Changed_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_ABiggMazePlayerState_OnCurrentIngredient4Changed_Statics::PropPointers), sizeof(BiggMazePlayerState_eventOnCurrentIngredient4Changed_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08420800, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_ABiggMazePlayerState_OnCurrentIngredient4Changed_Statics::Function_MetaDataParams), Z_Construct_UFunction_ABiggMazePlayerState_OnCurrentIngredient4Changed_Statics::Function_MetaDataParams) };
+static_assert(sizeof(BiggMazePlayerState_eventOnCurrentIngredient4Changed_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_ABiggMazePlayerState_OnCurrentIngredient4Changed()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_ABiggMazePlayerState_OnCurrentIngredient4Changed_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+// End Class ABiggMazePlayerState Function OnCurrentIngredient4Changed
+
+// Begin Class ABiggMazePlayerState Function OnCurrentIngredient5Changed
+struct BiggMazePlayerState_eventOnCurrentIngredient5Changed_Parms
+{
+	float DeltaValue;
+	FGameplayTagContainer EventTags;
+};
+static const FName NAME_ABiggMazePlayerState_OnCurrentIngredient5Changed = FName(TEXT("OnCurrentIngredient5Changed"));
+void ABiggMazePlayerState::OnCurrentIngredient5Changed(float DeltaValue, FGameplayTagContainer const& EventTags)
+{
+	BiggMazePlayerState_eventOnCurrentIngredient5Changed_Parms Parms;
+	Parms.DeltaValue=DeltaValue;
+	Parms.EventTags=EventTags;
+	UFunction* Func = FindFunctionChecked(NAME_ABiggMazePlayerState_OnCurrentIngredient5Changed);
+	ProcessEvent(Func,&Parms);
+}
+struct Z_Construct_UFunction_ABiggMazePlayerState_OnCurrentIngredient5Changed_Statics
+{
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Category", "Ingredients" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "/** Ingredient5 Attributes */// Current Ingredient5\n" },
+#endif
+		{ "ModuleRelativePath", "Public/Character/Player/BiggMazePlayerState.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "Ingredient5 Attributes // Current Ingredient5" },
+#endif
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_EventTags_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FFloatPropertyParams NewProp_DeltaValue;
+	static const UECodeGen_Private::FStructPropertyParams NewProp_EventTags;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_ABiggMazePlayerState_OnCurrentIngredient5Changed_Statics::NewProp_DeltaValue = { "DeltaValue", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(BiggMazePlayerState_eventOnCurrentIngredient5Changed_Parms, DeltaValue), METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_ABiggMazePlayerState_OnCurrentIngredient5Changed_Statics::NewProp_EventTags = { "EventTags", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(BiggMazePlayerState_eventOnCurrentIngredient5Changed_Parms, EventTags), Z_Construct_UScriptStruct_FGameplayTagContainer, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_EventTags_MetaData), NewProp_EventTags_MetaData) }; // 3352185621
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_ABiggMazePlayerState_OnCurrentIngredient5Changed_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ABiggMazePlayerState_OnCurrentIngredient5Changed_Statics::NewProp_DeltaValue,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ABiggMazePlayerState_OnCurrentIngredient5Changed_Statics::NewProp_EventTags,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_ABiggMazePlayerState_OnCurrentIngredient5Changed_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ABiggMazePlayerState_OnCurrentIngredient5Changed_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ABiggMazePlayerState, nullptr, "OnCurrentIngredient5Changed", nullptr, nullptr, Z_Construct_UFunction_ABiggMazePlayerState_OnCurrentIngredient5Changed_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_ABiggMazePlayerState_OnCurrentIngredient5Changed_Statics::PropPointers), sizeof(BiggMazePlayerState_eventOnCurrentIngredient5Changed_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08420800, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_ABiggMazePlayerState_OnCurrentIngredient5Changed_Statics::Function_MetaDataParams), Z_Construct_UFunction_ABiggMazePlayerState_OnCurrentIngredient5Changed_Statics::Function_MetaDataParams) };
+static_assert(sizeof(BiggMazePlayerState_eventOnCurrentIngredient5Changed_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_ABiggMazePlayerState_OnCurrentIngredient5Changed()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_ABiggMazePlayerState_OnCurrentIngredient5Changed_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+// End Class ABiggMazePlayerState Function OnCurrentIngredient5Changed
+
+// Begin Class ABiggMazePlayerState Function OnCurrentIngredient6Changed
+struct BiggMazePlayerState_eventOnCurrentIngredient6Changed_Parms
+{
+	float DeltaValue;
+	FGameplayTagContainer EventTags;
+};
+static const FName NAME_ABiggMazePlayerState_OnCurrentIngredient6Changed = FName(TEXT("OnCurrentIngredient6Changed"));
+void ABiggMazePlayerState::OnCurrentIngredient6Changed(float DeltaValue, FGameplayTagContainer const& EventTags)
+{
+	BiggMazePlayerState_eventOnCurrentIngredient6Changed_Parms Parms;
+	Parms.DeltaValue=DeltaValue;
+	Parms.EventTags=EventTags;
+	UFunction* Func = FindFunctionChecked(NAME_ABiggMazePlayerState_OnCurrentIngredient6Changed);
+	ProcessEvent(Func,&Parms);
+}
+struct Z_Construct_UFunction_ABiggMazePlayerState_OnCurrentIngredient6Changed_Statics
+{
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Category", "Ingredients" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "/** Ingredient6 Attributes */// Current Ingredient6\n" },
+#endif
+		{ "ModuleRelativePath", "Public/Character/Player/BiggMazePlayerState.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "Ingredient6 Attributes // Current Ingredient6" },
+#endif
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_EventTags_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FFloatPropertyParams NewProp_DeltaValue;
+	static const UECodeGen_Private::FStructPropertyParams NewProp_EventTags;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_ABiggMazePlayerState_OnCurrentIngredient6Changed_Statics::NewProp_DeltaValue = { "DeltaValue", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(BiggMazePlayerState_eventOnCurrentIngredient6Changed_Parms, DeltaValue), METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_ABiggMazePlayerState_OnCurrentIngredient6Changed_Statics::NewProp_EventTags = { "EventTags", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(BiggMazePlayerState_eventOnCurrentIngredient6Changed_Parms, EventTags), Z_Construct_UScriptStruct_FGameplayTagContainer, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_EventTags_MetaData), NewProp_EventTags_MetaData) }; // 3352185621
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_ABiggMazePlayerState_OnCurrentIngredient6Changed_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ABiggMazePlayerState_OnCurrentIngredient6Changed_Statics::NewProp_DeltaValue,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ABiggMazePlayerState_OnCurrentIngredient6Changed_Statics::NewProp_EventTags,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_ABiggMazePlayerState_OnCurrentIngredient6Changed_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ABiggMazePlayerState_OnCurrentIngredient6Changed_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ABiggMazePlayerState, nullptr, "OnCurrentIngredient6Changed", nullptr, nullptr, Z_Construct_UFunction_ABiggMazePlayerState_OnCurrentIngredient6Changed_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_ABiggMazePlayerState_OnCurrentIngredient6Changed_Statics::PropPointers), sizeof(BiggMazePlayerState_eventOnCurrentIngredient6Changed_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08420800, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_ABiggMazePlayerState_OnCurrentIngredient6Changed_Statics::Function_MetaDataParams), Z_Construct_UFunction_ABiggMazePlayerState_OnCurrentIngredient6Changed_Statics::Function_MetaDataParams) };
+static_assert(sizeof(BiggMazePlayerState_eventOnCurrentIngredient6Changed_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_ABiggMazePlayerState_OnCurrentIngredient6Changed()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_ABiggMazePlayerState_OnCurrentIngredient6Changed_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+// End Class ABiggMazePlayerState Function OnCurrentIngredient6Changed
+
 // Begin Class ABiggMazePlayerState Function OnCurrentLevelChanged
 struct BiggMazePlayerState_eventOnCurrentLevelChanged_Parms
 {
@@ -648,6 +990,348 @@ UFunction* Z_Construct_UFunction_ABiggMazePlayerState_OnMaxHealthChanged()
 	return ReturnFunction;
 }
 // End Class ABiggMazePlayerState Function OnMaxHealthChanged
+
+// Begin Class ABiggMazePlayerState Function OnMaxIngredient1Changed
+struct BiggMazePlayerState_eventOnMaxIngredient1Changed_Parms
+{
+	float DeltaValue;
+	FGameplayTagContainer EventTags;
+};
+static const FName NAME_ABiggMazePlayerState_OnMaxIngredient1Changed = FName(TEXT("OnMaxIngredient1Changed"));
+void ABiggMazePlayerState::OnMaxIngredient1Changed(float DeltaValue, FGameplayTagContainer const& EventTags)
+{
+	BiggMazePlayerState_eventOnMaxIngredient1Changed_Parms Parms;
+	Parms.DeltaValue=DeltaValue;
+	Parms.EventTags=EventTags;
+	UFunction* Func = FindFunctionChecked(NAME_ABiggMazePlayerState_OnMaxIngredient1Changed);
+	ProcessEvent(Func,&Parms);
+}
+struct Z_Construct_UFunction_ABiggMazePlayerState_OnMaxIngredient1Changed_Statics
+{
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Category", "Ingredients" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "// Max Ingredient1\n" },
+#endif
+		{ "ModuleRelativePath", "Public/Character/Player/BiggMazePlayerState.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "Max Ingredient1" },
+#endif
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_EventTags_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FFloatPropertyParams NewProp_DeltaValue;
+	static const UECodeGen_Private::FStructPropertyParams NewProp_EventTags;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_ABiggMazePlayerState_OnMaxIngredient1Changed_Statics::NewProp_DeltaValue = { "DeltaValue", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(BiggMazePlayerState_eventOnMaxIngredient1Changed_Parms, DeltaValue), METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_ABiggMazePlayerState_OnMaxIngredient1Changed_Statics::NewProp_EventTags = { "EventTags", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(BiggMazePlayerState_eventOnMaxIngredient1Changed_Parms, EventTags), Z_Construct_UScriptStruct_FGameplayTagContainer, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_EventTags_MetaData), NewProp_EventTags_MetaData) }; // 3352185621
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_ABiggMazePlayerState_OnMaxIngredient1Changed_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ABiggMazePlayerState_OnMaxIngredient1Changed_Statics::NewProp_DeltaValue,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ABiggMazePlayerState_OnMaxIngredient1Changed_Statics::NewProp_EventTags,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_ABiggMazePlayerState_OnMaxIngredient1Changed_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ABiggMazePlayerState_OnMaxIngredient1Changed_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ABiggMazePlayerState, nullptr, "OnMaxIngredient1Changed", nullptr, nullptr, Z_Construct_UFunction_ABiggMazePlayerState_OnMaxIngredient1Changed_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_ABiggMazePlayerState_OnMaxIngredient1Changed_Statics::PropPointers), sizeof(BiggMazePlayerState_eventOnMaxIngredient1Changed_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08420800, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_ABiggMazePlayerState_OnMaxIngredient1Changed_Statics::Function_MetaDataParams), Z_Construct_UFunction_ABiggMazePlayerState_OnMaxIngredient1Changed_Statics::Function_MetaDataParams) };
+static_assert(sizeof(BiggMazePlayerState_eventOnMaxIngredient1Changed_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_ABiggMazePlayerState_OnMaxIngredient1Changed()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_ABiggMazePlayerState_OnMaxIngredient1Changed_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+// End Class ABiggMazePlayerState Function OnMaxIngredient1Changed
+
+// Begin Class ABiggMazePlayerState Function OnMaxIngredient2Changed
+struct BiggMazePlayerState_eventOnMaxIngredient2Changed_Parms
+{
+	float DeltaValue;
+	FGameplayTagContainer EventTags;
+};
+static const FName NAME_ABiggMazePlayerState_OnMaxIngredient2Changed = FName(TEXT("OnMaxIngredient2Changed"));
+void ABiggMazePlayerState::OnMaxIngredient2Changed(float DeltaValue, FGameplayTagContainer const& EventTags)
+{
+	BiggMazePlayerState_eventOnMaxIngredient2Changed_Parms Parms;
+	Parms.DeltaValue=DeltaValue;
+	Parms.EventTags=EventTags;
+	UFunction* Func = FindFunctionChecked(NAME_ABiggMazePlayerState_OnMaxIngredient2Changed);
+	ProcessEvent(Func,&Parms);
+}
+struct Z_Construct_UFunction_ABiggMazePlayerState_OnMaxIngredient2Changed_Statics
+{
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Category", "Ingredients" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "// Max Ingredient2\n" },
+#endif
+		{ "ModuleRelativePath", "Public/Character/Player/BiggMazePlayerState.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "Max Ingredient2" },
+#endif
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_EventTags_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FFloatPropertyParams NewProp_DeltaValue;
+	static const UECodeGen_Private::FStructPropertyParams NewProp_EventTags;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_ABiggMazePlayerState_OnMaxIngredient2Changed_Statics::NewProp_DeltaValue = { "DeltaValue", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(BiggMazePlayerState_eventOnMaxIngredient2Changed_Parms, DeltaValue), METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_ABiggMazePlayerState_OnMaxIngredient2Changed_Statics::NewProp_EventTags = { "EventTags", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(BiggMazePlayerState_eventOnMaxIngredient2Changed_Parms, EventTags), Z_Construct_UScriptStruct_FGameplayTagContainer, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_EventTags_MetaData), NewProp_EventTags_MetaData) }; // 3352185621
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_ABiggMazePlayerState_OnMaxIngredient2Changed_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ABiggMazePlayerState_OnMaxIngredient2Changed_Statics::NewProp_DeltaValue,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ABiggMazePlayerState_OnMaxIngredient2Changed_Statics::NewProp_EventTags,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_ABiggMazePlayerState_OnMaxIngredient2Changed_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ABiggMazePlayerState_OnMaxIngredient2Changed_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ABiggMazePlayerState, nullptr, "OnMaxIngredient2Changed", nullptr, nullptr, Z_Construct_UFunction_ABiggMazePlayerState_OnMaxIngredient2Changed_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_ABiggMazePlayerState_OnMaxIngredient2Changed_Statics::PropPointers), sizeof(BiggMazePlayerState_eventOnMaxIngredient2Changed_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08420800, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_ABiggMazePlayerState_OnMaxIngredient2Changed_Statics::Function_MetaDataParams), Z_Construct_UFunction_ABiggMazePlayerState_OnMaxIngredient2Changed_Statics::Function_MetaDataParams) };
+static_assert(sizeof(BiggMazePlayerState_eventOnMaxIngredient2Changed_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_ABiggMazePlayerState_OnMaxIngredient2Changed()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_ABiggMazePlayerState_OnMaxIngredient2Changed_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+// End Class ABiggMazePlayerState Function OnMaxIngredient2Changed
+
+// Begin Class ABiggMazePlayerState Function OnMaxIngredient3Changed
+struct BiggMazePlayerState_eventOnMaxIngredient3Changed_Parms
+{
+	float DeltaValue;
+	FGameplayTagContainer EventTags;
+};
+static const FName NAME_ABiggMazePlayerState_OnMaxIngredient3Changed = FName(TEXT("OnMaxIngredient3Changed"));
+void ABiggMazePlayerState::OnMaxIngredient3Changed(float DeltaValue, FGameplayTagContainer const& EventTags)
+{
+	BiggMazePlayerState_eventOnMaxIngredient3Changed_Parms Parms;
+	Parms.DeltaValue=DeltaValue;
+	Parms.EventTags=EventTags;
+	UFunction* Func = FindFunctionChecked(NAME_ABiggMazePlayerState_OnMaxIngredient3Changed);
+	ProcessEvent(Func,&Parms);
+}
+struct Z_Construct_UFunction_ABiggMazePlayerState_OnMaxIngredient3Changed_Statics
+{
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Category", "Ingredients" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "// Max Ingredient3\n" },
+#endif
+		{ "ModuleRelativePath", "Public/Character/Player/BiggMazePlayerState.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "Max Ingredient3" },
+#endif
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_EventTags_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FFloatPropertyParams NewProp_DeltaValue;
+	static const UECodeGen_Private::FStructPropertyParams NewProp_EventTags;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_ABiggMazePlayerState_OnMaxIngredient3Changed_Statics::NewProp_DeltaValue = { "DeltaValue", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(BiggMazePlayerState_eventOnMaxIngredient3Changed_Parms, DeltaValue), METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_ABiggMazePlayerState_OnMaxIngredient3Changed_Statics::NewProp_EventTags = { "EventTags", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(BiggMazePlayerState_eventOnMaxIngredient3Changed_Parms, EventTags), Z_Construct_UScriptStruct_FGameplayTagContainer, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_EventTags_MetaData), NewProp_EventTags_MetaData) }; // 3352185621
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_ABiggMazePlayerState_OnMaxIngredient3Changed_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ABiggMazePlayerState_OnMaxIngredient3Changed_Statics::NewProp_DeltaValue,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ABiggMazePlayerState_OnMaxIngredient3Changed_Statics::NewProp_EventTags,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_ABiggMazePlayerState_OnMaxIngredient3Changed_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ABiggMazePlayerState_OnMaxIngredient3Changed_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ABiggMazePlayerState, nullptr, "OnMaxIngredient3Changed", nullptr, nullptr, Z_Construct_UFunction_ABiggMazePlayerState_OnMaxIngredient3Changed_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_ABiggMazePlayerState_OnMaxIngredient3Changed_Statics::PropPointers), sizeof(BiggMazePlayerState_eventOnMaxIngredient3Changed_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08420800, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_ABiggMazePlayerState_OnMaxIngredient3Changed_Statics::Function_MetaDataParams), Z_Construct_UFunction_ABiggMazePlayerState_OnMaxIngredient3Changed_Statics::Function_MetaDataParams) };
+static_assert(sizeof(BiggMazePlayerState_eventOnMaxIngredient3Changed_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_ABiggMazePlayerState_OnMaxIngredient3Changed()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_ABiggMazePlayerState_OnMaxIngredient3Changed_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+// End Class ABiggMazePlayerState Function OnMaxIngredient3Changed
+
+// Begin Class ABiggMazePlayerState Function OnMaxIngredient4Changed
+struct BiggMazePlayerState_eventOnMaxIngredient4Changed_Parms
+{
+	float DeltaValue;
+	FGameplayTagContainer EventTags;
+};
+static const FName NAME_ABiggMazePlayerState_OnMaxIngredient4Changed = FName(TEXT("OnMaxIngredient4Changed"));
+void ABiggMazePlayerState::OnMaxIngredient4Changed(float DeltaValue, FGameplayTagContainer const& EventTags)
+{
+	BiggMazePlayerState_eventOnMaxIngredient4Changed_Parms Parms;
+	Parms.DeltaValue=DeltaValue;
+	Parms.EventTags=EventTags;
+	UFunction* Func = FindFunctionChecked(NAME_ABiggMazePlayerState_OnMaxIngredient4Changed);
+	ProcessEvent(Func,&Parms);
+}
+struct Z_Construct_UFunction_ABiggMazePlayerState_OnMaxIngredient4Changed_Statics
+{
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Category", "Ingredients" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "// Max Ingredient4\n" },
+#endif
+		{ "ModuleRelativePath", "Public/Character/Player/BiggMazePlayerState.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "Max Ingredient4" },
+#endif
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_EventTags_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FFloatPropertyParams NewProp_DeltaValue;
+	static const UECodeGen_Private::FStructPropertyParams NewProp_EventTags;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_ABiggMazePlayerState_OnMaxIngredient4Changed_Statics::NewProp_DeltaValue = { "DeltaValue", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(BiggMazePlayerState_eventOnMaxIngredient4Changed_Parms, DeltaValue), METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_ABiggMazePlayerState_OnMaxIngredient4Changed_Statics::NewProp_EventTags = { "EventTags", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(BiggMazePlayerState_eventOnMaxIngredient4Changed_Parms, EventTags), Z_Construct_UScriptStruct_FGameplayTagContainer, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_EventTags_MetaData), NewProp_EventTags_MetaData) }; // 3352185621
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_ABiggMazePlayerState_OnMaxIngredient4Changed_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ABiggMazePlayerState_OnMaxIngredient4Changed_Statics::NewProp_DeltaValue,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ABiggMazePlayerState_OnMaxIngredient4Changed_Statics::NewProp_EventTags,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_ABiggMazePlayerState_OnMaxIngredient4Changed_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ABiggMazePlayerState_OnMaxIngredient4Changed_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ABiggMazePlayerState, nullptr, "OnMaxIngredient4Changed", nullptr, nullptr, Z_Construct_UFunction_ABiggMazePlayerState_OnMaxIngredient4Changed_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_ABiggMazePlayerState_OnMaxIngredient4Changed_Statics::PropPointers), sizeof(BiggMazePlayerState_eventOnMaxIngredient4Changed_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08420800, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_ABiggMazePlayerState_OnMaxIngredient4Changed_Statics::Function_MetaDataParams), Z_Construct_UFunction_ABiggMazePlayerState_OnMaxIngredient4Changed_Statics::Function_MetaDataParams) };
+static_assert(sizeof(BiggMazePlayerState_eventOnMaxIngredient4Changed_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_ABiggMazePlayerState_OnMaxIngredient4Changed()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_ABiggMazePlayerState_OnMaxIngredient4Changed_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+// End Class ABiggMazePlayerState Function OnMaxIngredient4Changed
+
+// Begin Class ABiggMazePlayerState Function OnMaxIngredient5Changed
+struct BiggMazePlayerState_eventOnMaxIngredient5Changed_Parms
+{
+	float DeltaValue;
+	FGameplayTagContainer EventTags;
+};
+static const FName NAME_ABiggMazePlayerState_OnMaxIngredient5Changed = FName(TEXT("OnMaxIngredient5Changed"));
+void ABiggMazePlayerState::OnMaxIngredient5Changed(float DeltaValue, FGameplayTagContainer const& EventTags)
+{
+	BiggMazePlayerState_eventOnMaxIngredient5Changed_Parms Parms;
+	Parms.DeltaValue=DeltaValue;
+	Parms.EventTags=EventTags;
+	UFunction* Func = FindFunctionChecked(NAME_ABiggMazePlayerState_OnMaxIngredient5Changed);
+	ProcessEvent(Func,&Parms);
+}
+struct Z_Construct_UFunction_ABiggMazePlayerState_OnMaxIngredient5Changed_Statics
+{
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Category", "Ingredients" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "// Max Ingredient5\n" },
+#endif
+		{ "ModuleRelativePath", "Public/Character/Player/BiggMazePlayerState.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "Max Ingredient5" },
+#endif
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_EventTags_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FFloatPropertyParams NewProp_DeltaValue;
+	static const UECodeGen_Private::FStructPropertyParams NewProp_EventTags;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_ABiggMazePlayerState_OnMaxIngredient5Changed_Statics::NewProp_DeltaValue = { "DeltaValue", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(BiggMazePlayerState_eventOnMaxIngredient5Changed_Parms, DeltaValue), METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_ABiggMazePlayerState_OnMaxIngredient5Changed_Statics::NewProp_EventTags = { "EventTags", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(BiggMazePlayerState_eventOnMaxIngredient5Changed_Parms, EventTags), Z_Construct_UScriptStruct_FGameplayTagContainer, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_EventTags_MetaData), NewProp_EventTags_MetaData) }; // 3352185621
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_ABiggMazePlayerState_OnMaxIngredient5Changed_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ABiggMazePlayerState_OnMaxIngredient5Changed_Statics::NewProp_DeltaValue,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ABiggMazePlayerState_OnMaxIngredient5Changed_Statics::NewProp_EventTags,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_ABiggMazePlayerState_OnMaxIngredient5Changed_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ABiggMazePlayerState_OnMaxIngredient5Changed_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ABiggMazePlayerState, nullptr, "OnMaxIngredient5Changed", nullptr, nullptr, Z_Construct_UFunction_ABiggMazePlayerState_OnMaxIngredient5Changed_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_ABiggMazePlayerState_OnMaxIngredient5Changed_Statics::PropPointers), sizeof(BiggMazePlayerState_eventOnMaxIngredient5Changed_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08420800, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_ABiggMazePlayerState_OnMaxIngredient5Changed_Statics::Function_MetaDataParams), Z_Construct_UFunction_ABiggMazePlayerState_OnMaxIngredient5Changed_Statics::Function_MetaDataParams) };
+static_assert(sizeof(BiggMazePlayerState_eventOnMaxIngredient5Changed_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_ABiggMazePlayerState_OnMaxIngredient5Changed()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_ABiggMazePlayerState_OnMaxIngredient5Changed_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+// End Class ABiggMazePlayerState Function OnMaxIngredient5Changed
+
+// Begin Class ABiggMazePlayerState Function OnMaxIngredient6Changed
+struct BiggMazePlayerState_eventOnMaxIngredient6Changed_Parms
+{
+	float DeltaValue;
+	FGameplayTagContainer EventTags;
+};
+static const FName NAME_ABiggMazePlayerState_OnMaxIngredient6Changed = FName(TEXT("OnMaxIngredient6Changed"));
+void ABiggMazePlayerState::OnMaxIngredient6Changed(float DeltaValue, FGameplayTagContainer const& EventTags)
+{
+	BiggMazePlayerState_eventOnMaxIngredient6Changed_Parms Parms;
+	Parms.DeltaValue=DeltaValue;
+	Parms.EventTags=EventTags;
+	UFunction* Func = FindFunctionChecked(NAME_ABiggMazePlayerState_OnMaxIngredient6Changed);
+	ProcessEvent(Func,&Parms);
+}
+struct Z_Construct_UFunction_ABiggMazePlayerState_OnMaxIngredient6Changed_Statics
+{
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Category", "Ingredients" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "// Max Ingredient6\n" },
+#endif
+		{ "ModuleRelativePath", "Public/Character/Player/BiggMazePlayerState.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "Max Ingredient6" },
+#endif
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_EventTags_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FFloatPropertyParams NewProp_DeltaValue;
+	static const UECodeGen_Private::FStructPropertyParams NewProp_EventTags;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_ABiggMazePlayerState_OnMaxIngredient6Changed_Statics::NewProp_DeltaValue = { "DeltaValue", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(BiggMazePlayerState_eventOnMaxIngredient6Changed_Parms, DeltaValue), METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_ABiggMazePlayerState_OnMaxIngredient6Changed_Statics::NewProp_EventTags = { "EventTags", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(BiggMazePlayerState_eventOnMaxIngredient6Changed_Parms, EventTags), Z_Construct_UScriptStruct_FGameplayTagContainer, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_EventTags_MetaData), NewProp_EventTags_MetaData) }; // 3352185621
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_ABiggMazePlayerState_OnMaxIngredient6Changed_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ABiggMazePlayerState_OnMaxIngredient6Changed_Statics::NewProp_DeltaValue,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ABiggMazePlayerState_OnMaxIngredient6Changed_Statics::NewProp_EventTags,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_ABiggMazePlayerState_OnMaxIngredient6Changed_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ABiggMazePlayerState_OnMaxIngredient6Changed_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ABiggMazePlayerState, nullptr, "OnMaxIngredient6Changed", nullptr, nullptr, Z_Construct_UFunction_ABiggMazePlayerState_OnMaxIngredient6Changed_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_ABiggMazePlayerState_OnMaxIngredient6Changed_Statics::PropPointers), sizeof(BiggMazePlayerState_eventOnMaxIngredient6Changed_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08420800, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_ABiggMazePlayerState_OnMaxIngredient6Changed_Statics::Function_MetaDataParams), Z_Construct_UFunction_ABiggMazePlayerState_OnMaxIngredient6Changed_Statics::Function_MetaDataParams) };
+static_assert(sizeof(BiggMazePlayerState_eventOnMaxIngredient6Changed_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_ABiggMazePlayerState_OnMaxIngredient6Changed()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_ABiggMazePlayerState_OnMaxIngredient6Changed_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+// End Class ABiggMazePlayerState Function OnMaxIngredient6Changed
 
 // Begin Class ABiggMazePlayerState Function OnMaxPistolAmmoChanged
 struct BiggMazePlayerState_eventOnMaxPistolAmmoChanged_Parms
@@ -1278,6 +1962,12 @@ struct Z_Construct_UClass_ABiggMazePlayerState_Statics
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
 		{ &Z_Construct_UFunction_ABiggMazePlayerState_OnCurrentHealthChanged, "OnCurrentHealthChanged" }, // 2373994233
+		{ &Z_Construct_UFunction_ABiggMazePlayerState_OnCurrentIngredient1Changed, "OnCurrentIngredient1Changed" }, // 408928222
+		{ &Z_Construct_UFunction_ABiggMazePlayerState_OnCurrentIngredient2Changed, "OnCurrentIngredient2Changed" }, // 3952925832
+		{ &Z_Construct_UFunction_ABiggMazePlayerState_OnCurrentIngredient3Changed, "OnCurrentIngredient3Changed" }, // 3346423713
+		{ &Z_Construct_UFunction_ABiggMazePlayerState_OnCurrentIngredient4Changed, "OnCurrentIngredient4Changed" }, // 143002457
+		{ &Z_Construct_UFunction_ABiggMazePlayerState_OnCurrentIngredient5Changed, "OnCurrentIngredient5Changed" }, // 3506409296
+		{ &Z_Construct_UFunction_ABiggMazePlayerState_OnCurrentIngredient6Changed, "OnCurrentIngredient6Changed" }, // 2981695851
 		{ &Z_Construct_UFunction_ABiggMazePlayerState_OnCurrentLevelChanged, "OnCurrentLevelChanged" }, // 3968438268
 		{ &Z_Construct_UFunction_ABiggMazePlayerState_OnCurrentPistolAmmoChanged, "OnCurrentPistolAmmoChanged" }, // 2960105727
 		{ &Z_Construct_UFunction_ABiggMazePlayerState_OnCurrentRifleAmmoChanged, "OnCurrentRifleAmmoChanged" }, // 589069124
@@ -1288,6 +1978,12 @@ struct Z_Construct_UClass_ABiggMazePlayerState_Statics
 		{ &Z_Construct_UFunction_ABiggMazePlayerState_OnCurrentUniversalAmmoChanged, "OnCurrentUniversalAmmoChanged" }, // 4221130650
 		{ &Z_Construct_UFunction_ABiggMazePlayerState_OnCurrentXPChanged, "OnCurrentXPChanged" }, // 1270865614
 		{ &Z_Construct_UFunction_ABiggMazePlayerState_OnMaxHealthChanged, "OnMaxHealthChanged" }, // 1118374484
+		{ &Z_Construct_UFunction_ABiggMazePlayerState_OnMaxIngredient1Changed, "OnMaxIngredient1Changed" }, // 3595968565
+		{ &Z_Construct_UFunction_ABiggMazePlayerState_OnMaxIngredient2Changed, "OnMaxIngredient2Changed" }, // 2756080167
+		{ &Z_Construct_UFunction_ABiggMazePlayerState_OnMaxIngredient3Changed, "OnMaxIngredient3Changed" }, // 3500656071
+		{ &Z_Construct_UFunction_ABiggMazePlayerState_OnMaxIngredient4Changed, "OnMaxIngredient4Changed" }, // 3540990380
+		{ &Z_Construct_UFunction_ABiggMazePlayerState_OnMaxIngredient5Changed, "OnMaxIngredient5Changed" }, // 3463648213
+		{ &Z_Construct_UFunction_ABiggMazePlayerState_OnMaxIngredient6Changed, "OnMaxIngredient6Changed" }, // 4272012053
 		{ &Z_Construct_UFunction_ABiggMazePlayerState_OnMaxPistolAmmoChanged, "OnMaxPistolAmmoChanged" }, // 1504529955
 		{ &Z_Construct_UFunction_ABiggMazePlayerState_OnMaxRifleAmmoChanged, "OnMaxRifleAmmoChanged" }, // 3986816166
 		{ &Z_Construct_UFunction_ABiggMazePlayerState_OnMaxRocketAmmoChanged, "OnMaxRocketAmmoChanged" }, // 3364955087
@@ -1369,10 +2065,10 @@ ABiggMazePlayerState::~ABiggMazePlayerState() {}
 struct Z_CompiledInDeferFile_FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_Public_Character_Player_BiggMazePlayerState_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ABiggMazePlayerState, ABiggMazePlayerState::StaticClass, TEXT("ABiggMazePlayerState"), &Z_Registration_Info_UClass_ABiggMazePlayerState, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ABiggMazePlayerState), 3911714539U) },
+		{ Z_Construct_UClass_ABiggMazePlayerState, ABiggMazePlayerState::StaticClass, TEXT("ABiggMazePlayerState"), &Z_Registration_Info_UClass_ABiggMazePlayerState, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ABiggMazePlayerState), 1063722465U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_Public_Character_Player_BiggMazePlayerState_h_3915776422(TEXT("/Script/BigMaze_Alpha_0"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_Public_Character_Player_BiggMazePlayerState_h_1427780713(TEXT("/Script/BigMaze_Alpha_0"),
 	Z_CompiledInDeferFile_FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_Public_Character_Player_BiggMazePlayerState_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_Public_Character_Player_BiggMazePlayerState_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

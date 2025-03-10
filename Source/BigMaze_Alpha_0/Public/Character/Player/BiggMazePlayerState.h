@@ -92,6 +92,42 @@ public:
 	UFUNCTION(BlueprintImplementableEvent, Category = "Universal Ammo") // Max Universal Ammo
 	void OnMaxUniversalAmmoChanged(float DeltaValue, const FGameplayTagContainer& EventTags);
 
+	/** Ingredient1 Attributes */
+	UFUNCTION(BlueprintImplementableEvent, Category = "Ingredients") // Current Ingredient1
+	void OnCurrentIngredient1Changed(float DeltaValue, const FGameplayTagContainer& EventTags);
+	UFUNCTION(BlueprintImplementableEvent, Category = "Ingredients") // Max Ingredient1
+	void OnMaxIngredient1Changed(float DeltaValue, const FGameplayTagContainer& EventTags);
+	
+	/** Ingredient2 Attributes */
+	UFUNCTION(BlueprintImplementableEvent, Category = "Ingredients") // Current Ingredient2
+	void OnCurrentIngredient2Changed(float DeltaValue, const FGameplayTagContainer& EventTags);
+	UFUNCTION(BlueprintImplementableEvent, Category = "Ingredients") // Max Ingredient2
+	void OnMaxIngredient2Changed(float DeltaValue, const FGameplayTagContainer& EventTags);
+	
+	/** Ingredient3 Attributes */
+	UFUNCTION(BlueprintImplementableEvent, Category = "Ingredients") // Current Ingredient3
+	void OnCurrentIngredient3Changed(float DeltaValue, const FGameplayTagContainer& EventTags);
+	UFUNCTION(BlueprintImplementableEvent, Category = "Ingredients") // Max Ingredient3
+	void OnMaxIngredient3Changed(float DeltaValue, const FGameplayTagContainer& EventTags);
+	
+	/** Ingredient4 Attributes */
+	UFUNCTION(BlueprintImplementableEvent, Category = "Ingredients") // Current Ingredient4
+	void OnCurrentIngredient4Changed(float DeltaValue, const FGameplayTagContainer& EventTags);
+	UFUNCTION(BlueprintImplementableEvent, Category = "Ingredients") // Max Ingredient4
+	void OnMaxIngredient4Changed(float DeltaValue, const FGameplayTagContainer& EventTags);
+	
+	/** Ingredient5 Attributes */
+	UFUNCTION(BlueprintImplementableEvent, Category = "Ingredients") // Current Ingredient5
+	void OnCurrentIngredient5Changed(float DeltaValue, const FGameplayTagContainer& EventTags);
+	UFUNCTION(BlueprintImplementableEvent, Category = "Ingredients") // Max Ingredient5
+	void OnMaxIngredient5Changed(float DeltaValue, const FGameplayTagContainer& EventTags);
+	
+	/** Ingredient6 Attributes */
+	UFUNCTION(BlueprintImplementableEvent, Category = "Ingredients") // Current Ingredient6
+	void OnCurrentIngredient6Changed(float DeltaValue, const FGameplayTagContainer& EventTags);
+	UFUNCTION(BlueprintImplementableEvent, Category = "Ingredients") // Max Ingredient6
+	void OnMaxIngredient6Changed(float DeltaValue, const FGameplayTagContainer& EventTags);
+
 protected:
 
 	virtual void BeginPlay() override;
@@ -145,6 +181,26 @@ private:
 	// UniversalAmmo
 	void HandleCurrentUniversalAmmoChanged(const FOnAttributeChangeData& Data); // CurrentUniversalAmmo
 	void HandleMaxUniversalAmmoChanged(const FOnAttributeChangeData& Data); // MaxUniversalAmmo
+
+	/** Ingredient Attributes */
+	//Ingredient Ingredient1
+	void HandleCurrentIngredient1Changed(const FOnAttributeChangeData& Data); // CurrentIngredient1
+	void HandleMaxIngredient1Changed(const FOnAttributeChangeData& Data); // Max Ingredient1
+	//Ingredient Ingredient2
+	void HandleCurrentIngredient2Changed(const FOnAttributeChangeData& Data); // CurrentIngredient2
+	void HandleMaxIngredient2Changed(const FOnAttributeChangeData& Data); // Max Ingredient2
+	//Ingredient Ingredient3
+	void HandleCurrentIngredient3Changed(const FOnAttributeChangeData& Data); // CurrentIngredient3
+	void HandleMaxIngredient3Changed(const FOnAttributeChangeData& Data); // Max Ingredient3
+	//Ingredient Ingredient4
+	void HandleCurrentIngredient4Changed(const FOnAttributeChangeData& Data); // CurrentIngredient4
+	void HandleMaxIngredient4Changed(const FOnAttributeChangeData& Data); // Max Ingredient4
+	//Ingredient Ingredient5
+	void HandleCurrentIngredient5Changed(const FOnAttributeChangeData& Data); // CurrentIngredient5
+	void HandleMaxIngredient5Changed(const FOnAttributeChangeData& Data); // Max Ingredient5
+	//Ingredient Ingredient6
+	void HandleCurrentIngredient6Changed(const FOnAttributeChangeData& Data); // CurrentIngredient6
+	void HandleMaxIngredient6Changed(const FOnAttributeChangeData& Data); // Max Ingredient6
 
 	// Specifies what properties get replicated
 	virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
