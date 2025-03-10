@@ -2,6 +2,7 @@
 
 
 #include "Character/Player/BiggMazePlayerState.h"
+#include "Character/Player/BiggMazePlayerCharacter.h"
 #include "GameplayEffect.h"
 #include "GameplayEffectExtension.h"
 #include "GASFramework/ASCs/ASC_BiggMaze.h"
@@ -28,12 +29,90 @@ UAbilitySystemComponent *ABiggMazePlayerState::GetAbilitySystemComponent() const
     return AbilitySystemComponent;
 }
 
+void ABiggMazePlayerState::AddCharAttributeChangeDelegates()
+{
+    // Set Handlers for Character Attribute Changes After Possessing a Character
+    ABiggMazePlayerCharacter* PChar = Cast<ABiggMazePlayerCharacter>(GetPawn());
+    if (PChar)
+    {
+        TObjectPtr<UAS_BM_CharBase> AttributeSet = PChar->GetCharAttributeSet();
+        /** Health Attributes */
+        // CurrentHealth
+        AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(AttributeSet->GetCurrentHealthAttribute()).AddUObject(this, &ABiggMazePlayerState::HandleCurrentHealthChanged);
+        // MaxHealth
+        AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(AttributeSet->GetMaxHealthAttribute()).AddUObject(this, &ABiggMazePlayerState::HandleMaxHealthChanged);
+        // RegenHealth
+        AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(AttributeSet->GetRegenHealthAttribute()).AddUObject(this, &ABiggMazePlayerState::HandleRegenHealthChanged);
+
+        /** Stamina Attributes */
+        // CurrentStamina
+        AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(AttributeSet->GetCurrentStaminaAttribute()).AddUObject(this, &ABiggMazePlayerState::HandleCurrentStaminaChanged);
+        // MaxStamina
+        AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(AttributeSet->GetMaxStaminaAttribute()).AddUObject(this, &ABiggMazePlayerState::HandleMaxStaminaChanged);
+        // RegenStamina
+        AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(AttributeSet->GetRegenStaminaAttribute()).AddUObject(this, &ABiggMazePlayerState::HandleRegenStaminaChanged);
+
+        /** Leveling Attributes */
+        // CurrentLevel
+        AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(AttributeSet->GetCurrentLevelAttribute()).AddUObject(this, &ABiggMazePlayerState::HandleCurrentLevelChanged);
+        // XPRequired
+        AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(AttributeSet->GetXPRequiredAttribute()).AddUObject(this, &ABiggMazePlayerState::HandleXPRequiredChanged);
+        // CurrentXP
+        AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(AttributeSet->GetCurrentXPAttribute()).AddUObject(this, &ABiggMazePlayerState::HandleCurrentXPChanged);
+    }
+}
+
 void ABiggMazePlayerState::BeginPlay()
 {
     Super::BeginPlay();
 
     // Initialize Default Attributes
     InitializeAttributes();
+
+    if (AbilitySystemComponent)
+    {
+        // Bind playerstate change handles to attribute value change delegates in the ASC
+        AddCharAttributeChangeDelegates();
+
+        if (AmmoAttributeSet)
+        {
+            /** PistolAmmo Attributes */
+            // CurrentPistolAmmo
+            AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(AmmoAttributeSet->GetCurrentPistolAmmoAttribute()).AddUObject(this, &ABiggMazePlayerState::HandleCurrentPistolAmmoChanged);
+            // MaxPistolAmmo
+            AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(AmmoAttributeSet->GetMaxPistolAmmoAttribute()).AddUObject(this, &ABiggMazePlayerState::HandleMaxPistolAmmoChanged);
+
+            /** RifleAmmo Attributes */
+            // CurrentRifleAmmo
+            AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(AmmoAttributeSet->GetCurrentRifleAmmoAttribute()).AddUObject(this, &ABiggMazePlayerState::HandleCurrentRifleAmmoChanged);
+            // MaxRifleAmmo
+            AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(AmmoAttributeSet->GetMaxRifleAmmoAttribute()).AddUObject(this, &ABiggMazePlayerState::HandleMaxRifleAmmoChanged);
+
+            /** SniperAmmo Attributes */
+            // CurrentSniperAmmo
+            AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(AmmoAttributeSet->GetCurrentSniperAmmoAttribute()).AddUObject(this, &ABiggMazePlayerState::HandleCurrentSniperAmmoChanged);
+            // MaxSniperAmmo
+            AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(AmmoAttributeSet->GetMaxSniperAmmoAttribute()).AddUObject(this, &ABiggMazePlayerState::HandleMaxSniperAmmoChanged);
+
+            /** ShotgunAmmo Attributes */
+            // CurrentShotgunAmmo
+            AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(AmmoAttributeSet->GetCurrentShotgunAmmoAttribute()).AddUObject(this, &ABiggMazePlayerState::HandleCurrentShotgunAmmoChanged);
+            // MaxShotgunAmmo
+            AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(AmmoAttributeSet->GetMaxShotgunAmmoAttribute()).AddUObject(this, &ABiggMazePlayerState::HandleMaxShotgunAmmoChanged);
+
+            /** RocketAmmo Attributes */
+            // CurrentRocketAmmo
+            AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(AmmoAttributeSet->GetCurrentRocketAmmoAttribute()).AddUObject(this, &ABiggMazePlayerState::HandleCurrentRocketAmmoChanged);
+            // MaxRocketAmmo
+            AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(AmmoAttributeSet->GetMaxRocketAmmoAttribute()).AddUObject(this, &ABiggMazePlayerState::HandleMaxRocketAmmoChanged);
+
+            /** UniversalAmmo Attributes */
+            // CurrentUniversalAmmo
+            AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(AmmoAttributeSet->GetCurrentUniversalAmmoAttribute()).AddUObject(this, &ABiggMazePlayerState::HandleCurrentUniversalAmmoChanged);
+            // MaxUniversalAmmo
+            AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(AmmoAttributeSet->GetMaxUniversalAmmoAttribute()).AddUObject(this, &ABiggMazePlayerState::HandleMaxUniversalAmmoChanged);
+        }
+    }
 }
 
 void ABiggMazePlayerState::InitializeAttributes()
@@ -42,6 +121,283 @@ void ABiggMazePlayerState::InitializeAttributes()
 	{
 		AbilitySystemComponent->StartupEffectsApplied = true;
 	}
+}
+
+// Handle changes to attributes and propagate them to UI
+
+/** Health Attributes */
+// CurrentHealth
+void ABiggMazePlayerState::HandleCurrentHealthChanged(const FOnAttributeChangeData &Data)
+{
+    // Set local variables from old and new values
+    float NewValue = Data.NewValue;
+    float OldValue = Data.OldValue;
+    
+    // Set a delta value based on the difference between new and old values
+    float DeltaValue = NewValue - OldValue;
+
+    // Trigger blueprint event to update UI
+    OnCurrentHealthChanged(DeltaValue, FGameplayTagContainer());
+}
+// MaxHealth
+void ABiggMazePlayerState::HandleMaxHealthChanged(const FOnAttributeChangeData &Data)
+{
+    // Set local variables from old and new values
+    float NewValue = Data.NewValue;
+    float OldValue = Data.OldValue;
+    
+    // Set a delta value based on the difference between new and old values
+    float DeltaValue = NewValue - OldValue;
+
+    // Trigger blueprint event to update UI
+    OnMaxHealthChanged(DeltaValue, FGameplayTagContainer());
+}
+// RegenHealth
+void ABiggMazePlayerState::HandleRegenHealthChanged(const FOnAttributeChangeData &Data) 
+{
+    // Set local variables from old and new values
+    float NewValue = Data.NewValue;
+    float OldValue = Data.OldValue;
+    
+    // Set a delta value based on the difference between new and old values
+    float DeltaValue = NewValue - OldValue;
+
+    // Trigger blueprint event to update UI
+    OnRegenHealthChanged(DeltaValue, FGameplayTagContainer());
+}
+
+/** Stamina Attributes */
+//CurrentStamina
+void ABiggMazePlayerState::HandleCurrentStaminaChanged(const FOnAttributeChangeData &Data)
+{
+    // Set local variables from old and new values
+    float NewValue = Data.NewValue;
+    float OldValue = Data.OldValue;
+    
+    // Set a delta value based on the difference between new and old values
+    float DeltaValue = NewValue - OldValue;
+
+    // Trigger blueprint event to update UI
+    OnCurrentStaminaChanged(DeltaValue, FGameplayTagContainer());
+}
+//MaxStamina
+void ABiggMazePlayerState::HandleMaxStaminaChanged(const FOnAttributeChangeData &Data)
+{
+    // Set local variables from old and new values
+    float NewValue = Data.NewValue;
+    float OldValue = Data.OldValue;
+    
+    // Set a delta value based on the difference between new and old values
+    float DeltaValue = NewValue - OldValue;
+
+    // Trigger blueprint event to update UI
+    OnMaxStaminaChanged(DeltaValue, FGameplayTagContainer());
+}
+//RegenStamina
+void ABiggMazePlayerState::HandleRegenStaminaChanged(const FOnAttributeChangeData &Data)
+{
+    // Set local variables from old and new values
+    float NewValue = Data.NewValue;
+    float OldValue = Data.OldValue;
+    
+    // Set a delta value based on the difference between new and old values
+    float DeltaValue = NewValue - OldValue;
+
+    // Trigger blueprint event to update UI
+    OnRegenStaminaChanged(DeltaValue, FGameplayTagContainer());
+}
+
+/** Leveling Attributes */
+// CurrentLevel
+void ABiggMazePlayerState::HandleCurrentLevelChanged(const FOnAttributeChangeData &Data)
+{
+    // Set local variables from old and new values
+    float NewValue = Data.NewValue;
+    float OldValue = Data.OldValue;
+    
+    // Set a delta value based on the difference between new and old values
+    float DeltaValue = NewValue - OldValue;
+
+    // Trigger blueprint event to update UI
+    OnCurrentLevelChanged(DeltaValue, FGameplayTagContainer());
+}
+// XPRequired
+void ABiggMazePlayerState::HandleXPRequiredChanged(const FOnAttributeChangeData &Data)
+{
+    // Set local variables from old and new values
+    float NewValue = Data.NewValue;
+    float OldValue = Data.OldValue;
+    
+    // Set a delta value based on the difference between new and old values
+    float DeltaValue = NewValue - OldValue;
+
+    // Trigger blueprint event to update UI
+    OnXPRequiredChanged(DeltaValue, FGameplayTagContainer());
+}
+// CurrentXP
+void ABiggMazePlayerState::HandleCurrentXPChanged(const FOnAttributeChangeData &Data)
+{
+    // Set local variables from old and new values
+    float NewValue = Data.NewValue;
+    float OldValue = Data.OldValue;
+    
+    // Set a delta value based on the difference between new and old values
+    float DeltaValue = NewValue - OldValue;
+
+    // Trigger blueprint event to update UI
+    OnCurrentXPChanged(DeltaValue, FGameplayTagContainer());
+}
+
+/** Ammo Attributes */
+// Pistol Ammo
+void ABiggMazePlayerState::HandleCurrentPistolAmmoChanged(const FOnAttributeChangeData &Data)
+{
+    // Set local variables from old and new values
+    float NewValue = Data.NewValue;
+    float OldValue = Data.OldValue;
+    
+    // Set a delta value based on the difference between new and old values
+    float DeltaValue = NewValue - OldValue;
+
+    // Trigger blueprint event to update UI
+    OnCurrentPistolAmmoChanged(DeltaValue, FGameplayTagContainer());
+}
+void ABiggMazePlayerState::HandleMaxPistolAmmoChanged(const FOnAttributeChangeData &Data)
+{
+    // Set local variables from old and new values
+    float NewValue = Data.NewValue;
+    float OldValue = Data.OldValue;
+    
+    // Set a delta value based on the difference between new and old values
+    float DeltaValue = NewValue - OldValue;
+
+    // Trigger blueprint event to update UI
+    OnMaxPistolAmmoChanged(DeltaValue, FGameplayTagContainer());
+}
+// Rifle Ammo
+void ABiggMazePlayerState::HandleCurrentRifleAmmoChanged(const FOnAttributeChangeData &Data)
+{
+    // Set local variables from old and new values
+    float NewValue = Data.NewValue;
+    float OldValue = Data.OldValue;
+    
+    // Set a delta value based on the difference between new and old values
+    float DeltaValue = NewValue - OldValue;
+
+    // Trigger blueprint event to update UI
+    OnCurrentRifleAmmoChanged(DeltaValue, FGameplayTagContainer());
+}
+void ABiggMazePlayerState::HandleMaxRifleAmmoChanged(const FOnAttributeChangeData &Data)
+{
+    // Set local variables from old and new values
+    float NewValue = Data.NewValue;
+    float OldValue = Data.OldValue;
+    
+    // Set a delta value based on the difference between new and old values
+    float DeltaValue = NewValue - OldValue;
+
+    // Trigger blueprint event to update UI
+    OnMaxRifleAmmoChanged(DeltaValue, FGameplayTagContainer());
+}
+// Sniper Ammo
+void ABiggMazePlayerState::HandleCurrentSniperAmmoChanged(const FOnAttributeChangeData &Data)
+{
+    // Set local variables from old and new values
+    float NewValue = Data.NewValue;
+    float OldValue = Data.OldValue;
+    
+    // Set a delta value based on the difference between new and old values
+    float DeltaValue = NewValue - OldValue;
+
+    // Trigger blueprint event to update UI
+    OnCurrentSniperAmmoChanged(DeltaValue, FGameplayTagContainer());
+}
+void ABiggMazePlayerState::HandleMaxSniperAmmoChanged(const FOnAttributeChangeData &Data)
+{
+    // Set local variables from old and new values
+    float NewValue = Data.NewValue;
+    float OldValue = Data.OldValue;
+    
+    // Set a delta value based on the difference between new and old values
+    float DeltaValue = NewValue - OldValue;
+
+    // Trigger blueprint event to update UI
+    OnMaxSniperAmmoChanged(DeltaValue, FGameplayTagContainer());
+}
+// Shotgun Ammo
+void ABiggMazePlayerState::HandleCurrentShotgunAmmoChanged(const FOnAttributeChangeData &Data)
+{
+    // Set local variables from old and new values
+    float NewValue = Data.NewValue;
+    float OldValue = Data.OldValue;
+    
+    // Set a delta value based on the difference between new and old values
+    float DeltaValue = NewValue - OldValue;
+
+    // Trigger blueprint event to update UI
+    OnCurrentShotgunAmmoChanged(DeltaValue, FGameplayTagContainer());
+}
+void ABiggMazePlayerState::HandleMaxShotgunAmmoChanged(const FOnAttributeChangeData &Data)
+{
+    // Set local variables from old and new values
+    float NewValue = Data.NewValue;
+    float OldValue = Data.OldValue;
+    
+    // Set a delta value based on the difference between new and old values
+    float DeltaValue = NewValue - OldValue;
+
+    // Trigger blueprint event to update UI
+    OnMaxShotgunAmmoChanged(DeltaValue, FGameplayTagContainer());
+}
+// Rocket Ammo
+void ABiggMazePlayerState::HandleCurrentRocketAmmoChanged(const FOnAttributeChangeData &Data)
+{
+    // Set local variables from old and new values
+    float NewValue = Data.NewValue;
+    float OldValue = Data.OldValue;
+    
+    // Set a delta value based on the difference between new and old values
+    float DeltaValue = NewValue - OldValue;
+
+    // Trigger blueprint event to update UI
+    OnCurrentRocketAmmoChanged(DeltaValue, FGameplayTagContainer());
+}
+void ABiggMazePlayerState::HandleMaxRocketAmmoChanged(const FOnAttributeChangeData &Data)
+{
+    // Set local variables from old and new values
+    float NewValue = Data.NewValue;
+    float OldValue = Data.OldValue;
+    
+    // Set a delta value based on the difference between new and old values
+    float DeltaValue = NewValue - OldValue;
+
+    // Trigger blueprint event to update UI
+    OnMaxRocketAmmoChanged(DeltaValue, FGameplayTagContainer());
+}
+// Universal Ammo
+void ABiggMazePlayerState::HandleCurrentUniversalAmmoChanged(const FOnAttributeChangeData &Data)
+{
+    // Set local variables from old and new values
+    float NewValue = Data.NewValue;
+    float OldValue = Data.OldValue;
+    
+    // Set a delta value based on the difference between new and old values
+    float DeltaValue = NewValue - OldValue;
+
+    // Trigger blueprint event to update UI
+    OnCurrentUniversalAmmoChanged(DeltaValue, FGameplayTagContainer());
+}
+void ABiggMazePlayerState::HandleMaxUniversalAmmoChanged(const FOnAttributeChangeData &Data)
+{
+    // Set local variables from old and new values
+    float NewValue = Data.NewValue;
+    float OldValue = Data.OldValue;
+    
+    // Set a delta value based on the difference between new and old values
+    float DeltaValue = NewValue - OldValue;
+
+    // Trigger blueprint event to update UI
+    OnMaxUniversalAmmoChanged(DeltaValue, FGameplayTagContainer());
 }
 
 void ABiggMazePlayerState::GetLifetimeReplicatedProps(TArray<FLifetimeProperty> &OutLifetimeProps) const

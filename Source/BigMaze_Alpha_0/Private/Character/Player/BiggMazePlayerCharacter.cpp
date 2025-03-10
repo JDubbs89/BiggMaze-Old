@@ -34,12 +34,11 @@ void ABiggMazePlayerCharacter::OnRep_PlayerState()
 
 void ABiggMazePlayerCharacter::BindAttributeChangeDelegates()
 {
-    
-}
-
-void ABiggMazePlayerCharacter::OnAttributeChanged(const FOnAttributeChangeData &Data, FName AttributeName)
-{
-    
+    ABiggMazePlayerState* PS = GetPlayerState<ABiggMazePlayerState>();
+    if (PS)
+    {
+        PS->AddCharAttributeChangeDelegates();
+    }
 }
 
 void ABiggMazePlayerCharacter::InitializeAbilitySystem() 

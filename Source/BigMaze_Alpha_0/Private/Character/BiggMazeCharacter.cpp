@@ -21,6 +21,13 @@ UAbilitySystemComponent *ABiggMazeCharacter::GetAbilitySystemComponent() const
 {
 	return nullptr;
 }
+
+// Function to return character attribute set from character
+class UAS_BM_CharBase* ABiggMazeCharacter::GetCharAttributeSet()
+{
+	return CharAttributeSet;
+}
+
 // Called when the game starts or when spawned
 void ABiggMazeCharacter::BeginPlay()
 {

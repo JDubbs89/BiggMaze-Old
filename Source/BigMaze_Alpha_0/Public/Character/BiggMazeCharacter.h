@@ -22,6 +22,8 @@ public:
 	// Interface method for getting ASC
 	virtual class UAbilitySystemComponent* GetAbilitySystemComponent() const override;
 
+	class UAS_BM_CharBase* GetCharAttributeSet();
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
