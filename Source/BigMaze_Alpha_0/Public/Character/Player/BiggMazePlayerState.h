@@ -28,6 +28,10 @@ public:
 	virtual UAbilitySystemComponent* GetAbilitySystemComponent() const override;
 
 	void AddCharAttributeChangeDelegates();
+
+	void AddAmmoAttributeChangeDelegates();
+
+	void AddIngredientAttributeChangeDelegates();
 	// Functions to handle attribute changes and propagate those changes to UI
 	
 	/** Health Attributes */

@@ -52,12 +52,44 @@ DEFINE_FUNCTION(ABiggMazeCharacter::execInitializeAbilities)
 }
 // End Class ABiggMazeCharacter Function InitializeAbilities
 
+// Begin Class ABiggMazeCharacter Function InitializeAttributes
+struct Z_Construct_UFunction_ABiggMazeCharacter_InitializeAttributes_Statics
+{
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "BlueprintType", "true" },
+		{ "IsBlueprintBase", "true" },
+		{ "ModuleRelativePath", "Public/Character/BiggMazeCharacter.h" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ABiggMazeCharacter_InitializeAttributes_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ABiggMazeCharacter, nullptr, "InitializeAttributes", nullptr, nullptr, nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00080401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_ABiggMazeCharacter_InitializeAttributes_Statics::Function_MetaDataParams), Z_Construct_UFunction_ABiggMazeCharacter_InitializeAttributes_Statics::Function_MetaDataParams) };
+UFunction* Z_Construct_UFunction_ABiggMazeCharacter_InitializeAttributes()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_ABiggMazeCharacter_InitializeAttributes_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(ABiggMazeCharacter::execInitializeAttributes)
+{
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	P_THIS->InitializeAttributes();
+	P_NATIVE_END;
+}
+// End Class ABiggMazeCharacter Function InitializeAttributes
+
 // Begin Class ABiggMazeCharacter
 void ABiggMazeCharacter::StaticRegisterNativesABiggMazeCharacter()
 {
 	UClass* Class = ABiggMazeCharacter::StaticClass();
 	static const FNameNativePtrPair Funcs[] = {
 		{ "InitializeAbilities", &ABiggMazeCharacter::execInitializeAbilities },
+		{ "InitializeAttributes", &ABiggMazeCharacter::execInitializeAttributes },
 	};
 	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 }
@@ -120,6 +152,7 @@ struct Z_Construct_UClass_ABiggMazeCharacter_Statics
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
 		{ &Z_Construct_UFunction_ABiggMazeCharacter_InitializeAbilities, "InitializeAbilities" }, // 1460449916
+		{ &Z_Construct_UFunction_ABiggMazeCharacter_InitializeAttributes, "InitializeAttributes" }, // 3661743581
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static const UECodeGen_Private::FImplementedInterfaceParams InterfaceParams[];
@@ -191,10 +224,10 @@ ABiggMazeCharacter::~ABiggMazeCharacter() {}
 struct Z_CompiledInDeferFile_FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_Public_Character_BiggMazeCharacter_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ABiggMazeCharacter, ABiggMazeCharacter::StaticClass, TEXT("ABiggMazeCharacter"), &Z_Registration_Info_UClass_ABiggMazeCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ABiggMazeCharacter), 1133128292U) },
+		{ Z_Construct_UClass_ABiggMazeCharacter, ABiggMazeCharacter::StaticClass, TEXT("ABiggMazeCharacter"), &Z_Registration_Info_UClass_ABiggMazeCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ABiggMazeCharacter), 3956243779U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_Public_Character_BiggMazeCharacter_h_1101529239(TEXT("/Script/BigMaze_Alpha_0"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_Public_Character_BiggMazeCharacter_h_1333168818(TEXT("/Script/BigMaze_Alpha_0"),
 	Z_CompiledInDeferFile_FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_Public_Character_BiggMazeCharacter_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_Public_Character_BiggMazeCharacter_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

@@ -36,6 +36,7 @@ protected:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Attributes", Replicated, meta = (AllowPrivateAccess = "true"))
 	TObjectPtr<UAS_BM_CharBase> CharAttributeSet;
 
+	UFUNCTION(Blueprintable)
 	void InitializeAttributes();
 
 	UFUNCTION(Blueprintable)

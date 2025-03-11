@@ -62,6 +62,91 @@ void ABiggMazePlayerState::AddCharAttributeChangeDelegates()
     }
 }
 
+void ABiggMazePlayerState::AddAmmoAttributeChangeDelegates()
+{
+    if (AmmoAttributeSet)
+    {
+        /** PistolAmmo Attributes */
+        // CurrentPistolAmmo
+        AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(AmmoAttributeSet->GetCurrentPistolAmmoAttribute()).AddUObject(this, &ABiggMazePlayerState::HandleCurrentPistolAmmoChanged);
+        // MaxPistolAmmo
+        AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(AmmoAttributeSet->GetMaxPistolAmmoAttribute()).AddUObject(this, &ABiggMazePlayerState::HandleMaxPistolAmmoChanged);
+
+        /** RifleAmmo Attributes */
+        // CurrentRifleAmmo
+        AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(AmmoAttributeSet->GetCurrentRifleAmmoAttribute()).AddUObject(this, &ABiggMazePlayerState::HandleCurrentRifleAmmoChanged);
+        // MaxRifleAmmo
+        AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(AmmoAttributeSet->GetMaxRifleAmmoAttribute()).AddUObject(this, &ABiggMazePlayerState::HandleMaxRifleAmmoChanged);
+
+        /** SniperAmmo Attributes */
+        // CurrentSniperAmmo
+        AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(AmmoAttributeSet->GetCurrentSniperAmmoAttribute()).AddUObject(this, &ABiggMazePlayerState::HandleCurrentSniperAmmoChanged);
+        // MaxSniperAmmo
+        AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(AmmoAttributeSet->GetMaxSniperAmmoAttribute()).AddUObject(this, &ABiggMazePlayerState::HandleMaxSniperAmmoChanged);
+
+        /** ShotgunAmmo Attributes */
+        // CurrentShotgunAmmo
+        AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(AmmoAttributeSet->GetCurrentShotgunAmmoAttribute()).AddUObject(this, &ABiggMazePlayerState::HandleCurrentShotgunAmmoChanged);
+        // MaxShotgunAmmo
+        AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(AmmoAttributeSet->GetMaxShotgunAmmoAttribute()).AddUObject(this, &ABiggMazePlayerState::HandleMaxShotgunAmmoChanged);
+
+        /** RocketAmmo Attributes */
+        // CurrentRocketAmmo
+        AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(AmmoAttributeSet->GetCurrentRocketAmmoAttribute()).AddUObject(this, &ABiggMazePlayerState::HandleCurrentRocketAmmoChanged);
+        // MaxRocketAmmo
+        AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(AmmoAttributeSet->GetMaxRocketAmmoAttribute()).AddUObject(this, &ABiggMazePlayerState::HandleMaxRocketAmmoChanged);
+
+        /** UniversalAmmo Attributes */
+        // CurrentUniversalAmmo
+        AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(AmmoAttributeSet->GetCurrentUniversalAmmoAttribute()).AddUObject(this, &ABiggMazePlayerState::HandleCurrentUniversalAmmoChanged);
+        // MaxUniversalAmmo
+        AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(AmmoAttributeSet->GetMaxUniversalAmmoAttribute()).AddUObject(this, &ABiggMazePlayerState::HandleMaxUniversalAmmoChanged);
+    }
+}
+
+void ABiggMazePlayerState::AddIngredientAttributeChangeDelegates()
+{
+    if (IngredientAttributeSet)
+    {
+        /** Ingredient1 Attributes */
+        // CurrentIngredient1
+        AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(IngredientAttributeSet->GetCurrentIngredient1Attribute()).AddUObject(this, &ABiggMazePlayerState::HandleCurrentIngredient1Changed);
+        // MaxIngredient1
+        AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(IngredientAttributeSet->GetMaxIngredient1Attribute()).AddUObject(this, &ABiggMazePlayerState::HandleMaxIngredient1Changed);
+
+        /** Ingredient2 Attributes */
+        // CurrentIngredient2
+        AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(IngredientAttributeSet->GetCurrentIngredient2Attribute()).AddUObject(this, &ABiggMazePlayerState::HandleCurrentIngredient2Changed);
+        // MaxIngredient2
+        AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(IngredientAttributeSet->GetMaxIngredient2Attribute()).AddUObject(this, &ABiggMazePlayerState::HandleMaxIngredient2Changed);
+        
+        /** Ingredient3 Attributes */
+        // CurrentIngredient3
+        AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(IngredientAttributeSet->GetCurrentIngredient3Attribute()).AddUObject(this, &ABiggMazePlayerState::HandleCurrentIngredient3Changed);
+        // MaxIngredient3
+        AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(IngredientAttributeSet->GetMaxIngredient3Attribute()).AddUObject(this, &ABiggMazePlayerState::HandleMaxIngredient3Changed);
+        
+        /** Ingredient4 Attributes */
+        // CurrentIngredient4
+        AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(IngredientAttributeSet->GetCurrentIngredient4Attribute()).AddUObject(this, &ABiggMazePlayerState::HandleCurrentIngredient4Changed);
+        // MaxIngredient4
+        AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(IngredientAttributeSet->GetMaxIngredient4Attribute()).AddUObject(this, &ABiggMazePlayerState::HandleMaxIngredient4Changed);
+        
+        /** Ingredient5 Attributes */
+        // CurrentIngredient5
+        AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(IngredientAttributeSet->GetCurrentIngredient5Attribute()).AddUObject(this, &ABiggMazePlayerState::HandleCurrentIngredient5Changed);
+        // MaxIngredient5
+        AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(IngredientAttributeSet->GetMaxIngredient5Attribute()).AddUObject(this, &ABiggMazePlayerState::HandleMaxIngredient5Changed);
+        
+        /** Ingredient6 Attributes */
+        // CurrentIngredient6
+        AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(IngredientAttributeSet->GetCurrentIngredient6Attribute()).AddUObject(this, &ABiggMazePlayerState::HandleCurrentIngredient6Changed);
+        // MaxIngredient6
+        AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(IngredientAttributeSet->GetMaxIngredient6Attribute()).AddUObject(this, &ABiggMazePlayerState::HandleMaxIngredient6Changed);
+        
+    }
+}
+
 void ABiggMazePlayerState::BeginPlay()
 {
     Super::BeginPlay();
@@ -71,86 +156,13 @@ void ABiggMazePlayerState::BeginPlay()
 
     if (AbilitySystemComponent)
     {
-        // Bind playerstate change handles to attribute value change delegates in the ASC
-        AddCharAttributeChangeDelegates();
-
-        if (AmmoAttributeSet)
-        {
-            /** PistolAmmo Attributes */
-            // CurrentPistolAmmo
-            AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(AmmoAttributeSet->GetCurrentPistolAmmoAttribute()).AddUObject(this, &ABiggMazePlayerState::HandleCurrentPistolAmmoChanged);
-            // MaxPistolAmmo
-            AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(AmmoAttributeSet->GetMaxPistolAmmoAttribute()).AddUObject(this, &ABiggMazePlayerState::HandleMaxPistolAmmoChanged);
-
-            /** RifleAmmo Attributes */
-            // CurrentRifleAmmo
-            AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(AmmoAttributeSet->GetCurrentRifleAmmoAttribute()).AddUObject(this, &ABiggMazePlayerState::HandleCurrentRifleAmmoChanged);
-            // MaxRifleAmmo
-            AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(AmmoAttributeSet->GetMaxRifleAmmoAttribute()).AddUObject(this, &ABiggMazePlayerState::HandleMaxRifleAmmoChanged);
-
-            /** SniperAmmo Attributes */
-            // CurrentSniperAmmo
-            AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(AmmoAttributeSet->GetCurrentSniperAmmoAttribute()).AddUObject(this, &ABiggMazePlayerState::HandleCurrentSniperAmmoChanged);
-            // MaxSniperAmmo
-            AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(AmmoAttributeSet->GetMaxSniperAmmoAttribute()).AddUObject(this, &ABiggMazePlayerState::HandleMaxSniperAmmoChanged);
-
-            /** ShotgunAmmo Attributes */
-            // CurrentShotgunAmmo
-            AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(AmmoAttributeSet->GetCurrentShotgunAmmoAttribute()).AddUObject(this, &ABiggMazePlayerState::HandleCurrentShotgunAmmoChanged);
-            // MaxShotgunAmmo
-            AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(AmmoAttributeSet->GetMaxShotgunAmmoAttribute()).AddUObject(this, &ABiggMazePlayerState::HandleMaxShotgunAmmoChanged);
-
-            /** RocketAmmo Attributes */
-            // CurrentRocketAmmo
-            AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(AmmoAttributeSet->GetCurrentRocketAmmoAttribute()).AddUObject(this, &ABiggMazePlayerState::HandleCurrentRocketAmmoChanged);
-            // MaxRocketAmmo
-            AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(AmmoAttributeSet->GetMaxRocketAmmoAttribute()).AddUObject(this, &ABiggMazePlayerState::HandleMaxRocketAmmoChanged);
-
-            /** UniversalAmmo Attributes */
-            // CurrentUniversalAmmo
-            AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(AmmoAttributeSet->GetCurrentUniversalAmmoAttribute()).AddUObject(this, &ABiggMazePlayerState::HandleCurrentUniversalAmmoChanged);
-            // MaxUniversalAmmo
-            AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(AmmoAttributeSet->GetMaxUniversalAmmoAttribute()).AddUObject(this, &ABiggMazePlayerState::HandleMaxUniversalAmmoChanged);
-        }
-        if (IngredientAttributeSet)
-        {
-            /** Ingredient1 Attributes */
-            // CurrentIngredient1
-            AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(IngredientAttributeSet->GetCurrentIngredient1Attribute()).AddUObject(this, &ABiggMazePlayerState::HandleCurrentIngredient1Changed);
-            // MaxIngredient1
-            AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(IngredientAttributeSet->GetMaxIngredient1Attribute()).AddUObject(this, &ABiggMazePlayerState::HandleMaxIngredient1Changed);
-
-            /** Ingredient2 Attributes */
-            // CurrentIngredient2
-            AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(IngredientAttributeSet->GetCurrentIngredient2Attribute()).AddUObject(this, &ABiggMazePlayerState::HandleCurrentIngredient2Changed);
-            // MaxIngredient2
-            AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(IngredientAttributeSet->GetMaxIngredient2Attribute()).AddUObject(this, &ABiggMazePlayerState::HandleMaxIngredient2Changed);
+        /** Bind playerstate change handles to attribute value change delegates in the ASC */
         
-            /** Ingredient3 Attributes */
-            // CurrentIngredient3
-            AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(IngredientAttributeSet->GetCurrentIngredient3Attribute()).AddUObject(this, &ABiggMazePlayerState::HandleCurrentIngredient3Changed);
-            // MaxIngredient3
-            AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(IngredientAttributeSet->GetMaxIngredient3Attribute()).AddUObject(this, &ABiggMazePlayerState::HandleMaxIngredient3Changed);
-        
-            /** Ingredient4 Attributes */
-            // CurrentIngredient4
-            AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(IngredientAttributeSet->GetCurrentIngredient4Attribute()).AddUObject(this, &ABiggMazePlayerState::HandleCurrentIngredient4Changed);
-            // MaxIngredient4
-            AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(IngredientAttributeSet->GetMaxIngredient4Attribute()).AddUObject(this, &ABiggMazePlayerState::HandleMaxIngredient4Changed);
-        
-            /** Ingredient5 Attributes */
-            // CurrentIngredient5
-            AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(IngredientAttributeSet->GetCurrentIngredient5Attribute()).AddUObject(this, &ABiggMazePlayerState::HandleCurrentIngredient5Changed);
-            // MaxIngredient5
-            AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(IngredientAttributeSet->GetMaxIngredient5Attribute()).AddUObject(this, &ABiggMazePlayerState::HandleMaxIngredient5Changed);
-        
-            /** Ingredient6 Attributes */
-            // CurrentIngredient6
-            AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(IngredientAttributeSet->GetCurrentIngredient6Attribute()).AddUObject(this, &ABiggMazePlayerState::HandleCurrentIngredient6Changed);
-            // MaxIngredient6
-            AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(IngredientAttributeSet->GetMaxIngredient6Attribute()).AddUObject(this, &ABiggMazePlayerState::HandleMaxIngredient6Changed);
-        
-        }
+        AddCharAttributeChangeDelegates(); // Character Attribute Set (Held on Player Character)
+
+        AddAmmoAttributeChangeDelegates(); // Ammo Attribute Set (PlayerState)
+    
+        AddIngredientAttributeChangeDelegates(); // Ingredient Attribute Set (PlayerState)
     }
 }
 
