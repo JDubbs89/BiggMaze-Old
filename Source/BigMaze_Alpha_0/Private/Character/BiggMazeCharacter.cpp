@@ -14,6 +14,7 @@ ABiggMazeCharacter::ABiggMazeCharacter()
 
 	// Init AttributeSets
     CharAttributeSet = CreateDefaultSubobject<UAS_BM_CharBase>(TEXT("AttributeSet"));
+	EquippedItemAttributeSet = CreateDefaultSubobject<UAS_EquippedItem>(TEXT("EquippedItemAttributeSet"));
 }
 
 // Subclasses Override This
@@ -26,6 +27,12 @@ UAbilitySystemComponent *ABiggMazeCharacter::GetAbilitySystemComponent() const
 class UAS_BM_CharBase* ABiggMazeCharacter::GetCharAttributeSet()
 {
 	return CharAttributeSet;
+}
+
+// Function to return equipped item attribute set from character
+UAS_EquippedItem *ABiggMazeCharacter::GetEquippedItemAttributeSet()
+{
+    return EquippedItemAttributeSet;
 }
 
 // Called when the game starts or when spawned
@@ -70,6 +77,7 @@ void ABiggMazeCharacter::GetLifetimeReplicatedProps(TArray<FLifetimeProperty> &O
 
 	DOREPLIFETIME(ABiggMazeCharacter, AbilitySystemComponent);
 	DOREPLIFETIME(ABiggMazeCharacter, CharAttributeSet);
+	DOREPLIFETIME(ABiggMazeCharacter, EquippedItemAttributeSet);
 }
 
 // Called every frame
@@ -83,7 +91,6 @@ void ABiggMazeCharacter::Tick(float DeltaTime)
 void ABiggMazeCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
-	
 }
 
 void ABiggMazeCharacter::OnRep_PlayerState()

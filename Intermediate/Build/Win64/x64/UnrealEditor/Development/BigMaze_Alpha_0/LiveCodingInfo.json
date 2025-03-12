@@ -6,16 +6,17 @@
 			"ASC_CharacterBase.gen.cpp.obj",
 			"AS_Ammunition.gen.cpp.obj",
 			"AS_BM_CharBase.gen.cpp.obj",
+			"AS_EquippedItem.gen.cpp.obj",
 			"AS_Ingredients.gen.cpp.obj",
-			"BiggMazeAICharacter.gen.cpp.obj",
+			"BiggMazeAICharacter.gen.cpp.obj"
+		],
+		"Module.BigMaze_Alpha_0.2.cpp.obj": [
 			"BiggMazeAIController.gen.cpp.obj",
 			"BiggMazeAssetManager.gen.cpp.obj",
 			"BiggMazeCharacter.gen.cpp.obj",
 			"BiggMazePlayerCharacter.gen.cpp.obj",
 			"BiggMazePlayerController.gen.cpp.obj",
-			"BiggMazePlayerState.gen.cpp.obj"
-		],
-		"Module.BigMaze_Alpha_0.2.cpp.obj": [
+			"BiggMazePlayerState.gen.cpp.obj",
 			"BigMaze_Alpha_0.init.gen.cpp.obj",
 			"EC_BaseDamage.gen.cpp.obj",
 			"ItemEnums.gen.cpp.obj",
@@ -27,7 +28,9 @@
 			"BigMaze_Alpha_0.cpp.obj",
 			"MyClass.cpp.obj",
 			"BiggMazeAssetManager.cpp.obj",
-			"BiggMazeAICharacter.cpp.obj",
+			"BiggMazeAICharacter.cpp.obj"
+		],
+		"Module.BigMaze_Alpha_0.3.cpp.obj": [
 			"BiggMazeAIController.cpp.obj",
 			"BiggMazeCharacter.cpp.obj",
 			"BiggMazePlayerCharacter.cpp.obj",
@@ -37,6 +40,7 @@
 			"ASC_CharacterBase.cpp.obj",
 			"AS_Ammunition.cpp.obj",
 			"AS_BM_CharBase.cpp.obj",
+			"AS_EquippedItem.cpp.obj",
 			"AS_Ingredients.cpp.obj",
 			"EC_BaseDamage.cpp.obj",
 			"MMC_Damage.cpp.obj",

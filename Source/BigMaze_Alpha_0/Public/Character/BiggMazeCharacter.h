@@ -8,6 +8,7 @@
 #include "AbilitySystemComponent.h"
 #include "GASFramework/ASCs/ASC_BiggMaze.h"
 #include "GASFramework/AttributeSets/AS_BM_CharBase.h"
+#include "GASFramework/AttributeSets/AS_EquippedItem.h"
 #include "BiggMazeCharacter.generated.h"
 
 UCLASS(Blueprintable, ClassGroup = BiggMaze)
@@ -24,6 +25,8 @@ public:
 
 	class UAS_BM_CharBase* GetCharAttributeSet();
 
+	class UAS_EquippedItem* GetEquippedItemAttributeSet();
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
@@ -35,6 +38,10 @@ protected:
 	// Character Attribute Set
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Attributes", Replicated, meta = (AllowPrivateAccess = "true"))
 	TObjectPtr<UAS_BM_CharBase> CharAttributeSet;
+
+	// Equipped Item Attribute Set
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Attributes", Replicated, meta = (AllowPrivateAccess = "true"))
+	TObjectPtr<UAS_EquippedItem> EquippedItemAttributeSet;
 
 	UFUNCTION(Blueprintable)
 	void InitializeAttributes();

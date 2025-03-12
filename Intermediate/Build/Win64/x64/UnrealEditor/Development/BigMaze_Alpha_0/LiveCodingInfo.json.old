@@ -17,6 +17,7 @@
 		],
 		"Module.BigMaze_Alpha_0.2.cpp.obj": [
 			"BigMaze_Alpha_0.init.gen.cpp.obj",
+			"EC_BaseDamage.gen.cpp.obj",
 			"ItemEnums.gen.cpp.obj",
 			"ItemSystem.gen.cpp.obj",
 			"MMC_Damage.gen.cpp.obj",
@@ -37,6 +38,7 @@
 			"AS_Ammunition.cpp.obj",
 			"AS_BM_CharBase.cpp.obj",
 			"AS_Ingredients.cpp.obj",
+			"EC_BaseDamage.cpp.obj",
 			"MMC_Damage.cpp.obj",
 			"MMC_HealthRegen.cpp.obj",
 			"PS_BM_Player.cpp.obj"
