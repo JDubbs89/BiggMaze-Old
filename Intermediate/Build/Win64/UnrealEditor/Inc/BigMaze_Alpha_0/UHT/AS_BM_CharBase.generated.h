@@ -23,7 +23,17 @@ struct FGameplayAttributeData;
 	DECLARE_FUNCTION(execOnRep_RegenStamina); \
 	DECLARE_FUNCTION(execOnRep_MaxStamina); \
 	DECLARE_FUNCTION(execOnRep_CurrentStamina); \
+	DECLARE_FUNCTION(execOnRep_RegenShield); \
 	DECLARE_FUNCTION(execOnRep_RegenHealth); \
+	DECLARE_FUNCTION(execOnRep_Shield1OverflowPercent); \
+	DECLARE_FUNCTION(execOnRep_ShieldOverflowPercent); \
+	DECLARE_FUNCTION(execOnRep_HealthOverflowPercent); \
+	DECLARE_FUNCTION(execOnRep_MaxShield1); \
+	DECLARE_FUNCTION(execOnRep_CurrentShield1); \
+	DECLARE_FUNCTION(execOnRep_MaxShield); \
+	DECLARE_FUNCTION(execOnRep_CurrentShield); \
+	DECLARE_FUNCTION(execOnRep_MaxHealth1); \
+	DECLARE_FUNCTION(execOnRep_CurrentHealth1); \
 	DECLARE_FUNCTION(execOnRep_MaxHealth); \
 	DECLARE_FUNCTION(execOnRep_CurrentHealth);
 
@@ -40,7 +50,17 @@ public: \
 		NETFIELD_REP_START=(uint16)((int32)Super::ENetFields_Private::NETFIELD_REP_END + (int32)1), \
 		CurrentHealth=NETFIELD_REP_START, \
 		MaxHealth, \
+		CurrentHealth1, \
+		MaxHealth1, \
+		HealthOverflowPercent, \
+		CurrentShield, \
+		MaxShield, \
+		CurrentShield1, \
+		MaxShield1, \
+		ShieldOverflowPercent, \
+		Shield1OverflowPercent, \
 		RegenHealth, \
+		RegenShield, \
 		CurrentStamina, \
 		MaxStamina, \
 		RegenStamina, \
