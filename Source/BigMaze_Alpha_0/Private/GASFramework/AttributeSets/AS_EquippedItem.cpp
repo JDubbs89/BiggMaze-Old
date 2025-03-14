@@ -21,6 +21,9 @@ UAS_EquippedItem::UAS_EquippedItem()
     /** MaxMagCount */
     MaxMagCount.SetBaseValue(-99.f);
     MaxMagCount.SetCurrentValue(-99.f);
+    /** AmmoType */
+    AmmoType.SetBaseValue(-99.f);
+    AmmoType.SetCurrentValue(-99.f);
 
     /** Level */
     Level.SetBaseValue(1.f);
@@ -80,6 +83,16 @@ void UAS_EquippedItem::OnRep_MagCount(const FGameplayAttributeData& OldMagCount)
 void UAS_EquippedItem::OnRep_MaxMagCount(const FGameplayAttributeData& OldMaxMagCount)
 {
     GAMEPLAYATTRIBUTE_REPNOTIFY(UAS_EquippedItem, MaxMagCount, OldMaxMagCount);
+}
+// AmmoType
+void UAS_EquippedItem::OnRep_AmmoType(const FGameplayAttributeData& OldAmmoType)
+{
+    GAMEPLAYATTRIBUTE_REPNOTIFY(UAS_EquippedItem, AmmoType, OldAmmoType);
+}
+// ReloadAmt
+void UAS_EquippedItem::OnRep_ReloadAmt(const FGameplayAttributeData& OldReloadAmt)
+{
+    GAMEPLAYATTRIBUTE_REPNOTIFY(UAS_EquippedItem, ReloadAmt, OldReloadAmt);
 }
 
 /** Level */
@@ -172,6 +185,21 @@ void UAS_EquippedItem::PreAttributeChange(const FGameplayAttribute& Attribute, f
             NewValue = FMath::Clamp(NewValue, 0.0f, MaxValue);
         }
     }
+    else if (Attribute == GetAmmoTypeAttribute())
+    {
+        if (NewValue != -99.f)
+        {
+            NewValue = FMath::Clamp(NewValue, 0.0f, 5.f); // bounded between 0 and 5 (1 and 6) due to there being 6 ammo types
+        }
+    }
+    else if (Attribute == GetReloadAmtAttribute())
+    {
+        if (NewValue != -99.f)
+        {
+            const float MaxValue = MaxMagCount.GetCurrentValue();
+            NewValue = FMath::Clamp(NewValue, 0.0f, MaxValue);
+        }
+    }
     else if (Attribute == GetRangeAttribute()) // Range
     {
         if (NewValue != -99.f)
@@ -254,6 +282,25 @@ void UAS_EquippedItem::PostGameplayEffectExecute(const FGameplayEffectModCallbac
             SetMagCount(NewValue); // MagCount
         }
     }
+    else if (Attribute == GetAmmoTypeAttribute())
+    {
+        NewValue = AmmoType.GetCurrentValue();
+        if (NewValue != -99.f)
+        {
+            NewValue = FMath::Clamp(NewValue, 0.0f, 5.f);
+            SetAmmoType(NewValue); // Ammo Type
+        }
+    }
+    else if (Attribute == GetReloadAmtAttribute())
+    {
+        const float MaxValue = MaxMagCount.GetCurrentValue();
+        NewValue = ReloadAmt.GetCurrentValue();
+        if (NewValue != -99.f)
+        {
+            NewValue = FMath::Clamp(NewValue, 0.0f, MaxValue);
+            SetReloadAmt(NewValue);
+        }
+    }
     else if (Attribute == GetRangeAttribute()) // Range
     {
         NewValue = Range.GetCurrentValue();
@@ -320,6 +367,10 @@ void UAS_EquippedItem::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& Out
     DOREPLIFETIME_CONDITION_NOTIFY(UAS_EquippedItem, MagCount, COND_None, REPNOTIFY_Always);
     // MaxMagCount
     DOREPLIFETIME_CONDITION_NOTIFY(UAS_EquippedItem, MaxMagCount, COND_None, REPNOTIFY_Always);
+    // Ammo Type
+    DOREPLIFETIME_CONDITION_NOTIFY(UAS_EquippedItem, AmmoType, COND_None, REPNOTIFY_Always);
+    // Reload Amt
+    DOREPLIFETIME_CONDITION_NOTIFY(UAS_EquippedItem, ReloadAmt, COND_None, REPNOTIFY_Always);
 
     /** Level */
     // Level

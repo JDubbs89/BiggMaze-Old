@@ -19,6 +19,7 @@
 			"BiggMazePlayerState.gen.cpp.obj",
 			"BigMaze_Alpha_0.init.gen.cpp.obj",
 			"EC_BaseDamage.gen.cpp.obj",
+			"EC_ReloadWeapon.gen.cpp.obj",
 			"ItemEnums.gen.cpp.obj",
 			"ItemSystem.gen.cpp.obj",
 			"MMC_Damage.gen.cpp.obj",
@@ -43,6 +44,7 @@
 			"AS_EquippedItem.cpp.obj",
 			"AS_Ingredients.cpp.obj",
 			"EC_BaseDamage.cpp.obj",
+			"EC_ReloadWeapon.cpp.obj",
 			"MMC_Damage.cpp.obj",
 			"MMC_HealthRegen.cpp.obj",
 			"PS_BM_Player.cpp.obj"

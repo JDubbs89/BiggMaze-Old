@@ -51,6 +51,13 @@
 	    FGameplayAttributeData MaxMagCount; // The max amount of items in a mag
 	    ATTRIBUTE_ACCESSORS(UAS_EquippedItem, MaxMagCount)
         
+        UPROPERTY(BlueprintReadOnly, Category = "Magazine", ReplicatedUsing = OnRep_AmmoType)
+        FGameplayAttributeData AmmoType; // The type of ammo the weapon uses, 1-6
+        ATTRIBUTE_ACCESSORS(UAS_EquippedItem, AmmoType)
+
+        UPROPERTY(BlueprintReadOnly, Category = "Magazine", ReplicatedUsing = OnRep_ReloadAmt)
+        FGameplayAttributeData ReloadAmt; // The Amount of Ammo that Can Be Replenished in a single reload instance
+        ATTRIBUTE_ACCESSORS(UAS_EquippedItem, ReloadAmt)
 
         /** Level Attributes */
         UPROPERTY(BlueprintReadOnly, Category = "Level", ReplicatedUsing = OnRep_Level)
@@ -112,6 +119,10 @@
 	    virtual void OnRep_MagCount(const FGameplayAttributeData& OldMagCount);
         UFUNCTION() // MaxMagCount
 	    virtual void OnRep_MaxMagCount(const FGameplayAttributeData& OldMaxMagCount);
+        UFUNCTION() // AmmoType
+        virtual void OnRep_AmmoType(const FGameplayAttributeData& OldAmmoType);
+        UFUNCTION() // ReloadAmt
+        virtual void OnRep_ReloadAmt(const FGameplayAttributeData& OldReloadAmt);
 
         /** Level */
         UFUNCTION() // Level

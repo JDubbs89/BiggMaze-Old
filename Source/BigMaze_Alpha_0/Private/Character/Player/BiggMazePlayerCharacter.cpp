@@ -56,6 +56,7 @@ void ABiggMazePlayerCharacter::ApplyAttributeSetToASC()
     if (AbilitySystemComponent && CharAttributeSet)
     {
         AbilitySystemComponent->InitStats(CharAttributeSet->StaticClass(), nullptr);
+        AbilitySystemComponent->InitStats(EquippedItemAttributeSet->StaticClass(), nullptr);
     }
 }
 
@@ -64,5 +65,6 @@ void ABiggMazePlayerCharacter::RemoveAttributeSetFromASC()
     if (AbilitySystemComponent && CharAttributeSet)
     {
         AbilitySystemComponent->RemoveSpawnedAttribute(CharAttributeSet);
+        AbilitySystemComponent->RemoveSpawnedAttribute(EquippedItemAttributeSet);
     }
 }

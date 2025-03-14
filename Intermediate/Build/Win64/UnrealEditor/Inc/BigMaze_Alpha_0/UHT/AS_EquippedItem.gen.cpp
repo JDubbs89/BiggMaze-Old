@@ -18,6 +18,57 @@ GAMEPLAYABILITIES_API UScriptStruct* Z_Construct_UScriptStruct_FGameplayAttribut
 UPackage* Z_Construct_UPackage__Script_BigMaze_Alpha_0();
 // End Cross Module References
 
+// Begin Class UAS_EquippedItem Function OnRep_AmmoType
+struct Z_Construct_UFunction_UAS_EquippedItem_OnRep_AmmoType_Statics
+{
+	struct AS_EquippedItem_eventOnRep_AmmoType_Parms
+	{
+		FGameplayAttributeData OldAmmoType;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "// AmmoType\n" },
+#endif
+		{ "ModuleRelativePath", "Public/GASFramework/AttributeSets/AS_EquippedItem.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "AmmoType" },
+#endif
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OldAmmoType_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FStructPropertyParams NewProp_OldAmmoType;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UAS_EquippedItem_OnRep_AmmoType_Statics::NewProp_OldAmmoType = { "OldAmmoType", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AS_EquippedItem_eventOnRep_AmmoType_Parms, OldAmmoType), Z_Construct_UScriptStruct_FGameplayAttributeData, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OldAmmoType_MetaData), NewProp_OldAmmoType_MetaData) }; // 675369593
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UAS_EquippedItem_OnRep_AmmoType_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UAS_EquippedItem_OnRep_AmmoType_Statics::NewProp_OldAmmoType,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UAS_EquippedItem_OnRep_AmmoType_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UAS_EquippedItem_OnRep_AmmoType_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UAS_EquippedItem, nullptr, "OnRep_AmmoType", nullptr, nullptr, Z_Construct_UFunction_UAS_EquippedItem_OnRep_AmmoType_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UAS_EquippedItem_OnRep_AmmoType_Statics::PropPointers), sizeof(Z_Construct_UFunction_UAS_EquippedItem_OnRep_AmmoType_Statics::AS_EquippedItem_eventOnRep_AmmoType_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00480400, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UAS_EquippedItem_OnRep_AmmoType_Statics::Function_MetaDataParams), Z_Construct_UFunction_UAS_EquippedItem_OnRep_AmmoType_Statics::Function_MetaDataParams) };
+static_assert(sizeof(Z_Construct_UFunction_UAS_EquippedItem_OnRep_AmmoType_Statics::AS_EquippedItem_eventOnRep_AmmoType_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_UAS_EquippedItem_OnRep_AmmoType()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UAS_EquippedItem_OnRep_AmmoType_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UAS_EquippedItem::execOnRep_AmmoType)
+{
+	P_GET_STRUCT_REF(FGameplayAttributeData,Z_Param_Out_OldAmmoType);
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	P_THIS->OnRep_AmmoType(Z_Param_Out_OldAmmoType);
+	P_NATIVE_END;
+}
+// End Class UAS_EquippedItem Function OnRep_AmmoType
+
 // Begin Class UAS_EquippedItem Function OnRep_CritMultiplier
 struct Z_Construct_UFunction_UAS_EquippedItem_OnRep_CritMultiplier_Statics
 {
@@ -528,6 +579,57 @@ DEFINE_FUNCTION(UAS_EquippedItem::execOnRep_Range)
 }
 // End Class UAS_EquippedItem Function OnRep_Range
 
+// Begin Class UAS_EquippedItem Function OnRep_ReloadAmt
+struct Z_Construct_UFunction_UAS_EquippedItem_OnRep_ReloadAmt_Statics
+{
+	struct AS_EquippedItem_eventOnRep_ReloadAmt_Parms
+	{
+		FGameplayAttributeData OldReloadAmt;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "// ReloadAmt\n" },
+#endif
+		{ "ModuleRelativePath", "Public/GASFramework/AttributeSets/AS_EquippedItem.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "ReloadAmt" },
+#endif
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OldReloadAmt_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FStructPropertyParams NewProp_OldReloadAmt;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UAS_EquippedItem_OnRep_ReloadAmt_Statics::NewProp_OldReloadAmt = { "OldReloadAmt", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AS_EquippedItem_eventOnRep_ReloadAmt_Parms, OldReloadAmt), Z_Construct_UScriptStruct_FGameplayAttributeData, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OldReloadAmt_MetaData), NewProp_OldReloadAmt_MetaData) }; // 675369593
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UAS_EquippedItem_OnRep_ReloadAmt_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UAS_EquippedItem_OnRep_ReloadAmt_Statics::NewProp_OldReloadAmt,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UAS_EquippedItem_OnRep_ReloadAmt_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UAS_EquippedItem_OnRep_ReloadAmt_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UAS_EquippedItem, nullptr, "OnRep_ReloadAmt", nullptr, nullptr, Z_Construct_UFunction_UAS_EquippedItem_OnRep_ReloadAmt_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UAS_EquippedItem_OnRep_ReloadAmt_Statics::PropPointers), sizeof(Z_Construct_UFunction_UAS_EquippedItem_OnRep_ReloadAmt_Statics::AS_EquippedItem_eventOnRep_ReloadAmt_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00480400, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UAS_EquippedItem_OnRep_ReloadAmt_Statics::Function_MetaDataParams), Z_Construct_UFunction_UAS_EquippedItem_OnRep_ReloadAmt_Statics::Function_MetaDataParams) };
+static_assert(sizeof(Z_Construct_UFunction_UAS_EquippedItem_OnRep_ReloadAmt_Statics::AS_EquippedItem_eventOnRep_ReloadAmt_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_UAS_EquippedItem_OnRep_ReloadAmt()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UAS_EquippedItem_OnRep_ReloadAmt_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UAS_EquippedItem::execOnRep_ReloadAmt)
+{
+	P_GET_STRUCT_REF(FGameplayAttributeData,Z_Param_Out_OldReloadAmt);
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	P_THIS->OnRep_ReloadAmt(Z_Param_Out_OldReloadAmt);
+	P_NATIVE_END;
+}
+// End Class UAS_EquippedItem Function OnRep_ReloadAmt
+
 // Begin Class UAS_EquippedItem Function OnRep_ScopedSpread
 struct Z_Construct_UFunction_UAS_EquippedItem_OnRep_ScopedSpread_Statics
 {
@@ -686,6 +788,7 @@ void UAS_EquippedItem::StaticRegisterNativesUAS_EquippedItem()
 {
 	UClass* Class = UAS_EquippedItem::StaticClass();
 	static const FNameNativePtrPair Funcs[] = {
+		{ "OnRep_AmmoType", &UAS_EquippedItem::execOnRep_AmmoType },
 		{ "OnRep_CritMultiplier", &UAS_EquippedItem::execOnRep_CritMultiplier },
 		{ "OnRep_Damage", &UAS_EquippedItem::execOnRep_Damage },
 		{ "OnRep_FireRate", &UAS_EquippedItem::execOnRep_FireRate },
@@ -696,6 +799,7 @@ void UAS_EquippedItem::StaticRegisterNativesUAS_EquippedItem()
 		{ "OnRep_MaxMagCount", &UAS_EquippedItem::execOnRep_MaxMagCount },
 		{ "OnRep_MaxStackCount", &UAS_EquippedItem::execOnRep_MaxStackCount },
 		{ "OnRep_Range", &UAS_EquippedItem::execOnRep_Range },
+		{ "OnRep_ReloadAmt", &UAS_EquippedItem::execOnRep_ReloadAmt },
 		{ "OnRep_ScopedSpread", &UAS_EquippedItem::execOnRep_ScopedSpread },
 		{ "OnRep_Spread", &UAS_EquippedItem::execOnRep_Spread },
 		{ "OnRep_StackCount", &UAS_EquippedItem::execOnRep_StackCount },
@@ -739,6 +843,14 @@ struct Z_Construct_UClass_UAS_EquippedItem_Statics
 #endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_MaxMagCount_MetaData[] = {
+		{ "Category", "Magazine" },
+		{ "ModuleRelativePath", "Public/GASFramework/AttributeSets/AS_EquippedItem.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_AmmoType_MetaData[] = {
+		{ "Category", "Magazine" },
+		{ "ModuleRelativePath", "Public/GASFramework/AttributeSets/AS_EquippedItem.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ReloadAmt_MetaData[] = {
 		{ "Category", "Magazine" },
 		{ "ModuleRelativePath", "Public/GASFramework/AttributeSets/AS_EquippedItem.h" },
 	};
@@ -819,6 +931,8 @@ struct Z_Construct_UClass_UAS_EquippedItem_Statics
 	static const UECodeGen_Private::FStructPropertyParams NewProp_MaxStackCount;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_MagCount;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_MaxMagCount;
+	static const UECodeGen_Private::FStructPropertyParams NewProp_AmmoType;
+	static const UECodeGen_Private::FStructPropertyParams NewProp_ReloadAmt;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_Level;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_MaxLevel;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_Range;
@@ -831,6 +945,7 @@ struct Z_Construct_UClass_UAS_EquippedItem_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
+		{ &Z_Construct_UFunction_UAS_EquippedItem_OnRep_AmmoType, "OnRep_AmmoType" }, // 796607717
 		{ &Z_Construct_UFunction_UAS_EquippedItem_OnRep_CritMultiplier, "OnRep_CritMultiplier" }, // 1306559762
 		{ &Z_Construct_UFunction_UAS_EquippedItem_OnRep_Damage, "OnRep_Damage" }, // 3927168899
 		{ &Z_Construct_UFunction_UAS_EquippedItem_OnRep_FireRate, "OnRep_FireRate" }, // 3234575905
@@ -841,6 +956,7 @@ struct Z_Construct_UClass_UAS_EquippedItem_Statics
 		{ &Z_Construct_UFunction_UAS_EquippedItem_OnRep_MaxMagCount, "OnRep_MaxMagCount" }, // 2571391041
 		{ &Z_Construct_UFunction_UAS_EquippedItem_OnRep_MaxStackCount, "OnRep_MaxStackCount" }, // 54725971
 		{ &Z_Construct_UFunction_UAS_EquippedItem_OnRep_Range, "OnRep_Range" }, // 2641817062
+		{ &Z_Construct_UFunction_UAS_EquippedItem_OnRep_ReloadAmt, "OnRep_ReloadAmt" }, // 2745661776
 		{ &Z_Construct_UFunction_UAS_EquippedItem_OnRep_ScopedSpread, "OnRep_ScopedSpread" }, // 378141837
 		{ &Z_Construct_UFunction_UAS_EquippedItem_OnRep_Spread, "OnRep_Spread" }, // 221309192
 		{ &Z_Construct_UFunction_UAS_EquippedItem_OnRep_StackCount, "OnRep_StackCount" }, // 2283411285
@@ -855,6 +971,8 @@ const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UAS_EquippedIt
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UAS_EquippedItem_Statics::NewProp_MaxStackCount = { "MaxStackCount", "OnRep_MaxStackCount", (EPropertyFlags)0x0010000100000034, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UAS_EquippedItem, MaxStackCount), Z_Construct_UScriptStruct_FGameplayAttributeData, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MaxStackCount_MetaData), NewProp_MaxStackCount_MetaData) }; // 675369593
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UAS_EquippedItem_Statics::NewProp_MagCount = { "MagCount", "OnRep_MagCount", (EPropertyFlags)0x0010000100000034, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UAS_EquippedItem, MagCount), Z_Construct_UScriptStruct_FGameplayAttributeData, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MagCount_MetaData), NewProp_MagCount_MetaData) }; // 675369593
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UAS_EquippedItem_Statics::NewProp_MaxMagCount = { "MaxMagCount", "OnRep_MaxMagCount", (EPropertyFlags)0x0010000100000034, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UAS_EquippedItem, MaxMagCount), Z_Construct_UScriptStruct_FGameplayAttributeData, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MaxMagCount_MetaData), NewProp_MaxMagCount_MetaData) }; // 675369593
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UAS_EquippedItem_Statics::NewProp_AmmoType = { "AmmoType", "OnRep_AmmoType", (EPropertyFlags)0x0010000100000034, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UAS_EquippedItem, AmmoType), Z_Construct_UScriptStruct_FGameplayAttributeData, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_AmmoType_MetaData), NewProp_AmmoType_MetaData) }; // 675369593
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UAS_EquippedItem_Statics::NewProp_ReloadAmt = { "ReloadAmt", "OnRep_ReloadAmt", (EPropertyFlags)0x0010000100000034, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UAS_EquippedItem, ReloadAmt), Z_Construct_UScriptStruct_FGameplayAttributeData, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ReloadAmt_MetaData), NewProp_ReloadAmt_MetaData) }; // 675369593
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UAS_EquippedItem_Statics::NewProp_Level = { "Level", "OnRep_Level", (EPropertyFlags)0x0010000100000034, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UAS_EquippedItem, Level), Z_Construct_UScriptStruct_FGameplayAttributeData, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Level_MetaData), NewProp_Level_MetaData) }; // 675369593
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UAS_EquippedItem_Statics::NewProp_MaxLevel = { "MaxLevel", "OnRep_MaxLevel", (EPropertyFlags)0x0010000100000034, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UAS_EquippedItem, MaxLevel), Z_Construct_UScriptStruct_FGameplayAttributeData, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MaxLevel_MetaData), NewProp_MaxLevel_MetaData) }; // 675369593
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UAS_EquippedItem_Statics::NewProp_Range = { "Range", "OnRep_Range", (EPropertyFlags)0x0010000100000034, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UAS_EquippedItem, Range), Z_Construct_UScriptStruct_FGameplayAttributeData, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Range_MetaData), NewProp_Range_MetaData) }; // 675369593
@@ -869,6 +987,8 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UAS_Equip
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UAS_EquippedItem_Statics::NewProp_MaxStackCount,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UAS_EquippedItem_Statics::NewProp_MagCount,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UAS_EquippedItem_Statics::NewProp_MaxMagCount,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UAS_EquippedItem_Statics::NewProp_AmmoType,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UAS_EquippedItem_Statics::NewProp_ReloadAmt,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UAS_EquippedItem_Statics::NewProp_Level,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UAS_EquippedItem_Statics::NewProp_MaxLevel,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UAS_EquippedItem_Statics::NewProp_Range,
@@ -918,6 +1038,8 @@ void UAS_EquippedItem::ValidateGeneratedRepEnums(const TArray<struct FRepRecord>
 	static const FName Name_MaxStackCount(TEXT("MaxStackCount"));
 	static const FName Name_MagCount(TEXT("MagCount"));
 	static const FName Name_MaxMagCount(TEXT("MaxMagCount"));
+	static const FName Name_AmmoType(TEXT("AmmoType"));
+	static const FName Name_ReloadAmt(TEXT("ReloadAmt"));
 	static const FName Name_Level(TEXT("Level"));
 	static const FName Name_MaxLevel(TEXT("MaxLevel"));
 	static const FName Name_Range(TEXT("Range"));
@@ -932,6 +1054,8 @@ void UAS_EquippedItem::ValidateGeneratedRepEnums(const TArray<struct FRepRecord>
 		&& Name_MaxStackCount == ClassReps[(int32)ENetFields_Private::MaxStackCount].Property->GetFName()
 		&& Name_MagCount == ClassReps[(int32)ENetFields_Private::MagCount].Property->GetFName()
 		&& Name_MaxMagCount == ClassReps[(int32)ENetFields_Private::MaxMagCount].Property->GetFName()
+		&& Name_AmmoType == ClassReps[(int32)ENetFields_Private::AmmoType].Property->GetFName()
+		&& Name_ReloadAmt == ClassReps[(int32)ENetFields_Private::ReloadAmt].Property->GetFName()
 		&& Name_Level == ClassReps[(int32)ENetFields_Private::Level].Property->GetFName()
 		&& Name_MaxLevel == ClassReps[(int32)ENetFields_Private::MaxLevel].Property->GetFName()
 		&& Name_Range == ClassReps[(int32)ENetFields_Private::Range].Property->GetFName()
@@ -951,10 +1075,10 @@ UAS_EquippedItem::~UAS_EquippedItem() {}
 struct Z_CompiledInDeferFile_FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_Public_GASFramework_AttributeSets_AS_EquippedItem_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UAS_EquippedItem, UAS_EquippedItem::StaticClass, TEXT("UAS_EquippedItem"), &Z_Registration_Info_UClass_UAS_EquippedItem, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UAS_EquippedItem), 4248676295U) },
+		{ Z_Construct_UClass_UAS_EquippedItem, UAS_EquippedItem::StaticClass, TEXT("UAS_EquippedItem"), &Z_Registration_Info_UClass_UAS_EquippedItem, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UAS_EquippedItem), 2668404266U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_Public_GASFramework_AttributeSets_AS_EquippedItem_h_2077658431(TEXT("/Script/BigMaze_Alpha_0"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_Public_GASFramework_AttributeSets_AS_EquippedItem_h_2949995174(TEXT("/Script/BigMaze_Alpha_0"),
 	Z_CompiledInDeferFile_FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_Public_GASFramework_AttributeSets_AS_EquippedItem_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_Public_GASFramework_AttributeSets_AS_EquippedItem_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

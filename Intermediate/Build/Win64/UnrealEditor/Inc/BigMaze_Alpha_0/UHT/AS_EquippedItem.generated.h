@@ -26,6 +26,8 @@ struct FGameplayAttributeData;
 	DECLARE_FUNCTION(execOnRep_Range); \
 	DECLARE_FUNCTION(execOnRep_MaxLevel); \
 	DECLARE_FUNCTION(execOnRep_Level); \
+	DECLARE_FUNCTION(execOnRep_ReloadAmt); \
+	DECLARE_FUNCTION(execOnRep_AmmoType); \
 	DECLARE_FUNCTION(execOnRep_MaxMagCount); \
 	DECLARE_FUNCTION(execOnRep_MagCount); \
 	DECLARE_FUNCTION(execOnRep_MaxStackCount); \
@@ -46,6 +48,8 @@ public: \
 		MaxStackCount, \
 		MagCount, \
 		MaxMagCount, \
+		AmmoType, \
+		ReloadAmt, \
 		Level, \
 		MaxLevel, \
 		Range, \

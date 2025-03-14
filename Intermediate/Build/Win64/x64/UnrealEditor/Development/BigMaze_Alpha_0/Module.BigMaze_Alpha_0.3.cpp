@@ -11,6 +11,7 @@
 #include "C:/Unreal Projects/BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade/Source/BigMaze_Alpha_0/Private/GASFramework/AttributeSets/AS_EquippedItem.cpp"
 #include "C:/Unreal Projects/BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade/Source/BigMaze_Alpha_0/Private/GASFramework/AttributeSets/AS_Ingredients.cpp"
 #include "C:/Unreal Projects/BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade/Source/BigMaze_Alpha_0/Private/GASFramework/Calculations/EC_BaseDamage.cpp"
+#include "C:/Unreal Projects/BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade/Source/BigMaze_Alpha_0/Private/GASFramework/Calculations/EC_ReloadWeapon.cpp"
 #include "C:/Unreal Projects/BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade/Source/BigMaze_Alpha_0/Private/GASFramework/Calculations/MMC_Damage.cpp"
 #include "C:/Unreal Projects/BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade/Source/BigMaze_Alpha_0/Private/GASFramework/Calculations/MMC_HealthRegen.cpp"
 #include "C:/Unreal Projects/BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade/Source/BigMaze_Alpha_0/Private/GASFramework/Player/PS_BM_Player.cpp"
