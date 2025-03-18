@@ -10,7 +10,6 @@
 #include "Net/Core/PushModel/PushModelMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-struct FGameplayAttribute;
 struct FGameplayAttributeData;
 #ifdef BIGMAZE_ALPHA_0_AS_Ammunition_generated_h
 #error "AS_Ammunition.generated.h already included, missing '#pragma once' in AS_Ammunition.h"
@@ -29,8 +28,7 @@ struct FGameplayAttributeData;
 	DECLARE_FUNCTION(execOnRep_MaxRifleAmmo); \
 	DECLARE_FUNCTION(execOnRep_CurrentRifleAmmo); \
 	DECLARE_FUNCTION(execOnRep_MaxPistolAmmo); \
-	DECLARE_FUNCTION(execOnRep_CurrentPistolAmmo); \
-	DECLARE_FUNCTION(execGetAmmoAttribute);
+	DECLARE_FUNCTION(execOnRep_CurrentPistolAmmo);
 
 
 #define FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_Public_GASFramework_AttributeSets_AS_Ammunition_h_23_INCLASS_NO_PURE_DECLS \

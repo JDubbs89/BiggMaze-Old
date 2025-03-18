@@ -14,59 +14,9 @@ void EmptyLinkFunctionForGeneratedCodeAS_Ammunition() {}
 BIGMAZE_ALPHA_0_API UClass* Z_Construct_UClass_UAS_Ammunition();
 BIGMAZE_ALPHA_0_API UClass* Z_Construct_UClass_UAS_Ammunition_NoRegister();
 GAMEPLAYABILITIES_API UClass* Z_Construct_UClass_UAttributeSet();
-GAMEPLAYABILITIES_API UScriptStruct* Z_Construct_UScriptStruct_FGameplayAttribute();
 GAMEPLAYABILITIES_API UScriptStruct* Z_Construct_UScriptStruct_FGameplayAttributeData();
 UPackage* Z_Construct_UPackage__Script_BigMaze_Alpha_0();
 // End Cross Module References
-
-// Begin Class UAS_Ammunition Function GetAmmoAttribute
-struct Z_Construct_UFunction_UAS_Ammunition_GetAmmoAttribute_Statics
-{
-	struct AS_Ammunition_eventGetAmmoAttribute_Parms
-	{
-		float AmmoType;
-		FGameplayAttribute ReturnValue;
-	};
-#if WITH_METADATA
-	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
-		{ "BlueprintType", "true" },
-		{ "Category", "Ammo" },
-		{ "IsBlueprintBase", "true" },
-		{ "ModuleRelativePath", "Public/GASFramework/AttributeSets/AS_Ammunition.h" },
-	};
-#endif // WITH_METADATA
-	static const UECodeGen_Private::FFloatPropertyParams NewProp_AmmoType;
-	static const UECodeGen_Private::FStructPropertyParams NewProp_ReturnValue;
-	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
-	static const UECodeGen_Private::FFunctionParams FuncParams;
-};
-const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UAS_Ammunition_GetAmmoAttribute_Statics::NewProp_AmmoType = { "AmmoType", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AS_Ammunition_eventGetAmmoAttribute_Parms, AmmoType), METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UAS_Ammunition_GetAmmoAttribute_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AS_Ammunition_eventGetAmmoAttribute_Parms, ReturnValue), Z_Construct_UScriptStruct_FGameplayAttribute, METADATA_PARAMS(0, nullptr) }; // 2792951819
-const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UAS_Ammunition_GetAmmoAttribute_Statics::PropPointers[] = {
-	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UAS_Ammunition_GetAmmoAttribute_Statics::NewProp_AmmoType,
-	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UAS_Ammunition_GetAmmoAttribute_Statics::NewProp_ReturnValue,
-};
-static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UAS_Ammunition_GetAmmoAttribute_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UAS_Ammunition_GetAmmoAttribute_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UAS_Ammunition, nullptr, "GetAmmoAttribute", nullptr, nullptr, Z_Construct_UFunction_UAS_Ammunition_GetAmmoAttribute_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UAS_Ammunition_GetAmmoAttribute_Statics::PropPointers), sizeof(Z_Construct_UFunction_UAS_Ammunition_GetAmmoAttribute_Statics::AS_Ammunition_eventGetAmmoAttribute_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UAS_Ammunition_GetAmmoAttribute_Statics::Function_MetaDataParams), Z_Construct_UFunction_UAS_Ammunition_GetAmmoAttribute_Statics::Function_MetaDataParams) };
-static_assert(sizeof(Z_Construct_UFunction_UAS_Ammunition_GetAmmoAttribute_Statics::AS_Ammunition_eventGetAmmoAttribute_Parms) < MAX_uint16);
-UFunction* Z_Construct_UFunction_UAS_Ammunition_GetAmmoAttribute()
-{
-	static UFunction* ReturnFunction = nullptr;
-	if (!ReturnFunction)
-	{
-		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UAS_Ammunition_GetAmmoAttribute_Statics::FuncParams);
-	}
-	return ReturnFunction;
-}
-DEFINE_FUNCTION(UAS_Ammunition::execGetAmmoAttribute)
-{
-	P_GET_PROPERTY(FFloatProperty,Z_Param_AmmoType);
-	P_FINISH;
-	P_NATIVE_BEGIN;
-	*(FGameplayAttribute*)Z_Param__Result=P_THIS->GetAmmoAttribute(Z_Param_AmmoType);
-	P_NATIVE_END;
-}
-// End Class UAS_Ammunition Function GetAmmoAttribute
 
 // Begin Class UAS_Ammunition Function OnRep_CurrentPistolAmmo
 struct Z_Construct_UFunction_UAS_Ammunition_OnRep_CurrentPistolAmmo_Statics
@@ -685,7 +635,6 @@ void UAS_Ammunition::StaticRegisterNativesUAS_Ammunition()
 {
 	UClass* Class = UAS_Ammunition::StaticClass();
 	static const FNameNativePtrPair Funcs[] = {
-		{ "GetAmmoAttribute", &UAS_Ammunition::execGetAmmoAttribute },
 		{ "OnRep_CurrentPistolAmmo", &UAS_Ammunition::execOnRep_CurrentPistolAmmo },
 		{ "OnRep_CurrentRifleAmmo", &UAS_Ammunition::execOnRep_CurrentRifleAmmo },
 		{ "OnRep_CurrentRocketAmmo", &UAS_Ammunition::execOnRep_CurrentRocketAmmo },
@@ -827,7 +776,6 @@ struct Z_Construct_UClass_UAS_Ammunition_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UAS_Ammunition_GetAmmoAttribute, "GetAmmoAttribute" }, // 2961779964
 		{ &Z_Construct_UFunction_UAS_Ammunition_OnRep_CurrentPistolAmmo, "OnRep_CurrentPistolAmmo" }, // 544132177
 		{ &Z_Construct_UFunction_UAS_Ammunition_OnRep_CurrentRifleAmmo, "OnRep_CurrentRifleAmmo" }, // 660654421
 		{ &Z_Construct_UFunction_UAS_Ammunition_OnRep_CurrentRocketAmmo, "OnRep_CurrentRocketAmmo" }, // 535808160
@@ -945,10 +893,10 @@ UAS_Ammunition::~UAS_Ammunition() {}
 struct Z_CompiledInDeferFile_FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_Public_GASFramework_AttributeSets_AS_Ammunition_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UAS_Ammunition, UAS_Ammunition::StaticClass, TEXT("UAS_Ammunition"), &Z_Registration_Info_UClass_UAS_Ammunition, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UAS_Ammunition), 228600512U) },
+		{ Z_Construct_UClass_UAS_Ammunition, UAS_Ammunition::StaticClass, TEXT("UAS_Ammunition"), &Z_Registration_Info_UClass_UAS_Ammunition, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UAS_Ammunition), 4070364656U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_Public_GASFramework_AttributeSets_AS_Ammunition_h_3311167038(TEXT("/Script/BigMaze_Alpha_0"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_Public_GASFramework_AttributeSets_AS_Ammunition_h_633362390(TEXT("/Script/BigMaze_Alpha_0"),
 	Z_CompiledInDeferFile_FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_Public_GASFramework_AttributeSets_AS_Ammunition_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_Public_GASFramework_AttributeSets_AS_Ammunition_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

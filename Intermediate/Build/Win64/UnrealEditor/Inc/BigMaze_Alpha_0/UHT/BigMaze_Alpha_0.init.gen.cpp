@@ -17,7 +17,7 @@ void EmptyLinkFunctionForGeneratedCodeBigMaze_Alpha_0_init() {}
 				nullptr,
 				0,
 				PKG_CompiledIn | 0x00000000,
-				0xCC854A24,
+				0x821D61B2,
 				0x69CF910F,
 				METADATA_PARAMS(0, nullptr)
 			};
@@ -25,5 +25,5 @@ void EmptyLinkFunctionForGeneratedCodeBigMaze_Alpha_0_init() {}
 		}
 		return Z_Registration_Info_UPackage__Script_BigMaze_Alpha_0.OuterSingleton;
 	}
-	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_BigMaze_Alpha_0(Z_Construct_UPackage__Script_BigMaze_Alpha_0, TEXT("/Script/BigMaze_Alpha_0"), Z_Registration_Info_UPackage__Script_BigMaze_Alpha_0, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0xCC854A24, 0x69CF910F));
+	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_BigMaze_Alpha_0(Z_Construct_UPackage__Script_BigMaze_Alpha_0, TEXT("/Script/BigMaze_Alpha_0"), Z_Registration_Info_UPackage__Script_BigMaze_Alpha_0, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0x821D61B2, 0x69CF910F));
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

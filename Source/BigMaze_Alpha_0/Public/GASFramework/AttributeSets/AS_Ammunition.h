@@ -37,7 +37,6 @@ public:
 
 	virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
 
-	UFUNCTION(Blueprintable, Category = "Ammo")
 	FGameplayAttribute GetAmmoAttribute(float AmmoType);
 
 	// Defining Gameplay Attributes (All are replicated besides cost, which is a meta attribute)
