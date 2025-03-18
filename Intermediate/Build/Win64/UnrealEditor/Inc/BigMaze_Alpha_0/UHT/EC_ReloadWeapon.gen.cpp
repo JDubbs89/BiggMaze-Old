@@ -30,10 +30,13 @@ struct Z_Construct_UClass_UEC_ReloadWeapon_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
 #if !UE_BUILD_SHIPPING
-		{ "Comment", "/**\n * \n */" },
+		{ "Comment", "/**\n Gameplay Effect Execution class for handling weapon reloads \n */" },
 #endif
 		{ "IncludePath", "GASFramework/Calculations/EC_ReloadWeapon.h" },
 		{ "ModuleRelativePath", "Public/GASFramework/Calculations/EC_ReloadWeapon.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "Gameplay Effect Execution class for handling weapon reloads" },
+#endif
 	};
 #endif // WITH_METADATA
 	static UObject* (*const DependentSingletons[])();
@@ -82,10 +85,10 @@ UEC_ReloadWeapon::~UEC_ReloadWeapon() {}
 struct Z_CompiledInDeferFile_FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_Public_GASFramework_Calculations_EC_ReloadWeapon_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UEC_ReloadWeapon, UEC_ReloadWeapon::StaticClass, TEXT("UEC_ReloadWeapon"), &Z_Registration_Info_UClass_UEC_ReloadWeapon, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UEC_ReloadWeapon), 1674965061U) },
+		{ Z_Construct_UClass_UEC_ReloadWeapon, UEC_ReloadWeapon::StaticClass, TEXT("UEC_ReloadWeapon"), &Z_Registration_Info_UClass_UEC_ReloadWeapon, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UEC_ReloadWeapon), 3772744658U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_Public_GASFramework_Calculations_EC_ReloadWeapon_h_2871348641(TEXT("/Script/BigMaze_Alpha_0"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_Public_GASFramework_Calculations_EC_ReloadWeapon_h_2090407767(TEXT("/Script/BigMaze_Alpha_0"),
 	Z_CompiledInDeferFile_FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_Public_GASFramework_Calculations_EC_ReloadWeapon_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_Public_GASFramework_Calculations_EC_ReloadWeapon_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

@@ -171,6 +171,20 @@ void UAS_Ammunition::GetLifetimeReplicatedProps(TArray<FLifetimeProperty> &OutLi
     DOREPLIFETIME_CONDITION_NOTIFY(UAS_Ammunition, MaxUniversalAmmo, COND_None, REPNOTIFY_Always);
 }
 
+FGameplayAttribute UAS_Ammunition::GetAmmoAttribute(float AmmoType)
+{
+    switch(static_cast<int32>(AmmoType))
+    {
+        case 0: return GetCurrentPistolAmmoAttribute();
+        case 1: return GetCurrentRifleAmmoAttribute();
+        case 2: return GetCurrentSniperAmmoAttribute();
+        case 3: return GetCurrentShotgunAmmoAttribute();
+        case 4: return GetCurrentRocketAmmoAttribute();
+        case 5: return GetCurrentUniversalAmmoAttribute();
+        default: return GetCurrentUniversalAmmoAttribute(); // Default to universal if type is invalid
+    }
+}
+
 // RepNotifies for attributes
 
 void UAS_Ammunition::OnRep_CurrentPistolAmmo(const FGameplayAttributeData &OldCurrentPistolAmmo)
