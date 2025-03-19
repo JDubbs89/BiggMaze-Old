@@ -1,10 +1,10 @@
 // Copyright Jade Eye Studios 2025
 
+#include "GASFramework/Calculations/EC_ReloadWeapon.h"
 #include "AbilitySystemComponent.h"
 #include "GameplayEffect.h"
 #include "GASFramework/AttributeSets/AS_EquippedItem.h"
 #include "GASFramework/AttributeSets/AS_Ammunition.h"
-#include "GASFramework/Calculations/EC_ReloadWeapon.h"
 
 UEC_ReloadWeapon::UEC_ReloadWeapon()
 {
