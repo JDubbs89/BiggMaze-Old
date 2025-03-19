@@ -154,11 +154,6 @@
 			"MarketplaceURL": "com.epicgames.launcher://ue/Fab/product/3e455250-77f9-4341-8c8b-00d7d680f1ae"
 		},
 		{
-			"Name": "SmoothSyncPlugin",
-			"Enabled": false,
-			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/content/c8f61b007fb44f4abcb7b0974cebff6b"
-		},
-		{
 			"Name": "Landmass",
 			"Enabled": true
 		},

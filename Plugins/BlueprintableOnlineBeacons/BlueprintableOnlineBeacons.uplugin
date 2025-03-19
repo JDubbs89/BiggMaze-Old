@@ -10,7 +10,7 @@
 	"DocsURL": "https://docs.google.com/document/d/12vvpOC8-liY3qUIV3ByEQecco3GiudjQ2mnV-BuqNoY/edit?usp=sharing",
 	"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/22087fb2e2494de6a2641d7cc97e07f0",
 	"SupportURL": "mailto:arbunese@gmail.com",
-	"EngineVersion": "5.5",
+	"EngineVersion": "5.5.4",
 	"CanContainContent": true,
 	"Installed": true,
 	"Modules": [
