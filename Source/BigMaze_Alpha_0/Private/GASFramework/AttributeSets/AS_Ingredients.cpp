@@ -1,7 +1,7 @@
 // Copyright Jade Eye Studios 2025
 
-#include "GASFramework/AttributeSets/AS_Ingredients.h"
 #include "Net/UnrealNetwork.h"
+#include "GASFramework/AttributeSets/AS_Ingredients.h"
 
 UAS_Ingredients::UAS_Ingredients()
 {
