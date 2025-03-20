@@ -58,7 +58,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -79,7 +79,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
@@ -134,7 +134,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -155,7 +155,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
@@ -207,7 +207,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -228,7 +228,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
@@ -283,7 +283,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -295,7 +295,7 @@
             },
             "Microsoft.Extensions.FileSystemGlobbing": {
               "target": "Package",
-              "version": "[8.0.0, )"
+              "version": "[6.0.0, )"
             },
             "System.Security.Permissions": {
               "target": "Package",
@@ -318,7 +318,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
@@ -363,7 +363,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -371,7 +371,7 @@
           "dependencies": {
             "JetBrains.Annotations": {
               "target": "Package",
-              "version": "[2024.3.0, )"
+              "version": "[2022.1.0, )"
             },
             "Microsoft.Extensions.Configuration": {
               "target": "Package",
@@ -379,15 +379,15 @@
             },
             "Microsoft.Extensions.Http.Polly": {
               "target": "Package",
-              "version": "[8.0.10, )"
+              "version": "[6.0.26, )"
             },
             "Microsoft.Extensions.Logging.Console": {
               "target": "Package",
-              "version": "[8.0.1, )"
+              "version": "[6.0.0, )"
             },
             "Microsoft.Extensions.ObjectPool": {
               "target": "Package",
-              "version": "[8.0.10, )"
+              "version": "[6.0.8, )"
             },
             "OpenTracing": {
               "target": "Package",
@@ -418,7 +418,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
@@ -479,7 +479,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -513,29 +513,25 @@
             },
             "Microsoft.Data.Sqlite": {
               "target": "Package",
-              "version": "[8.0.10, )"
+              "version": "[8.0.0, )"
             },
             "Microsoft.Extensions.Caching.Abstractions": {
               "target": "Package",
-              "version": "[8.0.0, )"
+              "version": "[6.0.0, )"
             },
             "Microsoft.Extensions.Caching.Memory": {
               "target": "Package",
-              "version": "[8.0.1, )"
+              "version": "[6.0.2, )"
             },
             "Microsoft.VisualStudio.Threading.Analyzers": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[17.11.20, )"
+              "version": "[17.8.14, )"
             },
             "System.IO.Pipelines": {
               "target": "Package",
               "version": "[8.0.0, )"
-            },
-            "System.Linq.Async": {
-              "target": "Package",
-              "version": "[6.0.1, )"
             },
             "ZstdSharp.Port": {
               "target": "Package",
@@ -558,7 +554,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
@@ -607,7 +603,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -615,7 +611,7 @@
           "dependencies": {
             "Blake3": {
               "target": "Package",
-              "version": "[1.1.0, )"
+              "version": "[0.6.1, )"
             },
             "System.Memory": {
               "target": "Package",
@@ -638,7 +634,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
@@ -687,7 +683,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -695,12 +691,14 @@
           "dependencies": {
             "Microsoft.Build": {
               "include": "Compile, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
-              "version": "[17.11.4, )"
+              "version": "[17.1.0, )"
             },
             "Microsoft.Build.Locator": {
+              "suppressParent": "All",
               "target": "Package",
-              "version": "[1.7.8, )"
+              "version": "[1.4.1, )"
             },
             "System.Drawing.Common": {
               "target": "Package",
@@ -723,7 +721,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
@@ -768,7 +766,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -776,19 +774,15 @@
           "dependencies": {
             "IdentityModel.OidcClient": {
               "target": "Package",
-              "version": "[6.0.0, )"
+              "version": "[4.0.0, )"
             },
             "Microsoft.Extensions.Configuration.Binder": {
               "target": "Package",
-              "version": "[8.0.2, )"
+              "version": "[6.0.0, )"
             },
             "Microsoft.Extensions.Configuration.Json": {
               "target": "Package",
-              "version": "[8.0.1, )"
-            },
-            "Microsoft.Extensions.Options": {
-              "target": "Package",
-              "version": "[8.0.2, )"
+              "version": "[6.0.0, )"
             },
             "System.Text.Json": {
               "target": "Package",
@@ -811,7 +805,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
@@ -856,7 +850,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -877,7 +871,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
@@ -926,7 +920,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -947,7 +941,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
@@ -992,7 +986,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -1004,7 +998,7 @@
             },
             "Microsoft.Extensions.Logging": {
               "target": "Package",
-              "version": "[8.0.1, )"
+              "version": "[6.0.0, )"
             }
           },
           "imports": [
@@ -1023,7 +1017,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
@@ -1075,7 +1069,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -1102,7 +1096,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
@@ -1172,7 +1166,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -1182,24 +1176,20 @@
               "include": "Compile, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[17.11.4, )"
+              "version": "[17.1.0, )"
             },
             "Microsoft.Build.Locator": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[1.7.8, )"
+              "version": "[1.4.1, )"
             },
             "Microsoft.CodeAnalysis.CSharp": {
               "target": "Package",
-              "version": "[4.11.0, )"
+              "version": "[4.2.0, )"
             },
             "Microsoft.Extensions.Logging.Console": {
               "target": "Package",
-              "version": "[8.0.1, )"
-            },
-            "Microsoft.VisualStudio.Setup.Configuration.Interop": {
-              "target": "Package",
-              "version": "[3.11.2177, )"
+              "version": "[6.0.0, )"
             },
             "Microsoft.Win32.Registry": {
               "target": "Package",
@@ -1207,7 +1197,7 @@
             },
             "Newtonsoft.Json": {
               "target": "Package",
-              "version": "[13.0.3, )"
+              "version": "[13.0.1, )"
             },
             "OpenTracing": {
               "target": "Package",
@@ -1219,11 +1209,11 @@
             },
             "System.Management": {
               "target": "Package",
-              "version": "[8.0.0, )"
+              "version": "[4.7.0, )"
             },
             "System.Reflection.MetadataLoadContext": {
               "target": "Package",
-              "version": "[8.0.1, )"
+              "version": "[4.7.2, )"
             },
             "System.Security.Cryptography.Csp": {
               "target": "Package",
@@ -1235,11 +1225,11 @@
             },
             "System.ServiceProcess.ServiceController": {
               "target": "Package",
-              "version": "[8.0.1, )"
+              "version": "[4.7.0, )"
             },
             "System.Text.Encoding.CodePages": {
               "target": "Package",
-              "version": "[8.0.0, )"
+              "version": "[6.0.0, )"
             }
           },
           "imports": [
@@ -1258,7 +1248,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
@@ -1319,7 +1309,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -1340,7 +1330,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
