@@ -1,5 +1,6 @@
 // Copyright Jade Eye Studios 2025
 
+#include "EngineGlobals.h"
 #include "AbilitySystemComponent.h"
 #include "GameplayEffect.h"
 #include "GASFramework/AttributeSets/AS_EquippedItem.h"
@@ -122,6 +123,11 @@ void UEC_ReloadWeapon::Execute_Implementation(const FGameplayEffectCustomExecuti
     float NeededAmmo = MaxMagCount - CurrentMagCount;
     float AvailableAmmo = FMath::Min(NeededAmmo, CurrentReserveCount);
     float AmmoToReload = FMath::Min(AvailableAmmo, ReloadAmt);
+
+    if (GEngine)
+    {
+        GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, FString::Printf(TEXT("Ammo Approved to be re-allocated: %f"), AmmoToReload));
+    }
 
     // Apply changes
     OutputExecutionOutput.AddOutputModifier(FGameplayModifierEvaluatedData(CurrentMagCountDef.AttributeToCapture, EGameplayModOp::Additive, AmmoToReload));
