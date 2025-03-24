@@ -18,6 +18,7 @@
     <None Include="..\..\.vsconfig" />
     <None Include="..\..\BigMaze_Alpha_0.code-workspace" />
     <None Include="..\..\BigMaze_Alpha_0.png" />
+    <None Include="..\..\JonPCWorkspace.code-workspace" />
     <None Include="..\..\MCO_Mocap_Basics.png" />
     <None Include="..\..\README.md" />
     <None Include="..\..\shadertoolsconfig.json" />
@@ -476,6 +477,18 @@
     </ClCompile>
     <ClCompile Include="..\..\Source\BigMaze_Alpha_0\MyClass.h">
       <Filter>Source\BigMaze_Alpha_0</Filter>
+    </ClCompile>
+    <Filter Include="Source\BigMaze_Alpha_0\Private">
+      <UniqueIdentifier>{6CA6BDED-F3A5-380A-B84B-F6B4FD4CDF7F}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\BigMaze_Alpha_0\Private\DefaultAttributeSet.cpp">
+      <Filter>Source\BigMaze_Alpha_0\Private</Filter>
+    </ClCompile>
+    <Filter Include="Source\BigMaze_Alpha_0\Public">
+      <UniqueIdentifier>{2A2A904C-A892-3728-9E22-1E52761EFDE5}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\BigMaze_Alpha_0\Public\DefaultAttributeSet.h">
+      <Filter>Source\BigMaze_Alpha_0\Public</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

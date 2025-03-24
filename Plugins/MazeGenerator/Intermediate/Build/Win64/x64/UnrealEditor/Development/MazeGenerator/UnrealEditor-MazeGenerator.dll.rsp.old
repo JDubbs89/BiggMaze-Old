@@ -36,12 +36,9 @@
 /NODEFAULTLIB:"LIBCPD"
 /FUNCTIONPADMIN:6
 /NOIMPLIB
-"C:\Users\jonat\OneDrive\Documents\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\Intermediate\Build\Win64\x64\BigMaze_Alpha_0Editor\Development\UnrealEd\SharedPCH.UnrealEd.Project.NoValFmtStr.ValApi.Cpp20.InclOrderUnreal5_3.h.obj"
-"C:\Users\jonat\OneDrive\Documents\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\Plugins\MazeGenerator\Intermediate\Build\Win64\x64\UnrealEditor\Development\MazeGenerator\Module.MazeGenerator.cpp.obj"
-"C:\Users\jonat\OneDrive\Documents\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\Plugins\MazeGenerator\Intermediate\Build\Win64\x64\UnrealEditor\Development\MazeGenerator\PerModuleInline.gen.cpp.obj"
-"C:\Users\jonat\OneDrive\Documents\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\Plugins\MazeGenerator\Intermediate\Build\Win64\x64\UnrealEditor\Development\MazeGenerator\Maze.gen.cpp.obj"
-"C:\Users\jonat\OneDrive\Documents\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\Plugins\MazeGenerator\Intermediate\Build\Win64\x64\UnrealEditor\Development\MazeGenerator\MazeGenerator.init.gen.cpp.obj"
-"C:\Users\jonat\OneDrive\Documents\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\Plugins\MazeGenerator\Intermediate\Build\Win64\x64\UnrealEditor\Development\MazeGenerator\Default.rc2.res"
+"C:\Users\jonat\Documents\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\Intermediate\Build\Win64\x64\BigMaze_Alpha_0Editor\Development\UnrealEd\SharedPCH.UnrealEd.Project.NoValFmtStr.ValApi.Cpp20.InclOrderUnreal5_3.h.obj"
+"C:\Users\jonat\Documents\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\Plugins\MazeGenerator\Intermediate\Build\Win64\x64\UnrealEditor\Development\MazeGenerator\Module.MazeGenerator.cpp.obj"
+"C:\Users\jonat\Documents\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\Plugins\MazeGenerator\Intermediate\Build\Win64\x64\UnrealEditor\Development\MazeGenerator\Default.rc2.res"
 "..\Intermediate\Build\Win64\x64\UnrealEditor\Development\CoreUObject\UnrealEditor-CoreUObject.lib"
 "..\Intermediate\Build\Win64\x64\UnrealEditor\Development\Engine\UnrealEditor-Engine.lib"
 "..\Intermediate\Build\Win64\x64\UnrealEditor\Development\Slate\UnrealEditor-Slate.lib"
@@ -72,6 +69,6 @@
 "synchronization.lib"
 "dwmapi.lib"
 "imm32.lib"
-/OUT:"C:\Users\jonat\OneDrive\Documents\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\Plugins\MazeGenerator\Binaries\Win64\UnrealEditor-MazeGenerator.dll"
-/PDB:"C:\Users\jonat\OneDrive\Documents\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\Plugins\MazeGenerator\Binaries\Win64\UnrealEditor-MazeGenerator.pdb"
+/OUT:"C:\Users\jonat\Documents\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\Plugins\MazeGenerator\Binaries\Win64\UnrealEditor-MazeGenerator.dll"
+/PDB:"C:\Users\jonat\Documents\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\Plugins\MazeGenerator\Binaries\Win64\UnrealEditor-MazeGenerator.pdb"
 /ignore:4078

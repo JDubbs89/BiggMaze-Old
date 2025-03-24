@@ -1,0 +1,56 @@
+// Copyright Epic Games, Inc. All Rights Reserved.
+/*===========================================================================
+	Generated code exported from UnrealHeaderTool.
+	DO NOT modify this manually! Edit the corresponding .h files instead!
+===========================================================================*/
+
+// IWYU pragma: private, include "Character/Player/BiggMazePlayerController.h"
+#include "UObject/ObjectMacros.h"
+#include "UObject/ScriptMacros.h"
+
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+#ifdef BIGMAZE_ALPHA_0_BiggMazePlayerController_generated_h
+#error "BiggMazePlayerController.generated.h already included, missing '#pragma once' in BiggMazePlayerController.h"
+#endif
+#define BIGMAZE_ALPHA_0_BiggMazePlayerController_generated_h
+
+#define FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_Public_Character_Player_BiggMazePlayerController_h_15_INCLASS_NO_PURE_DECLS \
+private: \
+	static void StaticRegisterNativesABiggMazePlayerController(); \
+	friend struct Z_Construct_UClass_ABiggMazePlayerController_Statics; \
+public: \
+	DECLARE_CLASS(ABiggMazePlayerController, APlayerController, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/BigMaze_Alpha_0"), NO_API) \
+	DECLARE_SERIALIZER(ABiggMazePlayerController)
+
+
+#define FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_Public_Character_Player_BiggMazePlayerController_h_15_ENHANCED_CONSTRUCTORS \
+	/** Standard constructor, called after all reflected properties have been initialized */ \
+	NO_API ABiggMazePlayerController(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	ABiggMazePlayerController(ABiggMazePlayerController&&); \
+	ABiggMazePlayerController(const ABiggMazePlayerController&); \
+public: \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, ABiggMazePlayerController); \
+	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ABiggMazePlayerController); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(ABiggMazePlayerController) \
+	NO_API virtual ~ABiggMazePlayerController();
+
+
+#define FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_Public_Character_Player_BiggMazePlayerController_h_12_PROLOG
+#define FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_Public_Character_Player_BiggMazePlayerController_h_15_GENERATED_BODY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_Public_Character_Player_BiggMazePlayerController_h_15_INCLASS_NO_PURE_DECLS \
+	FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_Public_Character_Player_BiggMazePlayerController_h_15_ENHANCED_CONSTRUCTORS \
+private: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+template<> BIGMAZE_ALPHA_0_API UClass* StaticClass<class ABiggMazePlayerController>();
+
+#undef CURRENT_FILE_ID
+#define CURRENT_FILE_ID FID_Unreal_Projects_BigMaze_Alpha_0_0_1_UE_5_3_2joust_brigade_Source_BigMaze_Alpha_0_Public_Character_Player_BiggMazePlayerController_h
+
+
+PRAGMA_ENABLE_DEPRECATION_WARNINGS

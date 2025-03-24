@@ -10,7 +10,9 @@
 			"LoadingPhase": "Default",
 			"AdditionalDependencies": [
 				"Engine",
-				"OnlineSubsystemUtils"
+				"OnlineSubsystemUtils",
+				"GameplayAbilities",
+				"AIModule"
 			]
 		}
 	],
@@ -195,6 +197,18 @@
 		},
 		{
 			"Name": "AdvancedFlockSystem",
+			"Enabled": true
+		},
+		{
+			"Name": "OnlineFramework",
+			"Enabled": true
+		},
+		{
+			"Name": "GameplayStateTree",
+			"Enabled": true
+		},
+		{
+			"Name": "GameplayAbilities",
 			"Enabled": true
 		}
 	]

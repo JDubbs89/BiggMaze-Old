@@ -1,11 +1,13 @@
-"C:\Users\jonat\OneDrive\Documents\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\Intermediate\Build\Win64\UnrealEditor\Inc\BigMaze_Alpha_0\UHT\BigMaze_Alpha_0.init.gen.cpp"
-/FI"C:\Users\jonat\OneDrive\Documents\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\Intermediate\Build\Win64\x64\BigMaze_Alpha_0Editor\Development\Engine\SharedPCH.Engine.Cpp20.InclOrderUnreal5_0.h"
-/FI"C:\Users\jonat\OneDrive\Documents\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\Intermediate\Build\Win64\x64\UnrealEditor\Development\BigMaze_Alpha_0\Definitions.BigMaze_Alpha_0.h"
-/Yu"C:\Users\jonat\OneDrive\Documents\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\Intermediate\Build\Win64\x64\BigMaze_Alpha_0Editor\Development\Engine\SharedPCH.Engine.Cpp20.InclOrderUnreal5_0.h"
-/Fp"C:\Users\jonat\OneDrive\Documents\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\Intermediate\Build\Win64\x64\BigMaze_Alpha_0Editor\Development\Engine\SharedPCH.Engine.Cpp20.InclOrderUnreal5_0.h.pch"
-/Fo"C:\Users\jonat\OneDrive\Documents\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\Intermediate\Build\Win64\x64\UnrealEditor\Development\BigMaze_Alpha_0\BigMaze_Alpha_0.init.gen.cpp.obj"
-/sourceDependencies "C:\Users\jonat\OneDrive\Documents\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\Intermediate\Build\Win64\x64\UnrealEditor\Development\BigMaze_Alpha_0\BigMaze_Alpha_0.init.gen.cpp.dep.json"
-@"C:\Users\jonat\OneDrive\Documents\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\Intermediate\Build\Win64\x64\UnrealEditor\Development\BigMaze_Alpha_0\BigMaze_Alpha_0.Shared.rsp"
+"C:\Users\jonat\Documents\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\Intermediate\Build\Win64\UnrealEditor\Inc\BigMaze_Alpha_0\UHT\BigMaze_Alpha_0.init.gen.cpp"
+/FI"C:\Users\jonat\Documents\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\Intermediate\Build\Win64\x64\BigMaze_Alpha_0Editor\Development\UnrealEd\SharedPCH.UnrealEd.Project.NoValFmtStr.ValApi.Cpp20.InclOrderUnreal5_3.h"
+/FI"C:\Users\jonat\Documents\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\Intermediate\Build\Win64\x64\UnrealEditor\Development\BigMaze_Alpha_0\Definitions.BigMaze_Alpha_0.h"
+/Yu"C:\Users\jonat\Documents\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\Intermediate\Build\Win64\x64\BigMaze_Alpha_0Editor\Development\UnrealEd\SharedPCH.UnrealEd.Project.NoValFmtStr.ValApi.Cpp20.InclOrderUnreal5_3.h"
+/Fp"C:\Users\jonat\Documents\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\Intermediate\Build\Win64\x64\BigMaze_Alpha_0Editor\Development\UnrealEd\SharedPCH.UnrealEd.Project.NoValFmtStr.ValApi.Cpp20.InclOrderUnreal5_3.h.pch"
+/Fo"C:\Users\jonat\Documents\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\Intermediate\Build\Win64\x64\UnrealEditor\Development\BigMaze_Alpha_0\BigMaze_Alpha_0.init.gen.cpp.obj"
+/experimental:log "C:\Users\jonat\Documents\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\Intermediate\Build\Win64\x64\UnrealEditor\Development\BigMaze_Alpha_0\BigMaze_Alpha_0.init.gen.cpp.sarif"
+/sourceDependencies "C:\Users\jonat\Documents\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\Intermediate\Build\Win64\x64\UnrealEditor\Development\BigMaze_Alpha_0\BigMaze_Alpha_0.init.gen.cpp.dep.json"
+@"C:\Users\jonat\Documents\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\Intermediate\Build\Win64\x64\UnrealEditor\Development\BigMaze_Alpha_0\BigMaze_Alpha_0.Shared.rsp"
+/d2ssa-cfg-question-
 /Zc:inline
 /nologo
 /Oi
@@ -24,6 +26,7 @@
 /D_WINDLL
 /D_DISABLE_EXTENDED_ALIGNED_STORAGE
 /Ob2
+/d2ExtendedWarningInfo
 /Ox
 /Ot
 /GF
