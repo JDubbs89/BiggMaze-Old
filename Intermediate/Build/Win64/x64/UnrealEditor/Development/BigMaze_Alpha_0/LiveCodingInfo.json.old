@@ -8,7 +8,8 @@
 			"AS_BM_CharBase.gen.cpp.obj",
 			"AS_EquippedItem.gen.cpp.obj",
 			"AS_Ingredients.gen.cpp.obj",
-			"BiggMazeAICharacter.gen.cpp.obj"
+			"BiggMazeAICharacter.gen.cpp.obj",
+			"AbilitySystem.gen.cpp.obj"
 		],
 		"Module.BigMaze_Alpha_0.2.cpp.obj": [
 			"BiggMazeAIController.gen.cpp.obj",
@@ -17,8 +18,9 @@
 			"BiggMazePlayerCharacter.gen.cpp.obj",
 			"BiggMazePlayerController.gen.cpp.obj",
 			"BiggMazePlayerState.gen.cpp.obj",
-			"BigMaze_Alpha_0.init.gen.cpp.obj",
+			"BMBeaconClient.gen.cpp.obj",
 			"EC_BaseDamage.gen.cpp.obj",
+			"EC_ReloadWeapon.gen.cpp.obj",
 			"ItemEnums.gen.cpp.obj",
 			"ItemSystem.gen.cpp.obj",
 			"MMC_Damage.gen.cpp.obj",
@@ -28,7 +30,10 @@
 			"BigMaze_Alpha_0.cpp.obj",
 			"MyClass.cpp.obj",
 			"BiggMazeAssetManager.cpp.obj",
-			"BiggMazeAICharacter.cpp.obj"
+			"BiggMazeAICharacter.cpp.obj",
+			"BigMaze_Alpha_0.init.gen.cpp.obj",
+			"BMBeaconHostObject.gen.cpp.obj",
+			"BMLobbyGameMode.gen.cpp.obj"
 		],
 		"Module.BigMaze_Alpha_0.3.cpp.obj": [
 			"BiggMazeAIController.cpp.obj",
@@ -43,9 +48,13 @@
 			"AS_EquippedItem.cpp.obj",
 			"AS_Ingredients.cpp.obj",
 			"EC_BaseDamage.cpp.obj",
+			"EC_ReloadWeapon.cpp.obj",
 			"MMC_Damage.cpp.obj",
 			"MMC_HealthRegen.cpp.obj",
-			"PS_BM_Player.cpp.obj"
+			"PS_BM_Player.cpp.obj",
+			"BMBeaconClient.cpp.obj",
+			"BMBeaconHostObject.cpp.obj",
+			"BMLobbyGameMode.cpp.obj"
 		]
 	}
 }

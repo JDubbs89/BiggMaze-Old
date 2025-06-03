@@ -1,0 +1,19 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.MazeGenerator.cpp.obj": [
+			"Maze.gen.cpp.obj",
+			"MazeGenerator.init.gen.cpp.obj",
+			"Algorithm.cpp.obj",
+			"Backtracker.cpp.obj",
+			"Division.cpp.obj",
+			"Eller.cpp.obj",
+			"HaK.cpp.obj",
+			"Kruskal.cpp.obj",
+			"Prim.cpp.obj",
+			"Sidewinder.cpp.obj",
+			"Maze.cpp.obj",
+			"MazeGenerator.cpp.obj"
+		]
+	}
+}

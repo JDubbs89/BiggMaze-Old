@@ -1,4 +1,5 @@
 /I "."
+/I "C:\Unreal Projects\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\Source\BigMaze_Alpha_0\Private"
 /I "..\Intermediate\Build\Win64\UnrealEditor\Inc\Engine\UHT"
 /I "Runtime\Engine\Classes"
 /I "Runtime\Engine\Public"
@@ -303,6 +304,7 @@
 /I "..\Plugins\Runtime\DataRegistry\Source\DataRegistry\Public"
 /I "C:\Unreal Projects\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\Intermediate\Build\Win64\UnrealEditor\Inc\BigMaze_Alpha_0\UHT"
 /I "C:\Unreal Projects\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\Source"
+/I "C:\Unreal Projects\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\Source\BigMaze_Alpha_0\Public"
 /external:W0
 /external:I "ThirdParty\GuidelinesSupportLibrary\GSL-1144\include"
 /external:I "ThirdParty\RapidJSON\1.1.0"

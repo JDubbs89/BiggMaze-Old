@@ -1,0 +1,19 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\unreal projects\\bigmaze_alpha-0.0.1_ue_5.3.2joust-brigade\\source\\bigmaze_alpha_0\\private\\multiplayer\\bmlobbygamemode.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\unreal projects\\bigmaze_alpha-0.0.1_ue_5.3.2joust-brigade\\intermediate\\build\\win64\\x64\\bigmaze_alpha_0editor\\development\\unrealed\\sharedpch.unrealed.project.novalfmtstr.valapi.cpp20.inclorderunreal5_3.h.pch",
+        "Includes": [
+            "c:\\unreal projects\\bigmaze_alpha-0.0.1_ue_5.3.2joust-brigade\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\bigmaze_alpha_0\\definitions.bigmaze_alpha_0.h",
+            "c:\\unreal projects\\bigmaze_alpha-0.0.1_ue_5.3.2joust-brigade\\source\\bigmaze_alpha_0\\public\\multiplayer\\bmlobbygamemode.h",
+            "c:\\program files\\epic games\\ue_5.5\\engine\\source\\runtime\\engine\\classes\\gameframework\\gamemodebase.h",
+            "c:\\program files\\epic games\\ue_5.5\\engine\\source\\runtime\\engine\\classes\\engine\\serverstatreplicator.h",
+            "c:\\program files\\epic games\\ue_5.5\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\serverstatreplicator.generated.h",
+            "c:\\program files\\epic games\\ue_5.5\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\gamemodebase.generated.h",
+            "c:\\unreal projects\\bigmaze_alpha-0.0.1_ue_5.3.2joust-brigade\\intermediate\\build\\win64\\unrealeditor\\inc\\bigmaze_alpha_0\\uht\\bmlobbygamemode.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
