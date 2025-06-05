@@ -16,5 +16,8 @@ class BIGMAZE_ALPHA_0_API ABMBeaconHostObject : public AOnlineBeaconHostObject
 	
 public:
 	ABMBeaconHostObject();
+
+protected:
+	virtual void OnClientConnected(AOnlineBeaconClient* NewClientActor, UNetConnection* ClientConnection) override;
 	
 };

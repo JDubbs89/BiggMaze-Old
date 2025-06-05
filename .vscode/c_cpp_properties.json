@@ -8,7 +8,12 @@
             "intelliSenseMode": "msvc-x64",
             "compileCommands": [
                 "C:\\Unreal Projects\\BigMaze_Alpha-0.0.1_UE_5.3.2joust-brigade\\.vscode\\compileCommands_BigMaze_Alpha_0.json"
-            ]
+            ],
+            "includePath": [
+                "${workspaceFolder}/Source",
+                "${workspaceFolder}/Source/BigMaze_Alpha_0/Public",
+                "${workspaceFolder}/Source/BigMaze_Alpha_0/Private"
+            ],
         },
         {
             "name": "Win32",

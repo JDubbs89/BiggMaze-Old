@@ -17,4 +17,9 @@ class BIGMAZE_ALPHA_0_API ABMLobbyGameMode : public AGameModeBase
 public:
 	ABMLobbyGameMode();
 	
+protected:
+	UFUNCTION(BlueprintCallable)
+	bool CreateHostBeacon();
+
+	class ABMBeaconHostObject* HostObject;
 };

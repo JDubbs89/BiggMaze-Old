@@ -17,4 +17,10 @@ class BIGMAZE_ALPHA_0_API ABMBeaconClient : public AOnlineBeaconClient
 public:
 	ABMBeaconClient();
 	
+protected:
+	UFUNCTION(BlueprintCallable)
+	bool ConnectToServer(const FString& Address);
+
+	virtual void OnFailure() override;
+	virtual void OnConnected() override;
 };

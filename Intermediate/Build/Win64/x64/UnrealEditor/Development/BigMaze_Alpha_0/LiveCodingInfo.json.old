@@ -2,14 +2,14 @@
 	"RemapUnityFiles": 
 	{
 		"Module.BigMaze_Alpha_0.1.cpp.obj": [
+			"AbilitySystem.gen.cpp.obj",
 			"ASC_BiggMaze.gen.cpp.obj",
 			"ASC_CharacterBase.gen.cpp.obj",
 			"AS_Ammunition.gen.cpp.obj",
 			"AS_BM_CharBase.gen.cpp.obj",
 			"AS_EquippedItem.gen.cpp.obj",
 			"AS_Ingredients.gen.cpp.obj",
-			"BiggMazeAICharacter.gen.cpp.obj",
-			"AbilitySystem.gen.cpp.obj"
+			"BiggMazeAICharacter.gen.cpp.obj"
 		],
 		"Module.BigMaze_Alpha_0.2.cpp.obj": [
 			"BiggMazeAIController.gen.cpp.obj",
@@ -19,6 +19,7 @@
 			"BiggMazePlayerController.gen.cpp.obj",
 			"BiggMazePlayerState.gen.cpp.obj",
 			"BMBeaconClient.gen.cpp.obj",
+			"BMBeaconHostObject.gen.cpp.obj",
 			"EC_BaseDamage.gen.cpp.obj",
 			"EC_ReloadWeapon.gen.cpp.obj",
 			"ItemEnums.gen.cpp.obj",
@@ -26,16 +27,15 @@
 			"MMC_Damage.gen.cpp.obj",
 			"MMC_HealthRegen.gen.cpp.obj",
 			"PS_BM_Player.gen.cpp.obj",
+			"BigMaze_Alpha_0.init.gen.cpp.obj",
+			"BMLobbyGameMode.gen.cpp.obj"
+		],
+		"Module.BigMaze_Alpha_0.3.cpp.obj": [
 			"PerModuleInline.gen.cpp.obj",
 			"BigMaze_Alpha_0.cpp.obj",
 			"MyClass.cpp.obj",
 			"BiggMazeAssetManager.cpp.obj",
 			"BiggMazeAICharacter.cpp.obj",
-			"BigMaze_Alpha_0.init.gen.cpp.obj",
-			"BMBeaconHostObject.gen.cpp.obj",
-			"BMLobbyGameMode.gen.cpp.obj"
-		],
-		"Module.BigMaze_Alpha_0.3.cpp.obj": [
 			"BiggMazeAIController.cpp.obj",
 			"BiggMazeCharacter.cpp.obj",
 			"BiggMazePlayerCharacter.cpp.obj",

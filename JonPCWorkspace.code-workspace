@@ -16,7 +16,8 @@
 			"*.json": "cpp",
 			"*.rh": "cpp"
 		},
-		"dotnet.preferCSharpExtension": true
+		"dotnet.preferCSharpExtension": true,
+		"dotnet.defaultSolution": "BigMaze_Alpha_0/BigMaze_Alpha_0.sln"
 	},
 	"extensions": {
 		"recommendations": [
